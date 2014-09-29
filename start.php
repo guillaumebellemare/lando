@@ -10,6 +10,8 @@
 |
 | 2. Transformer le dossier classes en helpers (/php, /js, etc.)  
 |
+| 3. Save fait, Get fait
+|
 */
 
 
