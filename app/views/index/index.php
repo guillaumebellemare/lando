@@ -18,7 +18,6 @@
                 <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>.html"><?=$activity["activities.slug_$lang3"]?>.html</a></p>
             <?php endif;
         endforeach; ?>
-        
     </div>
   </div>
 </section>

@@ -8,14 +8,7 @@
 |    par défaut pour pouvoir caller get($table, $order, $active, $join) avec ::parent
 |    La table pourrait être optionnelle comme elle est déclarée dans le Model
 |
-| 2. Ajouter des functions aux modèles du genre catactivities qui montrerait
-|    au Controller comment joiner la table en question
-|
-| 3. Ajouter un dossier snippets (/php, /js, /css(border-radius,etc.), etc.)
-|    
-| 4. Transformer le dossier classes en helpers (/php, /js, etc.)  
-|    
-| 5. Appeller tous les modèles au loading pour y avoir accès? 
+| 2. Transformer le dossier classes en helpers (/php, /js, etc.)  
 |
 */
 
@@ -42,7 +35,8 @@ $debugging = true;
 */
 require_once("includes/conn.inc.php");
 require_once("classes/lang.class.php");
-require_once("classes/compressorloader.class.php");
+require_once("classes/compressor/compressorloader.class.php");
+
 
 /*
 |--------------------------------------------------------------------------
@@ -108,9 +102,21 @@ require_once("func/ti.php");
 | Here is where the custom methods are declared.
 |
 */
-/*require_once('app/models/App.php');
-$app = new App($db, $lang3);*/
 require_once("app/controllers/AppController.php");
+
+
+/*
+|--------------------------------------------------------------------------
+| Model classes
+|--------------------------------------------------------------------------
+|
+| Here is where the models are called.
+|
+*/
+foreach (glob("app/models/*.php") as $filename)
+{
+    require_once($filename);
+}
 
 
 /*

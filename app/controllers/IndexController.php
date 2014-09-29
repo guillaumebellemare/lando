@@ -36,12 +36,6 @@ class IndexController extends \AppController {
 		
 		global $db, $lang3;
 		
-		/***************************************
-		**** Call models that you need here ****
-		****************************************/
-		require_once('app/models/Base.php');
-		
-		
 		/************************
 		**** Slug management ****
 		************************/

@@ -9,8 +9,8 @@
 |
 */
 
-require_once("classes/phpmailer.class.php");
-require_once("classes/smtp.class.php");
+require_once("helpers/phpmailer.class.php");
+require_once("helpers/smtp.class.php");
 
 if ( isset($_POST['action']) && $_POST['action']=='send' ) {
 	
