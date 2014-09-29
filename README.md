@@ -4,4 +4,4 @@ Lando
 =====
 <p>http://guillaumebellemare.github.io/lando/</p>
 =====
-<iframe width="420" height="315" src="//www.youtube.com/embed/WrvHMW4rviE" frameborder="0" allowfullscreen></iframe>
+<p>https://www.youtube.com/watch?v=WrvHMW4rviE</p>
