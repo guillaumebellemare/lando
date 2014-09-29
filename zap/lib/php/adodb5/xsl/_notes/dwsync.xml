@@ -6,4 +6,10 @@
 <file name="convert-0.2-0.3.xsl" server="ftp.espacedev2.com" local="130564871983370596" remote="130500055200000000" Dst="2" />
 <file name="remove-0.2.xsl" server="ftp.espacedev2.com" local="130564871983380413" remote="130500055200000000" Dst="2" />
 <file name="remove-0.3.xsl" server="ftp.espacedev2.com" local="130564871983850866" remote="130500055200000000" Dst="2" />
+<file name="convert-0.1-0.2.xsl" server="ftp.espacedev2.com/base/" local="130564931804797071" remote="130500055200000000" Dst="2" />
+<file name="convert-0.1-0.3.xsl" server="ftp.espacedev2.com/base/" local="130564931805337464" remote="130500055200000000" Dst="2" />
+<file name="convert-0.2-0.1.xsl" server="ftp.espacedev2.com/base/" local="130564931805928038" remote="130500055200000000" Dst="2" />
+<file name="convert-0.2-0.3.xsl" server="ftp.espacedev2.com/base/" local="130564931807198889" remote="130500055200000000" Dst="2" />
+<file name="remove-0.2.xsl" server="ftp.espacedev2.com/base/" local="130564931808479847" remote="130500055200000000" Dst="2" />
+<file name="remove-0.3.xsl" server="ftp.espacedev2.com/base/" local="130564931809000036" remote="130500055200000000" Dst="2" />
 </dwsync>

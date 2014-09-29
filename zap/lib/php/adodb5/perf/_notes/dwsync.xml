@@ -7,4 +7,11 @@
 <file name="perf-mysql.inc.php" server="ftp.espacedev2.com" local="130564871971061899" remote="130500055200000000" Dst="2" />
 <file name="perf-oci8.inc.php" server="ftp.espacedev2.com" local="130564871971752363" remote="130500055200000000" Dst="2" />
 <file name="perf-postgres.inc.php" server="ftp.espacedev2.com" local="130564871971662317" remote="130500055200000000" Dst="2" />
+<file name="perf-db2.inc.php" server="ftp.espacedev2.com/base/" local="130564931772584230" remote="130500055200000000" Dst="2" />
+<file name="perf-informix.inc.php" server="ftp.espacedev2.com/base/" local="130564931773314749" remote="130500055200000000" Dst="2" />
+<file name="perf-mssql.inc.php" server="ftp.espacedev2.com/base/" local="130564931774135153" remote="130500055200000000" Dst="2" />
+<file name="perf-mssqlnative.inc.php" server="ftp.espacedev2.com/base/" local="130564931774755760" remote="130500055200000000" Dst="2" />
+<file name="perf-mysql.inc.php" server="ftp.espacedev2.com/base/" local="130564931775466089" remote="130500055200000000" Dst="2" />
+<file name="perf-oci8.inc.php" server="ftp.espacedev2.com/base/" local="130564931776236633" remote="130500055200000000" Dst="2" />
+<file name="perf-postgres.inc.php" server="ftp.espacedev2.com/base/" local="130564931776987286" remote="130500055200000000" Dst="2" />
 </dwsync>

@@ -5,4 +5,9 @@
 <file name="slider.jpg" server="ftp.espacedev2.com" local="130564871927907321" remote="130429077000000000" Dst="2" />
 <file name="icon-error.png" server="ftp.espacedev2.com" local="130564871925695757" remote="130501796400000000" Dst="2" />
 <file name="icon-success.png" server="ftp.espacedev2.com" local="130564871925715771" remote="130501799400000000" Dst="2" />
+<file name="form-select.png" server="ftp.espacedev2.com/base/" local="130564931676165825" remote="130441381800000000" Dst="2" />
+<file name="icon-error.png" server="ftp.espacedev2.com/base/" local="130564931676596066" remote="130501796400000000" Dst="2" />
+<file name="icon-success.png" server="ftp.espacedev2.com/base/" local="130564931677036678" remote="130501799400000000" Dst="2" />
+<file name="marker.png" server="ftp.espacedev2.com/base/" local="130564931677767058" remote="130401072000000000" Dst="2" />
+<file name="slider.jpg" server="ftp.espacedev2.com/base/" local="130564931679758463" remote="130429077000000000" Dst="2" />
 </dwsync>

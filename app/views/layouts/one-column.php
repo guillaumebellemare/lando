@@ -1,4 +1,4 @@
-<?php if(@include('includes/messages.inc.php')); ?>
+<?php if(@include('includes/app_messages.inc.php')); ?>
 <!doctype html>
 <html>
 <head>

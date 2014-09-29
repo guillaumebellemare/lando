@@ -67,5 +67,17 @@ class IndexController extends \AppController {
 	
 		return array("activities" => $activities);
 	}
+	
+	
+	function add() {
+		
+		global $db, $lang3;
+		
+		/*************
+		**** Data ****
+		**************/
+		$this->save(Base::table(), "name_fre");
+	
+	}
 }
 ?>

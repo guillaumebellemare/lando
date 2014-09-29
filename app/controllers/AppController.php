@@ -150,6 +150,48 @@ class AppController extends SluggedRecord {
 		return $data;
 	}
 
+
+	function save($table) {
+		
+		global $lang2;
+		global $db;
+		global $messages, $errors;
+		
+		$q = "SELECT * FROM {$table}";
+		
+		
+		// Check for data that already exist in the database
+		$numb_arga = func_num_args();
+		$numb_verified_fields  = $numb_arga - 1;
+		if($numb_verified_fields > 1 && $_POST)
+		{
+			$q .= " WHERE";
+			for ($i = 1; $i < $numb_arga; $i++) {
+				$verified_value = $_POST[func_get_arg($i)];
+				$verified_field = func_get_arg($i);
+				if($i!=1) $q .= " OR";
+				$q .= " {$table}.$verified_field = '$verified_value'";
+			}
+		}
+		$rsList = $this->db->Execute($q);
+		
+		if(isset($_POST['action']) && $_POST['action']=='save' && $_POST && $rsList->RecordCount()==0)
+		{
+			foreach($_POST as $field => $val)
+			{
+				if($val) if($_POST[$field]!=NULL) $record["$field"] = $val;
+			}
+			
+			$record["$field"] = $val;
+			$db->AutoExecute($table, $record, 'INSERT');
+			$messages[] = "L'ajout a bien été effectué.";
+		}else{
+			if($_POST) $errors[] = "Valeur déjà entrée.";
+		}
+		
+		return true;
+	}
+	
 	function getArgs($table) {
 		if(isset($_GET['argc'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argc']."'";
 		elseif(isset($_GET['argb'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argb']."'";

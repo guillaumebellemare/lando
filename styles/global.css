@@ -41,7 +41,11 @@ select { background:url(../images/common/form-select.png) no-repeat center right
 /*-------------------------------------------------------------------
 	States (ex.: .is-collapsed)
 -------------------------------------------------------------------*/
-.msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; }
+.app-msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; }
+.app-msg > p { display:block; clear:both; line-height:22px; }
+.app-msg > p > .msg-icon { width:23px; height:23px; display:block; float:left; margin:0 5px 9px 0; }
+.app-msg strong { font-weight:bold; }
+.msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; margin:0 0 10px 0; }
 .msg > p { display:block; clear:both; line-height:22px; }
 .msg > p > .msg-icon { width:23px; height:23px; display:block; float:left; margin:0 5px 9px 0; }
 .msg strong { font-weight:bold; }

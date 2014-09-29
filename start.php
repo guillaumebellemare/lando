@@ -79,6 +79,9 @@ require_once("classes/sluggedrecord.class.php");
 | This is where the errors handlers are declared
 |
 */
+$app_messages = array();
+$app_errors = array();
+
 $messages = array();
 $errors = array();
 
@@ -161,6 +164,7 @@ if($debugging==true)
 |
 */
 $pageSet = 0;
+$view_loaded = false;
 while ($currentRoute = current($routes)) {
 	
 	if(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'].'.html'; else $page = $_GET['page'];
@@ -173,7 +177,7 @@ while ($currentRoute = current($routes)) {
 			$current_route = explode('Controller', $current_controller);
 			$current_route = strtolower($current_route[0]);
 			$current_function = $current_app_route[1];
-			if($debugging==true) $messages[] = '<strong>Current controller:</strong> '.$current_controller.'@'.$current_function.'<br>';
+			if($debugging==true) $app_messages[] = '<strong>Current controller:</strong> '.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
 			$controller = new $current_controller($db, $lang3);
 		}
@@ -187,17 +191,19 @@ while ($currentRoute = current($routes)) {
 			next($currentArrays);
 			}
 		}elseif(isset($currentArrays) && $debugging==true){
-			$errors[] = "Vous devez retourner un array dans la fonction $current_function() de $current_controller.";
+			$app_errors[] = "Vous devez retourner un array dans la fonction $current_function() de $current_controller.";
 		}
 		
 		// View files handling
-		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php'))
+		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
-			if($debugging==true) $messages[] = '<strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
+			if($debugging==true) $app_messages[] = '<strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
 			require_once('app/views/'.$current_route.'/'.$current_function.'.php');
-		}elseif($debugging==true){
-			$errors[] = "Aucune view trouvée correspondant à $current_function dans app/views/$current_route/$current_function.php";	
-			require_once('app/views/404/errors.php');			
+			$view_loaded = true;
+		}elseif($debugging==true && !$view_loaded){
+			$app_errors[] = "Aucune view trouvée correspondant à $current_function dans app/views/$current_route/$current_function.php";	
+			require_once('app/views/404/errors.php');	
+			$view_loaded = true;		
 		}
 
 		$pageSet = 1;

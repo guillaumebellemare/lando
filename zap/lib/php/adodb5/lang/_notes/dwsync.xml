@@ -3,4 +3,7 @@
 <file name="adodb-en.inc.php" server="ftp.espacedev2.com" local="130564871966428498" remote="130500055200000000" Dst="2" />
 <file name="adodb-es.inc.php" server="ftp.espacedev2.com" local="130564871967319183" remote="130500055200000000" Dst="2" />
 <file name="adodb-fr.inc.php" server="ftp.espacedev2.com" local="130564871967359215" remote="130500055200000000" Dst="2" />
+<file name="adodb-en.inc.php" server="ftp.espacedev2.com/base/" local="130564931765649162" remote="130500055200000000" Dst="2" />
+<file name="adodb-es.inc.php" server="ftp.espacedev2.com/base/" local="130564931766319741" remote="130500055200000000" Dst="2" />
+<file name="adodb-fr.inc.php" server="ftp.espacedev2.com/base/" local="130564931767130207" remote="130500055200000000" Dst="2" />
 </dwsync>

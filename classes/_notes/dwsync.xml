@@ -3,4 +3,7 @@
 <file name="sluggedrecord.class.php" server="ftp.espacedev2.com" local="130564871913913498" remote="130564870800000000" Dst="2" />
 <file name="lang.class.php" server="ftp.espacedev2.com" local="130564871910350302" remote="130409437200000000" Dst="2" />
 <file name="record.class.php" server="ftp.espacedev2.com" local="130564871912562394" remote="130523318400000000" Dst="2" />
+<file name="lang.class.php" server="ftp.espacedev2.com/base/" local="130564931658052925" remote="130409437200000000" Dst="2" />
+<file name="record.class.php" server="ftp.espacedev2.com/base/" local="130564931660914956" remote="130523318400000000" Dst="2" />
+<file name="sluggedrecord.class.php" server="ftp.espacedev2.com/base/" local="130564931663096495" remote="130564870800000000" Dst="2" />
 </dwsync>

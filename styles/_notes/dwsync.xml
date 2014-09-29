@@ -7,4 +7,11 @@
 <file name="normalize.css" server="ftp.espacedev2.com" local="130564871947875362" remote="130360464000000000" Dst="2" />
 <file name="queries.css" server="ftp.espacedev2.com" local="130564871948075605" remote="130463837400000000" Dst="2" />
 <file name="reset.css" server="ftp.espacedev2.com" local="130564871950016879" remote="130172976000000000" Dst="2" />
+<file name="flexslider.css" server="ftp.espacedev2.com/base/" local="130564931713362276" remote="130429077600000000" Dst="2" />
+<file name="global.css" server="ftp.espacedev2.com/base/" local="130564931713752627" remote="130564918800000000" Dst="2" />
+<file name="jquery.fancybox.css" server="ftp.espacedev2.com/base/" local="130564931714352969" remote="130172976000000000" Dst="2" />
+<file name="layout.css" server="ftp.espacedev2.com/base/" local="130564931715363682" remote="130477641600000000" Dst="2" />
+<file name="normalize.css" server="ftp.espacedev2.com/base/" local="130564931722588955" remote="130360464000000000" Dst="2" />
+<file name="queries.css" server="ftp.espacedev2.com/base/" local="130564931723199389" remote="130463837400000000" Dst="2" />
+<file name="reset.css" server="ftp.espacedev2.com/base/" local="130564931723709740" remote="130172976000000000" Dst="2" />
 </dwsync>

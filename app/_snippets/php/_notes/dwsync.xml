@@ -4,4 +4,8 @@
 <file name="custom_get.txt" server="ftp.espacedev2.com" local="130564871899122232" remote="130562174400000000" Dst="2" />
 <file name="email.txt" server="ftp.espacedev2.com" local="130564871899152259" remote="130564866000000000" Dst="2" />
 <file name="join.txt" server="ftp.espacedev2.com" local="130564871899722653" remote="130562258400000000" Dst="2" />
+<file name="custom_get.txt" server="ftp.espacedev2.com/base/" local="130564931635296865" remote="130562174400000000" Dst="2" />
+<file name="email.txt" server="ftp.espacedev2.com/base/" local="130564931635837256" remote="130564866000000000" Dst="2" />
+<file name="get.txt" server="ftp.espacedev2.com/base/" local="130564931637108156" remote="130562173800000000" Dst="2" />
+<file name="join.txt" server="ftp.espacedev2.com/base/" local="130564931637838668" remote="130562258400000000" Dst="2" />
 </dwsync>

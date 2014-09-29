@@ -4,4 +4,8 @@
 <file name="index.php" server="ftp.espacedev2.com" local="130564871934892427" remote="130499989800000000" Dst="2" />
 <file name=".htaccess" server="ftp.espacedev2.com" local="130564871895319667" remote="130501665600000000" Dst="2" />
 <file name="start.php" server="ftp.espacedev2.com" local="130564871943262137" remote="130564870200000000" Dst="2" />
+<file name=".htaccess" server="ftp.espacedev2.com/base/" local="130564931810130837" remote="130501665600000000" Dst="2" />
+<file name="index.php" server="ftp.espacedev2.com/base/" local="130564931811331679" remote="130499989800000000" Dst="2" />
+<file name="routes.php" server="ftp.espacedev2.com/base/" local="130564931812072373" remote="130564897800000000" Dst="2" />
+<file name="start.php" server="ftp.espacedev2.com/base/" local="130564931813703358" remote="130564903800000000" Dst="2" />
 </dwsync>

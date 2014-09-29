@@ -4,4 +4,8 @@
 <file name="adodb-ado5.inc.php" server="ftp.espacedev2.com" local="130564871965578024" remote="130500055200000000" Dst="2" />
 <file name="adodb-mysql.inc.php" server="ftp.espacedev2.com" local="130564871966418454" remote="130500055200000000" Dst="2" />
 <file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com" local="130564871966538530" remote="130500055200000000" Dst="2" />
+<file name="adodb-ado.inc.php" server="ftp.espacedev2.com/base/" local="130564931762356842" remote="130500055200000000" Dst="2" />
+<file name="adodb-ado5.inc.php" server="ftp.espacedev2.com/base/" local="130564931763077348" remote="130500055200000000" Dst="2" />
+<file name="adodb-mysql.inc.php" server="ftp.espacedev2.com/base/" local="130564931763717800" remote="130500055200000000" Dst="2" />
+<file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com/base/" local="130564931764608431" remote="130500055200000000" Dst="2" />
 </dwsync>
