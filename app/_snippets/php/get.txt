@@ -1,0 +1,12 @@
+/*
+|--------------------------------------------------------------------------
+| Get Snippet
+|--------------------------------------------------------------------------
+|
+| Arguments : nom de la table, colonnes pour l'ordre, 1 ou 0 pour le slug
+|
+| @return array
+|
+*/
+
+$var = $this->get("table_name", "order_column1, order_column2", 1);

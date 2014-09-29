@@ -1,0 +1,1237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0017)http://phpti.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  
+  
+  <link type="text/css" rel="stylesheet" href="./php-ti_files/banner-styles.css">
+  
+  
+  
+  
+  <title>PHP Template Inheritance</title>
+  <meta name="description" content="Template inheritance in straight PHP without a new template language">
+  <meta name="keywords" content="PHP, template inheritance, PHPTI, template, inheritance">
+  <style type="text/css">
+  
+  body {
+  	margin: 0;
+  	padding: 0;
+  	background: #F7FFEA;
+  	font-family: Arial, sans-serif;
+  	font-size: 15px;
+  	}
+  	
+  a {
+  	color: #000;
+  	}
+  	
+  h2, p {
+  	width: 780px;
+  	margin: 1em auto;
+  	}
+  	
+  h2 {
+  	font-size: 24px;
+  	}
+  	
+  h2 a {
+  	position: relative;
+  	border-bottom: 1px solid #FBA877;
+  	}
+  	
+  p {
+  	line-height: 150%;
+  	color: #2A2A2A;
+  	}
+  	
+  code {
+  	font-family:'Courier New','Courier',monospace;
+  	line-height: 140%;
+  	}
+  	
+  p code {
+  	font-size: 13px;
+  	background: #FDFFFA;
+  	border-bottom: 1px solid #E6F0CF;
+  	}
+  	
+  code .php {
+  	color: #445B07;
+  	font-weight: bold;
+  	}
+  	
+  	
+  	
+  #back-to-top {
+  	_display: none;
+  	position: fixed;
+  	z-index: 1;
+  	top: 10px;
+  	left: 10px;
+  	font-size: 11px;
+  	color: #445B07;
+  	}
+  	
+  .back-to-top-light {
+  	color: #fff !important;
+  	}
+  	
+  	
+  	
+  #top {
+  	border-top: 5px solid #424242;
+  	background: #F7FFEA url(http://phpti.com/images/fade.gif) repeat-x;
+  	position: relative;
+  	z-index: 2;
+  	}
+  	
+  h1 {
+  	margin: 0 0 30px;
+  	height: 92px;
+  	border-top: 1px solid #2C2C2C;
+  	background: url(http://phpti.com/images/title.gif) no-repeat 50% 7px;
+  	}
+  	
+  h1 span {
+  	display: none;
+  	}
+  	
+  #menu {
+  	margin: 30px 0;
+  	background: #363534;
+  	border-top: 1px solid #222121;
+  	border-bottom: 1px solid #222121;
+  	}
+  	
+  #menu, #menu p, #menu a {
+  	color: #fff;
+  	}
+  	
+  #menu table {
+  	width: 780px;
+  	margin: 10px auto;
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  	}
+  	
+  #menu table td {
+  	padding: 0;
+  	}
+  	
+  #menu h2, #menu p {
+  	width: auto;
+  	margin: 1em 0;
+  	}
+  	
+  #menu .download, #menu .links {
+  	padding-left: 30px;
+  	}
+  	
+  #menu .links ul {
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	}
+  	
+  #menu .links li {
+  	margin: 9px 0;
+  	}
+  	
+  	
+  	
+  	
+  #menu .toc {
+  	padding: 15px 0;
+  	width: 48%;
+  	border-right: 1px solid #2C2B2B;
+  	vertical-align: middle;
+  	}
+  	
+  #menu .toc h2 {
+  	font-size: 23px;
+  	margin: 0 0 .5em;
+  	}
+  	
+  #menu .toc ol {
+  	margin: 0;
+  	padding: 0;
+  	list-style-position: inside;
+  	}
+  	
+  #menu .toc li {
+  	margin: .6em 0;
+  	padding: 0;
+  	}
+  	
+  #menu .toc li span {
+  	color: #FF5104;
+  	font-style: italic;
+  	font-size: 11px;
+  	margin-left: 1em;
+  	}
+  	
+  	
+  	
+  
+  #menu .download {
+  	padding-top: 15px;
+  	vertical-align: top;
+  	}
+  	
+  #menu .download p {
+  	margin: 0 0 5px;
+  	}	
+  	
+  #menu .download a.button {
+  	display: inline-block;
+  	background: url(http://phpti.com/images/dl_button.gif) no-repeat bottom right;
+  	padding-right: 15px;
+  	margin-bottom: 8px;
+  	font-weight: bold;
+  	font-size: 20px;
+  	text-decoration: none;
+  	cursor: pointer;
+  	}
+  	
+  #menu .download a.button:hover {
+  	text-decoration: underline;
+  	}
+  	
+  #menu .download a.button span.button-inner {
+  	display: block;
+  	_display: inline-block;
+  	height: 45px;
+  	line-height: 45px;
+  	background: url(http://phpti.com/images/dl_button.gif) no-repeat top left;
+  	padding-left: 40px;
+  	}
+  	
+  #menu .download a.button span.button-inner span {
+  	font-weight: normal;
+  	font-size: 12px;
+  	}
+  	
+  #menu .download p.subtext {
+  	margin: 2px 0;
+  	font-size: 11px;
+  	}
+  	
+  	
+  	
+  	
+  #menu .links {
+  	padding-bottom: 15px;
+  	vertical-align: bottom;
+  	}
+  	
+  #menu .links p {
+  	margin: .5em 0 0;
+  	}
+  	
+  	
+  	
+  .example {
+  	position: relative;
+  	margin: 60px 0 35px;
+  	font-size: 12px;
+  	border-top: 1px solid #E6F0CF;
+  	border-bottom: 1px solid #E6F0CF;
+  	background: #F0F9D9;
+  	padding: 2px 0;
+  	}
+  	
+  .example-no-header, .example-single {
+  	margin: 30px 0;
+  	}
+  	
+  .example table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  	margin: -38px auto 0;
+  	width: 780px;
+  	}
+  	
+  .example-no-header table {
+  	margin: 0 auto;
+  	}
+  	
+  .example th {
+  	text-align: left;
+  	padding: 0 22px;
+  	height: 38px;
+  	line-height: 38px;
+  	}
+  	
+  .example th.first {
+  	padding-left: 0;
+  	}
+  	
+  .example th.last {
+  	padding-right: 0;
+  	}
+  	
+  .example th span {
+  	font-weight: normal;
+  	margin-left: .3em;
+  	}
+  	
+  .example td {
+  	padding: 20px 22px;
+  	vertical-align: top;
+  	border-left: 1px solid #D5E1BB;
+  	}
+  	
+  .example td.first {
+  	border-left: 0;
+  	padding-left: 0;
+  	}
+  	
+  .example td.last {
+  	padding-right: 0;
+  	}
+  	
+  .example code {
+  	white-space: pre;
+  	}
+  	
+  .example-single code {
+  	display: block;
+  	width: 780px;
+  	margin: 0 auto;
+  	padding: 20px 0;
+  	}
+  	
+  	
+  	
+  .short-tags {
+  	position: absolute;
+  	top: -28px;
+  	right: 6px;
+  	font-size: 10px;
+  	}
+  	
+  .short-tags .checkbox-wrap,
+  .short-tags label,
+  .short-tags a.expand {
+  	float: left;
+  	height: 20px;
+  	line-height: 20px;
+  	}
+  	
+  .short-tags input {
+  	margin: 0 3px 0 0;
+  	vertical-align: text-bottom;
+  	}
+  	
+  .short-tags label {
+  	padding-right: 5px;
+  	color: #686964;
+  	}
+  	
+  .short-tags a.expand {
+  	color: #445B07;
+  	border-left: 1px solid #D9E2C4;
+  	padding: 0 5px;
+  	cursor: pointer;
+  	}
+  	
+  .short-tags a:hover {
+  	text-decoration: underline;
+  	}
+  	
+  .short-tags-message {
+  	position: absolute;
+  	top: 22px;
+  	right: 0;
+  	border-style: solid;
+  	border-width: 0 1px 1px 1px;
+  	border-color: #D8E1C4 #E8F0D1;
+  	}
+  	
+  .short-tags-message-inner {
+  	padding: 0 10px;
+  	background: #EFFFC5;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color: #EAF7C8 #D6E0BA #A8AF98;
+  	}
+  	
+  .short-tags-message-inner p {
+  	white-space: nowrap;
+  	font-size: 12px;
+  	width: auto;
+  	}
+  	
+  	
+  	
+  	
+  #bottom {
+  	margin-top: 40px;
+  	background: #363534;
+  	border-top: 1px solid #222121;
+  	padding-bottom: 10px;
+  	font-size: 12px;
+  	}
+  	
+  #bottom, #bottom p, #bottom a {
+  	color: #fff;
+  	}
+  	
+  #bug-reminder {
+  	width: 780px;
+  	margin: 0 auto;
+  	position: relative;
+  	}
+  	
+  #bug-reminder div {
+  	position: absolute;
+  	top: 18px;
+  	right: 0;
+  	padding: 10px 10px 10px 35px;
+  	background: #555 url(http://phpti.com/images/bug.png) no-repeat 10px 50%;
+  	}
+  	
+  #bug-reminder a {
+  	font-weight: bold;
+  	}
+  	
+  #comments {
+  	width: 780px;
+  	min-height: 600px;
+  	_height: 600px;
+  	margin: 0 auto;
+  	}
+  	
+  #disqus_thread {
+  	padding-top: 10px;
+  	}
+  	
+  #copyright {
+  	text-align: center;
+  	}
+  	
+  </style>
+  <script type="text/javascript" async="" src="./php-ti_files/ga.js"></script><script type="text/javascript" src="./php-ti_files/jquery.min.js"></script>
+  <script type="text/javascript">
+  
+  $(function() {
+  
+  	// "short tags" checkbox and message dialog
+  	var shortTags = $('div.short-tags');
+  	var shortTagsUID = 0;
+  	var activeMsg = $([]);
+  	$('div.example:not(.example-single)')
+  		.filter(':gt(0)')
+  			.each(function() {
+  				$(this).append(shortTags.clone());
+  			})
+  		.end()
+  		.each(function() {
+  			var example = $(this);
+  			var msg = example.find('div.short-tags-message')
+  				.click(function(ev) {
+  					ev.stopPropagation();
+  				});
+  			example
+  				.find('div.short-tags')
+  					.find('input')
+  						.attr('id', 'code' + shortTagsUID)
+  						.click(function() {
+  							if (this.checked) {
+  								example.find('span.php').each(function() {
+  									$(this).text(
+  										$(this).text()
+  											.replace(/<\?php echo/g, '<'+'?=')
+  											.replace(/<\?php/g, '<'+'?'));
+  								});
+  							}else{
+  								example.find('span.php').each(function() {
+  									$(this).text(
+  										$(this).text()
+  											.replace(/<\?=/g, '<'+'?php echo')
+  											.replace(/<\?/g, '<'+'?php'));
+  								});
+  							}
+  						})
+  					.end()
+  					.find('label')
+  						.attr('for', 'code' + shortTagsUID)
+  					.end()
+  					.find('a.expand')
+  						.click(function(ev) {
+  							activeMsg.hide();
+  							activeMsg = msg.show();
+  							ev.stopPropagation();
+  						})
+  					.end();
+  			shortTagsUID++;
+  		});
+  	$('body').click(function() {
+  		activeMsg.hide();
+  		activeMsg = $([]);
+  	});
+  	
+  	// activate disqus on scroll / make "back to top" white
+  	var btop = $('#bottom').offset().top;
+  	var prevwtop = 0;
+  	var w = $(window).scroll(scroll);
+  	var btt = $('#back-to-top').click(function() { w.scrollTop(0) });
+  	function scroll() {
+  		var wtop = w.scrollTop();
+  		if (wtop + w.height() > btop) {
+  			enableDisqus();
+  		}
+  		if (prevwtop < btop-20 && wtop >= btop-20) {
+  			btt.addClass('back-to-top-light');
+  		}
+  		else if (prevwtop >= btop-20 && wtop < btop-20) {
+  			btt.removeClass('back-to-top-light');
+  		}
+  		prevwtop = wtop;
+  	}
+  	scroll();
+  	
+  	disqusCommentCounts();
+  	
+  });
+  
+  var disqusEnabled = false;
+  function enableDisqus() {
+  	if (!disqusEnabled) {
+  		//disqus_developer = 1;
+  		(function() {
+  			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  			dsq.src = '/web/20120820124715/http://phpti.disqus.com/embed.js';
+  			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  		})();
+  		disqusEnabled = true;
+  	}
+  }
+  
+  function disqusCommentCounts() {
+  	var links = document.getElementsByTagName('a');
+  	var query = '?';
+  	for (var i=0; i<links.length; i++) {
+  		if (links[i].href.indexOf('#disqus_thread') >= 0) {
+  			query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+  		}
+  	}
+  	$('head').append('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/phpti/get_num_replies.js' + query + '"></' + 'script>');
+  }
+  
+  // google analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3534877-7']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  	ga.src = "http://www.google-analytics.com/ga.js";
+  	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+  function trackDownload(url) {
+  	_gaq.push(['_trackPageview', url]);
+  }
+  
+  </script>
+  </head>
+  <body>
+  
+  
+  
+  <div id="top">
+  
+  <h1><span>PHP Template Inheritance</span></h1>
+  
+  <p><strong>Template Inheritance</strong> is an extremely useful technique for making reusable HTML layouts for a site. It is much more
+  flexible than alternative techniques, such as “including” common elements of a page (like a header and footer file).
+  The concept has been around for a while, most notably in the <a href="http://www.djangoproject.com/">Django</a> template engine. Unlike other libraries,
+  <em>PHP Template Inheritance</em> lets you write everything in straight PHP. <strong>There is no need to learn another template language</strong>.</p>
+  
+  <div id="menu">
+  <table>
+  <tbody><tr>
+  
+  <td class="toc" rowspan="2">
+  <h2>Tutorial</h2>
+  <ol>
+  <li><a href="http://phpti.com/#basic-inheritance">Basic Inheritance</a>  <span>startblock, endblock</span></li>
+  <li><a href="http://phpti.com/#more-on-blocks">More on Blocks</a>  <span>emptyblock</span></li>
+  <li><a href="http://phpti.com/#defaults-overriding">Default Block Content &amp; Overriding</a></li>
+  <li><a href="http://phpti.com/#always-executed">Every Block is Always Executed!</a></li>
+  <li><a href="http://phpti.com/#super-block">The Super Block</a>  <span>superblock, getsuperblock</span></li>
+  <li><a href="http://phpti.com/#nested-blocks">Nested Blocks</a></li>
+  <li><a href="http://phpti.com/#block-filters">Block Filters</a></li>
+  <li><a href="http://phpti.com/#under-the-hood">Under the Hood</a></li>
+  <li><a href="http://phpti.com/#flushing-capturing">Flushing &amp; Capturing Output</a>  <span>flushblocks</span></li>
+  <li><a href="http://phpti.com/#base-no-blocks">Base With No Blocks</a>  <span>blockbase</span></li>
+  </ol>
+  </td>
+  
+  <td class="download">
+  <p>Download version 0.9:</p>
+  <a class="button" href="http://phpti.com/downloads/phpti-0.9.zip" onclick="trackDownload(&#39;/downloads/phpti-0.9.zip&#39;)">
+  <span class="button-inner">phpti-0.9.zip <span>3.9 KB</span></span>
+  </a>
+  <p class="subtext">
+  Released 3/28/10 <!--(<a href='#'>changelog</a>)-->
+  </p>
+  <p class="subtext">
+  Requires PHP version 4.3 or later
+  </p>
+  </td>
+  
+  </tr>
+  <tr>
+  
+  <td class="links">
+  <ul>
+  <li>For development, visit the <a href="http://github.com/arshaw/phpti">GitHub Project</a></li>
+  <li>For bugs, visit the <a href="http://github.com/arshaw/phpti/issues">Issue Tracker</a></li>
+  <li>Created by <a href="http://arshaw.com/">Adam Shaw</a></li>
+  <li>Released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></li>
+  <li><a href="http://phpti.com/#disqus_thread" onclick="enableDisqus()">Comments (0)</a></li>
+  </ul>
+  </td>
+  
+  </tr>
+  </tbody></table>
+  </div>
+  
+  </div> <!-- end #top -->
+  
+  <a href="http://phpti.com/#top" id="back-to-top">^ back to top</a>
+  
+  <h2><a name="basic-inheritance">1. Basic Inheritance</a></h2>
+  
+  <p>Template Inheritance usually involves two separate templates, each in their own file: the <em>parent</em> template and the <em>child</em>
+  template. The parent contains the HTML skeleton and markers for where content should go. These
+  markers are called <em>blocks</em>. The child then “fills-in” the blocks with content. Example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php <span>(the parent)</span></th>
+  <th>page.php <span>(the child)</span></th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;h1&gt;
+  <span class="php">&lt;?php startblock('title') ?&gt;</span>
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/h1&gt;
+  &lt;div id='article'&gt;
+  <span class="php">&lt;?php startblock('article') ?&gt;</span>
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('title') ?&gt;</span>
+     This is the title
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('article') ?&gt;</span>
+     This is the article
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  &lt;h1&gt;
+     This is the title
+  &lt;/h1&gt;
+  &lt;div id='article'&gt;
+     This is the article
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code0"></span>
+  <label for="code0">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  
+  <p>The child is always responsible for declaring its parent. This is done with a simple <code>include</code> statement at the beginning of the child file.</p>
+  
+  <p>When declaring a parent, it is also possible to use <code>require</code>.
+  However, <code>include</code> is preferred as it does not throw a fatal error if the parent does not exist.</p>
+  
+  <h2><a name="more-on-blocks">2. More on Blocks</a></h2>
+  
+  <p>In the previous example, both the parent and child templates contain blocks. A block begins with a call to the <code>startblock</code> function,
+  passing in the name of the block, and ends with a call to <code>endblock</code>. For added clarity, you can optionally pass the name to <code>endblock</code> as well.</p>
+  
+  <p>You will often encounter blocks that contain no content (such as in base.php above). This is the norm for parent templates in general.
+  A good shorthand for this is the <code>emptyblock</code> function.</p>
+  
+  <p>The following three ways of defining an empty block are all equivalent:</p>
+  
+  <div class="example example-no-header">
+  <table>
+  <tbody><tr>
+  <td class="first">
+  <code><span class="php">&lt;?php startblock('article') ?&gt;</span>
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td>
+  <code><span class="php">&lt;?php startblock('article') ?&gt;</span>
+  <span class="php">&lt;?php endblock('article') ?&gt;</span></code></td>
+  <td>
+  <code><span class="php">&lt;?php emptyblock('article') ?&gt;</span></code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code1"></span>
+  <label for="code1">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>Also, when you have a template with blocks, make sure all the blocks are contained within a single file. Don’t fragment
+  your blocks across multiple files and access them through includes. Additionally, you cannot define multiple blocks with
+  the same name in a single template file.</p>
+  
+  <h2><a name="defaults-overriding">3. Default Block Content &amp; Overriding</a></h2>
+  
+  <p>You won’t always want your child template to fill in every one of your parent’s blocks. Sometimes you’ll want the parent to
+  contribute content instead. This content is called <em>default</em> content. Example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php</th>
+  <th>page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='main'&gt;
+  <span class="php">&lt;?php emptyblock('main') ?&gt;</span>
+  &lt;/div&gt;
+  &lt;div id='footer'&gt;
+  <span class="php">&lt;?php startblock('footer') ?&gt;</span>
+     Copyright 2010
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('main') ?&gt;</span>
+     The main content
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='main'&gt;
+     The main content
+  &lt;/div&gt;
+  &lt;div id='footer'&gt;
+     Copyright 2010
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code2"></span>
+  <label for="code2">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>As you can see, the child doesn’t define a footer block, so the parent’s footer gets used instead.</p>
+  
+  <p>However, if the child <em>did</em> decide to define a footer, it would <em>override</em> the parent’s. Example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php</th>
+  <th>page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='main'&gt;
+  <span class="php">&lt;?php emptyblock('main') ?&gt;</span>
+  &lt;/div&gt;
+  &lt;div id='footer'&gt;
+  <span class="php">&lt;?php startblock('footer') ?&gt;</span>
+     Copyright 2010
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('main') ?&gt;</span>
+     The main content
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('footer') ?&gt;</span>
+     Custom footer!!!
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='main'&gt;
+     The main content
+  &lt;/div&gt;
+  &lt;div id='footer'&gt;
+     Custom footer!!!
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code3"></span>
+  <label for="code3">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>Default block content is useful if you are not sure an area of content will change in the parent template.
+  When in doubt, wrap the content in <code>startblock</code> and <code>endblock</code> tags, and you can always override it later.</p>
+  
+  <h2><a name="always-executed">4. Every Block is Always Executed!</a></h2>
+  
+  <p>It is important to note that <code>startblock</code> and <code>endblock</code> are not control structures, so they cannot prevent code from executing.
+  <em>All code between startblock and endblock will always be executed!…</em> regardless of whether the block is overridden or not.</p>
+  
+  <p>If you have a block with high resource demands (such as database calls) and you only want to it to execute if its content
+  is guaranteed to be in the output (in other words, not overridden), then you might need to restructure your code.</p>
+  
+  <h2><a name="super-block">5. The Super Block</a></h2>
+  
+  <p>We have seen that a parent’s block can either be kept as-is, or overridden by a child’s block. However, what if you wanted
+  to keep a parent’s block <em>and</em> incorporate additional content? This is possible by calling the <code>superblock</code> function from within a
+  block. It will insert the overriden block’s content into the output. Example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php</th>
+  <th>page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  <span class="php">&lt;?php startblock('top') ?&gt;</span>
+     &lt;h1&gt;The Main Title&lt;/h1&gt;
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('top') ?&gt;</span>
+     <span class="php">&lt;?php superblock() ?&gt;</span>
+     &lt;h2&gt;The Second Title&lt;/h2&gt;
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+     &lt;h1&gt;The Main Title&lt;/h1&gt;
+     &lt;h2&gt;The Second Title&lt;/h2&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code4"></span>
+  <label for="code4">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>An additional function exists called <code>getsuperblock</code>. This is the same as <code>superblock</code> except it <em>returns</em> the super block’s
+  content as a string instead of sending it to the output.</p>
+  
+  <h2><a name="nested-blocks">6. Nested Blocks</a></h2>
+  
+  <p>A block’s content usually consists of HTML, but it can also consists of other blocks as well. These blocks-within-blocks
+  are called <em>nested</em> blocks, and they function very similarly to normal blocks:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php</th>
+  <th>2col.php</th>
+  <th>page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='content'&gt;
+  <span class="php">&lt;?php emptyblock('content') ?&gt;</span>
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('content') ?&gt;</span>
+     &lt;table&gt;
+     &lt;tr&gt;
+     &lt;td&gt;
+     <span class="php">&lt;?php emptyblock('left') ?&gt;</span>
+     &lt;/td&gt;
+     &lt;td&gt;
+     <span class="php">&lt;?php emptyblock('right') ?&gt;</span>
+     &lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;/table&gt;
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td>
+  <code><span class="php">&lt;?php include '2col.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('left') ?&gt;</span>
+     left content
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('right') ?&gt;</span>
+     right content
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='content'&gt;
+     &lt;table&gt;
+     &lt;tr&gt;
+     &lt;td&gt;
+     left content
+     &lt;/td&gt;
+     &lt;td&gt;
+     right content
+     &lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code5"></span>
+  <label for="code5">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>Note, this example also demonstrates how there can be more than two parents involved in template inheritance.
+  In this case there are <em>three</em>. <strong>page.php</strong> inherits from <strong>2col.php</strong>, which in turn inherits from <strong>base.php</strong>!</p>
+  
+  <h2><a name="block-filters">7. Block Filters</a></h2>
+  
+  <p>You’ve seen the basic usage of <code>startblock</code> and <code>endblock</code>, but you have not yet seen them used with a <em>filter function</em>.
+  This is an optional second argument for <code>startblock</code>.</p>
+  
+  <p>A filter function allows you to modify a block’s content before it is sent to the output. It is a function that
+  accepts a single string argument (the content of the block) and must return a string that will be sent to the output.
+  Here is a barebones example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php
+  
+  require_once 'ti.php';
+  
+  function exclaim($s) {
+     return trim($s) . "!!!";
+  }
+  
+  ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='content'&gt;
+  <span class="php">&lt;?php startblock('content', 'exclaim') ?&gt;</span>
+     This is the content
+  <span class="php">&lt;?php endblock() ?&gt;</span>
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  &lt;div id='content'&gt;
+  This is the content!!!
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code6"></span>
+  <label for="code6">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <p>In page.php’s call to <code>startblock</code>, the string <code>'exclaim'</code> is being passed, signifying that the filter function is a
+  global function of the same name. In PHP version 5.3 or greater, you may pass an <a href="http://php.net/manual/en/functions.anonymous.php">anonymous function</a>.</p>
+  
+  <p>Contrary to this example, it is usually good to keep your filter functions in a separate PHP file and then
+  <code>include_once</code> them from your templates.</p>
+  
+  <p>Filter functions are useful if you want your content to be in a different markup format. For example, you could
+  include the <a href="http://michelf.com/projects/php-markdown/">PHP markdown library</a>, and have your filter function be <code>'markdown'</code>.</p>
+  
+  <p>Multiple filters are possible by passing a comma-delimited string like <code>'markdown,exclaim'</code> or an array of
+  strings/functions like <code>array('markdown', 'exclaim')</code>.</p>
+  
+  <h2><a name="under-the-hood">8. Under the Hood</a></h2>
+  
+  <p>So how does <em>PHP Template Inheritance</em> do its job behind the scenes? At the first sign of a block, it initializes
+  an <a href="http://www.php.net/manual/en/book.outcontrol.php">output buffer</a>. It then continues normal PHP execution, keeping tabs on every block it encounters. When the
+  page request is done, it compiles all the blocks together and sends them to standard out.</p>
+  
+  <p>It also does some tricky stuff with the <a href="http://php.net/manual/en/function.debug-backtrace.php">debug_backtrace</a> function to analyze the call stack. To see how
+  everything works, you can browse the <a href="http://github.com/arshaw/phpti/blob/master/src/ti.php">source code on GitHub</a>.</p>
+  
+  <p><em>PHP Template Inheritance</em> has very good performance because it utilizes PHP’s native output buffers
+  and does not rely on any kind of expensive parsing.</p>
+  
+  <h2><a name="flushing-capturing">9. Flushing and Capturing Output</a></h2>
+  
+  <p>Because the library utilizes an output buffer, you might be wondering how you can “break out” of the output
+  buffer and return to PHP’s normal rules of output (where output is directly sent to the browser). This can be
+  done by calling <code>flushblocks</code>, a function with zero arguments.</p>
+  
+  <p>As with the PHP language, all output is sent to the browser by default. However, what if you wanted to capture
+  all output into a <em>string</em>? This is entirely possible by utilizing the previously described <code>flushblocks</code> function
+  along with PHP’s <a href="http://www.php.net/manual/en/book.outcontrol.php">output buffer functions</a>. Example:</p>
+  
+  <div class="example example-single">
+  <code><span class="php">&lt;?php
+  
+  require_once 'ti.php';
+  
+  ob_start();
+  include 'yourtemplate.php';
+  flushblocks();
+  $s = ob_get_clean();
+  
+  // $s now holds the output!
+  
+  ?&gt;</span></code></div>
+  
+  <h2><a name="base-no-blocks">10. Base With No Blocks</a></h2>
+  
+  <p><em>PHP Template Inheritance</em> strives to provide a very intuitive API. However, there is one situation in which
+  it might get confused, so you’ll need to give it a hint. This situation occurs when you have a base template
+  that has no blocks. <strong>You must call the blockbase() function</strong> in the base template in order to make things
+  work. Example:</p>
+  
+  <div class="example">
+  <table>
+  <tbody><tr>
+  <th class="first">base.php</th>
+  <th>page.php</th>
+  <th class="last">page.php’s output</th>
+  </tr>
+  <tr>
+  <td class="first">
+  <code><span class="php">&lt;?php require_once 'ti.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php blockbase() ?&gt;</span>
+  &lt;html&gt;
+  &lt;body&gt;
+  There are no blocks!
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  <td>
+  <code><span class="php">&lt;?php include 'base.php' ?&gt;</span>
+  
+  <span class="php">&lt;?php startblock('content') ?&gt;</span>
+     Block that doesn't do anything
+  <span class="php">&lt;?php endblock() ?&gt;</span></code></td>
+  <td class="last">
+  <code>&lt;html&gt;
+  &lt;body&gt;
+  There are no blocks!
+  &lt;/body&gt;
+  &lt;/html&gt;</code></td>
+  </tr>
+  </tbody></table>
+  <div class="short-tags">
+  <span class="checkbox-wrap"><input type="checkbox" id="code7"></span>
+  <label for="code7">short tags</label>
+  <a class="expand">?</a>
+  <div class="short-tags-message" style="display:none">
+  <div class="short-tags-message-inner">
+  <p>
+  <b>short_open_tags</b> is a feature in PHP that <br>
+  lets you write <code>&lt;?</code> instead of <code>&lt;?php</code> and<br>
+  <code>&lt;?=</code> instead of <code>&lt;?php echo</code>.
+  </p>
+  <p>
+  It makes your template code look much nicer!<br>
+  However, it must be enabled on your server<br> before you can use it.&nbsp;
+  <a href="http://php.net/manual/en/ini.core.php#ini.short-open-tag" target="_blank">Learn more</a>
+  </p>
+  </div>
+  </div>
+  </div></div>
+  
+  <h2><a name="end">The End</a></h2>
+  
+  <p>Thank you for reading the tutorial, and for using <em>PHP Template Inheritance</em>!
+  If you have any bug reports or feature requests, please visit the <a href="http://github.com/arshaw/phpti/issues">Issue Tracker</a>.
+  If you have any reactions about the project or suggestions about the documention (or found typos), please leave a comment below.</p>
+  
+  <div id="bottom">
+  
+  <div id="bug-reminder">
+  <div>
+  If you have found a bug, please use the <a href="http://github.com/arshaw/phpti/issues">Issue Tracker</a>
+  </div>
+  </div>
+  
+  <h2>Comments</h2>
+  
+  <div id="comments">
+  
+  <div id="disqus_thread"></div>
+  <noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript=phpti"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  
+  <p id="copyright">
+  © 2012 <a href="http://arshaw.com/">Adam Shaw</a>
+  </p>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+</body></html>

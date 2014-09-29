@@ -1,0 +1,18 @@
+/*
+|--------------------------------------------------------------------------
+| Join Snippet
+|--------------------------------------------------------------------------
+|
+| Retourne les éléments à joindre à la query
+|
+| @return array
+|
+*/
+
+public static function table_to_join(){
+	
+	require_once("app/models/App.php");
+	$app = new App($db, $lang3);
+	return $app->joinTable("table_name", "table_to_join.id = table_name.column_id", "LEFT JOIN");
+
+}
