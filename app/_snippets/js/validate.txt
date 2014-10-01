@@ -1,0 +1,50 @@
+/*
+|--------------------------------------------------------------------------
+| Validate Snippet
+|--------------------------------------------------------------------------
+|
+|
+| @return void
+|
+*/
+
+<script src="<?php echo URL_ROOT; ?>scripts/jquery.validate.min.js"></script> 
+<script src="<?php echo URL_ROOT; ?>scripts/jquery.validate.additional-methods.min.js"></script> 
+<script>
+$(document).ready(function() {
+	// Validate signup form on keyup and submit
+	$("#formID").validate({
+		rules: {
+			tField: "required",
+			tDate: {
+				required: true,
+				dateISO: true
+			},
+			tEmail: {
+				required: true,
+				email: true
+			},
+			tPhone: {
+				required: true,
+				phoneUS: true
+			},
+		},
+		messages: {
+			tField: "Veuillez entrer votre",
+			tDate: {
+				required: "Veuillez entrer la date",
+				dateISO: "Veuillez entrer une date valide"
+			},
+			tEmail: {
+				required: "Veuillez entrer votre courriel",
+				email: "Veuillez entrer un courriel valide"
+			},
+			tPhone: {
+				required: "Veuillez entrer un numéro de téléphone",
+				phoneUS: "Veuillez entrer un numéro de téléphone valide"
+			},
+		}
+	});
+
+});
+</script>
