@@ -51,7 +51,7 @@ require_once("classes/compressor/compressorloader.class.php");
 |
 */
 define("PRODUCTION_MODE", 0);
-define("URL_ROOT", "/base/");
+define("URL_ROOT", "/lando/");
 define("WBR_FOLDER", "images/wbr/uploads/");
 
 /*
