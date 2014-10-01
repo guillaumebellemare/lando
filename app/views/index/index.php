@@ -4,9 +4,10 @@
   <div class="l-grid l-row-1">
     <div class="l-grid-100">
       <h1><?=$global["title"]?></h1>
-      
+      	<?php $currentCat = ""; ?>
 		<?php foreach($activities AS $activity) : ?>
             <?php if(isset($currentCat) && $currentCat!=$activity['catacts.catacts_name_fre']) : ?>
+                <hr>
                 <h1><?=$activity['catacts.catacts_name_fre']?></h1>
             <?php endif; ?>
             

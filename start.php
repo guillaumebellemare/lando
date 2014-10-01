@@ -167,11 +167,13 @@ if($debugging==true)
 */
 $pageSet = 0;
 $view_loaded = false;
+$controller_loaded = false;
+
 while ($currentRoute = current($routes)) {
 	
 	if(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'].'.html'; else $page = $_GET['page'];
 
-	if ($page == $currentRoute) {
+	if ($page == $currentRoute && !$controller_loaded) {
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
 			$current_app_route = explode('@', $app_routes[key($routes)]);
@@ -182,6 +184,7 @@ while ($currentRoute = current($routes)) {
 			if($debugging==true) $app_messages[] = '<strong>Current controller:</strong> '.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
 			$controller = new $current_controller($db, $lang3);
+			$controller_loaded = true;
 		}
 		
 		// Extract the arrays returned by the function
