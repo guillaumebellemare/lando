@@ -8,4 +8,8 @@
 <file name="email.txt" server="ftp.espacedev2.com/base/" local="130564931635837256" remote="130564866000000000" Dst="2" />
 <file name="get.txt" server="ftp.espacedev2.com/base/" local="130564931637108156" remote="130562173800000000" Dst="2" />
 <file name="join.txt" server="ftp.espacedev2.com/base/" local="130564931637838668" remote="130562258400000000" Dst="2" />
+<file name="delete.txt" server="ftp.espacedev2.com/lando/" local="130566689714497469" remote="130566689400000000" Dst="2" />
+<file name="remove.txt" server="ftp.espacedev2.com/lando/" local="130566692120765367" remote="130566691800000000" Dst="2" />
+<file name="save.txt" server="ftp.espacedev2.com/lando/" local="130566692032260542" remote="130566691800000000" Dst="2" />
+<file name="get.txt" server="ftp.espacedev2.com/lando/" local="130562173800000000" remote="130562173800000000" Dst="2" />
 </dwsync>

@@ -159,10 +159,9 @@ class AppController extends SluggedRecord {
 		
 		$q = "SELECT * FROM {$table}";
 		
-		
 		// Check for data that already exist in the database
 		$numb_arga = func_num_args();
-		$numb_verified_fields  = $numb_arga - 1;
+		$numb_verified_fields  = $numb_arga;
 		if($numb_verified_fields > 1 && $_POST)
 		{
 			$q .= " WHERE";
@@ -184,12 +183,36 @@ class AppController extends SluggedRecord {
 			
 			$record["$field"] = $val;
 			$db->AutoExecute($table, $record, 'INSERT');
+			unset($_POST);
 			$messages[] = "L'ajout a bien été effectué.";
 		}else{
 			if($_POST) $errors[] = "Valeur déjà entrée.";
 		}
 		
 		return true;
+	}
+	
+	function remove($table, $row_id) {
+	
+		global $lang2;
+		global $db;
+		global $messages, $errors;
+		
+		$q = "SELECT * FROM {$table} WHERE {$table}.id={$row_id}";
+		$rsList = $this->db->Execute($q);
+		if($rsList->RecordCount()!=0)
+		{
+			$q = "DELETE FROM {$table}";
+			$q .= " WHERE {$table}.id = '".$row_id."'";
+			$rsList = $db->Execute($q);
+		
+			$_SESSION['errors'] = 'Le champs a bien été supprimé.';
+		}else{
+			$_SESSION['errors'] = 'Aucun champs avec cet id. Le champs n\'a pas été supprimé.';
+		}
+		
+		unset($_POST);
+		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
 	}
 	
 	function getArgs($table) {

@@ -1,0 +1,14 @@
+/*
+|--------------------------------------------------------------------------
+| Remove Snippet
+|--------------------------------------------------------------------------
+|
+| Arguments : nom de la table, id de la rangée à supprimer
+|
+| @return void
+|
+*/
+
+function remove() {
+	$this->remove(Base::table(), $_GET['argb']);
+}

@@ -1,14 +1,14 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| Index Controller
+| Manage Controller
 |--------------------------------------------------------------------------
 |
 | To access a function from the AppController, do something like that :
 | $this->writePrettyDate("2014-02-11");
 |
 */
-class IndexController extends \AppController {
+class ManageController extends \AppController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -44,6 +44,12 @@ class IndexController extends \AppController {
 		
 		
 		/*************
+		**** Save ****
+		**************/
+		$this->save(Base::table(), "name_fre");
+		
+		
+		/*************
 		**** Data ****
 		**************/
 		$activities = $this->get(Base::table(), "catact_id, rank", 1, Base::catacts());
@@ -51,21 +57,10 @@ class IndexController extends \AppController {
 		return array("activities" => $activities);
 	}
 	
+	function save() { }
 	
-	function show() {
-		
-		global $db, $lang3;
-		
-		/*************
-		**** Data ****
-		**************/
-		$q = "SELECT activities.id AS activity_id, activities.name_{$lang3} AS activity_name, activities.description_fre AS activity_description, activities.test AS activity_test, activities.slug_{$lang3}, catacts.name_{$lang3} AS category_name FROM activities";
-		$q .= " LEFT JOIN catacts ON catacts.id = activities.catact_id WHERE activities.slug_{$lang3} = '{$_GET['arga']}'";
-		$q .= " AND activities.active = 1";
-		
-		$activities = $this->custom_get($q);
-	
-		return array("activities" => $activities);
+	function remove() {
+		$this->remove(Base::table(), $_GET['argb']);
 	}
 	
 }

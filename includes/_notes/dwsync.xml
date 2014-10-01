@@ -21,4 +21,5 @@
 <file name="nav.inc.php" server="ftp.espacedev2.com/base/" local="130564931689745464" remote="130562163000000000" Dst="2" />
 <file name="scripts.inc.php" server="ftp.espacedev2.com/base/" local="130564931690185823" remote="130561492800000000" Dst="2" />
 <file name="slider.inc.php" server="ftp.espacedev2.com/base/" local="130564931690856245" remote="130429077000000000" Dst="2" />
+<file name="messages.inc.php" server="ftp.espacedev2.com/lando/" local="130566686570595241" remote="130566686400000000" Dst="2" />
 </dwsync>
