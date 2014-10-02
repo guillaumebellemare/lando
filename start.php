@@ -169,10 +169,13 @@ $pageSet = 0;
 $view_loaded = false;
 $controller_loaded = false;
 
+if(isset($_GET['arga']) && isset($_GET['argb']) && isset($_GET['argc'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'].'/'.$_GET['argc'].'.html';
+elseif(isset($_GET['arga']) && isset($_GET['argb'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'].'.html';
+elseif(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'].'.html';
+else $page = $_GET['page'];
+
 while ($currentRoute = current($routes)) {
 	
-	if(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'].'.html'; else $page = $_GET['page'];
-
 	if ($page == $currentRoute && !$controller_loaded) {
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
