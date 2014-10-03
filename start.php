@@ -27,9 +27,6 @@
 */
 $debugging = true;
 
-	error_reporting(E_ALL);
-	ini_set("display_errors", 1);
-	$db->debug = true;
 
 /*
 |--------------------------------------------------------------------------
@@ -182,7 +179,6 @@ else $page = $_GET['page'];
 while ($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
-		
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
 			$current_app_route = explode('@', $app_routes[key($routes)]);
@@ -224,7 +220,6 @@ while ($currentRoute = current($routes)) {
 	}
 	next($routes);
 }
-
 // Error 404
 if($pageSet==0) {
 	require_once('app/views/404/index.php');			

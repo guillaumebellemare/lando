@@ -5,4 +5,5 @@
 <file name="validate.txt" server="ftp.espacedev2.com/base/" local="130566459176187315" remote="130566459000000000" Dst="2" />
 <file name="map.txt" server="ftp.espacedev2.com/lando/" local="130568345567500886" remote="130566691200000000" Dst="2" />
 <file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130568345567780969" remote="130566459000000000" Dst="2" />
+<file name="confirm.txt" server="ftp.espacedev2.com/lando/" local="130568392684501976" remote="130568392800000000" Dst="2" />
 </dwsync>

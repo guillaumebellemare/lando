@@ -44,12 +44,6 @@ class ManageController extends \AppController {
 		
 		
 		/*************
-		**** Save ****
-		**************/
-		$this->save(Base::table(), "name_fre");
-		
-		
-		/*************
 		**** Data ****
 		**************/
 		$activities = $this->get(Base::table(), "catact_id, rank", 1, Base::catacts());
@@ -57,10 +51,15 @@ class ManageController extends \AppController {
 		return array("activities" => $activities);
 	}
 	
-	function save() { }
+	function form() {
+	}
+
+	function save() {
+		$this->add(Base::table(), "name_fre");	
+	}
 	
 	function remove() {
-		$this->remove(Base::table(), $_GET['argb']);
+		$this->delete(Base::table(), $_GET['argb']);
 	}
 	
 }

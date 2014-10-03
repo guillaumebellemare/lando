@@ -1,0 +1,12 @@
+/*
+|--------------------------------------------------------------------------
+| Confirm Snippet
+|--------------------------------------------------------------------------
+|
+| À mettre sur un lien <a>
+|
+| @return void
+|
+*/
+
+onclick="return confirm('Voulez-vous vraiment supprimer <?=$var["field"]?> ?')"

@@ -46,9 +46,11 @@ class IndexController extends \AppController {
 		/*************
 		**** Data ****
 		**************/
+		$activities2 = $this->get(Base::table());
+		
 		$activities = $this->get(Base::table(), "catact_id, rank", 1, Base::catacts());
 
-		return array("activities" => $activities);
+		return array("activities" => $activities, "activities2" => $activities2);
 	}
 	
 	

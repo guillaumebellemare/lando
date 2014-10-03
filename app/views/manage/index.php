@@ -5,7 +5,7 @@
     <div class="l-grid-100">
       <h1><?=$global["title"]?></h1>
       <?php if(@include('includes/messages.inc.php')); ?>
-      <a href="<?=URL_ROOT.$lang2;?>/manage/add.html">Ajouter</a>
+      <a href="<?=URL_ROOT.$lang2;?>/manage/form.html">Ajouter</a>
       	<?php $currentCat = ""; ?>
 		<?php foreach($activities AS $activity) : ?>
             <?php if(isset($currentCat) && $currentCat!=$activity['catacts.catacts_name_fre']) : ?>
@@ -19,7 +19,7 @@
                 <h2><?=$activity["activities.name_$lang3"]?></h2>
                 <?=$activity["activities.description_fre"]?> <?=$activity["activities.test"]?>
                 <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>.html"><?=$activity["activities.slug_$lang3"]?>.html</a></p>
-                <a href="<?php echo URL_ROOT.$lang2; ?>/manage/delete/<?=$activity["activities.id"]?>.html">[Supprimer]</a>
+                <a href="<?php echo URL_ROOT.$lang2; ?>/manage/remove/<?=$activity["activities.id"]?>.html" onclick="return confirm('Voulez-vous vraiment supprimer <?=$activity["activities.name_$lang3"]?> ?')">[Supprimer]</a>
             <?php endif;
         endforeach; ?>
     </div>

@@ -151,7 +151,7 @@ class AppController extends SluggedRecord {
 	}
 
 
-	function save($table) {
+	function add($table) {
 		
 		global $lang2;
 		global $db;
@@ -184,15 +184,17 @@ class AppController extends SluggedRecord {
 			$record["$field"] = $val;
 			$db->AutoExecute($table, $record, 'INSERT');
 			unset($_POST);
-			$messages[] = "L'ajout a bien été effectué.";
-		}else{
-			if($_POST) $errors[] = "Valeur déjà entrée.";
-		}
-		
+			$_SESSION['messages'] = "L'ajout a bien été effectué.";
+		}/*elseif($_POST) {
+			$_SESSION['errors'] = "Valeur déjà entrée.";
+		}*/
+		if(isset($_POST)) unset($_POST);
+		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
+
 		return true;
 	}
 	
-	function remove($table, $row_id) {
+	function delete($table, $row_id) {
 	
 		global $lang2;
 		global $db;
@@ -211,7 +213,7 @@ class AppController extends SluggedRecord {
 			$_SESSION['errors'] = 'Aucun champs avec cet id. Le champs n\'a pas été supprimé.';
 		}
 		
-		unset($_POST);
+		if(isset($_POST)) unset($_POST);
 		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
 	}
 	
