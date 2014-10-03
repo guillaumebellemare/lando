@@ -10,7 +10,9 @@
 |
 | 2. Transformer le dossier classes en helpers (/php, /js, etc.)  
 |
-| 3. Save fait, Get fait
+| 3. Save fait, Get fait, remove fait.
+|
+| 4. Ajouter une classe de login/logout
 |
 */
 
@@ -25,6 +27,9 @@
 */
 $debugging = true;
 
+	error_reporting(E_ALL);
+	ini_set("display_errors", 1);
+	$db->debug = true;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,8 +41,8 @@ $debugging = true;
 |
 */
 require_once("includes/conn.inc.php");
-require_once("classes/lang.class.php");
-require_once("classes/compressor/compressorloader.class.php");
+require_once("app/helpers/lang.class.php");
+require_once("app/helpers/compressor/compressorloader.class.php");
 
 
 /*
@@ -70,7 +75,7 @@ $lang2_trans = $lang->lang2_trans;
 
 $compressor = new CompressorLoader(PRODUCTION_MODE, URL_ROOT);
 
-require_once("classes/sluggedrecord.class.php");
+require_once("app/helpers/sluggedrecord.class.php");
 
 
 /*
@@ -96,7 +101,7 @@ $errors = array();
 | Here is where the templates inheritance is declared.
 |
 */
-require_once("func/ti.php");
+require_once("app/helpers/ti/ti.php");
 
 
 /*
@@ -115,7 +120,7 @@ require_once("app/controllers/AppController.php");
 | Model classes
 |--------------------------------------------------------------------------
 |
-| Here is where the models are called.
+| Here is where all the models classes are called.
 |
 */
 foreach (glob("app/models/*.php") as $filename)
@@ -177,6 +182,7 @@ else $page = $_GET['page'];
 while ($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
+		
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
 			$current_app_route = explode('@', $app_routes[key($routes)]);

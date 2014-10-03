@@ -6,4 +6,7 @@
 <file name="jquery.fancybox-min.js" server="ftp.espacedev2.com/base/" local="130564931708748870" remote="130410538200000000" Dst="2" />
 <file name="jquery.google.map-min.js" server="ftp.espacedev2.com/base/" local="130564931708918993" remote="130413567600000000" Dst="2" />
 <file name="navigation-min.js" server="ftp.espacedev2.com/base/" local="130564931709309150" remote="130410538200000000" Dst="2" />
+<file name="jquery.google.map-min.js" server="ftp.espacedev2.com/lando/" local="130568345613813612" remote="130413567600000000" Dst="2" />
+<file name="jquery.fancybox-min.js" server="ftp.espacedev2.com/lando/" local="130568345612592575" remote="130409712000000000" Dst="2" />
+<file name="navigation-min.js" server="ftp.espacedev2.com/lando/" local="130568345613833526" remote="130409712000000000" Dst="2" />
 </dwsync>

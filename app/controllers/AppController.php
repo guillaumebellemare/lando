@@ -1,5 +1,5 @@
 <?php
-require_once("classes/sluggedrecord.class.php");
+require_once("app/helpers/sluggedrecord.class.php");
 
 class AppController extends SluggedRecord {
 	

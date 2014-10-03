@@ -6,4 +6,7 @@
 <file name="adodb-en.inc.php" server="ftp.espacedev2.com/base/" local="130564931765649162" remote="130500055200000000" Dst="2" />
 <file name="adodb-es.inc.php" server="ftp.espacedev2.com/base/" local="130564931766319741" remote="130500055200000000" Dst="2" />
 <file name="adodb-fr.inc.php" server="ftp.espacedev2.com/base/" local="130564931767130207" remote="130500055200000000" Dst="2" />
+<file name="adodb-en.inc.php" server="ftp.espacedev2.com/lando/" local="130568345639702618" remote="130500055200000000" Dst="2" />
+<file name="adodb-es.inc.php" server="ftp.espacedev2.com/lando/" local="130568345639712628" remote="130500055200000000" Dst="2" />
+<file name="adodb-fr.inc.php" server="ftp.espacedev2.com/lando/" local="130568345639722641" remote="130500055200000000" Dst="2" />
 </dwsync>

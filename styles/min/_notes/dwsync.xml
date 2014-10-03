@@ -14,4 +14,11 @@
 <file name="layout-min.css" server="ftp.espacedev2.com/base/" local="130564931719927077" remote="130439448000000000" Dst="2" />
 <file name="queries-min.css" server="ftp.espacedev2.com/base/" local="130564931720757494" remote="130429078200000000" Dst="2" />
 <file name="reset-min.css" server="ftp.espacedev2.com/base/" local="130564931721498137" remote="130410538200000000" Dst="2" />
+<file name="global-compress.min.css" server="ftp.espacedev2.com/lando/" local="130568345616225347" remote="130410576000000000" Dst="2" />
+<file name="flexslider-min.css" server="ftp.espacedev2.com/lando/" local="130568345616895790" remote="130429077600000000" Dst="2" />
+<file name="global-min.css" server="ftp.espacedev2.com/lando/" local="130568345617876309" remote="130441382400000000" Dst="2" />
+<file name="jquery.fancybox-min.css" server="ftp.espacedev2.com/lando/" local="130568345618506923" remote="130409712000000000" Dst="2" />
+<file name="layout-min.css" server="ftp.espacedev2.com/lando/" local="130568345619577513" remote="130439448000000000" Dst="2" />
+<file name="reset-min.css" server="ftp.espacedev2.com/lando/" local="130568345620738465" remote="130409712000000000" Dst="2" />
+<file name="queries-min.css" server="ftp.espacedev2.com/lando/" local="130568345620067871" remote="130429078200000000" Dst="2" />
 </dwsync>

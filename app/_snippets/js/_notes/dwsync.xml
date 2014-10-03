@@ -3,5 +3,6 @@
 <file name="map.txt" server="ftp.espacedev2.com" local="130564871898091505" remote="130562157600000000" Dst="2" />
 <file name="map.txt" server="ftp.espacedev2.com/base/" local="130564931634406246" remote="130562157600000000" Dst="2" />
 <file name="validate.txt" server="ftp.espacedev2.com/base/" local="130566459176187315" remote="130566459000000000" Dst="2" />
-<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130566691413281323" remote="130566691200000000" Dst="2" />
+<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130568345567500886" remote="130566691200000000" Dst="2" />
+<file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130568345567780969" remote="130566459000000000" Dst="2" />
 </dwsync>

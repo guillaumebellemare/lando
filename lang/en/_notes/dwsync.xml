@@ -8,4 +8,8 @@
 <file name="meta.php" server="ftp.espacedev2.com/base/" local="130564931693938296" remote="130561434000000000" Dst="2" />
 <file name="navigation.php" server="ftp.espacedev2.com/base/" local="130564931695189354" remote="130562162400000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/base/" local="130564931696019943" remote="130562163600000000" Dst="2" />
+<file name="meta.php" server="ftp.espacedev2.com/lando/" local="130568345606828511" remote="130561434000000000" Dst="2" />
+<file name="global.php" server="ftp.espacedev2.com/lando/" local="130568345606818628" remote="130499907000000000" Dst="2" />
+<file name="routes.php" server="ftp.espacedev2.com/lando/" local="130568345607809206" remote="130562163600000000" Dst="2" />
+<file name="navigation.php" server="ftp.espacedev2.com/lando/" local="130568345607809206" remote="130562162400000000" Dst="2" />
 </dwsync>

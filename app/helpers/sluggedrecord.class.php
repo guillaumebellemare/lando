@@ -1,5 +1,5 @@
 <?php
-require_once("classes/record.class.php");
+require_once("app/helpers/record.class.php");
 /**
  * SluggedRecord class.
  */

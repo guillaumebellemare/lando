@@ -1,7 +1,7 @@
 <?php 
-require_once(dirname(__FILE__). '/jsmin.class.php');
-require_once(dirname(__FILE__). '/jsmin-plus.class.php');
-require_once(dirname(__FILE__). '/cssmin.class.php');
+require_once('app/helpers/compressor/jsmin.class.php');
+require_once('app/helpers/compressor/jsmin-plus.class.php');
+require_once('app/helpers/compressor/cssmin.class.php');
 
 class CompressorLoader {
 	private $production_mode = 1;

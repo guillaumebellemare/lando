@@ -8,8 +8,9 @@
 <file name="index.php" server="ftp.espacedev2.com/base/" local="130564931811331679" remote="130499989800000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/base/" local="130564931812072373" remote="130564897800000000" Dst="2" />
 <file name="start.php" server="ftp.espacedev2.com/base/" local="130566496143901532" remote="130566496200000000" Dst="2" />
-<file name="start.php" server="ftp.espacedev2.com/lando/" local="130567313314397449" remote="130567313400000000" Dst="2" />
-<file name=".htaccess" server="ftp.espacedev2.com/lando/" local="130566498578494921" remote="130566498600000000" Dst="2" />
-<file name="README.md" server="ftp.espacedev2.com/lando/" local="130566514249020130" remote="130566514200000000" Dst="2" />
-<file name="routes.php" server="ftp.espacedev2.com/lando/" local="130566689969493646" remote="130566690000000000" Dst="2" />
+<file name="start.php" server="ftp.espacedev2.com/lando/" local="130568345661538079" remote="130568341800000000" Dst="2" />
+<file name=".htaccess" server="ftp.espacedev2.com/lando/" local="130568345660187119" remote="130566498600000000" Dst="2" />
+<file name="README.md" server="ftp.espacedev2.com/lando/" local="130568345660717663" remote="130566514200000000" Dst="2" />
+<file name="routes.php" server="ftp.espacedev2.com/lando/" local="130568345661508048" remote="130566690000000000" Dst="2" />
+<file name="index.php" server="ftp.espacedev2.com/lando/" local="130568345660717663" remote="130499989800000000" Dst="2" />
 </dwsync>
