@@ -5,6 +5,6 @@
 <file name="AppController.php" server="ftp.espacedev2.com/base/" local="130564931639149587" remote="130564930200000000" Dst="2" />
 <file name="IndexController.php" server="ftp.espacedev2.com/base/" local="130564931640280394" remote="130564930200000000" Dst="2" />
 <file name="ManageController.php" server="ftp.espacedev2.com/lando/" local="130568390297404730" remote="130568390400000000" Dst="2" />
-<file name="AppController.php" server="ftp.espacedev2.com/lando/" local="130568388650985398" remote="130568388600000000" Dst="2" />
-<file name="IndexController.php" server="ftp.espacedev2.com/lando/" local="130568351963905864" remote="130568352000000000" Dst="2" />
+<file name="AppController.php" server="ftp.espacedev2.com/lando/" local="130568388650985398" remote="130568388600000000" Dst="1" />
+<file name="IndexController.php" server="ftp.espacedev2.com/lando/" local="130568351963905864" remote="130568352000000000" Dst="1" />
 </dwsync>

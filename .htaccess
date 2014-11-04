@@ -4,7 +4,9 @@
     RewriteBase /
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    
+	
+	RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
+	
     #Niveau 1 : exemple : fr/index.html
     RewriteRule ^(en|fr)/([^/]*).html$ /lando/start.php?lang=$1&page=$2 [L]
     
@@ -23,4 +25,5 @@
     
     #404 ... 
     ErrorDocument 404 /lando/start.php?page=404
+	
 </IfModule>

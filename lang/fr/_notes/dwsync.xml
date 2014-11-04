@@ -9,7 +9,7 @@
 <file name="navigation.php" server="ftp.espacedev2.com/base/" local="130564931700192893" remote="130562161800000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/base/" local="130564931701013469" remote="130564899000000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/lando/" local="130568389991417966" remote="130568389800000000" Dst="2" />
-<file name="global.php" server="ftp.espacedev2.com/lando/" local="130568345607819373" remote="130499338200000000" Dst="2" />
+<file name="global.php" server="ftp.espacedev2.com/lando/" local="130568345607819373" remote="130499338200000000" Dst="1" />
 <file name="meta.php" server="ftp.espacedev2.com/lando/" local="130568345608840054" remote="130561434000000000" Dst="2" />
 <file name="navigation.php" server="ftp.espacedev2.com/lando/" local="130568345609070226" remote="130562161800000000" Dst="2" />
 </dwsync>

@@ -14,6 +14,8 @@
 |
 | 4. Ajouter une classe de login/logout
 |
+| 5. Ajouter le sitemap comme un controller/view par défaut
+|
 */
 
 
@@ -175,7 +177,7 @@ if($debugging==true)
 | The arrays returned by the functions are extracted here.
 |
 */
-$pageSet = 0;
+$page_setted = 0;
 $view_loaded = false;
 $controller_loaded = false;
 
@@ -224,12 +226,12 @@ while ($currentRoute = current($routes)) {
 			$view_loaded = true;		
 		}
 
-		$pageSet = 1;
+		$page_setted = 1;
 	}
 	next($routes);
 }
 // Error 404
-if($pageSet==0) {
+if($page_setted==0) {
 	require_once('app/views/404/index.php');			
 }
 
