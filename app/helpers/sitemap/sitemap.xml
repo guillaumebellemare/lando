@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Plop PHP XML Sitemap Generator 0.2 www.plop.at -->
+
+
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/asdf-asd.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/test.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/test-4.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/test-23.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/asdfasdfasdfasdfasdf-dasf-adfs.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http:/www.espacedev2.com/lando/fr/index/asdfasdf.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+</urlset>

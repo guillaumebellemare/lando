@@ -14,7 +14,9 @@
 |
 | 4. Ajouter une classe de login/logout
 |
-| 5. Ajouter le sitemap comme un controller/view par défaut
+| 5. Ajouter le sitemap comme un controller/view par défaut (peut-être faire un controller
+|    avec une fonction du genre $app->addToSitemap("activities", "product") pour les slug<br>
+|    automatiques...
 |
 */
 
@@ -162,6 +164,7 @@ if($debugging==true)
 		ini_set("display_errors", 1);
 		$db->debug = true;
 		$debug_on = true;
+		//require_once("app/helpers/sitemap/sitemap-generator.php");
 	}
 }
 

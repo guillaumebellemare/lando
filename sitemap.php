@@ -7,6 +7,8 @@
     <priority>1.00</priority>
   </url>
   <?php
+  
+  //=> A remplacer par $app->addToSitemap("activities");
     require_once("includes/conn.inc.php");
 	
 	$q = "SELECT activities.id AS activity_id, activities.slug_fre AS activity_slug FROM activities";
