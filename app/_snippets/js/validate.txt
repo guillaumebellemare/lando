@@ -9,7 +9,13 @@
 */
 
 <script src="<?php echo URL_ROOT; ?>scripts/jquery.validate.min.js"></script> 
-<script src="<?php echo URL_ROOT; ?>scripts/jquery.validate.additional-methods.min.js"></script> 
+<script src="<?php echo URL_ROOT; ?>scripts/jquery.validate.additional-methods.min.js"></script>
+<script>
+jQuery.validator.addMethod("cdnPostal", function(postal, element) {
+    return this.optional(element) || 
+    postal.match(/[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/);
+}, "Please specify a valid postal code.");
+</script>
 <script>
 $(document).ready(function() {
 	// Validate signup form on keyup and submit
@@ -27,6 +33,10 @@ $(document).ready(function() {
 			tPhone: {
 				required: true,
 				phoneUS: true
+			},
+			tZip: {
+				required: true,
+				cdnPostal: true
 			},
 		},
 		messages: {
