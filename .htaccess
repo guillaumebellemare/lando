@@ -8,8 +8,8 @@
 	RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
 	
     #Niveau 1 : exemple : fr/index.html
-    RewriteRule ^(en|fr)/([^/]*)/$ /lando/start.php?lang=$1&page=$2 [L]
-    
+    RewriteRule ^(en|fr)/([^/]*)$ /lando/start.php?lang=$1&page=$2 [L]
+   
     #Niveau 2 : exemple : fr/page/argA.html
     RewriteRule ^(en|fr)/([^/]*)/([^/]*)$ /lando/start.php?lang=$1&page=$2&arga=$3 [L]
     

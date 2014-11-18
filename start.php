@@ -10,6 +10,9 @@
 |    avec une fonction du genre $app->addToSitemap("activities", "product") pour les slug<br>
 |    automatiques...
 |
+| 3. Meilleure gestion erreurs : http://php.net/manual/fr/language.exceptions.php<br>
+|    http://www.w3schools.com/php/php_exception.asp
+|
 */
 
 
