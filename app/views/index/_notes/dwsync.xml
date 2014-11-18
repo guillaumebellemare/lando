@@ -5,6 +5,6 @@
 <file name="add.php" server="ftp.espacedev2.com/base/" local="130564931648646285" remote="130564906800000000" Dst="2" />
 <file name="index.php" server="ftp.espacedev2.com/base/" local="130566495227067984" remote="130566495000000000" Dst="2" />
 <file name="show.php" server="ftp.espacedev2.com/base/" local="130564931650347494" remote="130561519200000000" Dst="2" />
-<file name="show.php" server="ftp.espacedev2.com/lando/" local="130568345588015409" remote="130561519200000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com/lando/" local="130568355170831903" remote="130568355000000000" Dst="2" />
+<file name="show.php" server="ftp.espacedev2.com/lando/" local="130607950832337997" remote="130607950800000000" Dst="1" />
+<file name="index.php" server="ftp.espacedev2.com/lando/" local="130607950176267758" remote="130607950200000000" Dst="1" />
 </dwsync>

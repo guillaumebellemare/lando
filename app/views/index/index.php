@@ -20,7 +20,7 @@
             <?php if($activity["catacts.catacts_id"]==$activity["activities.catact_id"]) : ?>
                 <h2><?=$activity["activities.name_$lang3"]?></h2>
                 <?=$activity["activities.description_fre"]?> <?=$activity["activities.test"]?>
-                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>.html"><?=$activity["activities.slug_$lang3"]?>.html</a></p>
+                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>"><?=$activity["activities.slug_$lang3"]?></a></p>
             <?php endif;
         endforeach; ?>
     </div>

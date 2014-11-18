@@ -18,8 +18,8 @@
             <?php if($activity["catacts.catacts_id"]==$activity["activities.catact_id"]) : ?>
                 <h2><?=$activity["activities.name_$lang3"]?></h2>
                 <?=$activity["activities.description_fre"]?> <?=$activity["activities.test"]?>
-                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>.html"><?=$activity["activities.slug_$lang3"]?>.html</a></p>
-                <a href="<?php echo URL_ROOT.$lang2; ?>/manage/remove/<?=$activity["activities.id"]?>.html" onclick="return confirm('Voulez-vous vraiment supprimer <?=$activity["activities.name_$lang3"]?> ?')">[Supprimer]</a>
+                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["activities.slug_$lang3"]?>"><?=$activity["activities.slug_$lang3"]?></a></p>
+                <a href="<?php echo URL_ROOT.$lang2; ?>/manage/remove/<?=$activity["activities.id"]?>" onclick="return confirm('Voulez-vous vraiment supprimer <?=$activity["activities.name_$lang3"]?> ?')">[Supprimer]</a>
             <?php endif;
         endforeach; ?>
     </div>

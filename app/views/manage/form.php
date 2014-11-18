@@ -4,7 +4,7 @@
   <div class="l-grid l-row-1">
     <div class="l-grid-100">
       <h1>ADD</h1>
-        <form action="<?php echo URL_ROOT.$lang2; ?>/manage/save.html" method="post" name="fAdd">
+        <form action="<?php echo URL_ROOT.$lang2; ?>/manage/save" method="post" name="fAdd">
         	<input name="name_fre" type="text">
             <textarea name="description_fre"></textarea>
             <select name="catact_id">

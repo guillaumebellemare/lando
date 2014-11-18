@@ -9,7 +9,7 @@
            		<h1><?=$activity["category_name"]?></h1>
                 <h2><?=$activity["activity_name"]?></h2>
                 <?=$activity["activity_description"]?> <?=$activity["activity_test"]?>
-                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["slug_$lang3"]?>.html"><?=$activity["slug_$lang3"]?>.html</a></p>
+                <p>Slug: <a href="<?=URL_ROOT.$lang2?>/index/<?=$activity["slug_$lang3"]?>"><?=$activity["slug_$lang3"]?></a></p>
         <?php endforeach; ?>
     </div>
   </div>

@@ -4,17 +4,9 @@
 | To-do list
 |--------------------------------------------------------------------------
 |
-| 1. Rendre les fonctions de base (create, read, update, delete) dans le AppModel
-|    par défaut pour pouvoir caller get($table, $order, $active, $join) avec ::parent
-|    La table pourrait être optionnelle comme elle est déclarée dans le Model
+| 1. Ajouter une classe de login/logout
 |
-| 2. Transformer le dossier classes en helpers (/php, /js, etc.)  
-|
-| 3. Save fait, Get fait, remove fait.
-|
-| 4. Ajouter une classe de login/logout
-|
-| 5. Ajouter le sitemap comme un controller/view par défaut (peut-être faire un controller
+| 2. Ajouter le sitemap comme un controller/view par défaut (peut-être faire un controller
 |    avec une fonction du genre $app->addToSitemap("activities", "product") pour les slug<br>
 |    automatiques...
 |
@@ -157,7 +149,7 @@ if($debugging==true)
 {
 	$ip_address = getenv('HTTP_CLIENT_IP')?:getenv('HTTP_X_FORWARDED_FOR')?:getenv('HTTP_X_FORWARDED')?:getenv('HTTP_FORWARDED_FOR')?:getenv('HTTP_FORWARDED')?:getenv('REMOTE_ADDR');
 	
-	if($ip_address)
+	if($ip_address==='50.100.142.169')
 	{
 		$app_messages[] = '<strong>IP address:</strong> '.$ip_address.'<br>';
 		error_reporting(E_ALL);
