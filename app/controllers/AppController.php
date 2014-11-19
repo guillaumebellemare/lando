@@ -118,6 +118,7 @@ class AppController extends SluggedRecord {
 
 
 		return $data;
+		
 	}
 	
 	/*

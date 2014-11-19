@@ -11,7 +11,8 @@
 |    automatiques...
 |
 | 3. Meilleure gestion erreurs : http://php.net/manual/fr/language.exceptions.php<br>
-|    http://www.w3schools.com/php/php_exception.asp
+|    http://www.w3schools.com/php/php_exception.asp<br>
+|    ==> http://code.tutsplus.com/tutorials/php-exceptions--net-22274 <==
 |
 */
 
@@ -172,7 +173,7 @@ if($debugging==true)
 | Here is where the views and controllers are included.
 | The View file is mandatory.
 | The Controller file is optional.
-| The arrays returned by the functions are extracted here.
+| The Arrays returned by the functions are extracted here.
 |
 */
 $page_setted = 0;
@@ -187,6 +188,8 @@ else $page = $_GET['page'];
 while ($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
+		
+		// Controller file handling
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
 			$current_app_route = explode('@', $app_routes[key($routes)]);
@@ -194,7 +197,7 @@ while ($currentRoute = current($routes)) {
 			$current_route = explode('Controller', $current_controller);
 			$current_route = strtolower($current_route[0]);
 			$current_function = $current_app_route[1];
-			if($debugging==true && $debug_on==true) $app_messages[] = '<strong>Current controller:</strong> '.$current_controller.'@'.$current_function.'<br>';
+			if($debugging==true && $debug_on==true) $app_messages[] = '<strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
 			$controller = new $current_controller($db, $lang3);
 			$controller_loaded = true;
@@ -209,10 +212,10 @@ while ($currentRoute = current($routes)) {
 			next($currentArrays);
 			}
 		}elseif(isset($currentArrays) && $debugging==true && $debug_on==true){
-			$app_errors[] = "Vous devez retourner un array dans la fonction $current_function() de $current_controller.";
+			$app_errors[] = "Vous devez retourner un array[] dans la fonction $current_function() de $current_controller.";
 		}
 		
-		// View files handling
+		// View file handling
 		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
 			if($debugging==true && $debug_on==true) $app_messages[] = '<strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
@@ -230,6 +233,7 @@ while ($currentRoute = current($routes)) {
 }
 // Error 404
 if($page_setted==0) {
+	if($debugging==true && $debug_on==true) $app_messages[] = '<strong>Current view:</strong> app/views/404/index.php';
 	require_once('app/views/404/index.php');			
 }
 
