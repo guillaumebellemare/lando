@@ -12,4 +12,5 @@
 <file name="global.php" server="ftp.espacedev2.com/lando/" local="130568345606818628" remote="130499907000000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/lando/" local="130568345607809206" remote="130562163600000000" Dst="2" />
 <file name="navigation.php" server="ftp.espacedev2.com/lando/" local="130568345607809206" remote="130562162400000000" Dst="2" />
+<file name="validate.php" server="ftp.espacedev2.com/lando/" local="130609692176632528" remote="130609692000000000" Dst="1" />
 </dwsync>

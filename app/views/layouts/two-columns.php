@@ -15,7 +15,7 @@
     <section>
       <h1>Base Propaganda Design</h1>
       <?php include('includes/nav.inc.php'); ?>
-      <a href="<?php echo URL_ROOT.$lang2_trans; ?>/">Langue</a>
+      <a href="<?=URL_ROOT.$lang2_trans.'/'.$_GET['page']?>">Langue</a>
       <div class="l-grid">
         <div class="l-grid-100">
           <?php if(@include('includes/slider.inc.php')); ?>

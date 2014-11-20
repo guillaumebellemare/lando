@@ -1,11 +1,14 @@
 <?php
-require_once("app/helpers/sluggedrecord.class.php");
+/*
+|--------------------------------------------------------------------------
+| App Controller
+|--------------------------------------------------------------------------
+*/
 
 class AppController extends SluggedRecord {
 	
-	/*
-	/ Arguments = Table name, Column to order, Has slug 1/0?
-	*/
+	
+	# Arguments = Table name, Column to order, Has slug 1/0?
 	function get($table=NULL, $sortBy=NULL, $hasSlug=NULL){
 		
 		$numb_arga = func_num_args();
@@ -17,16 +20,16 @@ class AppController extends SluggedRecord {
 		$q = "SHOW COLUMNS FROM {$table}";
 		$rsColumns = $this->db->Execute($q);
 		
-		// Select rows names
+		# Select rows names
 		$a_table_rows = array();
 		$table_rows = "";
 		$i = 1;
 		while(!$rsColumns->EOF){
 			
-			// Put fields in an array
+			# Put fields in an array
 			$a_table_rows[$i] = $table.".".$rsColumns->fields["Field"];
 			
-			// Put fields in a string
+			# Put fields in a string
 			if($i==1) $table_rows = $table.".".$rsColumns->fields["Field"]; else $table_rows .= $table.".".$rsColumns->fields["Field"];
 			if($rsColumns->RecordCount()!=$i) $table_rows .= ", ";
 			
@@ -36,9 +39,9 @@ class AppController extends SluggedRecord {
 		$rsColumns->Close();
 
 
-		// Build the query
+		# Build the query
 		
-			// Join tables
+			# Join tables
 			$join = NULL;
 			
 			if($numb_join_tables>0)
@@ -57,15 +60,16 @@ class AppController extends SluggedRecord {
 					$joined_table = $jtable["table"];
 					$q = "SHOW COLUMNS FROM {$joined_table}";
 					$rsColumns = $this->db->Execute($q);
-					// Select rows names
+					
+					# Select rows names
 					while(!$rsColumns->EOF){
 						
-						// Put fields of the joined table in the array
+						# Put fields of the joined table in the array
 						$current_field = $rsColumns->fields["Field"];
 						//$a_table_rows[$i] = $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
 						$a_table_rows[$i] = $joined_table.".".$joined_table."_".$current_field;
 			
-						// Put fields in a string
+						# Put fields in a string
 						if($rsColumns->RecordCount()!=$i) $table_rows .= ", ";
 						$table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
 						
@@ -81,7 +85,7 @@ class AppController extends SluggedRecord {
 			if($join) $q .= $join;
 			$q .= " WHERE {$table}.active = 1";
 			
-			// Add slugs
+			# Add slugs
 			if($this->getArgs($table) && $hasSlug) $q .= $this->getArgs($table);
 			if($sortBy)
 			{
@@ -99,7 +103,7 @@ class AppController extends SluggedRecord {
 			}
 		$rsList = $this->db->Execute($q);
 		
-		// Put all data in an array
+		# Put all data in an array
 		$i = 0;
 				
 
@@ -121,9 +125,8 @@ class AppController extends SluggedRecord {
 		
 	}
 	
-	/*
-	/ Arguments = Custom Query
-	*/
+	
+	# Arguments = Custom Query
 	function custom_get($customQuery){
 		
 		$data = array();
@@ -135,6 +138,7 @@ class AppController extends SluggedRecord {
 		$columns = array();
 		$columns = $rsList->fields;
 		$i = 0;
+		
 		while(!$rsList->EOF){
 			
 			foreach($columns AS $column)
@@ -152,6 +156,7 @@ class AppController extends SluggedRecord {
 	}
 
 
+
 	function add($table) {
 		
 		global $lang2;
@@ -160,7 +165,7 @@ class AppController extends SluggedRecord {
 		
 		$q = "SELECT * FROM {$table}";
 		
-		// Check for data that already exist in the database
+		# Check for data that already exist in the database
 		$numb_arga = func_num_args();
 		$numb_verified_fields  = $numb_arga;
 		if($numb_verified_fields > 1 && $_POST)
@@ -190,10 +195,11 @@ class AppController extends SluggedRecord {
 			$_SESSION['errors'] = "Valeur déjà entrée.";
 		}*/
 		if(isset($_POST)) unset($_POST);
-		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
+		header("Location: ".URL_ROOT.$lang2."/".$_GET['page']."");
 
 		return true;
 	}
+	
 	
 	function delete($table, $row_id) {
 	
@@ -218,12 +224,14 @@ class AppController extends SluggedRecord {
 		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
 	}
 	
+	
 	function getArgs($table) {
 		if(isset($_GET['argc'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argc']."'";
 		elseif(isset($_GET['argb'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argb']."'";
 		elseif(isset($_GET['arga'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['arga']."'";
 		else return '';
 	}
+	
 	
 	function writePrettyDate($date){
 		
@@ -241,14 +249,14 @@ class AppController extends SluggedRecord {
 			$secondDateMonth = $this->writePrettyMonth($secondDate[1]);
 			$secondDateSend = $secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
 						
-			// Only one date
+			# Only one date
 			if($firstDate==$secondDate) $returnDate = '' . $firstDateSend;
 			else {
-				// Two dates of the same year
+				# Two dates of the same year
 				if($firstDate[0]==$secondDate[0]) $returnDate = $firstDate[2].' '.$firstDateMonth.' au '.$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
-				// Two dates of the same month
+				# Two dates of the same month
 				if($firstDate[1]==$secondDate[1]) $returnDate = $firstDate[2].' au '.$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
-				// DEFAULT 
+				# DEFAULT 
 				if($returnDate==NULL) $firstDateSend.' au '.$secondDateSend;	 
 			}
 			
@@ -256,6 +264,7 @@ class AppController extends SluggedRecord {
 		
 		return $returnDate;
 	}
+	
 	
 	function writePrettyMonth($month)
 	{

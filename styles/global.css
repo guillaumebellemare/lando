@@ -31,11 +31,12 @@ select { background:url(../images/common/form-select.png) no-repeat center right
 /*-------------------------------------------------------------------
 	Modules (ex.: .box)
 -------------------------------------------------------------------*/
-.navigation { position:relative; z-index:100; }
+.navigation { position:relative; z-index:100; font-size: 0;}
 .navigation > ul { position:relative; z-index:1; }
-.navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; }
-.navigation > ul > li:hover > a, .navigation > ul > li.selected >  a { }
+.navigation > ul > li > a { display:block; padding:10px; background:#CCC; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease;   }
+.navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; }
+.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { background:#FFF; }
 #map_canvas { height:300px; }
 
 /*-------------------------------------------------------------------

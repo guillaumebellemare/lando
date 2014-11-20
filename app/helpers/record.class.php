@@ -15,7 +15,7 @@ class Record{
 	 * @param mixed $table Le nom de la table associé à l'instance de cette classe.
 	 * @return void
 	 */
-	function __construct($db, $lang3, $table){
+	function __construct($db=NULL, $lang3=NULL, $table=NULL){
 		$this->db = $db;
 		$this->lang3 = $lang3;
 		$this->table = $table;

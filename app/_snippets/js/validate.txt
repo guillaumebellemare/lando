@@ -14,7 +14,7 @@
 jQuery.validator.addMethod("cdnPostal", function(postal, element) {
     return this.optional(element) || 
     postal.match(/[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/);
-}, "Please specify a valid postal code.");
+}, "<?=$validate['zip'];?>");
 </script>
 <script>
 $(document).ready(function() {
@@ -40,18 +40,18 @@ $(document).ready(function() {
 			},
 		},
 		messages: {
-			tField: "Veuillez entrer votre",
+			tField: "<?=$validate['first_name_required'];?>",
 			tDate: {
-				required: "Veuillez entrer la date",
-				dateISO: "Veuillez entrer une date valide"
+				required: "<?=$validate['date_required'];?>",
+				dateISO: "<?=$validate['date'];?>"
 			},
 			tEmail: {
-				required: "Veuillez entrer votre courriel",
-				email: "Veuillez entrer un courriel valide"
+				required: "<?=$validate['email_required'];?>",
+				email: "<?=$validate['email'];?>"
 			},
 			tPhone: {
-				required: "Veuillez entrer un numéro de téléphone",
-				phoneUS: "Veuillez entrer un numéro de téléphone valide"
+				required: "<?=$validate['phone_required'];?>",
+				phoneUS: "<?=$validate['phone'];?>"
 			},
 		}
 	});

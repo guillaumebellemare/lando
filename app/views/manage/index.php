@@ -5,7 +5,7 @@
     <div class="l-grid-100">
       <h1><?=$global["title"]?></h1>
       <?php if(@include('includes/messages.inc.php')); ?>
-      <a href="<?=URL_ROOT.$lang2;?>/manage/form.html">Ajouter</a>
+      <a href="<?=URL_ROOT.$lang2;?>/manage/form">Ajouter</a>
       	<?php $currentCat = ""; ?>
 		<?php foreach($activities AS $activity) : ?>
             <?php if(isset($currentCat) && $currentCat!=$activity['catacts.catacts_name_fre']) : ?>

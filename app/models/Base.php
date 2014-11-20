@@ -13,7 +13,6 @@ require_once("app/models/App.php");
 */
 class Base extends \App {
 	
-	public $table;
 	
 	function __construct($db, $lang3){
 		$this->table = 'activities';
