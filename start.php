@@ -215,6 +215,7 @@ while ($currentRoute = current($routes)) {
 			$app_errors[] = "Vous devez retourner un array[] dans la fonction $current_function() de $current_controller.";
 		}
 		
+	
 		// View file handling
 		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
