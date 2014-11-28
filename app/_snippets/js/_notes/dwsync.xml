@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="map.txt" server="ftp.espacedev2.com" local="130564871898091505" remote="130562157600000000" Dst="2" />
-<file name="map.txt" server="ftp.espacedev2.com/base/" local="130564931634406246" remote="130562157600000000" Dst="2" />
-<file name="validate.txt" server="ftp.espacedev2.com/base/" local="130566459176187315" remote="130566459000000000" Dst="2" />
-<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130568345567500886" remote="130566691200000000" Dst="2" />
-<file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130609697999246716" remote="130609698000000000" Dst="1" />
-<file name="confirm.txt" server="ftp.espacedev2.com/lando/" local="130568392684501976" remote="130568392800000000" Dst="2" />
+<file name="confirm.txt" server="ftp.espacedev2.com/lando/" local="130616776458615438" remote="130568392800000000" Dst="1" />
+<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130616776459575568" remote="130566691200000000" Dst="1" />
+<file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130616776460177040" remote="130609698000000000" Dst="1" />
 </dwsync>

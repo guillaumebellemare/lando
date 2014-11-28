@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="galerie.ajax.js" server="ftp.espacedev2.com" local="130564871939845913" remote="130274928000000000" Dst="2" />
-<file name="jquery.fancybox-media.js" server="ftp.espacedev2.com" local="130564871939875765" remote="130172976000000000" Dst="2" />
-<file name="jquery.fancybox.js" server="ftp.espacedev2.com" local="130564871940526460" remote="130172976000000000" Dst="2" />
-<file name="jquery.flexslider-min.js" server="ftp.espacedev2.com" local="130564871940596431" remote="130251600000000000" Dst="2" />
-<file name="jquery.google.map.js" server="ftp.espacedev2.com" local="130564871940636420" remote="130560576600000000" Dst="2" />
-<file name="jquery.validate.min.js" server="ftp.espacedev2.com" local="130564871941567116" remote="130438626000000000" Dst="2" />
-<file name="navigation.js" server="ftp.espacedev2.com" local="130564871942417719" remote="130476800400000000" Dst="2" />
-<file name="selectivizr-min.js" server="ftp.espacedev2.com" local="130564871943252133" remote="130395024000000000" Dst="2" />
-<file name="galerie.ajax.js" server="ftp.espacedev2.com/base/" local="130564931702934695" remote="130274928000000000" Dst="2" />
-<file name="jquery.fancybox-media.js" server="ftp.espacedev2.com/base/" local="130564931703585106" remote="130172976000000000" Dst="2" />
-<file name="jquery.fancybox.js" server="ftp.espacedev2.com/base/" local="130564931704385667" remote="130172976000000000" Dst="2" />
-<file name="jquery.flexslider-min.js" server="ftp.espacedev2.com/base/" local="130564931705886899" remote="130251600000000000" Dst="2" />
-<file name="jquery.google.map.js" server="ftp.espacedev2.com/base/" local="130564931706006911" remote="130560576600000000" Dst="2" />
-<file name="jquery.validate.min.js" server="ftp.espacedev2.com/base/" local="130564931706887436" remote="130438626000000000" Dst="2" />
-<file name="navigation.js" server="ftp.espacedev2.com/base/" local="130564931710139906" remote="130476800400000000" Dst="2" />
-<file name="selectivizr-min.js" server="ftp.espacedev2.com/base/" local="130564931710830396" remote="130395024000000000" Dst="2" />
-<file name="jquery.validate.additional-methods.js" server="ftp.espacedev2.com/base/" local="130566458400000000" remote="130566458400000000" Dst="2" />
-<file name="galerie.ajax.js" server="ftp.espacedev2.com/lando/" local="130568345609980908" remote="130274928000000000" Dst="2" />
-<file name="jquery.fancybox-media.js" server="ftp.espacedev2.com/lando/" local="130568345609980908" remote="130172976000000000" Dst="2" />
-<file name="jquery.fancybox.js" server="ftp.espacedev2.com/lando/" local="130568345611171736" remote="130172976000000000" Dst="2" />
-<file name="jquery.flexslider-min.js" server="ftp.espacedev2.com/lando/" local="130568345611251798" remote="130251600000000000" Dst="2" />
-<file name="jquery.google.map.js" server="ftp.espacedev2.com/lando/" local="130568345611171736" remote="130560576600000000" Dst="2" />
-<file name="jquery.validate.min.js" server="ftp.espacedev2.com/lando/" local="130568345612472497" remote="130438626000000000" Dst="2" />
-<file name="jquery.validate.additional-methods.js" server="ftp.espacedev2.com/lando/" local="130568345612392440" remote="130566458400000000" Dst="1" />
-<file name="navigation.js" server="ftp.espacedev2.com/lando/" local="130568345613413335" remote="130476800400000000" Dst="2" />
-<file name="selectivizr-min.js" server="ftp.espacedev2.com/lando/" local="130568345615014471" remote="130395024000000000" Dst="2" />
+<file name="galerie.ajax.js" server="ftp.espacedev2.com/lando/" local="130616776503046803" remote="130274964000000000" Dst="1" />
+<file name="jquery.fancybox-media.js" server="ftp.espacedev2.com/lando/" local="130616776503671920" remote="130173012000000000" Dst="1" />
+<file name="jquery.flexslider-min.js" server="ftp.espacedev2.com/lando/" local="130616776504609425" remote="130251636000000000" Dst="1" />
+<file name="jquery.fancybox.js" server="ftp.espacedev2.com/lando/" local="130616776504609425" remote="130173012000000000" Dst="1" />
+<file name="jquery.google.map.js" server="ftp.espacedev2.com/lando/" local="130616776504609425" remote="130560576600000000" Dst="1" />
+<file name="jquery.validate.additional-methods.js" server="ftp.espacedev2.com/lando/" local="130616776505703223" remote="130566458400000000" Dst="1" />
+<file name="jquery.validate.min.js" server="ftp.espacedev2.com/lando/" local="130616776505703223" remote="130438260000000000" Dst="1" />
+<file name="navigation.js" server="ftp.espacedev2.com/lando/" local="130616776507578208" remote="130476800400000000" Dst="1" />
+<file name="selectivizr-min.js" server="ftp.espacedev2.com/lando/" local="130616776507578208" remote="130395060000000000" Dst="1" />
 </dwsync>

@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="form-select.png" server="ftp.espacedev2.com" local="130564871925385713" remote="130441381800000000" Dst="2" />
-<file name="marker.png" server="ftp.espacedev2.com" local="130564871926666451" remote="130401072000000000" Dst="2" />
-<file name="slider.jpg" server="ftp.espacedev2.com" local="130564871927907321" remote="130429077000000000" Dst="2" />
-<file name="icon-error.png" server="ftp.espacedev2.com" local="130564871925695757" remote="130501796400000000" Dst="2" />
-<file name="icon-success.png" server="ftp.espacedev2.com" local="130564871925715771" remote="130501799400000000" Dst="2" />
-<file name="form-select.png" server="ftp.espacedev2.com/base/" local="130564931676165825" remote="130441381800000000" Dst="2" />
-<file name="icon-error.png" server="ftp.espacedev2.com/base/" local="130564931676596066" remote="130501796400000000" Dst="2" />
-<file name="icon-success.png" server="ftp.espacedev2.com/base/" local="130564931677036678" remote="130501799400000000" Dst="2" />
-<file name="marker.png" server="ftp.espacedev2.com/base/" local="130564931677767058" remote="130401072000000000" Dst="2" />
-<file name="slider.jpg" server="ftp.espacedev2.com/base/" local="130564931679758463" remote="130429077000000000" Dst="2" />
-<file name="icon-success.png" server="ftp.espacedev2.com/lando/" local="130568345597802330" remote="130501799400000000" Dst="2" />
-<file name="form-select.png" server="ftp.espacedev2.com/lando/" local="130568345597782143" remote="130441381800000000" Dst="2" />
-<file name="icon-error.png" server="ftp.espacedev2.com/lando/" local="130568345597792314" remote="130501796400000000" Dst="2" />
-<file name="marker.png" server="ftp.espacedev2.com/lando/" local="130568345599123198" remote="130401072000000000" Dst="2" />
-<file name="slider.jpg" server="ftp.espacedev2.com/lando/" local="130568345599153111" remote="130429077000000000" Dst="2" />
-<file name="apple-touch-icon.png" server="ftp.espacedev2.com/lando/" local="130570800417678145" remote="130570801200000000" Dst="2" />
+<file name="apple-touch-icon.png" server="ftp.espacedev2.com/lando/" local="130616776483542179" remote="130570801200000000" Dst="1" />
+<file name="form-select.png" server="ftp.espacedev2.com/lando/" local="130616776489250469" remote="130440852000000000" Dst="1" />
+<file name="icon-error.png" server="ftp.espacedev2.com/lando/" local="130616776489590321" remote="130501796400000000" Dst="1" />
+<file name="icon-success.png" server="ftp.espacedev2.com/lando/" local="130616776489590321" remote="130501799400000000" Dst="1" />
+<file name="marker.png" server="ftp.espacedev2.com/lando/" local="130616776490450545" remote="130401108000000000" Dst="1" />
+<file name="slider.jpg" server="ftp.espacedev2.com/lando/" local="130616776491330585" remote="130428756000000000" Dst="1" />
 </dwsync>

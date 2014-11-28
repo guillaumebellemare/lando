@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="ftp.espacedev2.com" local="130564871904566399" remote="130564868400000000" Dst="2" />
-<file name="show.php" server="ftp.espacedev2.com" local="130564871904596245" remote="130561519200000000" Dst="2" />
-<file name="add.php" server="ftp.espacedev2.com/base/" local="130564931648646285" remote="130564906800000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com/base/" local="130566495227067984" remote="130566495000000000" Dst="2" />
-<file name="show.php" server="ftp.espacedev2.com/base/" local="130564931650347494" remote="130561519200000000" Dst="2" />
-<file name="show.php" server="ftp.espacedev2.com/lando/" local="130607950832337997" remote="130607950800000000" Dst="1" />
-<file name="index.php" server="ftp.espacedev2.com/lando/" local="130607950176267758" remote="130607950200000000" Dst="1" />
-<file name="index.html" server="ftp.espacedev2.com/lando/" local="130609906002139067" remote="130609905600000000" Dst="1" />
-<file name="popoo.html" server="ftp.espacedev2.com/lando/" local="130609897560381475" remote="130609897200000000" Dst="1" />
+<file name="index.php" server="ftp.espacedev2.com/lando/" local="130616776477950078" remote="130607950200000000" Dst="1" />
+<file name="show.php" server="ftp.espacedev2.com/lando/" local="130616776477950078" remote="130607950800000000" Dst="1" />
 </dwsync>

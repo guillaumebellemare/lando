@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="adodb-ado.inc.php" server="ftp.espacedev2.com" local="130564871965277649" remote="130500055200000000" Dst="2" />
-<file name="adodb-ado5.inc.php" server="ftp.espacedev2.com" local="130564871965578024" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysql.inc.php" server="ftp.espacedev2.com" local="130564871966418454" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com" local="130564871966538530" remote="130500055200000000" Dst="2" />
-<file name="adodb-ado.inc.php" server="ftp.espacedev2.com/base/" local="130564931762356842" remote="130500055200000000" Dst="2" />
-<file name="adodb-ado5.inc.php" server="ftp.espacedev2.com/base/" local="130564931763077348" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysql.inc.php" server="ftp.espacedev2.com/base/" local="130564931763717800" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com/base/" local="130564931764608431" remote="130500055200000000" Dst="2" />
-<file name="adodb-ado.inc.php" server="ftp.espacedev2.com/lando/" local="130568345637411010" remote="130500055200000000" Dst="2" />
-<file name="adodb-ado5.inc.php" server="ftp.espacedev2.com/lando/" local="130568345638431721" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysql.inc.php" server="ftp.espacedev2.com/lando/" local="130568345638511787" remote="130500055200000000" Dst="2" />
-<file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com/lando/" local="130568345638741940" remote="130500055200000000" Dst="2" />
+<file name="adodb-ado.inc.php" server="ftp.espacedev2.com/lando/" local="130616776528043429" remote="130500055200000000" Dst="1" />
+<file name="adodb-ado5.inc.php" server="ftp.espacedev2.com/lando/" local="130616776528053439" remote="130500055200000000" Dst="1" />
+<file name="adodb-mysql.inc.php" server="ftp.espacedev2.com/lando/" local="130616776528783950" remote="130500055200000000" Dst="1" />
+<file name="adodb-mysqli.inc.php" server="ftp.espacedev2.com/lando/" local="130616776529534489" remote="130500055200000000" Dst="1" />
 </dwsync>

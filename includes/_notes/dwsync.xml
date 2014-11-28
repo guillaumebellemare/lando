@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="footer.inc.php" server="ftp.espacedev2.com" local="130564871932470537" remote="130480035600000000" Dst="2" />
-<file name="nav.inc.php" server="ftp.espacedev2.com" local="130564871933681407" remote="130562163000000000" Dst="2" />
-<file name="analyticstracking.inc.php" server="ftp.espacedev2.com" local="130564871930649255" remote="130251600000000000" Dst="2" />
-<file name="conn.inc.php" server="ftp.espacedev2.com" local="130564871931519969" remote="130172976000000000" Dst="2" />
-<file name="header.inc.php" server="ftp.espacedev2.com" local="130564871932500559" remote="130433436000000000" Dst="2" />
-<file name="scripts.inc.php" server="ftp.espacedev2.com" local="130564871934482083" remote="130561492800000000" Dst="2" />
-<file name="slider.inc.php" server="ftp.espacedev2.com" local="130564871934872404" remote="130429077000000000" Dst="2" />
-<file name="messages.inc.php" server="ftp.espacedev2.com" local="130564871933671388" remote="130501798200000000" Dst="2" />
-<file name="map.inc.php" server="ftp.espacedev2.com" local="130564871932600632" remote="130501801200000000" Dst="2" />
-<file name="meta.inc.php" server="ftp.espacedev2.com" local="130564871933651368" remote="130561490400000000" Dst="2" />
-<file name="app_messages.inc.php" server="ftp.espacedev2.com/base/" local="130564931685192300" remote="130564918200000000" Dst="2" />
-<file name="analyticstracking.inc.php" server="ftp.espacedev2.com/base/" local="130564931684101382" remote="130251600000000000" Dst="2" />
-<file name="conn.inc.php" server="ftp.espacedev2.com/base/" local="130564931686393096" remote="130172976000000000" Dst="2" />
-<file name="footer.inc.php" server="ftp.espacedev2.com/base/" local="130564931687233689" remote="130480035600000000" Dst="2" />
-<file name="header.inc.php" server="ftp.espacedev2.com/base/" local="130564931687693893" remote="130433436000000000" Dst="2" />
-<file name="map.inc.php" server="ftp.espacedev2.com/base/" local="130564931687743928" remote="130501801200000000" Dst="2" />
-<file name="messages.inc.php" server="ftp.espacedev2.com/base/" local="130564931688744804" remote="130501798200000000" Dst="2" />
-<file name="meta.inc.php" server="ftp.espacedev2.com/base/" local="130564931689144983" remote="130561490400000000" Dst="2" />
-<file name="nav.inc.php" server="ftp.espacedev2.com/base/" local="130564931689745464" remote="130562163000000000" Dst="2" />
-<file name="scripts.inc.php" server="ftp.espacedev2.com/base/" local="130564931690185823" remote="130561492800000000" Dst="2" />
-<file name="slider.inc.php" server="ftp.espacedev2.com/base/" local="130564931690856245" remote="130429077000000000" Dst="2" />
-<file name="messages.inc.php" server="ftp.espacedev2.com/lando/" local="130568345604056562" remote="130566686400000000" Dst="2" />
-<file name="conn.inc.php" server="ftp.espacedev2.com/lando/" local="130608892818030266" remote="130608892800000000" Dst="1" />
-<file name="analyticstracking.inc.php" server="ftp.espacedev2.com/lando/" local="130568345600974483" remote="130251600000000000" Dst="2" />
-<file name="app_messages.inc.php" server="ftp.espacedev2.com/lando/" local="130568345602145316" remote="130564918200000000" Dst="2" />
-<file name="footer.inc.php" server="ftp.espacedev2.com/lando/" local="130568345603045936" remote="130480035600000000" Dst="2" />
-<file name="header.inc.php" server="ftp.espacedev2.com/lando/" local="130570801274105546" remote="130570801200000000" Dst="2" />
-<file name="meta.inc.php" server="ftp.espacedev2.com/lando/" local="130609705564518889" remote="130609705200000000" Dst="1" />
-<file name="nav.inc.php" server="ftp.espacedev2.com/lando/" local="130609700134217937" remote="130609699800000000" Dst="1" />
-<file name="scripts.inc.php" server="ftp.espacedev2.com/lando/" local="130568345605117313" remote="130561492800000000" Dst="2" />
-<file name="map.inc.php" server="ftp.espacedev2.com/lando/" local="130568345604036544" remote="130501801200000000" Dst="2" />
-<file name="slider.inc.php" server="ftp.espacedev2.com/lando/" local="130568345606228103" remote="130429077000000000" Dst="2" />
+<file name="analyticstracking.inc.php" server="ftp.espacedev2.com/lando/" local="130616776492030646" remote="130251636000000000" Dst="1" />
+<file name="app_messages.inc.php" server="ftp.espacedev2.com/lando/" local="130616776493310558" remote="130564918200000000" Dst="1" />
+<file name="conn.inc.php" server="ftp.espacedev2.com/lando/" local="130616776493921276" remote="130608892800000000" Dst="1" />
+<file name="footer.inc.php" server="ftp.espacedev2.com/lando/" local="130616776494161446" remote="130480035600000000" Dst="1" />
+<file name="header.inc.php" server="ftp.espacedev2.com/lando/" local="130616776494171468" remote="130570801200000000" Dst="1" />
+<file name="messages.inc.php" server="ftp.espacedev2.com/lando/" local="130616776495122167" remote="130566686400000000" Dst="1" />
+<file name="map.inc.php" server="ftp.espacedev2.com/lando/" local="130616776495502197" remote="130501801200000000" Dst="1" />
+<file name="meta.inc.php" server="ftp.espacedev2.com/lando/" local="130616776495762360" remote="130609705200000000" Dst="1" />
+<file name="nav.inc.php" server="ftp.espacedev2.com/lando/" local="130616776495782208" remote="130609699800000000" Dst="1" />
+<file name="slider.inc.php" server="ftp.espacedev2.com/lando/" local="130616776496782445" remote="130428756000000000" Dst="1" />
+<file name="scripts.inc.php" server="ftp.espacedev2.com/lando/" local="130616776496802398" remote="130561492800000000" Dst="1" />
 </dwsync>

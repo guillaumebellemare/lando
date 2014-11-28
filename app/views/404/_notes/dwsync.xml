@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="errors.php" server="ftp.espacedev2.com" local="130564871902835003" remote="130501793400000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com" local="130564871902815143" remote="130501656600000000" Dst="2" />
-<file name="errors.php" server="ftp.espacedev2.com/base/" local="130564931646955097" remote="130501793400000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com/base/" local="130564931647935798" remote="130501656600000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com/lando/" local="130607950652624648" remote="130607950200000000" Dst="1" />
-<file name="errors.php" server="ftp.espacedev2.com/lando/" local="130568345586564334" remote="130501793400000000" Dst="1" />
+<file name="errors.php" server="ftp.espacedev2.com/lando/" local="130616776476741722" remote="130501793400000000" Dst="1" />
+<file name="index.php" server="ftp.espacedev2.com/lando/" local="130616776476771565" remote="130607950200000000" Dst="1" />
 </dwsync>

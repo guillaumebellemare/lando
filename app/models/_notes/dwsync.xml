@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="Base.php" server="ftp.espacedev2.com" local="130564871900933510" remote="130564865400000000" Dst="2" />
-<file name="App.php" server="ftp.espacedev2.com" local="130564871900913496" remote="130564870800000000" Dst="2" />
-<file name="__Form.php" server="ftp.espacedev2.com" local="130564871902074315" remote="130501665000000000" Dst="2" />
-<file name="__Search.php" server="ftp.espacedev2.com" local="130564871902124360" remote="130501665000000000" Dst="2" />
-<file name="App.php" server="ftp.espacedev2.com/base/" local="130564931642291801" remote="130564870800000000" Dst="2" />
-<file name="Base.php" server="ftp.espacedev2.com/base/" local="130564931643402594" remote="130564865400000000" Dst="2" />
-<file name="__Form.php" server="ftp.espacedev2.com/base/" local="130564931643792872" remote="130501665000000000" Dst="2" />
-<file name="__Search.php" server="ftp.espacedev2.com/base/" local="130564931644633456" remote="130501665000000000" Dst="2" />
-<file name="App.php" server="ftp.espacedev2.com/lando/" local="130568345583111786" remote="130568340600000000" Dst="1" />
-<file name="Base.php" server="ftp.espacedev2.com/lando/" local="130608941568937303" remote="130608941400000000" Dst="1" />
-<file name="__Form.php" server="ftp.espacedev2.com/lando/" local="130568345584492755" remote="130568341200000000" Dst="2" />
-<file name="__Search.php" server="ftp.espacedev2.com/lando/" local="130568345584502762" remote="130568341200000000" Dst="2" />
+<file name="App.php" server="ftp.espacedev2.com/lando/" local="130616776474250981" remote="130568340600000000" Dst="1" />
+<file name="Base.php" server="ftp.espacedev2.com/lando/" local="130616776474250981" remote="130608941400000000" Dst="1" />
+<file name="__Form.php" server="ftp.espacedev2.com/lando/" local="130616776474250981" remote="130568341200000000" Dst="1" />
+<file name="__Search.php" server="ftp.espacedev2.com/lando/" local="130616776474731161" remote="130568341200000000" Dst="1" />
 </dwsync>

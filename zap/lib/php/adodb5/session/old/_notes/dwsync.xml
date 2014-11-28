@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="adodb-cryptsession.php" server="ftp.espacedev2.com" local="130564871979137598" remote="130500055200000000" Dst="2" />
-<file name="adodb-session-clob.php" server="ftp.espacedev2.com" local="130564871979197477" remote="130500055200000000" Dst="2" />
-<file name="adodb-session.php" server="ftp.espacedev2.com" local="130564871979267514" remote="130500055200000000" Dst="2" />
-<file name="crypt.inc.php" server="ftp.espacedev2.com" local="130564871980298414" remote="130500055200000000" Dst="2" />
-<file name="adodb-cryptsession.php" server="ftp.espacedev2.com/base/" local="130564931795800530" remote="130500055200000000" Dst="2" />
-<file name="adodb-session-clob.php" server="ftp.espacedev2.com/base/" local="130564931796540959" remote="130500055200000000" Dst="2" />
-<file name="adodb-session.php" server="ftp.espacedev2.com/base/" local="130564931796891236" remote="130500055200000000" Dst="2" />
-<file name="crypt.inc.php" server="ftp.espacedev2.com/base/" local="130564931797701802" remote="130500055200000000" Dst="2" />
-<file name="adodb-cryptsession.php" server="ftp.espacedev2.com/lando/" local="130568345653332283" remote="130500055200000000" Dst="2" />
-<file name="adodb-session-clob.php" server="ftp.espacedev2.com/lando/" local="130568345654292961" remote="130500055200000000" Dst="2" />
-<file name="crypt.inc.php" server="ftp.espacedev2.com/lando/" local="130568345654383021" remote="130500055200000000" Dst="2" />
-<file name="adodb-session.php" server="ftp.espacedev2.com/lando/" local="130568345654373023" remote="130500055200000000" Dst="2" />
+<file name="adodb-cryptsession.php" server="ftp.espacedev2.com/lando/" local="130616776541347119" remote="130500055200000000" Dst="1" />
+<file name="adodb-session-clob.php" server="ftp.espacedev2.com/lando/" local="130616776541347119" remote="130500055200000000" Dst="1" />
+<file name="adodb-session.php" server="ftp.espacedev2.com/lando/" local="130616776541387117" remote="130500055200000000" Dst="1" />
+<file name="crypt.inc.php" server="ftp.espacedev2.com/lando/" local="130616776542467286" remote="130500055200000000" Dst="1" />
 </dwsync>
