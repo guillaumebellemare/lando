@@ -6,4 +6,5 @@
 <file name="join.txt" server="ftp.espacedev2.com/lando/" local="130616776462127589" remote="130562258400000000" Dst="1" />
 <file name="save.txt" server="ftp.espacedev2.com/lando/" local="130616776462127589" remote="130566691800000000" Dst="1" />
 <file name="remove.txt" server="ftp.espacedev2.com/lando/" local="130616776462157474" remote="130566691800000000" Dst="1" />
+<file name="foreach.txt" server="ftp.espacedev2.com/lando/" local="130634795476046614" remote="130634795400000000" Dst="1" />
 </dwsync>

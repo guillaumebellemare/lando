@@ -153,7 +153,7 @@ if($debugging==true)
 {
 	$ip_address = getenv('HTTP_CLIENT_IP')?:getenv('HTTP_X_FORWARDED_FOR')?:getenv('HTTP_X_FORWARDED')?:getenv('HTTP_FORWARDED_FOR')?:getenv('HTTP_FORWARDED')?:getenv('REMOTE_ADDR');
 	
-	if($ip_address==='50.100.142.169')
+	if($ip_address==='65.92.227.46')
 	{
 		$app_messages[] = '<strong>IP address:</strong> '.$ip_address.'<br>';
 		error_reporting(E_ALL);

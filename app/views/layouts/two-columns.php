@@ -13,7 +13,6 @@
   <?php startblock('header') ?>
   <header>
     <section>
-      <h1>Base Propaganda Design</h1>
       <?php include('includes/nav.inc.php'); ?>
       <a href="<?=URL_ROOT.$lang2_trans.'/'.$_GET['page']?>">Langue</a>
       <div class="l-grid">

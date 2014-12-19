@@ -1,0 +1,14 @@
+/*
+|--------------------------------------------------------------------------
+| ForEach Snippet
+|--------------------------------------------------------------------------
+|
+| Pour afficher les résultats provenants du Controller associé
+|
+| @return array
+|
+*/
+
+<?php foreach($activities as $activity) : ?>
+	<?=$activity['activities.name_fre']?>
+<?php endforeach; ?>
