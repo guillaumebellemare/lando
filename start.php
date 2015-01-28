@@ -180,9 +180,9 @@ $page_setted = 0;
 $view_loaded = false;
 $controller_loaded = false;
 
-if(isset($_GET['arga']) && isset($_GET['argb']) && isset($_GET['argc'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'].'/'.$_GET['argc'].'.html';
-elseif(isset($_GET['arga']) && isset($_GET['argb'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'].'.html';
-elseif(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'].'.html';
+if(isset($_GET['arga']) && isset($_GET['argb']) && isset($_GET['argc'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'].'/'.$_GET['argc'];
+elseif(isset($_GET['arga']) && isset($_GET['argb'])) $page = $_GET['page'].'/'.$_GET['arga'].'/'.$_GET['argb'];
+elseif(isset($_GET['arga'])) $page = $_GET['page'].'/'.$_GET['arga'];
 else $page = $_GET['page'];
 
 while ($currentRoute = current($routes)) {
