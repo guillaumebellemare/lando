@@ -1,0 +1,16 @@
+/*
+|--------------------------------------------------------------------------
+| Stacktable Snippet
+|--------------------------------------------------------------------------
+|
+|
+| @return void
+|
+*/
+
+<script src="<?php echo URL_ROOT; ?>scripts/stacktable.js"></script> 
+<script>
+$(window).load(function(){
+	$('table').stacktable();
+});
+</script>
