@@ -110,6 +110,7 @@ require_once("app/helpers/ti/ti.php");
 |
 */
 require_once("app/controllers/AppController.php");
+require_once("app/helpers/custom_methods/index.php");
 
 
 /*
@@ -139,6 +140,7 @@ foreach (glob("lang/".$lang2."/*.php") as $filename)
     require_once($filename);
 }
 require_once("routes.php");
+
 
 /*
 |--------------------------------------------------------------------------
