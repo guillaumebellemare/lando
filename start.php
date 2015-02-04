@@ -24,8 +24,15 @@
 |
 | Debugging options.
 |
+| Here is where the production mode is set.
+| 0 = Online.
+| 1 = Production.
+|
 */
 $debugging = true;
+define("URL_ROOT", "/lando/");
+define("WBR_FOLDER", "images/wbr/uploads/");
+define("PRODUCTION_MODE", 0);
 
 
 /*
@@ -41,20 +48,6 @@ require_once("includes/conn.inc.php");
 require_once("app/helpers/lang.class.php");
 require_once("app/helpers/compressor/compressorloader.class.php");
 
-
-/*
-|--------------------------------------------------------------------------
-| Application Production Mode
-|--------------------------------------------------------------------------
-|
-| Here is where the production mode is set.
-| 0 = Online.
-| 1 = Production.
-|
-*/
-define("PRODUCTION_MODE", 0);
-define("URL_ROOT", "/lando/");
-define("WBR_FOLDER", "images/wbr/uploads/");
 
 /*
 |--------------------------------------------------------------------------
