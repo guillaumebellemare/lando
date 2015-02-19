@@ -15,9 +15,10 @@ h1 { font-size:25px; margin:20px 0 20px 0; }
 h2 { }
 h3 { }
 p, ul { margin:0 0 12px 0; font-size:12px; line-height:14px; }
-ul > li:before { content: "•"; padding: 0 4px 0 0; display: inline-block; float: left; }
+ul > li:before { content: "•"; padding: 0 12px 0 0; display: inline-block; float: left; }
 ul ul { margin:0 0 0 12px; }
 ul > li { margin:4px 0 4px 0; }
+ul { margin:0 0 20px 12px; list-style: none; text-indent: -12px; }
 strong { }
 hr { border:none; height:1px; background:#CCC; margin:20px 0; }
 table th { background:#333; padding:10px; text-align:left; font-size:14px; color:#FFF; }
@@ -50,7 +51,7 @@ select:hover option, select:focus option { background:#FFF; color:#000; }
 	Modules (ex.: .box)
 -------------------------------------------------------------------*/
 .navigation { position:relative; z-index:100; font-size: 0;}
-.navigation > ul { position:relative; z-index:1; margin:0; }
+.navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; }
 .navigation ul li:before { content:""; padding:0; float:none; }
 .navigation > ul > li > a { display:block; padding:10px; background:#CCC; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
