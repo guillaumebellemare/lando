@@ -1,5 +1,6 @@
 <?php
-class Record{
+
+class Record {
 
 	var $table;
 	var $lang3;
@@ -28,14 +29,14 @@ class Record{
 	 * @access public
 	 * @return void
 	 */
-	function getCurrent($current_id = null){
+	/*function getCurrent($current_id = null){
 		if($current_id) $this->current_id = $current_id;
 		if(!isset($this->current_id)){
 			echo 'FATAL ERROR : undefined $this->current_id in getCurrent() method';
 			exit;
 		}
 		$this->rsCurrent = $this->db->Execute("SELECT * FROM {$this->table} WHERE active = 1 AND id = {$this->current_id}{$this->complex_where} LIMIT 1");
-	}
+	}*/
 		
 	
 	/**
@@ -51,4 +52,3 @@ class Record{
 	}
 
 }
-?>

@@ -1,1 +1,0 @@
-$(document).ready(function(){$('.navigation li').hover(function(){$(this).find('ul').toggleClass("is-hover")},function(){$(this).find('ul').toggleClass("is-hover")})});$(document).ready(function(){$('.navigation').addClass('hide');$(".navigation-trigger").click(function(){$('.navigation').toggleClass('show');$('.navigation').toggleClass('hide');return false})})

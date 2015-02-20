@@ -1,5 +1,6 @@
 <?php
-if ( isset($_POST['action']) && $_POST['action']=='send' ) {
+
+if (isset($_POST['action']) && $_POST['action']=='send') {
 	
 	// Your code here to handle a successful verification
 	$mail = new PHPMailer();
@@ -35,5 +36,3 @@ if ( isset($_POST['action']) && $_POST['action']=='send' ) {
 		$msg = "<h2 class='is-failure'>Une erreur est survenue lors de l'envoi du courriel. Veuillez réessayez plus tard...</h2>" . $mail->ErrorInfo;
 	}
 }
-
-?>

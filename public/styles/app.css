@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/* Copyright 2014 Propaganda Design Inc. */
+
+/*-------------------------------------------------------------------
+	App
+-------------------------------------------------------------------*/
+.app-msg { }
+.app-msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; }
+.app-msg > p { display:block; clear:both; line-height:22px; }
+.app-msg > p > .msg-icon { width:23px; height:23px; display:block; float:left; margin:0 5px 9px 0; }
+.app-msg strong { font-weight:bold; }
+.app-is-success { background:#89A418; }
+.app-is-success > p > .msg-icon { background:url(../images/common/icon-success.png); }
+.app-is-failure { background:#d22300; }
+.app-is-failure > p > .msg-icon { background:url(../images/common/icon-error.png); }

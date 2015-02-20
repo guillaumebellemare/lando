@@ -1,4 +1,5 @@
 <?php
+
 require_once("classes/sluggedrecord.class.php");
 
 class Login extends SluggedRecord {
@@ -299,4 +300,3 @@ class Login extends SluggedRecord {
 	}
 
 }
-?>

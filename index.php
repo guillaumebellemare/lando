@@ -1,1 +1,4 @@
-<?php header('Location: fr'); exit(); ?>
+<?php
+
+header('Location: fr');
+exit();

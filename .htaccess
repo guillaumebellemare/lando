@@ -5,25 +5,25 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 	
-	RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
+	#RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
 	
     #Niveau 1 : exemple : fr/index.html
-    RewriteRule ^(en|fr)/([^/]*)$ /lando/start.php?lang=$1&page=$2 [L]
+    RewriteRule ^(en|fr)/([^/]*)$ /lando/config.php?lang=$1&page=$2 [L]
    
-    #Niveau 2 : exemple : fr/page/argA.html
-    RewriteRule ^(en|fr)/([^/]*)/([^/]*)$ /lando/start.php?lang=$1&page=$2&arga=$3 [L]
+    #Niveau 2 : exemple : fr/page/param1.html
+    RewriteRule ^(en|fr)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3 [L]
     
-    #Niveau 3 : exemple : fr/page/argA/argB.html
-    RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)$ /lando/start.php?lang=$1&page=$2&arga=$3&argb=$4 [L]
+    #Niveau 3 : exemple : fr/page/param1/param2.html
+    RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3&param2=$4 [L]
 
-    #Niveau 4 : exemple : fr/page/argA/argB/argC.html
-    RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ /lando/start.php?lang=$1&page=$2&arga=$3&argb=$4&argc=$5 [L]
+    #Niveau 4 : exemple : fr/page/param1/param2/param3.html
+    RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3&param2=$4&param3=$5 [L]
         
     #Root FR ou EN
-    RewriteRule ^(en|fr)/$ /lando/start.php?lang=$1&page=index [L]    
-    RewriteRule ^(en|fr)$ /lando/start.php?lang=$1&page=index [L]     
+    RewriteRule ^(en|fr)/$ /lando/config.php?lang=$1&page=index [L]    
+    RewriteRule ^(en|fr)$ /lando/config.php?lang=$1&page=index [L]     
     
     #404 ... 
-    ErrorDocument 404 /lando/start.php?page=404
+    ErrorDocument 404 /lando/config.php?page=404
 	
 </IfModule>

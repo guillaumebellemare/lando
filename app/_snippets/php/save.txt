@@ -15,15 +15,22 @@
 
 /********* PHP *********/
 
-$this->save(Base::table(), "name_fre");
+$this->save($this->table, "name_fre");
 
 /***********************/
 
 
+/********* Routes *********/
 
-/********* HTML *********/
+	"foo_form" => "FooController@form",
+	"foo_add" => "FooController@save",
+    
+/***************************/
 
-<form action="<?php echo URL_ROOT.$lang2; ?>/manage.html" method="post" name="fAdd">
+
+/********* HTML -> form *********/
+
+<form action="<?php echo URL_ROOT.$lang2; ?>/manage" method="post" name="fAdd">
 	<input name="name_fre" type="text">
 	<textarea name="description_fre"></textarea>
 	<select name="catact_id">
@@ -36,3 +43,26 @@ $this->save(Base::table(), "name_fre");
 </form>
 
 /************************/
+
+
+/********* HTML -> save *********/
+<form action="<?php echo URL_ROOT.$lang2; ?>/manage/save" method="post" name="fAdd">
+    <input name="name_fre" type="text">
+    <textarea name="description_fre"></textarea>
+    <select name="catact_id">
+        <option value="1">Test</option>
+        <option value="3">Test 2</option>
+        <option value="3">Test 3</option>
+   </select>
+   <input name="action" type="hidden" value="save">
+   <input name="btSubmit" type="submit" value="Ajouter">
+</form>
+/*******************************/
+
+
+/********* Messages *********/
+
+<?php if(@include('includes/messages.inc.php')); ?>
+
+/***************************/
+

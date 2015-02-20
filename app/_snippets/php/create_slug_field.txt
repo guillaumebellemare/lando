@@ -1,0 +1,12 @@
+/*
+|--------------------------------------------------------------------------
+| Create Slug Field Snippet
+|--------------------------------------------------------------------------
+|
+| Arguments : nom de code la table, champs de base, nouveau champs, nom du nouveau champs
+|
+| @return array
+|
+*/
+
+$foo->create_slug_field('bar', "name_$lang3", "slug_$lang3", "URL Slug - $lang2");

@@ -15,14 +15,13 @@
 
 *************************************************************/
 
-$file = "sitemap.xml";		// output file
+$file = "/home/espaced/public_html/bourque-dupere/sitemap.xml";		// output file
+echo $file;
 $url = "http://www.espacedev2.com/";	// url to scan
-$url_specific = "lando/fr/";
+$url_specific = "bourque-dupere/fr/";
 // ignore urls starting with
-$skip[0] = "http://www.espacedev2.com/lando/zap";
-$skip[1] = "http://www.espacedev2.com/lando/fr.html";
-
-$extension = ".html";		// scan files with extension
+$skip[0] = "http://www.espacedev2.com/bourque-dupere/zap";
+$skip[1] = "http://www.espacedev2.com/bourque-dupere/fr.html";
 
 $freq = "monthly";			// scan frequency
 $priority = "0.5";			// site priority
@@ -90,8 +89,7 @@ function Scan($url, $url_specific)
 			}
 		}
 	    if ((!$ignore) &&
-		(!in_array ($href, $scanned)) && 
-		(strpos ($href, $extension) > 0)		
+		(!in_array ($href, $scanned))		
 		)
 	    {
 			$href = str_replace("//", "/", $href);

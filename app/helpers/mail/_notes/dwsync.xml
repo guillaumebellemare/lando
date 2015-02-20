@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="smtp.class.php" server="ftp.espacedev2.com/lando/" local="130616776466748855" remote="130173012000000000" Dst="1" />
-<file name="sendEmail.func.php" server="ftp.espacedev2.com/lando/" local="130616776466748855" remote="130562158800000000" Dst="1" />
-<file name="phpmailer.class.php" server="ftp.espacedev2.com/lando/" local="130616776466778777" remote="130173012000000000" Dst="1" />
+<file name="phpmailer.class.php" server="ftp.espacedev2.com" local="130689353240147593" remote="130689351000000000" Dst="1" />
+<file name="sendEmail.func.php" server="ftp.espacedev2.com" local="130689353240147593" remote="130689351600000000" Dst="1" />
+<file name="smtp.class.php" server="ftp.espacedev2.com" local="130689353240616359" remote="130689351600000000" Dst="1" />
+<file name="sendEmail.func.php" server="ftp.espacedev2.com/lando/" local="130689353240147593" remote="130689354000000000" Dst="1" />
+<file name="phpmailer.class.php" server="ftp.espacedev2.com/lando/" local="130689353240147593" remote="130689354000000000" Dst="1" />
+<file name="smtp.class.php" server="ftp.espacedev2.com/lando/" local="130689353240616359" remote="130689354000000000" Dst="1" />
 </dwsync>

@@ -5,6 +5,9 @@
 |
 | Arguments : custom_query
 |
+| Faire un foreach pour extraire les données,
+| sans indiquer le nom de la table
+|
 | @return array
 |
 */

@@ -1,8 +1,5 @@
 <?php
-require_once("app/helpers/record.class.php");
-/**
- * SluggedRecord class.
- */
+
 class SluggedRecord extends Record {
 
 	var $source_field;
@@ -137,6 +134,4 @@ class SluggedRecord extends Record {
 		}
 	}
 
-
 }
-?>

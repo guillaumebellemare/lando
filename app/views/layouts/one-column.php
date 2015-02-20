@@ -1,23 +1,23 @@
-<?php if(@include('includes/app_messages.inc.php')); ?>
+<?php if(@include(COMPLETE_URL_ROOT . 'app/core/app_messages.php')); ?>
 <!doctype html>
 <html>
 <head>
-<?php if(@include('includes/meta.inc.php')) ?>
-<?php if(@include('includes/header.inc.php')) ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/meta.php')) ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/header.php')) ?>
 <?php startblock('extended-styles') ?>
 <?php endblock() ?>
 </head>
 <body>
-<?php if(@include('includes/analyticstracking.inc.php')); ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/analyticstracking.php')); ?>
 <div id="l-wrap">
   <?php startblock('header') ?>
   <header>
     <section>
-      <?php include('includes/nav.inc.php'); ?>
+      <?php include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/nav.php'); ?>
       <a href="<?php echo URL_ROOT.$lang2_trans; ?>/">Langue</a>
       <div class="l-grid">
         <div class="l-grid-100">
-          <?php if(@include('includes/slider.inc.php')); ?>
+          <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/slider.php')); ?>
         </div>
       </div>
     </section>
@@ -34,8 +34,8 @@
     </section>
   </div>
 </div>
-<?php if(@include('includes/footer.inc.php')); ?>
-<?php if(@include('includes/scripts.inc.php')); ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/footer.php')); ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/scripts.php')); ?>
 <?php startblock('extended-scripts') ?>
 <?php endblock() ?>
 </body>
