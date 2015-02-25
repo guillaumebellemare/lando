@@ -21,9 +21,9 @@ class IndexController extends \AppController {
 		# Slug creation
 		
 		# Data
-		// $foo = $base->getAllBar();
+		//$foo = $base->getAllBar();
 		
-		// return array("foo" => $foo);
+		//return array("foo" => $foo);
 	}
 	
 }

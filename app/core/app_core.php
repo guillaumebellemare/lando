@@ -108,15 +108,21 @@ require_once("app/core/app_routes.php");
 |
 |
 */
+ 
+
 if($debug==true)
 {
-	if($_SERVER['REMOTE_ADDR']==='65.92.227.46')
+	if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
 	{
 		$app_messages[] = '<strong>IP address: </strong>'.$_SERVER['REMOTE_ADDR'].'<br>';
 		error_reporting(E_ALL);
 		ini_set("display_errors", 1);
 		$db->debug = true;
 		$debug_on = true;
+		//http://adodblite.sourceforge.net/debugconsole.php
+		//$db->debug_console = true;
+		//include('zap/lib/php/adodb5/adodb-errorhandler.inc.php'); 
+		//var_dump($db->query_list);
 		//require_once("app/helpers/sitemap/sitemap-generator.php");
 	}
 }

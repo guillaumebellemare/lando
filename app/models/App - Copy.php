@@ -9,161 +9,64 @@
 |
 */
 
-class App extends SluggedRecord {
+class Appt extends SluggedRecord {
 	
-	private $from;
-	private $where = array();
-	private $order_by = array();
-	private $joined_table;
-	private $joined_table_code;
-	private $limit;
-	private $table_rows;
-	private $a_table_rows = array();
-
-    function select($table)
+	
+	# Method chaining #
+	# http://stackoverflow.com/questions/3724112/php-method-chaining
+	
+	/* $foo = $bar->select()->where()->get(); */	
+    /*
+	function select()
     {
-		
-		if($table)
-		{			
-			$data = array();
-			$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
-	
-			$q = "SHOW COLUMNS FROM {$table}";
-			$rsColumns = $this->db->Execute($q);
-			
-			# Select rows names
-			$this->table_rows = "";
-			$this->i = 1;
-			while(!$rsColumns->EOF){
-				
-				# Put fields in an array
-				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"];
-				
-				# Put fields in a string
-				if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]; else $this->table_rows .= $table.".".$rsColumns->fields["Field"];
-				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				
-				$this->i++;
-			$rsColumns->MoveNext();
-			}
-			$rsColumns->Close();
-		}
-		
+        $this->str .= "SELECT * FROM foo";
         return $this;
     }
-	
-	function left_join($joined_table)
-	{
-		
-       if($joined_table)
-	   {
-		   $this->joined_table = $joined_table;
-		   $this->joined_table_code = rtrim($joined_table, "s");
-		   
-			$q = "SHOW COLUMNS FROM {$joined_table}";
-			$rsColumns = $this->db->Execute($q);
-			
-			# Select rows names
-			while(!$rsColumns->EOF){
-				
-				# Put fields of the joined table in the array
-				$current_field = $rsColumns->fields["Field"];
-				$this->a_table_rows[$this->i] = $joined_table.".".$current_field;
-	
-				# Put fields in a string
-				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
-				
-				$this->i++;
-			$rsColumns->MoveNext();
-			}
-			$rsColumns->Close();
-	    }
 
-		return $this;
-	}
+    function where()
+    {
+        $this->str .= " WHERE bar = 0";
+        return $this;
+    }
+
+    function get()
+    {
+        return $this->str;
+    }
+	*/
 	
+	
+	private $query;
+	private $select;
+	private $where;
+
+	function select($fields)
+    {
+		if(!$fields) $fields = '*';
+
+        $this->select .= "SELECT $fields";
+        return $this;
+    }
+
+    function from($table)
+    {
+        $this->from .= " FROM $table";
+        return $this;
+    }
+
     function where($where)
     {
-       if($where) $this->where[] = $where;
+       if($where) $this->where .= " WHERE $where";
         return $this;
     }
-	
-    function order_by($order_by=NULL)
-    {
-       if($order_by) $this->order_by[] = $order_by;
-        return $this;
-    }
-	
-	function limit($limit)
-	{
-		if($limit) $this->limit = $limit;
-		return $this->all();
-	}
 	
 	function all()
-    {		
-		global $app_messages;
-		
-		$q = "SELECT {$this->table_rows} FROM {$this->table}";
-		if($this->joined_table) $q .= " LEFT JOIN {$this->joined_table} ON {$this->table}.{$this->joined_table_code}_id = {$this->joined_table}.id";
-		$q .= " WHERE ";
-		if($this->where) 
-		{
-			foreach($this->where as $where_statement)
-			{
-				$q .= "{$where_statement} AND ";
-			}
-		}
-		$q .= " {$this->table}.active = 1";
-		if($this->joined_table) $q .= " AND {$this->joined_table}.active = 1";
-		if($this->order_by) 
-		{
-			$q .= " ORDER BY ";
-			$i = 0;
-			foreach($this->order_by as $order_statement)
-			{
-				if($i!=0) $q .= ", ";
-				$q .= "{$order_statement}";
-				$i++;
-			}
-		}
-		if($this->limit) $q .= " LIMIT {$this->limit}";
-		$rsList = $this->db->Execute($q);
-		
-		# Put all data in an array
-		$i = 0;
-				
-		while(!$rsList->EOF){
-			$data[$i] = array();
-			foreach($this->a_table_rows as $table_row)
-			{
-				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
-				$table_row = explode(".", $table_row);
-				$table_row_complete = $table_row[0].'.'.$table_row[1];
-				$data[$i][$table_row_complete] = $rsList->fields[$table_field];
-			}
-			$i++;
-			
-		$rsList->MoveNext();
-		}
-		$rsList->Close();
-
-		if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
-		
-		if($this->from) unset($this->from);
-		if($this->where) unset($this->where);
-		if($this->order_by) unset($this->order_by);
-		if($this->joined_table) unset($this->joined_table);
-		if($this->joined_table_code) unset($this->joined_table_code);
-		if($this->limit) unset($this->limit);
-		if($this->table_rows) unset($this->table_rows);
-		if($this->a_table_rows) unset($this->a_table_rows);
-
-        return $data;
+    {
+		$this->query = $this->select.$this->from.$this->where;
+        return $this->query;
     }
 	
-
+	
 	# Arguments = Table name, Column to order, Has slug 1/0?
 	function get($table=NULL, $sortBy=NULL, $hasSlug=NULL){
 		
