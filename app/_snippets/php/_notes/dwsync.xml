@@ -10,14 +10,14 @@
 <file name="remove.txt" server="ftp.espacedev2.com" local="130689353234414229" remote="130677277800000000" Dst="1" />
 <file name="routes.txt" server="ftp.espacedev2.com" local="130689353234414229" remote="130689310800000000" Dst="1" />
 <file name="save.txt" server="ftp.espacedev2.com" local="130689353234674428" remote="130689306600000000" Dst="1" />
-<file name="create_slug_field.txt" server="ftp.espacedev2.com/lando/" local="130689353230821904" remote="130689354000000000" Dst="1" />
-<file name="custom_get.txt" server="ftp.espacedev2.com/lando/" local="130689353231759354" remote="130689354000000000" Dst="1" />
-<file name="delete.txt" server="ftp.espacedev2.com/lando/" local="130689353231759354" remote="130689354000000000" Dst="1" />
-<file name="email.txt" server="ftp.espacedev2.com/lando/" local="130689353231915606" remote="130689354000000000" Dst="1" />
-<file name="foreach.txt" server="ftp.espacedev2.com/lando/" local="130689353233083297" remote="130689354000000000" Dst="1" />
-<file name="get.txt" server="ftp.espacedev2.com/lando/" local="130689353233073281" remote="130689354000000000" Dst="1" />
-<file name="join.txt" server="ftp.espacedev2.com/lando/" local="130689353233083297" remote="130689354000000000" Dst="1" />
-<file name="remove.txt" server="ftp.espacedev2.com/lando/" local="130689353234414229" remote="130689354000000000" Dst="1" />
-<file name="routes.txt" server="ftp.espacedev2.com/lando/" local="130689353234414229" remote="130689354000000000" Dst="1" />
-<file name="save.txt" server="ftp.espacedev2.com/lando/" local="130689353234674428" remote="130689354000000000" Dst="1" />
+<file name="create_slug_field.txt" server="ftp.espacedev2.com/lando/" local="130705547586846584" remote="130689318000000000" Dst="2" />
+<file name="custom_get.txt" server="ftp.espacedev2.com/lando/" local="130705547589036591" remote="130689318000000000" Dst="2" />
+<file name="delete.txt" server="ftp.espacedev2.com/lando/" local="130705547589036591" remote="130689318000000000" Dst="2" />
+<file name="email.txt" server="ftp.espacedev2.com/lando/" local="130705547589192853" remote="130689318000000000" Dst="2" />
+<file name="foreach.txt" server="ftp.espacedev2.com/lando/" local="130705547590462365" remote="130689318000000000" Dst="2" />
+<file name="get.txt" server="ftp.espacedev2.com/lando/" local="130705547590462365" remote="130689318000000000" Dst="2" />
+<file name="join.txt" server="ftp.espacedev2.com/lando/" local="130705547590462365" remote="130689318000000000" Dst="2" />
+<file name="remove.txt" server="ftp.espacedev2.com/lando/" local="130705547591302422" remote="130689318000000000" Dst="2" />
+<file name="routes.txt" server="ftp.espacedev2.com/lando/" local="130705547591302422" remote="130689318000000000" Dst="2" />
+<file name="save.txt" server="ftp.espacedev2.com/lando/" local="130705547591302422" remote="130689318000000000" Dst="2" />
 </dwsync>

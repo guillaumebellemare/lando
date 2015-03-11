@@ -3,7 +3,9 @@
 <file name="record.class.php" server="ftp.espacedev2.com" local="130689353241219234" remote="130689321600000000" Dst="1" />
 <file name="sluggedrecord.class.php" server="ftp.espacedev2.com" local="130689353242899502" remote="130689321600000000" Dst="1" />
 <file name="lang.class.php" server="ftp.espacedev2.com" local="130689353238347017" remote="130689321000000000" Dst="1" />
-<file name="lang.class.php" server="ftp.espacedev2.com/lando/" local="130689353238347017" remote="130689354000000000" Dst="1" />
-<file name="record.class.php" server="ftp.espacedev2.com/lando/" local="130689353241219234" remote="130689354000000000" Dst="1" />
-<file name="sluggedrecord.class.php" server="ftp.espacedev2.com/lando/" local="130689353242899502" remote="130689354000000000" Dst="1" />
+<file name="lang.class.php" server="ftp.espacedev2.com/lando/" local="130705547599463003" remote="130689318000000000" Dst="2" />
+<file name="record.class.php" server="ftp.espacedev2.com/lando/" local="130705547602943390" remote="130689318000000000" Dst="2" />
+<file name="sluggedrecord.class.php" server="ftp.espacedev2.com/lando/" local="130705547608223732" remote="130689318000000000" Dst="2" />
+<file name="meta.class.php" server="ftp.espacedev2.com/lando/" local="130705547601983292" remote="130705505400000000" Dst="2" />
+<file name="translate.class.php" server="ftp.espacedev2.com/lando/" local="130705547613920051" remote="130705505400000000" Dst="2" />
 </dwsync>

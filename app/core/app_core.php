@@ -67,7 +67,8 @@ require_once("app/helpers/ti/ti.php");
 */
 require_once("app/core/app_controller.php");
 require_once("app/helpers/custom_methods/index.php");
-
+if(@require_once("app/helpers/meta.class.php"));
+if(@require_once("app/helpers/translate.class.php"));
 
 /*
 |--------------------------------------------------------------------------
@@ -81,6 +82,7 @@ foreach (glob("app/models/*.php") as $filename)
 {
 	require_once($filename);
 }
+$user = new User();
 
 
 /*
@@ -119,11 +121,6 @@ if($debug==true)
 		ini_set("display_errors", 1);
 		$db->debug = true;
 		$debug_on = true;
-		//http://adodblite.sourceforge.net/debugconsole.php
-		//$db->debug_console = true;
-		//include('zap/lib/php/adodb5/adodb-errorhandler.inc.php'); 
-		//var_dump($db->query_list);
-		//require_once("app/helpers/sitemap/sitemap-generator.php");
 	}
 }
 

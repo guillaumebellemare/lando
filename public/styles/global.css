@@ -27,19 +27,19 @@ table tr:nth-child(odd) td { background:#FFF; }
 label { display:block; }
 input, textarea, select { font-family:Arial,Helvetica,sans-serif; }
 input[type=text], textarea, select { -webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:1px solid #CCC; display:block; width:100%; margin:0 0 10px 0; padding:8px 8px; }
-input:focus, textarea:focus, select:focus { outline:none; border:1px solid #999; }
+input:focus, textarea:focus, input:hover, textarea:hover, select:focus, select:hover { outline:none; border:1px solid #999; }
 textarea { resize:vertical; min-height:150px; }
 input[type=submit] { cursor:pointer; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
-input[type='radio'] { opacity:0; float:left; width:16px; height:16px; cursor:pointer; padding:0; margin:0; }
+input[type='radio'] { opacity:0; float:left; width:16px; height:16px; cursor:default; padding:0; margin:0; }
 input[type='radio'] + label { background-image:url(../images/common/radio-off.png); background-repeat:no-repeat; height:16px; padding:3px 0 0 20px; display:block; margin:0 0 8px 0; }
 input[type='radio']:checked + label { background-image:url(../images/common/radio-on.png); }
-input[type='checkbox'] { opacity:0; float:left; width:16px; height:16px; cursor:pointer; padding:0; margin:0; }
+input[type='checkbox'] { opacity:0; float:left; width:16px; height:16px; cursor:default; padding:0; margin:0; }
 input[type='checkbox'] + label { background-image:url(../images/common/check-off.png); background-repeat:no-repeat; height:16px; padding:3px 0 0 20px; display:block; margin:0 0 8px 0; }
 input[type='checkbox']:checked + label { background-image:url(../images/common/check-on.png); }
 input[type="text"]:disabled { background:#dddddd; }
+input[type="text"]:disabled:hover { border:1px solid #CCC; }
 select { background:url(../images/common/form-select.png) no-repeat center right; }
-select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right #52a2ff; border:1px solid #52a2ff; color:#FFF; }
-select:hover option, select:focus option { background:#FFF; color:#000; }
+select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right; }
 ::selection { background:#0088CC; color:#FFF; }
 ::-moz-selection { background:#0088CC; border:1px solid #0088CC; color:#FFF; }
 ::-webkit-input-placeholder { color:#999; }
@@ -52,11 +52,14 @@ select:hover option, select:focus option { background:#FFF; color:#000; }
 -------------------------------------------------------------------*/
 .navigation { position:relative; z-index:100; font-size:0;}
 .navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; }
-.navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; }
+.navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0; }
 .navigation ul li:before { content:""; padding:0; float:none; }
-.navigation > ul > li > a { display:block; padding:10px; background:#CCC; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
-.navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; }
-.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { background:#FFF; }
+.navigation > ul > li > a { display:block; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
+.navigation > ul > li > ul > li { margin:0; text-indent:0px; }
+.navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; margin:0; }
+.navigation > ul > li > ul > li > a { padding:7px 10px; background:#FFF; display:block; }
+.navigation > ul > li > ul > li:hover > a { background:#CCC; }
+.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { color:#000; }
 .btn { display:inline-block; font-size:14px; padding:10px 12px; color:#FFF; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; opacity:0.8; margin:0 5px 0 0; }
 .btn:hover { opacity:1; }
 #map_canvas { height:300px; }

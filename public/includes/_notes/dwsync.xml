@@ -8,12 +8,12 @@
 <file name="footer.php" server="ftp.espacedev2.com" local="130689353270200922" remote="130689350400000000" Dst="1" />
 <file name="analyticstracking.php" server="ftp.espacedev2.com" local="130689353269006331" remote="130677277800000000" Dst="1" />
 <file name="slider.php" server="ftp.espacedev2.com" local="130689353272361058" remote="130677304800000000" Dst="1" />
-<file name="header.php" server="ftp.espacedev2.com/lando/" local="130693549133680627" remote="130692984000000000" Dst="1" />
-<file name="analyticstracking.php" server="ftp.espacedev2.com/lando/" local="130689353269006331" remote="130689354000000000" Dst="1" />
-<file name="footer.php" server="ftp.espacedev2.com/lando/" local="130689353270200922" remote="130689354000000000" Dst="1" />
-<file name="nav.php" server="ftp.espacedev2.com/lando/" local="130689353271180987" remote="130689354000000000" Dst="1" />
-<file name="messages.php" server="ftp.espacedev2.com/lando/" local="130689353271160988" remote="130689354000000000" Dst="1" />
-<file name="meta.php" server="ftp.espacedev2.com/lando/" local="130689356594726458" remote="130689356400000000" Dst="1" />
-<file name="slider.php" server="ftp.espacedev2.com/lando/" local="130689353272361058" remote="130689354000000000" Dst="1" />
-<file name="scripts.php" server="ftp.espacedev2.com/lando/" local="130689353271841025" remote="130689354000000000" Dst="1" />
+<file name="header.php" server="ftp.espacedev2.com/lando/" local="130705547649239981" remote="130692948000000000" Dst="2" />
+<file name="analyticstracking.php" server="ftp.espacedev2.com/lando/" local="130705547646187382" remote="130689318000000000" Dst="2" />
+<file name="footer.php" server="ftp.espacedev2.com/lando/" local="130705547649239981" remote="130689318000000000" Dst="2" />
+<file name="nav.php" server="ftp.espacedev2.com/lando/" local="130705547653230623" remote="130689318000000000" Dst="2" />
+<file name="messages.php" server="ftp.espacedev2.com/lando/" local="130705547649590040" remote="130689318000000000" Dst="2" />
+<file name="meta.php" server="ftp.espacedev2.com/lando/" local="130705547653230623" remote="130705511400000000" Dst="2" />
+<file name="slider.php" server="ftp.espacedev2.com/lando/" local="130705547655961068" remote="130689318000000000" Dst="2" />
+<file name="scripts.php" server="ftp.espacedev2.com/lando/" local="130705547653230623" remote="130689318000000000" Dst="2" />
 </dwsync>

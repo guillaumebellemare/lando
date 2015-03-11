@@ -13,8 +13,8 @@
   <?php startblock('header') ?>
   <header>
     <section>
+      <a href="<?=URL_ROOT.$lang2_trans.Translate::translateFromPage()?>"><?=$global["lang"]?></a>
       <?php include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/nav.php'); ?>
-      <a href="<?php echo URL_ROOT.$lang2_trans; ?>/">Langue</a>
       <div class="l-grid">
         <div class="l-grid-100">
           <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/slider.php')); ?>

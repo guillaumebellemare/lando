@@ -8,12 +8,12 @@
 <file name="reset.css" server="ftp.espacedev2.com" local="130689353283581894" remote="130689349200000000" Dst="1" />
 <file name="fancybox.css" server="ftp.espacedev2.com" local="130689353280941645" remote="130689346200000000" Dst="1" />
 <file name="flexslider.css" server="ftp.espacedev2.com" local="130689353281561670" remote="130677278400000000" Dst="1" />
-<file name="app.css" server="ftp.espacedev2.com/lando/" local="130693549142990055" remote="130692986400000000" Dst="1" />
-<file name="fancybox.css" server="ftp.espacedev2.com/lando/" local="130689353280941645" remote="130689354000000000" Dst="1" />
-<file name="flexslider.css" server="ftp.espacedev2.com/lando/" local="130689353281561670" remote="130689354000000000" Dst="1" />
-<file name="global.css" server="ftp.espacedev2.com/lando/" local="130689353282161711" remote="130689354000000000" Dst="1" />
-<file name="layout.css" server="ftp.espacedev2.com/lando/" local="130689353282521727" remote="130689354000000000" Dst="1" />
-<file name="normalize.css" server="ftp.espacedev2.com/lando/" local="130689353282601741" remote="130689354000000000" Dst="1" />
-<file name="queries.css" server="ftp.espacedev2.com/lando/" local="130689353284181838" remote="130689354000000000" Dst="1" />
-<file name="reset.css" server="ftp.espacedev2.com/lando/" local="130689353283581894" remote="130689354000000000" Dst="1" />
+<file name="app.css" server="ftp.espacedev2.com/lando/" local="130705547674349666" remote="130692950400000000" Dst="2" />
+<file name="fancybox.css" server="ftp.espacedev2.com/lando/" local="130705547676050000" remote="130689318000000000" Dst="2" />
+<file name="flexslider.css" server="ftp.espacedev2.com/lando/" local="130705555963359785" remote="130705519800000000" Dst="2" />
+<file name="global.css" server="ftp.espacedev2.com/lando/" local="130705559959188500" remote="130705523400000000" Dst="2" />
+<file name="layout.css" server="ftp.espacedev2.com/lando/" local="130705547676900170" remote="130689318000000000" Dst="2" />
+<file name="normalize.css" server="ftp.espacedev2.com/lando/" local="130705547676950196" remote="130689318000000000" Dst="2" />
+<file name="queries.css" server="ftp.espacedev2.com/lando/" local="130705547676950196" remote="130689318000000000" Dst="2" />
+<file name="reset.css" server="ftp.espacedev2.com/lando/" local="130705547677607774" remote="130689318000000000" Dst="2" />
 </dwsync>

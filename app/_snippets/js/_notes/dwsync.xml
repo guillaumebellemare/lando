@@ -4,8 +4,8 @@
 <file name="map.txt" server="ftp.espacedev2.com" local="130689353229570839" remote="130677277800000000" Dst="1" />
 <file name="stacktable.txt" server="ftp.espacedev2.com" local="130689353230665591" remote="130677277800000000" Dst="1" />
 <file name="validate.txt" server="ftp.espacedev2.com" local="130689353230665591" remote="130677277800000000" Dst="1" />
-<file name="confirm.txt" server="ftp.espacedev2.com/lando/" local="130689353229570839" remote="130689354000000000" Dst="1" />
-<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130689353229570839" remote="130689354000000000" Dst="1" />
-<file name="stacktable.txt" server="ftp.espacedev2.com/lando/" local="130689353230665591" remote="130689354000000000" Dst="1" />
-<file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130689353230665591" remote="130689354000000000" Dst="1" />
+<file name="confirm.txt" server="ftp.espacedev2.com/lando/" local="130705547583252723" remote="130689318000000000" Dst="2" />
+<file name="map.txt" server="ftp.espacedev2.com/lando/" local="130705547583408985" remote="130689318000000000" Dst="2" />
+<file name="stacktable.txt" server="ftp.espacedev2.com/lando/" local="130705547585909007" remote="130689318000000000" Dst="2" />
+<file name="validate.txt" server="ftp.espacedev2.com/lando/" local="130705547585909007" remote="130689318000000000" Dst="2" />
 </dwsync>
