@@ -2,4 +2,3 @@
 	$navigation = array(
 		"index" => "Home",
 	);
-?>

@@ -6,4 +6,3 @@
 		"index.description" => "",
 		"index.keywords" => "",
 	);
-?>

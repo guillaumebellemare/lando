@@ -3,4 +3,3 @@
 		"title" => "Welcome",
 		"lang" => "FR",
 	);
-?>

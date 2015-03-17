@@ -1,5 +1,4 @@
 <?php
-
-$routes = array(
-	"index" => "index",
-);
+	$routes = array(
+		"index" => "index",
+	);

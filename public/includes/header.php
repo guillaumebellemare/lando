@@ -9,3 +9,4 @@
 <link rel="stylesheet" href="<?=URL_ROOT . PUBLIC_FOLDER?>styles/fancybox.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=URL_ROOT . PUBLIC_FOLDER?>styles/queries.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=URL_ROOT . PUBLIC_FOLDER?>styles/app.css" type="text/css" media="screen" />
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

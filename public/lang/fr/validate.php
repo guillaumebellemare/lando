@@ -15,4 +15,3 @@
 		"comment_required" 		=> "Vous devez entrer un commentaire.",
 		"question_required" 	=> "Vous devez entrer une question.",
 	);
-?>
