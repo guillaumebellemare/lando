@@ -1,5 +1,14 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Slugged Record Class
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+
 class SluggedRecord {
 
 	protected $table;
@@ -18,10 +27,10 @@ class SluggedRecord {
 	 * @return void
 	 */
 	function __construct($db=NULL, $lang3=NULL, $table=NULL){
+		
 		$this->db = $db;
 		$this->lang3 = $lang3;
 		$this->table = $table;
-		$this->sortBy = " ORDER BY {$this->table}.rank";
 	}
 
 	/**
@@ -150,5 +159,22 @@ class SluggedRecord {
 			$lang3 = 'fre';
 		}
 	}
+	
+	/**
+	 * get function.
+	 * Avant de renvoyer le contenu du champ, on s'assure que la requête de sélection de l'enregistrement en cours a bien été fait auparavant.
+	 * @access public
+	 * @param mixed $field Nom du champ à retourner.
+	 * @return Le contenu d'un champ de l'enregistrement selectionné.
+	 */
+	function get($field){
+		if(!$this->rsCurrent) $this->getCurrent();
+		return $this->rsCurrent->fields($field);
+	}
+	
+	function getCodeFromTable(){
+		
+	}
+
 
 }

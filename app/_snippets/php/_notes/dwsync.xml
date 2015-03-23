@@ -10,7 +10,7 @@
 <file name="remove.txt" server="ftp.espacedev2.com" local="130689353234414229" remote="130677277800000000" Dst="1" />
 <file name="routes.txt" server="ftp.espacedev2.com" local="130689353234414229" remote="130689310800000000" Dst="1" />
 <file name="save.txt" server="ftp.espacedev2.com" local="130689353234674428" remote="130689306600000000" Dst="1" />
-<file name="create_slug_field.txt" server="ftp.espacedev2.com/lando/" local="130705547586846584" remote="130689318000000000" Dst="2" />
+<file name="create_slug_field.txt" server="ftp.espacedev2.com/lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
 <file name="custom_get.txt" server="ftp.espacedev2.com/lando/" local="130705547589036591" remote="130689318000000000" Dst="2" />
 <file name="delete.txt" server="ftp.espacedev2.com/lando/" local="130705547589036591" remote="130689318000000000" Dst="2" />
 <file name="email.txt" server="ftp.espacedev2.com/lando/" local="130705547589192853" remote="130689318000000000" Dst="2" />

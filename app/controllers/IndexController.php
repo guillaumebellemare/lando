@@ -9,11 +9,11 @@
 |
 */
 
-class IndexController extends \AppController {
+class IndexController extends AppController {
 
 	function index() {
 		
-		global $lang3;
+		global $lang2, $lang3;
 		
 		# Model declaration
 		$base = new Base();
@@ -21,7 +21,7 @@ class IndexController extends \AppController {
 		# Slug creation
 		
 		# Data
-		$foo = $base->getAllBar();
+		//$foo = $base->getAllBar();
 		
 		//return array("foo" => $foo);
 	}

@@ -33,7 +33,7 @@ while ($currentRoute = current($routes)) {
 			$current_route = explode('Controller', $current_controller);
 			$current_route = strtolower($current_route[0]);
 			$current_function = $current_app_route[1];
-			if($debug==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
+			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
 			$controller = new $current_controller($db, $lang3);
 			$controller_loaded = true;
@@ -47,17 +47,17 @@ while ($currentRoute = current($routes)) {
 				${key($currentArrays)} = ($currentArrays[key($currentArrays)]);
 			next($currentArrays);
 			}
-		}elseif(isset($currentArrays) && $debug==true && $debug_on==true){
+		}elseif(isset($currentArrays) && DEBUG==true && $debug_on==true){
 			$app_errors[] = "Vous devez retourner un array[] dans la fonction $current_function() de $current_controller.";
 		}
 		
 		// View file handling
 		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
-			if($debug==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
+			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
 			require_once('app/views/'.$current_route.'/'.$current_function.'.php');
 			$view_loaded = true;
-		}elseif($debug==true && $debug_on==true && !$view_loaded){
+		}elseif(DEBUG==true && $debug_on==true && !$view_loaded){
 			$app_errors[] = "<hr class='app-hr'>Aucune view trouvée correspondant à $current_function dans app/views/$current_route/$current_function.php";	
 			require_once('app/views/404/errors.php');	
 			$view_loaded = true;		
@@ -69,6 +69,6 @@ while ($currentRoute = current($routes)) {
 }
 // Error 404
 if($page_setted==0) {
-	if($debug==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/404/index.php';
+	if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/404/index.php';
 	require_once('app/views/404/index.php');			
 }

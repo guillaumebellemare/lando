@@ -20,6 +20,35 @@ class App extends SluggedRecord {
 	private $table_rows;
 	private $a_table_rows = array();
 
+	public function __construct($table=NULL) {
+		
+		global $lang3;
+		
+		# Create ADO object & connect to the database
+		$db = ADONewConnection(DB_TYPE);
+		$db->Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
+		
+		# Allow MySQL to query in utf8 encoding
+		$db->Execute("SET NAMES utf8");
+
+		$this->db = $db;
+		$this->lang3 = $lang3;
+		$this->table = $table;
+		
+		if(DEBUG==true)
+		{
+			if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
+			{
+				error_reporting(E_ALL);
+				ini_set("display_errors", 1);
+				$db->debug = true;
+			}
+		}
+
+		parent::__construct($this->db, $this->lang3, $this->table);
+
+	}
+
     function select($table)
     {
 		
@@ -149,7 +178,7 @@ class App extends SluggedRecord {
 		}
 		$rsList->Close();
 
-		if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
+		//if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
 		
 		if($this->from) unset($this->from);
 		if($this->where) unset($this->where);

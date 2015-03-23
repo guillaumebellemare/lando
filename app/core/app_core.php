@@ -111,14 +111,11 @@ require_once("app/core/app_routes.php");
 */
  
 
-if($debug==true)
+if(DEBUG==true)
 {
 	if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
 	{
 		$app_messages[] = '<strong>IP address: </strong>'.$_SERVER['REMOTE_ADDR'].'<br>';
-		error_reporting(E_ALL);
-		ini_set("display_errors", 1);
-		$db->debug = true;
 		$debug_on = true;
 	}
 }
