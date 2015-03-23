@@ -13,7 +13,7 @@ class Translate {
 			include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'lang/'.$lang2_trans.'/routes.php');
 			$translated_route .= $routes["$key"] ;
 			include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'lang/'.$lang2.'/routes.php');
-			return '/'.$translated_route;
+			if($translated_route) return '/'.$translated_route; else return false;
 		}else{
 			return false;
 		}

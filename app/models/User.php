@@ -10,7 +10,7 @@ class User extends \App {
 	
 	function authenticate($username, $password) {
 		
-		global $db, $errors, $global;
+		global $errors, $global;
 		
 		if(session_id() == '') session_start();
 		
@@ -26,7 +26,7 @@ class User extends \App {
 				$password = trim($password);
 				
 				$qUsers = "SELECT {$this->table}.id, {$this->table}.password, {$this->table}.username FROM {$this->table} WHERE ({$this->table}.username = '$username' OR {$this->table}.email = '$username') AND {$this->table}.password = MD5(CONCAT('".UNIQUE_SALT."', MD5('$password')))";
-				$rsUsers = $db->Execute($qUsers);
+				$rsUsers = $this->db->Execute($qUsers);
 				
 				# Verify if the user exist
 				if(!$rsUsers->EOF){
@@ -76,10 +76,8 @@ class User extends \App {
 	
 	function getUserType() {
 		
-		global $db;
-		$db->debug = false;
 		$q = "SELECT {$this->table}.id, {$this->table}.type_id FROM {$this->table} WHERE {$this->table}.id='".$_SESSION['id']."'";
-		$rsList = $db->Execute($q);
+		$rsList = $this->db->Execute($q);
 		return $rsList->fields["type_id"];
 		
 	}
@@ -100,10 +98,10 @@ class User extends \App {
 	
 	function forgotPassword($username) {
 	
-		global $db, $lang2, $routes, $errors, $messages, $login;
+		global $lang2, $routes, $errors, $messages, $login;
 		
 		$q = "SELECT {$this->table}.id, {$this->table}.email FROM {$this->table} WHERE {$this->table}.username='{$username}' OR {$this->table}.email='{$username}'";
-		$rsList = $db->Execute($q);
+		$rsList = $this->db->Execute($q);
 		
 		if($rsList->RecordCount() && $username!='')
 		{
@@ -127,7 +125,7 @@ class User extends \App {
 			$record["user_id"] = $rsList->fields["id"];
 			$record["created"] = date('Y-m-d H:i:s');
 			$record["updated"] = date('Y-m-d H:i:s');
-			$db->AutoExecute("recoveries", $record, 'INSERT');
+			$this->db->AutoExecute("recoveries", $record, 'INSERT');
 
 			# Email information
 			$mail->Subject	= "Récupération de votre mot de passe"; 
@@ -167,11 +165,9 @@ class User extends \App {
 	}
 	
 	function verifyRecoveryToken($token, $user) {
-		
-		global $db;
-		
+				
 		$q = "SELECT recoveries.id, recoveries.created FROM recoveries LEFT JOIN users ON users.id = recoveries.user_id WHERE recoveries.recovery_token='{$token}' AND {$this->table}.email='{$user}'";
-		$rsList = $db->Execute($q);
+		$rsList = $this->db->Execute($q);
 		
 		$expired_time = date($rsList->fields["created"]);
 		$expired_time = strtotime(date("Y-m-d H:i:s", strtotime($expired_time)) . " +1 hour");
@@ -186,11 +182,9 @@ class User extends \App {
 	}
 	
 	function updateUserPassword($new_password, $email) {
-	
-		global $db;
-		
+			
 		$q = "SELECT {$this->table}.id FROM {$this->table} WHERE {$this->table}.email='{$email}'";
-		$rsList = $db->Execute($q);
+		$rsList = $this->db->Execute($q);
 				
 		$record["password"] = md5(UNIQUE_SALT.md5($new_password));
 		$this->db->AutoExecute($this->table, $record, 'UPDATE', 'id = '.$rsList->fields["id"].'');
@@ -206,7 +200,6 @@ class User extends \App {
 		if(isset($_POST['action']) && $_POST['action']=='create')
 		{
 			global $lang2;
-			global $db;
 	
 			$out = '';
 			 
@@ -220,7 +213,7 @@ class User extends \App {
 				if($_POST['tUsername']!=NULL)	$record["username"] = $_POST['tUsername'];
 				if($_POST['tPassword']!=NULL)	$record["password"] =  MD5($_POST['tPassword']);
 							
-				$db->AutoExecute('users', $record,'INSERT');
+				$this->db->AutoExecute('users', $record,'INSERT');
 	
 				$messages[] .= 'L\'utilisateur <strong>'.$_POST['tName'].' '.$_POST['tSurname'].'</strong> a été créé.';
 			}
@@ -236,7 +229,7 @@ class User extends \App {
 	
 	function update(&$message, &$error, $userID=false) {
 		
-		global $db, $lang2;
+		global $lang2;
 		$out = '';
 		
 		if(isset($_POST['action']) && $_POST['action']=='update')
@@ -251,7 +244,7 @@ class User extends \App {
 			if($_POST['sLevel']!=NULL)		$record["level"] = $_POST['sLevel'];
 			if($_POST['sRegion']!=NULL)		$record["region_id"] = $_POST['sRegion'];
 						
-			$db->AutoExecute('users' ,$record,'UPDATE', 'id ='.$_POST['tUserId']);
+			$this->db->AutoExecute('users' ,$record,'UPDATE', 'id ='.$_POST['tUserId']);
 
 			$message[] .= 'L\'utilisateur <strong>'.$_POST['tName'].' '.$_POST['tSurname'].'</strong> a été modifié.';
 			

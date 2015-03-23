@@ -27,7 +27,6 @@ $lang2 = $lang->lang2;
 $lang3 = $lang->lang3;
 $lang2_trans = $lang->lang2_trans;
 
-require_once("app/helpers/record.class.php");
 require_once("app/helpers/sluggedrecord.class.php");
 
 
