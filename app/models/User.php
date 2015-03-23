@@ -1,16 +1,15 @@
 <?php
 
-class User extends \App {
+class User extends App {
 	
 	public function __construct() {
-		global $db, $lang3;
 		$this->table = 'users';
-		parent::__construct($db, $lang3, $this->table);
+		parent::__construct($this->table);
 	}
 	
 	function authenticate($username, $password) {
 		
-		global $errors, $global;
+		global $global, $errors;
 		
 		if(session_id() == '') session_start();
 		
