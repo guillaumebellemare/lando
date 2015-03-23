@@ -226,7 +226,7 @@ class User extends App {
 		
 	}
 	
-	function update(&$message, &$error, $userID=false) {
+	function update(&$messages, &$errors, $userID=false) {
 		
 		global $lang2;
 		$out = '';

@@ -35,7 +35,7 @@ while ($currentRoute = current($routes)) {
 			$current_function = $current_app_route[1];
 			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
-			$controller = new $current_controller($db, $lang3);
+			$controller = new $current_controller();
 			$controller_loaded = true;
 		}
 		
