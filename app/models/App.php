@@ -20,6 +20,7 @@ class App extends SluggedRecord {
 	private $table_rows;
 	private $a_table_rows = array();
 
+
 	public function __construct($table=NULL) {
 		
 		global $lang3;
@@ -45,10 +46,12 @@ class App extends SluggedRecord {
 			}
 		}
 
-		parent::__construct($this->db, $this->lang3, $this->table);
-
 	}
 
+	# select()
+	# @access public
+	# @param string $table
+	# @return $this
     function select($table)
     {
 		
@@ -81,6 +84,10 @@ class App extends SluggedRecord {
         return $this;
     }
 	
+	# left_join()
+	# @access public
+	# @param string $joined_table
+	# @return $this
 	function left_join($joined_table)
 	{
 		
@@ -112,24 +119,39 @@ class App extends SluggedRecord {
 		return $this;
 	}
 	
+	# where()
+	# @access public
+	# @param string $where
+	# @return $this
     function where($where)
     {
        if($where) $this->where[] = $where;
         return $this;
     }
 	
+	# order_by()
+	# @access public
+	# @param string $order_by
+	# @return $this
     function order_by($order_by=NULL)
     {
        if($order_by) $this->order_by[] = $order_by;
         return $this;
     }
 	
+	# limit()
+	# @access public
+	# @param string $limit
+	# @return $this->all()
 	function limit($limit)
 	{
 		if($limit) $this->limit = $limit;
 		return $this->all();
 	}
 	
+	# all()
+	# @access public
+	# @return array()
 	function all()
     {		
 		global $app_messages;

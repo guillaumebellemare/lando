@@ -13,7 +13,7 @@ class IndexController extends AppController {
 
 	function index() {
 		
-		global $lang2, $lang3;
+		global $routes, $lang2, $lang3;
 		
 		# Model declaration
 		$base = new Base();
