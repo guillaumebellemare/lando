@@ -16,10 +16,11 @@ class App extends SluggedRecord {
 	private $order_by = array();
 	private $joined_table;
 	private $joined_table_code;
+	private $joined_statement;
+	private $joined_table_active;
 	private $limit;
 	private $table_rows;
 	private $a_table_rows = array();
-
 
 	public function __construct($table=NULL) {
 		
@@ -40,7 +41,7 @@ class App extends SluggedRecord {
 		{
 			if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
 			{
-				error_reporting(E_ALL);
+				error_reporting(E_ERROR | E_WARNING | E_PARSE);
 				ini_set("display_errors", 1);
 				$db->debug = true;
 			}
@@ -54,7 +55,7 @@ class App extends SluggedRecord {
 	# @return $this
     function select($table)
     {
-		
+
 		if($table)
 		{			
 			$data = array();
@@ -64,7 +65,6 @@ class App extends SluggedRecord {
 			$rsColumns = $this->db->Execute($q);
 			
 			# Select rows names
-			$this->table_rows = "";
 			$this->i = 1;
 			while(!$rsColumns->EOF){
 				
@@ -93,9 +93,18 @@ class App extends SluggedRecord {
 		
        if($joined_table)
 	   {
-		   $this->joined_table = $joined_table;
-		   $this->joined_table_code = rtrim($joined_table, "s");
-		   
+			$this->joined_table = $joined_table;
+			$this->joined_table_code = rtrim($joined_table, "s");
+			
+			$called_class = get_called_class();
+			$called_class_init = new $called_class();
+		    if(method_exists($called_class_init, $joined_table))
+			{
+				$this->joined_statement .= " LEFT JOIN {$this->joined_table} ".$called_class_init->{$joined_table}();
+			}else{
+				$this->joined_statement .= " LEFT JOIN {$this->joined_table} ON {$this->table}.{$this->joined_table_code}_id = {$this->joined_table}.id";
+			}
+			
 			$q = "SHOW COLUMNS FROM {$joined_table}";
 			$rsColumns = $this->db->Execute($q);
 			
@@ -108,7 +117,8 @@ class App extends SluggedRecord {
 	
 				# Put fields in a string
 				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
+				$this->table_rows .= $joined_table.".".$current_field;
+				if($current_field=='active') $this->joined_table_active .= " AND {$joined_table}.active = 1";
 				
 				$this->i++;
 			$rsColumns->MoveNext();
@@ -117,6 +127,15 @@ class App extends SluggedRecord {
 	    }
 
 		return $this;
+	}
+	
+	# oneToMany()
+	# @access public
+	# @param string $called_class, $foreign_key, $primary_key
+	# @return $this
+	function oneToMany($foreign_key, $primary_key)
+	{
+		return "ON {$foreign_key} = {$primary_key}";
 	}
 	
 	# where()
@@ -157,7 +176,7 @@ class App extends SluggedRecord {
 		global $app_messages;
 		
 		$q = "SELECT {$this->table_rows} FROM {$this->table}";
-		if($this->joined_table) $q .= " LEFT JOIN {$this->joined_table} ON {$this->table}.{$this->joined_table_code}_id = {$this->joined_table}.id";
+		if($this->joined_statement) $q .= $this->joined_statement;
 		$q .= " WHERE ";
 		if($this->where) 
 		{
@@ -167,7 +186,7 @@ class App extends SluggedRecord {
 			}
 		}
 		$q .= " {$this->table}.active = 1";
-		if($this->joined_table) $q .= " AND {$this->joined_table}.active = 1";
+		$q .= $this->joined_table_active;
 		if($this->order_by) 
 		{
 			$q .= " ORDER BY ";
@@ -214,132 +233,13 @@ class App extends SluggedRecord {
         return $data;
     }
 	
-
-	# Arguments = Table name, Column to order, Has slug 1/0?
-	function get($table=NULL, $sortBy=NULL, $hasSlug=NULL){
-		
-		$numb_arga = func_num_args();
-		$numb_join_tables  = $numb_arga - 3;
-
-		$data = array();
-		$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
-
-		$q = "SHOW COLUMNS FROM {$table}";
-		$rsColumns = $this->db->Execute($q);
-		
-		# Select rows names
-		$a_table_rows = array();
-		$table_rows = "";
-		$i = 1;
-		while(!$rsColumns->EOF){
-			
-			# Put fields in an array
-			$a_table_rows[$i] = $table.".".$rsColumns->fields["Field"];
-			
-			# Put fields in a string
-			if($i==1) $table_rows = $table.".".$rsColumns->fields["Field"]; else $table_rows .= $table.".".$rsColumns->fields["Field"];
-			if($rsColumns->RecordCount()!=$i) $table_rows .= ", ";
-			
-			$i++;
-		$rsColumns->MoveNext();
-		}
-		$rsColumns->Close();
-
-
-		# Build the query
-		
-			# Join tables
-			$join = NULL;
-			
-			if($numb_join_tables>0)
-			{
-				$join_tables = array();
-				$v = 0;
-				for ($j = 3; $j < $numb_arga; $j++) {
-					$join_tables[$v] = func_get_arg($j);
-					$v++;
-				}
-
-				foreach($join_tables as $k => $jtable)
-				{
-					$join .= " ".$jtable["type"]." ".$jtable["table"]." ON ".$jtable["on"];
-
-					$joined_table = $jtable["table"];
-					$q = "SHOW COLUMNS FROM {$joined_table}";
-					$rsColumns = $this->db->Execute($q);
-					
-					# Select rows names
-					while(!$rsColumns->EOF){
-						
-						# Put fields of the joined table in the array
-						$current_field = $rsColumns->fields["Field"];
-						//$a_table_rows[$i] = $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
-						$a_table_rows[$i] = $joined_table.".".$joined_table."_".$current_field;
-			
-						# Put fields in a string
-						if($rsColumns->RecordCount()!=$i) $table_rows .= ", ";
-						$table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
-						
-						$i++;
-					$rsColumns->MoveNext();
-					}
-					$rsColumns->Close();
-					
-				}
-			}
-
-			$q = "SELECT $table_rows FROM {$table}";
-			if($join) $q .= $join;
-			$q .= " WHERE {$table}.active = 1";
-			
-			# Add slugs
-			if($this->getArgs($table) && $hasSlug) $q .= $this->getArgs($table);
-			if($sortBy)
-			{
-				$sortBy = str_replace(' ', '', $sortBy);
-				$sortBy = explode(",", $sortBy);
-				
-				$q .= " ORDER BY ";
-				$i = 0;
-				foreach($sortBy as $sort_field)
-				{
-					if($i>0) $q .= ", ";
-					$q .= "{$table}.$sort_field";
-					$i++;
-				}
-			}
-		$rsList = $this->db->Execute($q);
-		
-		# Put all data in an array
-		$i = 0;
-				
-
-		while(!$rsList->EOF){
-			$data[$i] = array();
-			foreach($a_table_rows as $table_row)
-			{
-				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
-				$data[$i][$table_row] = $rsList->fields[$table_field];
-			}
-			$i++;
-			
-		$rsList->MoveNext();
-		}
-		$rsList->Close();
-
-
-		return $data;
-		
-	}
-	
-	# Arguments = Custom Query
-	function custom_get($customQuery){
+	# Arguments = Raw Query
+	function raw_select($rawQuery){
 		
 		$data = array();
 		$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
 		
-		$q = $customQuery;
-		$rsList = $this->db->Execute($q);
+		$rsList = $this->db->Execute($rawQuery);
 		
 		$columns = array();
 		$columns = $rsList->fields;
@@ -361,6 +261,41 @@ class App extends SluggedRecord {
 		return $data;
 	}
 
+	# left_join_old()
+	# @access public
+	# @param string $joined_table
+	# @return $this
+	function left_join_old($joined_table)
+	{
+		
+       if($joined_table)
+	   {
+		   $this->joined_table = $joined_table;
+		   $this->joined_table_code = rtrim($joined_table, "s");
+		   
+			$q = "SHOW COLUMNS FROM {$joined_table}";
+			$rsColumns = $this->db->Execute($q);
+			
+			# Select rows names
+			while(!$rsColumns->EOF){
+				
+				# Put fields of the joined table in the array
+				$current_field = $rsColumns->fields["Field"];
+				$this->a_table_rows[$this->i] = $joined_table.".".$current_field;
+	
+				# Put fields in a string
+				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
+				$this->table_rows .= $joined_table.".".$current_field;
+				
+				$this->i++;
+			$rsColumns->MoveNext();
+			}
+			$rsColumns->Close();
+	    }
+
+		return $this;
+	}
+	
 	function add($table) {
 		
 		global $lang2;

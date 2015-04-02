@@ -1,17 +1,15 @@
 /*
 |--------------------------------------------------------------------------
-| Get Snippet
+| Raw Select Snippet
 |--------------------------------------------------------------------------
 |
-| Arguments : nom de la table
+| Arguments : raw_select
 |
 | Faire un foreach pour extraire les données,
-| et indiquer le nom de la table
+| sans indiquer le nom de la table
 |
 | @return array
 |
 */
 
-public function getAllBar(){
-	return $this->select($this->table)->all();
-}
+$var = $this->raw_select($q);
