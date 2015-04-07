@@ -69,10 +69,10 @@ class App extends SluggedRecord {
 			while(!$rsColumns->EOF){
 				
 				# Put fields in an array
-				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"];
+				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}";
 				
 				# Put fields in a string
-				if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]; else $this->table_rows .= $table.".".$rsColumns->fields["Field"];
+				if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}"; else $this->table_rows .= $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}";
 				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
 				
 				$this->i++;
@@ -113,11 +113,11 @@ class App extends SluggedRecord {
 				
 				# Put fields of the joined table in the array
 				$current_field = $rsColumns->fields["Field"];
-				$this->a_table_rows[$this->i] = $joined_table.".".$current_field;
-	
+				$this->a_table_rows[$this->i] = $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
+
 				# Put fields in a string
 				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field;
+				$this->table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
 				if($current_field=='active') $this->joined_table_active .= " AND {$joined_table}.active = 1";
 				
 				$this->i++;
@@ -203,15 +203,16 @@ class App extends SluggedRecord {
 		
 		# Put all data in an array
 		$i = 0;
-				
+		
 		while(!$rsList->EOF){
 			$data[$i] = array();
+
 			foreach($this->a_table_rows as $table_row)
 			{
-				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
-				$table_row = explode(".", $table_row);
-				$table_row_complete = $table_row[0].'.'.$table_row[1];
-				$data[$i][$table_row_complete] = $rsList->fields[$table_field];
+				if(explode('AS', $table_row)) $table_rows = explode('AS', $table_row);
+				$raw_field_name = str_replace(' ', '', $table_rows[0]);
+				$as_field_name = str_replace(' ', '', $table_rows[1]);
+				$data[$i][$raw_field_name] = $rsList->fields[$as_field_name];
 			}
 			$i++;
 			
