@@ -13,6 +13,7 @@ class App extends SluggedRecord {
 	
 	private $from;
 	private $where = array();
+	private $group_by = array();
 	private $order_by = array();
 	private $joined_table;
 	private $joined_table_code;
@@ -43,7 +44,7 @@ class App extends SluggedRecord {
 			{
 				error_reporting(E_ERROR | E_WARNING | E_PARSE);
 				ini_set("display_errors", 1);
-				$db->debug = true;
+				//$db->debug = true;
 			}
 		}
 
@@ -145,7 +146,17 @@ class App extends SluggedRecord {
     function where($where)
     {
        if($where) $this->where[] = $where;
-        return $this;
+       return $this;
+    }
+	
+	# group_by()
+	# @access public
+	# @param string $where
+	# @return $this
+    function group_by($group)
+    {
+       if($group) $this->group_by[] = $group;
+       return $this;
     }
 	
 	# order_by()
@@ -155,7 +166,7 @@ class App extends SluggedRecord {
     function order_by($order_by=NULL)
     {
        if($order_by) $this->order_by[] = $order_by;
-        return $this;
+       return $this;
     }
 	
 	# limit()
@@ -187,6 +198,17 @@ class App extends SluggedRecord {
 		}
 		$q .= " {$this->table}.active = 1";
 		$q .= $this->joined_table_active;
+		if($this->group_by) 
+		{
+			$q .= " GROUP BY ";
+			$i = 0;
+			foreach($this->group_by as $group_statement)
+			{
+				if($i!=0) $q .= ", ";
+				$q .= "{$group_statement}";
+				$i++;
+			}
+		}
 		if($this->order_by) 
 		{
 			$q .= " ORDER BY ";
@@ -199,6 +221,7 @@ class App extends SluggedRecord {
 			}
 		}
 		if($this->limit) $q .= " LIMIT {$this->limit}";
+
 		$rsList = $this->db->Execute($q);
 		
 		# Put all data in an array
@@ -220,10 +243,11 @@ class App extends SluggedRecord {
 		}
 		$rsList->Close();
 
-		//if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
+		if($_SERVER['REMOTE_ADDR']===IP_ADDRESS && DEBUG==true) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
 		
 		if($this->from) unset($this->from);
 		if($this->where) unset($this->where);
+		if($this->group_by) unset($this->group_by);
 		if($this->order_by) unset($this->order_by);
 		if($this->joined_table) unset($this->joined_table);
 		if($this->joined_table_code) unset($this->joined_table_code);
@@ -370,4 +394,79 @@ class App extends SluggedRecord {
 		else return '';
 	}
 	
+	function writePrettyDate($date){
+		
+		$returnDate = NULL;
+		
+		$date = explode(',', $date);
+		
+		$firstDate = explode('-', $date[0]);
+		$firstDateMonth = $this->writePrettyMonth($firstDate[1]);
+		$firstDateSend = ltrim($firstDate[2], '0').' '.$firstDateMonth.' '.$firstDate[0];
+		if(count($date) == 1){
+			$returnDate = '' . $firstDateSend;
+		}else {
+			$secondDate = explode('-', $date[1]);
+			$secondDateMonth = $this->writePrettyMonth($secondDate[1]);
+			$secondDateSend = ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+						
+			# Only one date
+			if($firstDate==$secondDate) $returnDate = '' . $firstDateSend;
+			else {
+				# Two dates of the same year
+				if($firstDate[0]==$secondDate[0]) $returnDate = ltrim($firstDate[2], '0').' '.$firstDateMonth.' au '.ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+				# Two dates of the same month
+				if($firstDate[1]==$secondDate[1]) $returnDate = ltrim($firstDate[2], '0').' au '.ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+				# DEFAULT 
+				if($returnDate==NULL) ltrim($firstDateSend, '0').' au '.ltrim($secondDateSend, '0');	 
+			}
+			
+		}
+		
+		return $returnDate;
+	}
+	
+	function writePrettyMonth($month)
+	{
+		switch ($month) {
+			case '01':
+				$month = 'janvier';
+			break;
+			case '02':
+				$month = 'février';
+			break;
+			case '03':
+				$month = 'mars';
+			break;
+			case '04':
+				$month = 'avril';
+			break;
+			case '05':
+				$month = 'mai';
+			break;
+			case '06':
+				$month = 'juin';
+			break;
+			case '07':
+				$month = 'juillet';
+			break;
+			case '08':
+				$month = 'août';
+			break;
+			case '09':
+				$month = 'septembre';
+			break;
+			case '10':
+				$month = 'octobre';
+			break;
+			case '11':
+				$month = 'novembre';
+			break;
+			case '12':
+				$month = 'décembre';
+			break;
+		}
+		
+		return $month;	
+	}	
 }
