@@ -2,6 +2,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/selectivizr-min.js" type="text/javascript"></script>
 <script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/navigation.js" type="text/javascript"></script>
+<script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/jquery.smooth-scroll.js" type="text/javascript"></script>
 
 <!-- FancyBox -->
 <script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/jquery.fancybox.js?v=2.1.5" type="text/javascript"></script>
