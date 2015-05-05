@@ -53,7 +53,7 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .navigation { position:relative; z-index:100; font-size:0;}
 .navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; font-size:0; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0; }
-.navigation ul li:before { content:""; padding:0; float:none; }
+.navigation ul li:before { content:""; padding:0; float:none; display:inline; }
 .navigation > ul > li > a { display:block; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
 .navigation > ul > li > ul > li { margin:0; text-indent:0px; }
 .navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; margin:0; }
