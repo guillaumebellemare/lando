@@ -13,12 +13,13 @@ class App extends SluggedRecord {
 	
 	private $from;
 	private $where = array();
-	private $group_by = array();
 	private $order_by = array();
+	private $group_by = array();
 	private $joined_table;
 	private $joined_table_code;
 	private $joined_statement;
 	private $joined_table_active;
+	private $table_active;
 	private $limit;
 	private $table_rows;
 	private $a_table_rows = array();
@@ -44,7 +45,7 @@ class App extends SluggedRecord {
 			{
 				error_reporting(E_ERROR | E_WARNING | E_PARSE);
 				ini_set("display_errors", 1);
-				//$db->debug = true;
+				$db->debug = true;
 			}
 		}
 
@@ -61,7 +62,8 @@ class App extends SluggedRecord {
 		{			
 			$data = array();
 			$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
-	
+			$this->table_rows = "";
+			
 			$q = "SHOW COLUMNS FROM {$table}";
 			$rsColumns = $this->db->Execute($q);
 			
@@ -70,18 +72,22 @@ class App extends SluggedRecord {
 			while(!$rsColumns->EOF){
 				
 				# Put fields in an array
-				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}";
+				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"]." AS ".$table."_".$rsColumns->fields["Field"];
 				
+				# Check if active field exist
+				if($rsColumns->fields["Field"]=='active') $this->table_active = true;
+
 				# Put fields in a string
-				if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}"; else $this->table_rows .= $table.".".$rsColumns->fields["Field"]." AS {$table}_{$rsColumns->fields['Field']}";
+				$this->table_rows .= $table.".".$rsColumns->fields["Field"]." AS ".$table."_".$rsColumns->fields["Field"];;
+				#if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]; else $this->table_rows .= $table.".".$rsColumns->fields["Field"];
 				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
 				
 				$this->i++;
+				
 			$rsColumns->MoveNext();
 			}
 			$rsColumns->Close();
 		}
-		
         return $this;
     }
 	
@@ -114,11 +120,11 @@ class App extends SluggedRecord {
 				
 				# Put fields of the joined table in the array
 				$current_field = $rsColumns->fields["Field"];
-				$this->a_table_rows[$this->i] = $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
-
+				$this->a_table_rows[$this->i] = $joined_table.".".$current_field." AS ".$joined_table."_".$rsColumns->fields["Field"];;
+	
 				# Put fields in a string
-				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field." AS {$joined_table}_{$current_field}";
+				$this->table_rows .= ", ";
+				$this->table_rows .= $joined_table.".".$current_field." AS ".$joined_table."_".$rsColumns->fields["Field"];;
 				if($current_field=='active') $this->joined_table_active .= " AND {$joined_table}.active = 1";
 				
 				$this->i++;
@@ -149,16 +155,6 @@ class App extends SluggedRecord {
        return $this;
     }
 	
-	# group_by()
-	# @access public
-	# @param string $where
-	# @return $this
-    function group_by($group)
-    {
-       if($group) $this->group_by[] = $group;
-       return $this;
-    }
-	
 	# order_by()
 	# @access public
 	# @param string $order_by
@@ -166,6 +162,16 @@ class App extends SluggedRecord {
     function order_by($order_by=NULL)
     {
        if($order_by) $this->order_by[] = $order_by;
+       return $this;
+    }
+	
+	# group_by()
+	# @access public
+	# @param string $order_by
+	# @return $this
+    function group_by($group_by=NULL)
+    {
+       if($group_by) $this->group_by[] = $group_by;
        return $this;
     }
 	
@@ -185,7 +191,7 @@ class App extends SluggedRecord {
 	function all()
     {		
 		global $app_messages;
-		
+
 		$q = "SELECT {$this->table_rows} FROM {$this->table}";
 		if($this->joined_statement) $q .= $this->joined_statement;
 		$q .= " WHERE ";
@@ -196,7 +202,8 @@ class App extends SluggedRecord {
 				$q .= "{$where_statement} AND ";
 			}
 		}
-		$q .= " {$this->table}.active = 1";
+		
+		if($this->table_active) $q .= " {$this->table}.active = 1"; else $q .= " {$this->table}.id"; 
 		$q .= $this->joined_table_active;
 		if($this->group_by) 
 		{
@@ -221,21 +228,23 @@ class App extends SluggedRecord {
 			}
 		}
 		if($this->limit) $q .= " LIMIT {$this->limit}";
-
 		$rsList = $this->db->Execute($q);
-		
+
 		# Put all data in an array
 		$i = 0;
-		
+		#var_dump($this->a_table_rows);
 		while(!$rsList->EOF){
 			$data[$i] = array();
-
 			foreach($this->a_table_rows as $table_row)
 			{
-				if(explode('AS', $table_row)) $table_rows = explode('AS', $table_row);
-				$raw_field_name = str_replace(' ', '', $table_rows[0]);
-				$as_field_name = str_replace(' ', '', $table_rows[1]);
-				$data[$i][$raw_field_name] = $rsList->fields[$as_field_name];
+				if(explode(' AS ', $table_row)) list($complete_field, $as_field) = explode(' AS ', $table_row);
+				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
+				$table_row = explode(".", $table_row);
+				$table_row_complete = $table_row[0].'.'.$table_row[1];
+				
+				#$data[$i][$table_row_complete] = $rsList->fields[$table_field];
+				$data[$i][$complete_field] = $rsList->fields[$as_field];
+
 			}
 			$i++;
 			
@@ -243,11 +252,10 @@ class App extends SluggedRecord {
 		}
 		$rsList->Close();
 
-		if($_SERVER['REMOTE_ADDR']===IP_ADDRESS && DEBUG==true) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
+		//if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
 		
 		if($this->from) unset($this->from);
 		if($this->where) unset($this->where);
-		if($this->group_by) unset($this->group_by);
 		if($this->order_by) unset($this->order_by);
 		if($this->joined_table) unset($this->joined_table);
 		if($this->joined_table_code) unset($this->joined_table_code);
@@ -259,7 +267,7 @@ class App extends SluggedRecord {
     }
 	
 	# Arguments = Raw Query
-	function raw_select($rawQuery){
+	function custom_get($rawQuery){
 		
 		$data = array();
 		$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
@@ -402,30 +410,30 @@ class App extends SluggedRecord {
 		
 		$firstDate = explode('-', $date[0]);
 		$firstDateMonth = $this->writePrettyMonth($firstDate[1]);
-		$firstDateSend = ltrim($firstDate[2], '0').' '.$firstDateMonth.' '.$firstDate[0];
+		$firstDateSend = (int)$firstDate[2].' '.$firstDateMonth.' '.$firstDate[0];
 		if(count($date) == 1){
 			$returnDate = '' . $firstDateSend;
 		}else {
 			$secondDate = explode('-', $date[1]);
 			$secondDateMonth = $this->writePrettyMonth($secondDate[1]);
-			$secondDateSend = ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+			$secondDateSend = (int)$secondDate[2].' '.$secondDateMonth.' '.(int)$secondDate[0];
 						
 			# Only one date
 			if($firstDate==$secondDate) $returnDate = '' . $firstDateSend;
 			else {
 				# Two dates of the same year
-				if($firstDate[0]==$secondDate[0]) $returnDate = ltrim($firstDate[2], '0').' '.$firstDateMonth.' au '.ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+				if($firstDate[0]==$secondDate[0]) $returnDate = (int)$firstDate[2].' '.$firstDateMonth.' au '.(int)$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
 				# Two dates of the same month
-				if($firstDate[1]==$secondDate[1]) $returnDate = ltrim($firstDate[2], '0').' au '.ltrim($secondDate[2], '0').' '.$secondDateMonth.' '.$secondDate[0];
+				if($firstDate[1]==$secondDate[1]) $returnDate = (int)$firstDate[2].' au '.(int)$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
 				# DEFAULT 
-				if($returnDate==NULL) ltrim($firstDateSend, '0').' au '.ltrim($secondDateSend, '0');	 
+				if($returnDate==NULL) $firstDateSend.' au '.$secondDateSend;	 
 			}
 			
 		}
 		
 		return $returnDate;
 	}
-	
+
 	function writePrettyMonth($month)
 	{
 		switch ($month) {
@@ -468,5 +476,38 @@ class App extends SluggedRecord {
 		}
 		
 		return $month;	
-	}	
+	}
+	
+	function writePrettyFirstDay($date){
+		
+		$returnDate = NULL;
+		
+		$date = explode(',', $date);
+		
+		$firstDate = explode('-', $date[0]);
+		$returnDate = $firstDate[2];
+		
+		return (int)$returnDate;
+	}
+	
+	function writePrettyFirstMonth($date){
+		
+		$returnDate = NULL;
+		
+		$date = explode(',', $date);
+		
+		$firstDate = explode('-', $date[0]);
+		$returnDate = $this->writePrettyMonth($firstDate[1]);
+		
+		return $returnDate;
+	}
+	
+	function limitStringSize($string, $size=200)
+	{
+		$pos = strpos($string, ' ', $size);
+		$string = substr($string,0,$pos);
+
+		return $string;
+	}
+	
 }

@@ -25,33 +25,46 @@ while ($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
 		
-		// Controller file handling
+		# Controller file handling
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
-			$current_app_route = explode('@', $app_routes[key($routes)]);
+			
+			# Broke the route into tokens
+			$token = strtok($app_routes[key($routes)], "@::");
+			
+			while ($token !== false) {
+				$current_app_route[] = $token;
+				$token = strtok("@::");
+			}
+			
+			# If the route if protected, authenticate the user and redirect him to the login page if necessary
+			if(isset($current_app_route[2]) && $current_app_route[2]=='protected')
+			{
+				$user = new User();
+				if(!$user->check()) header('Location: '.URL_ROOT.$lang2.'/'.$routes['login']);
+			}
+			
 			$current_controller = $current_app_route[0];
 			$current_route = explode('Controller', $current_controller);
 			$current_route = strtolower($current_route[0]);
 			$current_function = $current_app_route[1];
 			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
 			require_once('app/controllers/'.$current_controller.'.php');
-			$controller = new $current_controller();
+			$controller = new $current_controller($db, $lang3);
 			$controller_loaded = true;
 		}
 		
-		// Extract the arrays returned by the function
+		# Extract the arrays returned by the function
 		$currentArrays = $controller->$current_function();
+		
 		if(isset($currentArrays) && is_array($currentArrays))
 		{
-			while ($currentKey = current($currentArrays)) {
-				${key($currentArrays)} = ($currentArrays[key($currentArrays)]);
-			next($currentArrays);
-			}
+			extract($currentArrays);
 		}elseif(isset($currentArrays) && DEBUG==true && $debug_on==true){
 			$app_errors[] = "Vous devez retourner un array[] dans la fonction $current_function() de $current_controller.";
 		}
 		
-		// View file handling
+		# View file handling
 		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
 			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
@@ -67,7 +80,8 @@ while ($currentRoute = current($routes)) {
 	}
 	next($routes);
 }
-// Error 404
+
+# Error 404
 if($page_setted==0) {
 	if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/404/index.php';
 	require_once('app/views/404/index.php');			
