@@ -16,4 +16,7 @@
 <file name="meta.php" server="ftp.espacedev2.com/lando/" local="130724627586357394" remote="130724627400000000" Dst="2" />
 <file name="slider.php" server="ftp.espacedev2.com/lando/" local="130705547655961068" remote="130689318000000000" Dst="2" />
 <file name="scripts.php" server="ftp.espacedev2.com/lando/" local="130741895816287722" remote="130741895400000000" Dst="2" />
+<file name="header.php" server="ftp.espacedev2.com//lando/" local="130710026400000000" remote="130710026400000000" Dst="2" />
+<file name="footer.php" server="ftp.espacedev2.com//lando/" local="130689318000000000" remote="130689318000000000" Dst="2" />
+<file name="scripts.php" server="ftp.espacedev2.com//lando/" local="130741859400000000" remote="130741859400000000" Dst="2" />
 </dwsync>
