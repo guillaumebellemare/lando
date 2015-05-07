@@ -1,10 +1,12 @@
 <IfModule mod_rewrite.c>
-
+	SetEnv HTTP_MOD_REWRITE On
+	
     RewriteEngine On
     RewriteBase /
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 	
+	# Voir abgca.ca pour enlever la langue
 	#RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
 	
     #Niveau 1 : exemple : fr/index.html

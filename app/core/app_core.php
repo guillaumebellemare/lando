@@ -113,11 +113,30 @@ require_once("app/core/app_routes.php");
 
 if(DEBUG==true)
 {
+	if(CHECK_MOD_REWRITE)
+	{
+		if(function_exists('apache_get_modules'))
+		{
+			$modules = apache_get_modules();
+			$mod_rewrite = in_array('mod_rewrite', $modules);
+		}else{
+			$mod_rewrite =  getenv('HTTP_MOD_REWRITE')=='On' ? true : false ;
+		}
+		
+		if ($mod_rewrite)
+		{
+			$app_messages[] = '<strong>Mod_rewrite est activé</strong><hr class="app-hr">';
+		}else{
+			$app_messages[] = '<strong>Mod_rewrite est désactivé</strong><hr class="app-hr">';
+		}
+	}
+	
 	if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
 	{
 		$app_messages[] = '<strong>IP address: </strong>'.$_SERVER['REMOTE_ADDR'].'<br>';
 		$debug_on = true;
 	}
+	
 }
 
 require_once("app/core/app_handler.php");
