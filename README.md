@@ -99,3 +99,8 @@ $app->getPictureInfo($picture_path)
 ```php
 $app->nl2p(string)
 ```
+=====
+## Routes
+<p>You have to set your routes in two differents files:</p>
+### public/lang/routes.php
+### app/core/app_routes.php
