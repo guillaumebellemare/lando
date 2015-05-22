@@ -11,7 +11,10 @@ Lando
 <p>$this->select($this->table)</p>
 <h3>Join</h3>
 ```php
-$this->select($this->table)->left_join("table_name")
+public function foo() {
+  $this->select($this->table)->left_join("table_name")
+}
+
 public function table_name() {
   return $this->oneToMany("$this->table.id", "table_name.table_name_id");
 }
