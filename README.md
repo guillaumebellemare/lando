@@ -110,6 +110,15 @@ this->redirect("route_to_redirect");
 	<?=$bar["bars.name_$lang3"]?>
 <?php endforeach; ?>
 ```
+### Read complex returned array
+```php
+<?php foreach($foo as $bar) : ?>
+	<?=$bar["bars.name_$lang3"]?>
+	<?php foreach($bar["baz"] as $baz) : ?>
+		<?=$baz["bazs.name_$lang3"]>
+	<?php endforeach; ?>
+<?php endforeach; ?>
+```
 ### Write Pretty Date
 ```php
 $app->writePrettyDate("$date")
