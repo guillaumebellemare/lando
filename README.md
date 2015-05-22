@@ -9,7 +9,7 @@ Lando
 ## Queries
 ### Select
 ```php
-$this->select($this->table)</p>
+$this->select($this->table)
 ```
 ### Join
 ```php
