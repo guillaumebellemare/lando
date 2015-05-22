@@ -4,4 +4,6 @@
 <file name="index.php" server="ftp.espacedev2.com" local="130689353253261133" remote="130689307200000000" Dst="1" />
 <file name="errors.php" server="ftp.espacedev2.com/lando/" local="130705547622824252" remote="130689318000000000" Dst="2" />
 <file name="index.php" server="ftp.espacedev2.com/lando/" local="130705547623436289" remote="130689318000000000" Dst="2" />
+<file name="errors.php" server="ftp.espacedev2.com//lando/" local="130767918157911974" remote="130767918000000000" Dst="2" />
+<file name="index.php" server="ftp.espacedev2.com//lando/" local="130767918000000000" remote="130767918000000000" Dst="2" />
 </dwsync>

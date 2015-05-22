@@ -16,12 +16,13 @@ $page_setted = 0;
 $view_loaded = false;
 $controller_loaded = false;
 
-if(isset($_GET['param1']) && isset($_GET['param2']) && isset($_GET['param3'])) $page = $_GET['page'].'/'.$_GET['param1'].'/'.$_GET['param2'].'/'.$_GET['param3'];
+if(isset($_GET['param1']) && isset($_GET['param2']) && isset($_GET['param3']) && isset($_GET['param4'])) $page = $_GET['page'].'/'.$_GET['param1'].'/'.$_GET['param2'].'/'.$_GET['param3'].'/'.$_GET['param4'];
+elseif(isset($_GET['param1']) && isset($_GET['param2']) && isset($_GET['param3'])) $page = $_GET['page'].'/'.$_GET['param1'].'/'.$_GET['param2'].'/'.$_GET['param3'];
 elseif(isset($_GET['param1']) && isset($_GET['param2'])) $page = $_GET['page'].'/'.$_GET['param1'].'/'.$_GET['param2'];
 elseif(isset($_GET['param1'])) $page = $_GET['page'].'/'.$_GET['param1'];
 else $page = $_GET['page'];
 
-while ($currentRoute = current($routes)) {
+while($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
 		

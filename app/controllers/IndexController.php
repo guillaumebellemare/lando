@@ -13,7 +13,11 @@ class IndexController extends AppController {
 		
 		# Data
 		//$foo = $base->getAllBar();
-		
+		/*$this->setTitle("Title");
+		$this->setDescription("Description");
+		$this->setKeywords("key, words");
+		$this->setPageType("article");
+		$this->setImage("image.jpg");*/
 		//return array("foo" => $foo);
 	}
 	

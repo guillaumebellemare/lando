@@ -1,9 +1,13 @@
 <meta charset="utf-8">
-<title><?php if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.title"])) echo $meta["{$_GET['param3']}.title"]." | "; ?><?php if(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.title"])) echo $meta["{$_GET['param2']}.title"]." | "; ?><?php if(isset($_GET['param21']) && isset($meta["{$_GET['param21']}.title"])) echo $meta["{$_GET['param21']}.title"]." | "; ?><?=Meta::getMetaFromPage("title"); ?><?php if(isset($meta["site.title"])) echo $meta["site.title"]; ?></title>
-<meta name="keywords" content="<?php if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.keywords"])) echo $meta["{$_GET['param3']}.keywords"]; elseif(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.keywords"])) echo $meta["{$_GET['param2']}.keywords"]; elseif(isset($_GET['param21']) && isset($meta["{$_GET['param21']}.keywords"])) echo $meta["{$_GET['param21']}.keywords"]; ?><?=Meta::getMetaFromPage("keywords"); ?>">
-<meta name="description" content="<?php if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.description"])) echo $meta["{$_GET['param3']}.description"]; elseif(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.description"])) echo $meta["{$_GET['param2']}.description"]; elseif(isset($_GET['param21']) && isset($meta["{$_GET['param21']}.description"])) echo $meta["{$_GET['param21']}.description"]; ?><?=Meta::getMetaFromPage("description"); ?>">
-<meta property="og:title" content="<?php if(isset($_GET['param21']) && isset($meta["{$_GET['param21']}.title"])) echo $meta["{$_GET['param21']}.title"]." | "; ?><?=Meta::getMetaFromPage("title"); ?><?=$meta["site.title"]?>" />
-<meta property="og:url" content="http://<?php if(isset($meta["site.url"])) echo $meta["site.url"]; ?><?php echo '/'.$lang2; ?><?php if(isset($_GET['page']) && $_GET['page']!='index') echo '/'.$_GET['page']; ?><?php if(isset($_GET['param21'])) echo '/'.$_GET['param21']; ?><?php if(isset($_GET['param2'])) echo '/'.$_GET['param2']; ?><?php if(isset($_GET['param3'])) echo '/'.$_GET['param3']; ?>" />
-<meta property="og:description" content="<?php if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.description"])) echo $meta["{$_GET['param3']}.description"]; elseif(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.description"])) echo $meta["{$_GET['param2']}.description"]; elseif(isset($_GET['param21']) && isset($meta["{$_GET['param21']}.description"])) echo $meta["{$_GET['param21']}.description"]; ?><?=Meta::getMetaFromPage("description"); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-title" content="<?php if(isset($meta["site.title"])) echo $meta["site.title"]?>">
+<meta name="keywords" content="<?=$app_controller->getMeta("keywords")?>">
+<meta name="description" content="<?=$app_controller->getMeta("description")?>">
+<meta property="og:title" content="<?=$app_controller->getMeta("title")?>" />
+<meta property="og:url" content="<?=$app_controller->getMetaURL()?>" />
+<meta property="og:description" content="<?=$app_controller->getMeta("description")?>" />
 <meta property="og:site_name" content="<?php if(isset($meta["site.title"])) echo $meta["site.title"]?>" />
-<meta property="og:locale" content="<?php echo $lang2; ?>_CA" />
+<meta property="og:locale" content="<?=$lang2?>_CA" />
+<meta property="og:type" content="<?=$app_controller->getPageType()?>" />
+<meta property="og:image" content="<?=$app_controller->getImage()?>" />
+<title><?=$app_controller->getMeta("title")?></title>

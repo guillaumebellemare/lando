@@ -6,5 +6,7 @@
 <file name="one-column.php" server="ftp.espacedev2.com/lando/" local="130705547627217563" remote="130705507800000000" Dst="2" />
 <file name="two-columns.php" server="ftp.espacedev2.com/lando/" local="130724627932115790" remote="130724627400000000" Dst="2" />
 <file name="__rows.php" server="ftp.espacedev2.com/lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
-<file name="two-columns.php" server="ftp.espacedev2.com//lando/" local="130724591400000000" remote="130724591400000000" Dst="2" />
+<file name="two-columns.php" server="ftp.espacedev2.com//lando/" local="130767960302310495" remote="130767960000000000" Dst="2" />
+<file name="errors.php" server="ftp.espacedev2.com//lando/" local="130767917795017740" remote="130767917400000000" Dst="2" />
+<file name="404.php" server="ftp.espacedev2.com//lando/" local="130767945095244286" remote="130767945000000000" Dst="2" />
 </dwsync>

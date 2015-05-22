@@ -332,6 +332,31 @@ class App extends SluggedRecord {
 		return $this->db->AutoExecute($this->table, $record, 'UPDATE', 'id = ' . $id); 
 	}
 
+	# delete()
+	# @access public
+	# @param $table, $clause
+	# @return @void
+	function delete($table, $clause) {
+	
+		global $lang2;
+		global $db;
+		global $messages, $errors;
+		if(!isset($table))$table = $this->table;
+		$q = "SELECT * FROM {$table} WHERE {$clause}";
+		$rsList = $this->db->Execute($q);
+		if($rsList->RecordCount()!=0)
+		{
+			$q = "DELETE FROM {$table}";
+			$q .= " WHERE {$clause}";
+			$rsList = $db->Execute($q);
+		
+			$_SESSION['errors'] = 'Le champs a bien été supprimé.';
+		}else{
+			$_SESSION['errors'] = 'Aucun champs avec cet id. Le champs n\'a pas été supprimé.';
+		}
+
+	}
+
 	# writePrettyDate()
 	# @access public
 	# @param string $date

@@ -66,7 +66,6 @@ require_once("app/helpers/ti/ti.php");
 */
 require_once("app/core/app_controller.php");
 require_once("app/helpers/custom_methods/index.php");
-if(@require_once("app/helpers/meta.class.php"));
 if(@require_once("app/helpers/translate.class.php"));
 
 /*
@@ -82,7 +81,7 @@ foreach (glob("app/models/*.php") as $filename)
 	require_once($filename);
 }
 $user = new User();
-
+$app_controller = new AppController();
 
 /*
 |--------------------------------------------------------------------------

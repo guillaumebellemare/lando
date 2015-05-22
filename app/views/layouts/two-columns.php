@@ -3,11 +3,8 @@
 <html>
 <head>
 <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/meta.php')) ?>
-<meta property="og:type" content="<?php startblock('og:type') ?>website<?php endblock() ?>" />
-<meta property="og:image" content="<?php startblock('og:image') ?><?php endblock() ?>" />
 <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/header.php')) ?>
-<?php startblock('extended-styles') ?>
-<?php endblock() ?>
+<?php startblock('extended-styles') ?><?php endblock() ?>
 </head>
 <body>
 <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/analyticstracking.php')); ?>

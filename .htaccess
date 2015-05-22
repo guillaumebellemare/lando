@@ -6,26 +6,25 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 	
-	# Voir abgca.ca pour enlever la langue
-	#RewriteRule ^sitemap\.xml$ /lando/sitemap.php [NC,L]
-	
-    #Niveau 1 : exemple : fr/index.html
+    #Niveau 1 : exemple : fr/index
     RewriteRule ^(en|fr)/([^/]*)$ /lando/config.php?lang=$1&page=$2 [L]
    
-    #Niveau 2 : exemple : fr/page/param1.html
+    #Niveau 2 : exemple : fr/page/param1
     RewriteRule ^(en|fr)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3 [L]
     
-    #Niveau 3 : exemple : fr/page/param1/param2.html
+    #Niveau 3 : exemple : fr/page/param1/param2
     RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3&param2=$4 [L]
 
-    #Niveau 4 : exemple : fr/page/param1/param2/param3.html
+    #Niveau 4 : exemple : fr/page/param1/param2/param3
     RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3&param2=$4&param3=$5 [L]
-        
+
+    #Niveau 5 : exemple : fr/page/param1/param2/param3/param4
+    RewriteRule ^(en|fr)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ /lando/config.php?lang=$1&page=$2&param1=$3&param2=$4&param3=$5&param4=$6 [L]
+
     #Root FR ou EN
     RewriteRule ^(en|fr)/$ /lando/config.php?lang=$1&page=index [L]    
     RewriteRule ^(en|fr)$ /lando/config.php?lang=$1&page=index [L]     
     
     #404 ... 
     ErrorDocument 404 /lando/config.php?page=404
-	
 </IfModule>
