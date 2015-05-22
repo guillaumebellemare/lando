@@ -57,6 +57,7 @@ $this->update($record, $id)
 ```php
 $this->delete($this->table, "id = $id")
 ```
+=====
 ## Functions
 ### Write Pretty Date
 ```php
