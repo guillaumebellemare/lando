@@ -53,3 +53,7 @@ $this->insert($record)
 ```php
 $this->update($record, $id)
 ```
+### Delete
+```php
+$this->delete($this->table, "id = $id")
+```
