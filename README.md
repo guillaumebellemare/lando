@@ -59,6 +59,10 @@ $this->delete($this->table, "id = $id")
 ```
 =====
 ## Functions
+### Create Slug Field
+```php
+$foo->create_slug_field('bar', "name_$lang3", "slug_$lang3", "URL Slug - $lang2");
+```
 ### Write Pretty Date
 ```php
 $app->writePrettyDate("$date")
