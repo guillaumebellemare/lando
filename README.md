@@ -21,3 +21,7 @@ public function bar() {
   return $this->oneToMany("$this->table.id", "bar.foo_id");
 }
 ```
+### Where
+```php
+$this->select($this->table)->where("$this->table.id = 1")
+```
