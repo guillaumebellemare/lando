@@ -2,6 +2,27 @@
 <p>Lando Calrissian. C’est un petit magouilleur, un combinard... un vaurien, il va vous plaire.<br>http://guillaumebellemare.github.io/lando/<br>https://www.youtube.com/watch?v=WrvHMW4rviE</p>
 =====
 # Documentation
+## Controllers
+```php
+class IndexController extends AppController {
+
+	function index() {
+		
+		global $routes, $lang2, $lang3;
+		
+		# Model declaration
+		$base = new Base();
+		
+		# Slug creation
+		
+		# Data
+		$foos = $base->getAllBar();
+		
+		return array("$foos" => $foos);
+	}
+	
+}
+```
 ## Queries
 ### Select
 ```php
