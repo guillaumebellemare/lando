@@ -87,7 +87,7 @@ $bar = new Bar()
 
 foreach($rs as $key => &$record)
 {
-	$record["bars"] = $bar->select($bar->table)->all()
+	$record["bars"] = $bar->select($bar->table)->where("{$bar->table.id} = {$record['{$this->table}.id']}")
 }
 
 return $rs
