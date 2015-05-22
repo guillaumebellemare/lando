@@ -120,3 +120,12 @@ $app_routes = array(
 	"index" => "IndexController@index::protected",
 );
 ```
+=====
+## Metas
+```php
+$this->setTitle("Title");
+$this->setDescription("Description");
+$this->setKeywords("key, words");
+$this->setPageType("article");
+$this->setImage("image.jpg");
+```
