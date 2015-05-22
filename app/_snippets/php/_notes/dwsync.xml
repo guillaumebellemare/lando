@@ -21,4 +21,9 @@
 <file name="routes.txt" server="ftp.espacedev2.com/lando/" local="130705547591302422" remote="130689318000000000" Dst="2" />
 <file name="save.txt" server="ftp.espacedev2.com/lando/" local="130705547591302422" remote="130689318000000000" Dst="2" />
 <file name="raw_select.txt" server="ftp.espacedev2.com/lando/" local="130724630683559509" remote="130724630400000000" Dst="2" />
+<file name="create_slug_field.txt" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
+<file name="delete.txt" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
+<file name="email.txt" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
+<file name="foreach.txt" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
+<file name="routes.txt" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
 </dwsync>
