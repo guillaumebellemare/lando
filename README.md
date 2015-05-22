@@ -67,3 +67,23 @@ $app->writePrettyDate("$date")
 ```php
 $app->writePrettyMonth("$month")
 ```
+### Limit String Size
+```php
+$app->limitStringSize($month, 200)
+```
+### Format Money
+```php
+$app->format_money($price)
+```
+### Get picture path
+```php
+$app->getPicturePath($picture_path)
+```
+### Get picture infos
+```php
+$app->getPictureInfo($picture_path)
+```
+### New line to paragraph
+```php
+$app->nl2p(string)
+```
