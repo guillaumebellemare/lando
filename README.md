@@ -57,3 +57,8 @@ $this->update($record, $id)
 ```php
 $this->delete($this->table, "id = $id")
 ```
+## Functions
+### WritePrettyDate
+```php
+$app->writePrettyDate("$date")
+```
