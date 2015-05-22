@@ -176,5 +176,5 @@ $this->setTitle("Title");
 $this->setDescription("Description");
 $this->setKeywords("key, words");
 $this->setPageType("article");
-$this->setImage("image.jpg");
+$this->setImage("picture.jpg");
 ```
