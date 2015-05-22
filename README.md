@@ -82,12 +82,12 @@ $this->delete($this->table, "id = $id")
 ```
 ### Complex Query
 ```php
-$rs = $foo->select($member->table)->all()
+$rs = $this->select($this->table)->all()
 $bar = new Bar()
 
 foreach($rs as $key => &$record)
 {
-	$record["bar = $this->select($bar->table)->all()
+	$record["bars"] = $bar->select($bar->table)->all()
 }
 
 return $rs
