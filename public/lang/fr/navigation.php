@@ -1,4 +1,5 @@
 <?php
-	$navigation = array(
-		"index" => "Accueil",
-	);
+
+$navigation = array(
+	"index" => "Accueil",
+);

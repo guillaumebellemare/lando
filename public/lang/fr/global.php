@@ -1,5 +1,6 @@
 <?php
-	$global = array(
-		"title" => "Bienvenue",
-		"lang" => "EN",
-	);
+
+$global = array(
+	"title" => "Bienvenue",
+	"lang" => "EN",
+);

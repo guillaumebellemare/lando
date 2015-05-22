@@ -10,4 +10,9 @@
 <file name="global.php" server="ftp.espacedev2.com/lando/" local="130705571466175229" remote="130705535400000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com/lando/" local="130705571535697248" remote="130705535400000000" Dst="2" />
 <file name="validate.php" server="ftp.espacedev2.com/lando/" local="130705571570195910" remote="130705535400000000" Dst="2" />
+<file name="global.php" server="ftp.espacedev2.com//lando/" local="130767902014438203" remote="130767901800000000" Dst="2" />
+<file name="meta.php" server="ftp.espacedev2.com//lando/" local="130767902070582107" remote="130767901800000000" Dst="2" />
+<file name="navigation.php" server="ftp.espacedev2.com//lando/" local="130767902147084727" remote="130767901800000000" Dst="2" />
+<file name="routes.php" server="ftp.espacedev2.com//lando/" local="130767902211243316" remote="130767901800000000" Dst="2" />
+<file name="validate.php" server="ftp.espacedev2.com//lando/" local="130767902273135730" remote="130767901800000000" Dst="2" />
 </dwsync>

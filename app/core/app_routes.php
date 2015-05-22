@@ -1,5 +1,5 @@
 <?php
 
-	$app_routes = array(
-		"index" => "IndexController@index",
-	);
+$app_routes = array(
+	"index" => "IndexController@index",
+);
