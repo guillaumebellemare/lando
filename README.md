@@ -109,3 +109,14 @@ $routes = array(
 );
 ```
 ### app/core/app_routes.php
+```php
+$app_routes = array(
+	"index" => "IndexController@index",
+);
+```
+#### Password Protected
+```php
+$app_routes = array(
+	"index" => "IndexController@index::protected",
+);
+```
