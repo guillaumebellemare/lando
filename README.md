@@ -8,8 +8,10 @@ Lando
 # Documentation
 ## Queries
 ### Select
-<p>$this->select($this->table)</p>
-<h3>Join</h3>
+```php
+$this->select($this->table)</p>
+```
+### Join
 ```php
 public function foo() {
   $this->select($this->table)->left_join("table_name")
