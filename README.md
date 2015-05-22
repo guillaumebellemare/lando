@@ -5,12 +5,12 @@
 ## Queries
 ### Select
 ```php
-$this->select($this->table)
+$this->select($this->table)->all()
 ```
 ### Join
 ```php
 public function foo() {
-  $this->select($this->table)->left_join("table_name")
+  $this->select($this->table)->left_join("table_name")->all()
 }
 
 public function bar() {
@@ -19,17 +19,25 @@ public function bar() {
 ```
 ### Where
 ```php
-$this->select($this->table)->where("$this->table.id = 1")
+$this->select($this->table)->where("$this->table.id = 1")->all()
 ```
 ### Order By
 ```php
-$this->select($this->table)->order_by("$this->table.id ASC")
+$this->select($this->table)->order_by("$this->table.id ASC")->all()
 ```
 ### Group By
 ```php
-$this->select($this->table)->group_by("$this->table.id")
+$this->select($this->table)->group_by("$this->table.id")->all()
 ```
 ### Append
 ```php
-$this->select($this->table)->append(array("(DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) - INTERVAL 1 MONTH) AS special_date_renew", "DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) AS special_date_end"))
+$this->select($this->table)->append(array("(DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) - INTERVAL 1 MONTH) AS special_date_renew", "DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) AS special_date_end"))->all()
+```
+### Get
+```php
+$this->get($id)
+```
+### Limit
+```php
+$this->select($this->table)->limit(1)
 ```
