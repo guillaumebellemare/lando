@@ -68,7 +68,7 @@ $foo->create_slug_field('bar', "name_$lang3", "slug_$lang3", "URL Slug - $lang2"
 ### Read returned array
 ```php
 <?php foreach($foo as $bar) : ?>
-	<?=$bar['bars.name_$lang3']?>
+	<?=$bar["bars.name_$lang3"]?>
 <?php endforeach; ?>
 ```
 ### Write Pretty Date
