@@ -41,3 +41,15 @@ $this->get($id)
 ```php
 $this->select($this->table)->limit(1)
 ```
+### Raw Query
+```php
+$this->raw_query($q)
+```
+### Insert
+```php
+$this->insert($record)
+```
+### Update
+```php
+$this->update($record, $id)
+```
