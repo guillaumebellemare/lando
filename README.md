@@ -1,10 +1,10 @@
-Lando
+# Lando
 =====
-<p>Lando Calrissian. C’est un petit magouilleur, un combinard... un vaurien, il va vous plaire.</p>
+Lando Calrissian. C’est un petit magouilleur, un combinard... un vaurien, il va vous plaire.
 =====
-<p>http://guillaumebellemare.github.io/lando/</p>
+http://guillaumebellemare.github.io/lando/
 =====
-<p>https://www.youtube.com/watch?v=WrvHMW4rviE</p>
+https://www.youtube.com/watch?v=WrvHMW4rviE
 # Documentation
 ## Queries
 ### Select
