@@ -15,7 +15,7 @@ public function foo() {
   $this->select($this->table)->left_join("table_name")
 }
 
-public function table_name() {
-  return $this->oneToMany("$this->table.id", "table_name.table_name_id");
+public function bar() {
+  return $this->oneToMany("$this->table.id", "bar.foo_id");
 }
 ```
