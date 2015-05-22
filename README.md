@@ -58,7 +58,11 @@ $this->update($record, $id)
 $this->delete($this->table, "id = $id")
 ```
 ## Functions
-### WritePrettyDate
+### Write Pretty Date
 ```php
 $app->writePrettyDate("$date")
+```
+### Write Pretty Month
+```php
+$app->writePrettyMonth("$month")
 ```
