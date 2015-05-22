@@ -29,3 +29,7 @@ $this->select($this->table)->order_by("$this->table.id ASC")
 ```php
 $this->select($this->table)->group_by("$this->table.id")
 ```
+### Append
+```php
+$this->select($this->table)->append(array("(DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) - INTERVAL 1 MONTH) AS special_date_renew", "DATE(SUBSTRING_INDEX($this->table.date_activation, ',', -1)) AS special_date_end"))
+```
