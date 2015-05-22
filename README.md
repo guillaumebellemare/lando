@@ -11,14 +11,16 @@ class IndexController extends AppController {
 		global $routes, $lang2, $lang3;
 		
 		# Model declaration
-		$base = new Base();
+		foo = new Foo();
 		
 		# Slug creation
+		$foo->create_slug_field("bar", "name_$lang3", "slug_$lang3", "URL Slug - $lang2");
 		
 		# Data
-		$foos = $base->getAllBar();
+		$foos = foo->getAllBar();
+		$current_foo = current(foo->currentFoo());
 		
-		return array("$foos" => $foos);
+		return array("foos" => $foos, "current_foo" => $current_foo);
 	}
 	
 }
