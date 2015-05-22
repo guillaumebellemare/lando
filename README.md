@@ -103,4 +103,9 @@ $app->nl2p(string)
 ## Routes
 <p>You have to set your routes in two differents files:</p>
 ### public/lang/routes.php
+```php
+$routes = array(
+	"index" => "index",
+);
+```
 ### app/core/app_routes.php
