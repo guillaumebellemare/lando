@@ -21,3 +21,11 @@ public function bar() {
 ```php
 $this->select($this->table)->where("$this->table.id = 1")
 ```
+### Order By
+```php
+$this->select($this->table)->order_by("$this->table.id ASC")
+```
+### Group By
+```php
+$this->select($this->table)->group_by("$this->table.id")
+```
