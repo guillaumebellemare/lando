@@ -15,10 +15,10 @@ class App extends SluggedRecord {
 	private $where = array();
 	private $order_by = array();
 	private $group_by = array();
-	private $joined_table;
-	private $joined_table_code;
-	private $joined_statement;
-	private $joined_table_active;
+	private $joined_table = NULL;
+	private $joined_table_code = NULL;
+	private $joined_statement = NULL;
+	private $joined_table_active = NULL;
 	private $table_active;
 	private $limit;
 	private $table_rows;
@@ -49,6 +49,15 @@ class App extends SluggedRecord {
 			}
 		}
 
+	}
+	
+	# get()
+	# @access public
+	# @param $id
+	# @return current result
+	public function get($id){
+		$rs = $this->select($this->table)->where("{$this->table}.id = $id")->all(false);
+		return current($rs);
 	}
 
 	# select()
@@ -90,12 +99,24 @@ class App extends SluggedRecord {
 		}
         return $this;
     }
+    
+ 	# append()
+	# @access public
+	# @param string $a_rows
+	# @return $this
+    function append($a_rows){
+	    foreach($a_rows as $current_row){
+		    $this->a_table_rows[] = $current_row;
+		    $this->table_rows .= ', '. $current_row;
+	    }
+	    return $this;
+    }
 	
 	# left_join()
 	# @access public
 	# @param string $joined_table
 	# @return $this
-	function left_join($joined_table)
+	function left_join($joined_table, $force_active = true)
 	{
 		
        if($joined_table)
@@ -125,7 +146,7 @@ class App extends SluggedRecord {
 				# Put fields in a string
 				$this->table_rows .= ", ";
 				$this->table_rows .= $joined_table.".".$current_field." AS ".$joined_table."_".$rsColumns->fields["Field"];;
-				if($current_field=='active') $this->joined_table_active .= " AND {$joined_table}.active = 1";
+				if($current_field=='active' && $force_active) $this->joined_table_active .= " AND {$joined_table}.active = 1";
 				
 				$this->i++;
 			$rsColumns->MoveNext();
@@ -138,7 +159,7 @@ class App extends SluggedRecord {
 	
 	# oneToMany()
 	# @access public
-	# @param string $called_class, $foreign_key, $primary_key
+	# @param string $foreign_key, $primary_key
 	# @return $this
 	function oneToMany($foreign_key, $primary_key)
 	{
@@ -151,7 +172,7 @@ class App extends SluggedRecord {
 	# @return $this
     function where($where)
     {
-       if($where) $this->where[] = $where;
+       if($where) $this->where[] = "($where)";
        return $this;
     }
 	
@@ -167,7 +188,7 @@ class App extends SluggedRecord {
 	
 	# group_by()
 	# @access public
-	# @param string $order_by
+	# @param string $group_by
 	# @return $this
     function group_by($group_by=NULL)
     {
@@ -188,7 +209,7 @@ class App extends SluggedRecord {
 	# all()
 	# @access public
 	# @return array()
-	function all()
+	function all($force_active = true)
     {		
 		global $app_messages;
 
@@ -203,7 +224,7 @@ class App extends SluggedRecord {
 			}
 		}
 		
-		if($this->table_active) $q .= " {$this->table}.active = 1"; else $q .= " {$this->table}.id"; 
+		if($this->table_active && $force_active) $q .= " {$this->table}.active = 1"; else $q .= " 1"; 
 		$q .= $this->joined_table_active;
 		if($this->group_by) 
 		{
@@ -232,19 +253,24 @@ class App extends SluggedRecord {
 
 		# Put all data in an array
 		$i = 0;
-		#var_dump($this->a_table_rows);
+
 		while(!$rsList->EOF){
+			
 			$data[$i] = array();
+			
 			foreach($this->a_table_rows as $table_row)
 			{
 				if(explode(' AS ', $table_row)) list($complete_field, $as_field) = explode(' AS ', $table_row);
 				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
-				$table_row = explode(".", $table_row);
-				$table_row_complete = $table_row[0].'.'.$table_row[1];
-				
-				#$data[$i][$table_row_complete] = $rsList->fields[$table_field];
-				$data[$i][$complete_field] = $rsList->fields[$as_field];
+				if(strstr($as_field, 'special_')){
+					$table_row = (explode('special_', $as_field));
+					$complete_field = 'special.'.$table_row[1];
+				}else{
+					$table_row = explode(".", $table_row);
+					$table_row_complete = $table_row[0].'.'.$table_row[1];
+				}
 
+				$data[$i][$complete_field] = $rsList->fields[$as_field];
 			}
 			$i++;
 			
@@ -258,6 +284,8 @@ class App extends SluggedRecord {
 		if($this->where) unset($this->where);
 		if($this->order_by) unset($this->order_by);
 		if($this->joined_table) unset($this->joined_table);
+		if($this->joined_statement) unset($this->joined_statement);
+		if($this->joined_table_active) unset($this->joined_table_active);
 		if($this->joined_table_code) unset($this->joined_table_code);
 		if($this->limit) unset($this->limit);
 		if($this->table_rows) unset($this->table_rows);
@@ -266,13 +294,15 @@ class App extends SluggedRecord {
         return $data;
     }
 	
-	# Arguments = Raw Query
-	function custom_get($rawQuery){
+	# raw_query()
+	# @access public
+	# @param $raw_query
+	# @return array()
+	function raw_query($raw_query){
 		
 		$data = array();
 		$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
-		
-		$rsList = $this->db->Execute($rawQuery);
+		$rsList = $this->db->Execute($raw_query);
 		
 		$columns = array();
 		$columns = $rsList->fields;
@@ -290,224 +320,260 @@ class App extends SluggedRecord {
 		}
 		$rsList->Close();
 
-
 		return $data;
 	}
-
-	# left_join_old()
+	
+	# insert()
 	# @access public
-	# @param string $joined_table
-	# @return $this
-	function left_join_old($joined_table)
-	{
-		
-       if($joined_table)
-	   {
-		   $this->joined_table = $joined_table;
-		   $this->joined_table_code = rtrim($joined_table, "s");
-		   
-			$q = "SHOW COLUMNS FROM {$joined_table}";
-			$rsColumns = $this->db->Execute($q);
-			
-			# Select rows names
-			while(!$rsColumns->EOF){
-				
-				# Put fields of the joined table in the array
-				$current_field = $rsColumns->fields["Field"];
-				$this->a_table_rows[$this->i] = $joined_table.".".$current_field;
-	
-				# Put fields in a string
-				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field;
-				
-				$this->i++;
-			$rsColumns->MoveNext();
-			}
-			$rsColumns->Close();
-	    }
-
-		return $this;
-	}
-	
-	function add($table) {
-		
-		global $lang2;
-		global $db;
-		global $messages, $errors;
-		
-		$q = "SELECT * FROM {$table}";
-		
-		# Check for data that already exist in the database
-		$numb_arga = func_num_args();
-		$numb_verified_fields  = $numb_arga;
-		if($numb_verified_fields > 1 && $_POST)
-		{
-			$q .= " WHERE";
-			for ($i = 1; $i < $numb_arga; $i++) {
-				$verified_value = $_POST[func_get_arg($i)];
-				$verified_field = func_get_arg($i);
-				if($i!=1) $q .= " OR";
-				$q .= " {$table}.$verified_field = '$verified_value'";
-			}
-		}
-		$rsList = $this->db->Execute($q);
-		
-		if(isset($_POST['action']) && $_POST['action']=='save' && $_POST && $rsList->RecordCount()==0)
-		{
-			foreach($_POST as $field => $val)
-			{
-				if($val) if($_POST[$field]!=NULL) $record["$field"] = $val;
-			}
-			
-			$record["$field"] = $val;
-			$db->AutoExecute($table, $record, 'INSERT');
-			unset($_POST);
-			$_SESSION['messages'] = "L'ajout a bien été effectué.";
-		}/*elseif($_POST) {
-			$_SESSION['errors'] = "Valeur déjà entrée.";
-		}*/
-		if(isset($_POST)) unset($_POST);
-		header("Location: ".URL_ROOT.$lang2."/".$_GET['page']."");
-
+	# @param $record
+	# @return @void
+	public function insert(&$record){
+		$this->db->AutoExecute($this->table, $record, 'INSERT'); 
+		$record['id'] = $this->db->insert_id();
 		return true;
 	}
 	
-	function delete($table, $row_id) {
-	
-		global $lang2;
-		global $db;
-		global $messages, $errors;
-		
-		$q = "SELECT * FROM {$table} WHERE {$table}.id={$row_id}";
-		$rsList = $this->db->Execute($q);
-		if($rsList->RecordCount()!=0)
-		{
-			$q = "DELETE FROM {$table}";
-			$q .= " WHERE {$table}.id = '".$row_id."'";
-			$rsList = $db->Execute($q);
-		
-			$_SESSION['errors'] = 'Le champs a bien été supprimé.';
-		}else{
-			$_SESSION['errors'] = 'Aucun champs avec cet id. Le champs n\'a pas été supprimé.';
-		}
-		
-		if(isset($_POST)) unset($_POST);
-		header("Location: ".URL_ROOT.$lang2."/".$_GET['page'].".html");
+	# update()
+	# @access public
+	# @param $record, $id
+	# @return @void
+	public function update(&$record, $id){
+		return $this->db->AutoExecute($this->table, $record, 'UPDATE', 'id = ' . $id); 
 	}
-	
-	function getArgs($table) {
-		if(isset($_GET['argc'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argc']."'";
-		elseif(isset($_GET['argb'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['argb']."'";
-		elseif(isset($_GET['arga'])) return " AND {$table}.slug_{$this->lang3} = '".$_GET['arga']."'";
-		else return '';
-	}
-	
-	function writePrettyDate($date){
+
+	# writePrettyDate()
+	# @access public
+	# @param string $date
+	# @return readable date
+	public function writePrettyDate($date){
 		
-		$returnDate = NULL;
+		if($this->lang3=="fre") $word_link = "au"; else $word_link = "to";
+		$return_date = NULL;
 		
 		$date = explode(',', $date);
 		
-		$firstDate = explode('-', $date[0]);
-		$firstDateMonth = $this->writePrettyMonth($firstDate[1]);
-		$firstDateSend = (int)$firstDate[2].' '.$firstDateMonth.' '.$firstDate[0];
+		$first_date = explode('-', $date[0]);
+		$first_date_day = (int)$first_date[2];
+		$first_date_month = $this->writePrettyMonth($first_date[1]);
+		$first_date_year = $first_date[0];
+		
+		if($this->lang3=="fre" && $first_date_day==1) $first_date_day = $first_date_day."<sup>er</sup>";
+		
+		$first_date_send = $first_date_day." ".$first_date_month." ".$first_date_year;
+		
 		if(count($date) == 1){
-			$returnDate = '' . $firstDateSend;
+			$return_date = $first_date_send;
 		}else {
-			$secondDate = explode('-', $date[1]);
-			$secondDateMonth = $this->writePrettyMonth($secondDate[1]);
-			$secondDateSend = (int)$secondDate[2].' '.$secondDateMonth.' '.(int)$secondDate[0];
-						
-			# Only one date
-			if($firstDate==$secondDate) $returnDate = '' . $firstDateSend;
-			else {
-				# Two dates of the same year
-				if($firstDate[0]==$secondDate[0]) $returnDate = (int)$firstDate[2].' '.$firstDateMonth.' au '.(int)$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
-				# Two dates of the same month
-				if($firstDate[1]==$secondDate[1]) $returnDate = (int)$firstDate[2].' au '.(int)$secondDate[2].' '.$secondDateMonth.' '.$secondDate[0];
-				# DEFAULT 
-				if($returnDate==NULL) $firstDateSend.' au '.$secondDateSend;	 
-			}
+			$second_date = explode('-', $date[1]);
+			$second_date_day = (int)$second_date[2];
+			$second_date_month = $this->writePrettyMonth($second_date[1]);
+			$second_date_year = $second_date[0];
+			$second_dateSend = $second_date_day." ".$second_date_month." ".$second_date_year;
 			
+			if($this->lang3=="fre" && $second_date_day==1) $second_date_day = $second_date_day."<sup>er</sup>";
+			
+			# Only one date
+			if($first_date==$second_date)
+			{
+				$return_date = $first_date_send;
+			}else {
+				if($this->lang3=="fre")
+				{
+					# French formatting
+					
+					# Two dates of the same year
+					if($first_date_year == $second_date_year) $return_date = $first_date_day." ".$first_date_month." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
+					# Two dates of the same month
+					if($first_date_month === $second_date_month) $return_date = $first_date_day." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
+					
+					# Two dates of different year
+					if($first_date_year != $second_date_year) $return_date = $first_date_day." ".$first_date_month." ".$first_date_year." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
+					
+					# Default
+					if($return_date==NULL) $first_date_send." $word_link ".$second_dateSend;
+					
+				}elseif($this->lang3=="eng"){
+					# English formatting
+					
+					# Two dates of the same year
+					if($first_date_year == $second_date_year) $return_date = $first_date_month." ".$first_date_day." $word_link ".$second_date_month." ".$second_date_day.", ".$second_date_year;
+					# Two dates of the same month
+					if($first_date_month === $second_date_month) $return_date = $second_date_month." ".$first_date_day." $word_link ".$second_date_day.", ".$second_date_year;
+					
+					# Two dates of different year
+					if($first_date_year != $second_date_year) $return_date = $first_date_month." ".$first_date_day.", ".$first_date_year." $word_link ".$second_date_month." ".$second_date_day.", ".$second_date_year;
+					
+					# Default 
+					if($return_date==NULL) $first_date_send." $word_link ".$second_dateSend;	 
+				}
+			}
 		}
 		
-		return $returnDate;
+		return $return_date;
 	}
 
-	function writePrettyMonth($month)
+	# writePrettyMonth()
+	# @access public
+	# @param string $month
+	# @return readable montb
+	public function writePrettyMonth($month)
 	{
-		switch ($month) {
-			case '01':
-				$month = 'janvier';
-			break;
-			case '02':
-				$month = 'février';
-			break;
-			case '03':
-				$month = 'mars';
-			break;
-			case '04':
-				$month = 'avril';
-			break;
-			case '05':
-				$month = 'mai';
-			break;
-			case '06':
-				$month = 'juin';
-			break;
-			case '07':
-				$month = 'juillet';
-			break;
-			case '08':
-				$month = 'août';
-			break;
-			case '09':
-				$month = 'septembre';
-			break;
-			case '10':
-				$month = 'octobre';
-			break;
-			case '11':
-				$month = 'novembre';
-			break;
-			case '12':
-				$month = 'décembre';
-			break;
+		global $lang3;
+		
+		if($this->lang3=="fre")
+		{
+			switch ($month) {
+				case "01":
+					$month = "janvier";
+				break;
+				case "02":
+					$month = "février";
+				break;
+				case "03":
+					$month = "mars";
+				break;
+				case "04":
+					$month = "avril";
+				break;
+				case "05":
+					$month = "mai";
+				break;
+				case "06":
+					$month = "juin";
+				break;
+				case "07":
+					$month = "juillet";
+				break;
+				case "08":
+					$month = "août";
+				break;
+				case "09":
+					$month = "septembre";
+				break;
+				case "10":
+					$month = "octobre";
+				break;
+				case "11":
+					$month = "novembre";
+				break;
+				case "12":
+					$month = "décembre";
+				break;
+			}
+		}elseif($this->lang3=="eng"){
+			switch ($month) {
+				case "01":
+					$month = "January";
+				break;
+				case "02":
+					$month = "February";
+				break;
+				case "03":
+					$month = "March";
+				break;
+				case "04":
+					$month = "April";
+				break;
+				case "05":
+					$month = "May";
+				break;
+				case "06":
+					$month = "June";
+				break;
+				case "07":
+					$month = "July";
+				break;
+				case "08":
+					$month = "August";
+				break;
+				case "09":
+					$month = "September";
+				break;
+				case "10":
+					$month = "October";
+				break;
+				case "11":
+					$month = "November";
+				break;
+				case "12":
+					$month = "December";
+				break;
+			}
 		}
 		
 		return $month;	
 	}
 	
-	function writePrettyFirstDay($date){
-		
-		$returnDate = NULL;
-		
-		$date = explode(',', $date);
-		
-		$firstDate = explode('-', $date[0]);
-		$returnDate = $firstDate[2];
-		
-		return (int)$returnDate;
-	}
-	
-	function writePrettyFirstMonth($date){
-		
-		$returnDate = NULL;
-		
-		$date = explode(',', $date);
-		
-		$firstDate = explode('-', $date[0]);
-		$returnDate = $this->writePrettyMonth($firstDate[1]);
-		
-		return $returnDate;
-	}
-	
-	function limitStringSize($string, $size=200)
+	# limitStringSize()
+	# @access public
+	# @param string $string, $size
+	# @return cropped string
+	public function limitStringSize($string, $size=200)
 	{
 		$pos = strpos($string, ' ', $size);
-		$string = substr($string,0,$pos);
-
+		$cropped_string = substr($string,0,$pos);
+		if(strlen($cropped_string) >= $size) $string = $cropped_string;
 		return $string;
 	}
 	
+	# format_money()
+	# @access public
+	# @param string $number
+	# @return formatted number
+	public function format_money($number)
+	{
+		setlocale(LC_MONETARY, "fr_CA");
+		if($this->lang3=="fre") $number = money_format('%!.0n', $number)." $";
+		else $number = money_format('$ %!.0n', $number);
+		return $number;
+	}
+	
+	# getPicturePath()
+	# @access public
+	# @param string $string
+	# @return picture path
+	public function getPicturePath($string){
+		$a = explode("::", $string);
+		return $a[0];
+	}
+	
+	# getPictureInfo()
+	# @access public
+	# @param string $string
+	# @return array() of picture infos
+	function getPictureInfo($string){
+		$a = explode('::', $string);
+		return array('file' => $a[0], 'cropdata' => $a[1]);
+	}
+	
+	# nl2p()
+	# @access public
+	# @param string $string, $line_breaks, $xml
+	# @return trimmed string
+	function nl2p($string, $line_breaks = true, $xml = true) {
+
+		$string = str_replace(array('<p>', '</p>', '<br>', '<br />'), '', $string);
+		
+		# It is conceivable that you might still want single line-breaks without breaking into a new paragraph.
+		if ($line_breaks == true)
+		    return '<p>'.preg_replace(array("/([\n]{2,})/i", "/([^>])\n([^<])/i"), array("</p>\n<p>", '$1<br'.($xml == true ? ' /' : '').'>$2'), trim($string)).'</p>';
+		else 
+		    return '<p>'.preg_replace(
+		    array("/([\n]{2,})/i", "/([\r\n]{3,})/i","/([^>])\n([^<])/i"),
+		    array("</p>\n<p>", "</p>\n<p>", '$1<br'.($xml == true ? ' /' : '').'>$2'),
+		
+		    trim($string)).'</p>'; 
+	}
+	
+	# compact_list()
+	# @access public
+	# @param string $a, $field
+	# @return $a_compact
+	function compact_list($a, $field){
+		$a_compact = array();
+		foreach($a as $row){
+			$a_compact[] = $row[$field];
+		}
+		return $a_compact;
+	}
 }
