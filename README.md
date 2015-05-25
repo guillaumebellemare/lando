@@ -100,7 +100,7 @@ $foo->create_slug_field("bar", "name_$lang3", "slug_$lang3", "URL Slug - $lang2"
 ```
 ### Redirect
 ```php
-this->redirect("route_to_redirect");
+$this->redirect("route_to_redirect");
 ```
 =====
 ## View Functions
