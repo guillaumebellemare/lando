@@ -8,13 +8,11 @@ class IndexController extends AppController {
 
 	function index() {
 		
-		global $lang2, $lang3;
-		
 		# Model declaration
 		foo = new Foo();
 		
 		# Slug creation
-		$foo->create_slug_field("bar", "name_$lang3", "slug_$lang3", "URL Slug - $lang2");
+		$foo->create_slug_field("name_$this->lang3");
 		
 		# Data
 		$foos = foo->getAllBar();
