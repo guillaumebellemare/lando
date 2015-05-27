@@ -176,6 +176,6 @@ $app_routes = array(
 $this->setTitle("Title");
 $this->setDescription("Description");
 $this->setKeywords("key, words");
-$this->setPageType("article");
+$this->setPageType("article"); // Default : website
 $this->setImage("picture.jpg");
 ```
