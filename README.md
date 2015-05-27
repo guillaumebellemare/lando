@@ -96,8 +96,8 @@ return $rs
 ### Create Slug Field
 You can omit the second and third arguments witch are: name of the slug and name of the label of the slug
 ```php
-$foo->create_slug_field("name_$this->lang3");
-$foo->create_slug_field("name_$this->lang3", "slug_$this->lang3", "URL Slug - $this->lang2");
+$foo->createSlugField("name_$this->lang3");
+$foo->createSlugField("name_$this->lang3", "slug_$this->lang3", "URL Slug - $this->lang2");
 ```
 ### Redirect
 ```php
@@ -134,7 +134,7 @@ $app->limitStringSize($month, 200)
 ```
 ### Format Money
 ```php
-$app->format_money($price)
+$app->formatMoney($price)
 ```
 ### Get picture path
 ```php
