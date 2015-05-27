@@ -47,18 +47,12 @@ class SluggedRecord {
 		$rs->Close();
 	}
 	
-	/**
-	 * create_slug_field function.
-	 * Cette fonction permet de créer le champ slug dans la table de la base de données mais aussi dans l'interface d'administration ZA. 
-	 * Le champ sera automatiquement rempli à partir du champ source (tout en convertissant la chaine du champ source en une chaine URL valide (slug)
-	 * 
-	 * @access public
-	 * @param string $code Le nom de code la page (tel que nommé dans l'admin)
-	 * @param string $source_field Le nom du champ source 
-	 * @param string $slug_field Le nom du champ slug à créer
-	 * @param string $slug_label Le label du champ slug (tel qu'il s'affichera dans la zone admin. 
-	 * @return void
-	 */
+	# create_slug_field()
+	# Create slug field in the db table and in the ZAP interface
+	# This field will be automatically filled with the source field (all that while converting the source field in a valid URL - slug)
+	# @access public
+	# @param $code, $source_field, $slug_field, $slug_label
+	# @return void
 	function create_slug_field ($code,  $source_field,  $slug_field,  $slug_label) {
 		$rsField = $this->db->Execute('SELECT id FROM fields WHERE type = "form/slug"');
 		$field_id = $rsField->fields['id'];
@@ -101,27 +95,6 @@ class SluggedRecord {
 			$this->current_slug_trans = $rs->fields('slug_trans');
 		} else $this->current_id =false;
 		return $this->current_id;
-	}
-	
-	/**
-	 * setComplexWhere function.
-	 * À ce niveau, la fonction est vide, mais elle doit être définie dans les classes enfants si nécessaire.
-	 * @access public
-	 * @return void
-	 */
-	function setComplexWhere(){
-		// nothing to do here ...
-	}
-
-	/**
-	 * getLangURL function.
-	 * 
-	 * @access public
-	 * @return La langue sous sa forme utilisée dans l'URL (c'est-à-dire, 2 lettres).
-	 */
-	function getLangURL() {
-		if($this->lang3 == 'fre') return 'fr';
-		else  return 'en';
 	}
 	
 	/**
