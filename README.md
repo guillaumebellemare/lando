@@ -9,7 +9,7 @@ class IndexController extends AppController {
 	function index() {
 		
 		# Model declaration
-		foo = new Foo();
+		$foo = new Foo();
 		
 		# Slug creation
 		$foo->create_slug_field("name_$this->lang3");
