@@ -95,8 +95,10 @@ return $rs
 =====
 ## Functions
 ### Create Slug Field
+You can omit the second and third arguments witch are: name of the slug and name of the label of the slug
 ```php
-$foo->create_slug_field("bar", "name_$lang3", "slug_$lang3", "URL Slug - $lang2");
+$foo->create_slug_field("name_$this->lang3");
+$foo->create_slug_field("name_$this->lang3", "slug_$this->lang3", "URL Slug - $this->lang2");
 ```
 ### Redirect
 ```php
