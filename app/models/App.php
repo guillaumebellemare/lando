@@ -280,12 +280,17 @@ class App extends SluggedRecord {
 		if($this->joined_statement) unset($this->joined_statement);
 		if($this->joined_table_active) unset($this->joined_table_active);
 		if($this->joined_table_code) unset($this->joined_table_code);
-		if($this->limit) unset($this->limit);
 		if($this->table_rows) unset($this->table_rows);
 		if($this->a_table_rows) unset($this->a_table_rows);
 
-		if($this->limit AND $this->limit == 1) return current($data);
-        return $data;
+		if($this->limit && $this->limit == 1)
+		{
+			if($this->limit) unset($this->limit);
+			return current($data);
+		}else{
+			if($this->limit) unset($this->limit);
+        	return $data;
+		}
     }
 	
 	# raw_query()
