@@ -16,22 +16,14 @@ class AppController extends SluggedRecord {
 		$this->current_function = &$current_function;
 	}
 	
-	# invalidateAndRedirect()
-	# @access public
-	# @param $new_action - Allows us to redirect to another action while keeping the same variables
-	# @return new action
-	public function invalidateAndRedirect($new_action){
-		$this->current_function = $new_action;
-		return $this->$new_action();
-	}
-	
 	# redirect()
 	# @access public
 	# @param $to_route
 	# @return void
-	public function redirect($to_route){
+	public function redirect($to_route = NULL){
 		global $lang2, $routes;
-		header('Location: '."http://$_SERVER[HTTP_HOST]".URL_ROOT.$lang2.'/'.$routes[$to_route]);
+		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$lang2.'/'.$routes[$to_route];
+		header('Location: '.$path);
 		exit;
 	}
 
@@ -73,7 +65,9 @@ class AppController extends SluggedRecord {
 			}else {
 				if($this->lang3=="fre")
 				{
-					# French formatting
+					#######################
+					## French formatting ##
+					#######################
 					
 					# Two dates of the same year
 					if($first_date_year == $second_date_year) $return_date = $first_date_day." ".$first_date_month." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
@@ -87,7 +81,9 @@ class AppController extends SluggedRecord {
 					if($return_date==NULL) $first_date_send." $word_link ".$second_dateSend;
 					
 				}elseif($this->lang3=="eng"){
-					# English formatting
+					########################
+					## English formatting ##
+					########################
 					
 					# Two dates of the same year
 					if($first_date_year == $second_date_year) $return_date = $first_date_month." ".$first_date_day." $word_link ".$second_date_month." ".$second_date_day.", ".$second_date_year;
@@ -198,7 +194,7 @@ class AppController extends SluggedRecord {
 		return $month;	
 	}
 	
-	function getMetaFromPage($part)
+	public function getMetaFromPage($part)
 	{
 		global $routes, $meta;
 		$key = array_search("{$_GET['page']}", $routes);
@@ -213,8 +209,12 @@ class AppController extends SluggedRecord {
 		}
 
 	}
-	
-	function getMeta($part)
+
+	# getMeta()
+	# @access public
+	# @param $part
+	# @return current_meta
+	public function getMeta($part)
 	{
 		global $meta;
 		$current_meta = NULL;
@@ -232,7 +232,11 @@ class AppController extends SluggedRecord {
 		return $current_meta;
 	}
 	
-	function getMetaURL()
+	# getMetaURL()
+	# @access public
+	# @param void
+	# @return current_meta url
+	public function getMetaURL()
 	{
 		global $meta, $lang2;
 		$current_meta = "http://";
@@ -246,37 +250,65 @@ class AppController extends SluggedRecord {
 		return $current_meta;
 	}
 	
-	function getPageType()
+	# getPageType()
+	# @access public
+	# @param void
+	# @return page type
+	public function getPageType()
 	{
 		return self::$type;
 	}
 	
-	function getImage()
+	# getImage()
+	# @access public
+	# @param void
+	# @return image
+	public function getImage()
 	{
 		return self::$image;
 	}
 	
-	function setTitle($string)
+	# setTitle()
+	# @access public
+	# @param $string
+	# @return void
+	public function setTitle($string)
 	{
 		self::$title = $string;
 	}
 	
-	function setDescription($string)
+	# setDescription()
+	# @access public
+	# @param $string
+	# @return void
+	public function setDescription($string)
 	{
 		self::$description = $string;
 	}
 	
-	function setKeywords($string)
+	# setKeywords()
+	# @access public
+	# @param $string
+	# @return void
+	public function setKeywords($string)
 	{
 		self::$keywords = $string;
 	}
 	
-	function setPageType($string)
+	# setPageType()
+	# @access public
+	# @param $string
+	# @return void
+	public function setPageType($string)
 	{
 		self::$type = $string;
 	}
 	
-	function setImage($string, $from_zap = true)
+	# setImage()
+	# @access public
+	# @param $string, $from_zap
+	# @return void
+	public function setImage($string, $from_zap = true)
 	{
 		if($from_zap) self::$image = URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;
 		self::$image .= $string;
