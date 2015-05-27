@@ -59,6 +59,7 @@ $this->select($this->table)->append(array("(DATE(SUBSTRING_INDEX($this->table.da
 $this->get($id)
 ```
 ### Limit
+If the limit is set to 1, you will automatically receive the current array
 ```php
 $this->select($this->table)->limit(1)
 ```
