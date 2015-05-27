@@ -539,11 +539,11 @@ class App extends SluggedRecord {
 		return $string;
 	}
 	
-	# format_money()
+	# formatMoney()
 	# @access public
 	# @param string $number
 	# @return formatted number
-	public function format_money($number)
+	public function formatMoney($number)
 	{
 		setlocale(LC_MONETARY, "fr_CA");
 		if($this->lang3=="fre") $number = money_format('%!.0n', $number)." $";

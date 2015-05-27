@@ -47,13 +47,13 @@ class SluggedRecord {
 		$rs->Close();
 	}
 	
-	# create_slug_field()
+	# createSlugField()
 	# Create slug field in the db table and in the ZAP interface
 	# This field will be automatically filled with the source field (all that while converting the source field in a valid URL - slug)
 	# @access public
 	# @param $code, $source_field, $slug_field, $slug_label
 	# @return void
-	function create_slug_field($source_field,  $slug_field = NULL,  $slug_label = NULL) {
+	function createSlugField($source_field,  $slug_field = NULL,  $slug_label = NULL) {
 		if(!$slug_field) $slug_field = "slug_$this->lang3";
 		if(!$slug_label) $slug_label = "URL Slug - $this->lang2";
 		
