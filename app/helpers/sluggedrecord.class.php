@@ -35,7 +35,7 @@ class SluggedRecord {
 	# @access public
 	# @param $source_field, $slug_field
 	# @return void
-	function check_slug ($source_field,  $slug_field) {
+	function check_slug($source_field,  $slug_field) {
 		
 		# Create slug for  
 		$rs = $this->db->Execute("SELECT id, $source_field, $slug_field FROM {$this->table} WHERE $slug_field = '' AND active = 1");
@@ -53,13 +53,18 @@ class SluggedRecord {
 	# @access public
 	# @param $code, $source_field, $slug_field, $slug_label
 	# @return void
-	function create_slug_field ($code,  $source_field,  $slug_field,  $slug_label) {
+	function create_slug_field($source_field,  $slug_field = NULL,  $slug_label = NULL) {
+		if(!$slug_field) $slug_field = "slug_$this->lang3";
+		if(!$slug_label) $slug_label = "URL Slug - $this->lang2";
+		
 		$rsField = $this->db->Execute('SELECT id FROM fields WHERE type = "form/slug"');
 		$field_id = $rsField->fields['id'];
 		$rsField->Close();
-		$rs = $this->db->Execute('SELECT pages.id FROM pages WHERE code_name = "' . $code . '"');
-		$page_id = $rs->fields('id'); $rs->Close();
+		$rs = $this->db->Execute('SELECT pages.id FROM pages WHERE code_name = "' . $this->table_code . '"');
+		$page_id = $rs->fields('id');
+		$rs->Close();
 		$rs = $this->db->Execute('SELECT pages_fields.id FROM pages_fields WHERE name = "' . $slug_field . '" AND page_id = '.$page_id.'');
+		
 		if(!$rs->RecordCount()){
 			$this->db->Execute("INSERT INTO `pages_fields` ( `page_id`, `field_id`, `classdef`, `list_display_style`, `display_in_list`, `active`, `rank`, `name`, `label_fre`, `label_eng`, `lang_specific`, `specs`, `rules_fre`, `rules_eng`) VALUES
 ($page_id, $field_id, '', '', 0, 1, 60, '$slug_field', '$slug_label', '$slug_label', 1, '', '', '')");

@@ -15,9 +15,9 @@ class App extends SluggedRecord {
 	private $table_rows;
 	private $a_table_rows = array();
 
-	public function __construct($table=NULL) {
+	public function __construct($table = NULL, $table_code = NULL) {
 		
-		global $lang3;
+		global $lang2, $lang3;
 		
 		# Create ADO object & connect to the database
 		$db = ADONewConnection(DB_TYPE);
@@ -27,8 +27,10 @@ class App extends SluggedRecord {
 		$db->Execute("SET NAMES utf8");
 
 		$this->db = $db;
+		$this->lang2 = $lang2;
 		$this->lang3 = $lang3;
 		$this->table = $table;
+		$this->table_code = $table_code;
 		
 		if(DEBUG==true)
 		{
@@ -338,7 +340,6 @@ class App extends SluggedRecord {
 	# @return @void
 	function delete($table, $clause) {
 	
-		global $lang2;
 		global $db;
 		global $messages, $errors;
 		if(!isset($table))$table = $this->table;

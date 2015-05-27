@@ -4,7 +4,8 @@ class Base extends App {
 	
 	public function __construct() {
 		$this->table = 'activities';
-		parent::__construct($this->table);
+		$this->table_code = 'activity';
+		parent::__construct($this->table, $this->table_code);
 	}
 	
 	public function getAllBar(){

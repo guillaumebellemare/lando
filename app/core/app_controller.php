@@ -13,6 +13,11 @@ class AppController extends SluggedRecord {
 	# @param mixed $current_function - Reference to the function that will be executed. We keep the reference to be able to modify it later to show another view if necessary
 	# @return void
 	public function __construct(&$current_function=NULL){
+		
+		global $lang2, $lang3;
+		
+		$this->lang3 = $lang3;
+		$this->lang2 = $lang2;
 		$this->current_function = &$current_function;
 	}
 	
@@ -21,8 +26,8 @@ class AppController extends SluggedRecord {
 	# @param $to_route
 	# @return void
 	public function redirect($to_route = NULL){
-		global $lang2, $routes;
-		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$lang2.'/'.$routes[$to_route];
+		global $routes;
+		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2.'/'.$routes[$to_route];
 		header('Location: '.$path);
 		exit;
 	}
@@ -108,8 +113,6 @@ class AppController extends SluggedRecord {
 	# @return readable montb
 	public function writePrettyMonth($month)
 	{
-		global $lang3;
-		
 		if($this->lang3=="fre")
 		{
 			switch ($month) {
@@ -238,9 +241,9 @@ class AppController extends SluggedRecord {
 	# @return current_meta url
 	public function getMetaURL()
 	{
-		global $meta, $lang2;
+		global $meta;
 		$current_meta = "http://";
-		if(isset($meta["site.url"])) $current_meta .= $meta["site.url"]."/".$lang2;
+		if(isset($meta["site.url"])) $current_meta .= $meta["site.url"]."/".$this->lang2;
 		if(isset($_GET["page"]) && $_GET["page"]!="index") $current_meta .= "/".$_GET['page'];
 		if(isset($_GET['param1'])) $current_meta .=  "/".$_GET['param1'];
 		if(isset($_GET['param2'])) $current_meta .=  "/".$_GET['param2'];

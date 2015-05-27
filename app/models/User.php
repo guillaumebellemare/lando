@@ -4,7 +4,8 @@ class User extends App {
 	
 	public function __construct() {
 		$this->table = 'users';
-		parent::__construct($this->table);
+		$this->table_code = 'user';
+		parent::__construct($this->table, $this->table_code);
 	}
 	
 	function authenticate($username, $password) {
