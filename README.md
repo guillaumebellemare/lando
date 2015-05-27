@@ -16,7 +16,7 @@ class IndexController extends AppController {
 		
 		# Data
 		$foos = foo->getAllBar();
-		$current_foo = current(foo->currentFoo());
+		$current_foo = current($foo->currentFoo());
 		
 		return array("foos" => $foos, "current_foo" => $current_foo);
 	}
