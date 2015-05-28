@@ -40,8 +40,8 @@ input[type="text"]:disabled { background:#dddddd; }
 input:disabled:hover, textarea:disabled:hover { border:1px solid #CCC; }
 select { background:url(../images/common/form-select.png) no-repeat center right; }
 select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right; }
-::selection { background:#0088CC; color:#FFF; }
-::-moz-selection { background:#0088CC; border:1px solid #0088CC; color:#FFF; }
+::selection { background:#607C8A; color:#FFF; }
+::-moz-selection { background:#607C8A; border:1px solid #607C8A; color:#FFF; }
 ::-webkit-input-placeholder { color:#999; }
 :-moz-placeholder { color:#999; }
 ::-moz-placeholder { color:#999; }
