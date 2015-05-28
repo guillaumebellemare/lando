@@ -41,7 +41,7 @@
 <label for="rRadio_1">Radio 2</label>
 <input type="radio" name="rRadio" value="2" id="rRadio_2">
 <label for="rRadio_2">Radio 3</label>
-<input type="checkbox" name="cCheck" value="0" id="cCheck_0">
+<input type="checkbox" name="cCheck" checked value="0" id="cCheck_0">
 <label for="cCheck_0">Checkbox 1</label>
 <input type="checkbox" name="cCheck" value="1" id="cCheck_1">
 <label for="cCheck_1">Checkbox 2</label>

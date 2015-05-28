@@ -21,4 +21,8 @@
 <file name="radio-on.png" server="ftp.espacedev2.com/lando/" local="130705547636107353" remote="130689318000000000" Dst="2" />
 <file name="slider.jpg" server="ftp.espacedev2.com/lando/" local="130705547639078198" remote="130689318000000000" Dst="2" />
 <file name="slider.jpg" server="ftp.espacedev2.com//lando/" local="130767908362498942" remote="130767908400000000" Dst="2" />
+<file name="check-off.png" server="ftp.espacedev2.com//lando/" local="130772942609799827" remote="130772942400000000" Dst="2" />
+<file name="radio-off.png" server="ftp.espacedev2.com//lando/" local="130772942611518473" remote="130772942400000000" Dst="2" />
+<file name="check-on.png" server="ftp.espacedev2.com//lando/" local="130772942609799827" remote="130772942400000000" Dst="2" />
+<file name="radio-on.png" server="ftp.espacedev2.com//lando/" local="130772943614342658" remote="130772943600000000" Dst="2" />
 </dwsync>
