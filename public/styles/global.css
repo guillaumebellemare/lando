@@ -50,16 +50,16 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 /*-------------------------------------------------------------------
 	Modules (ex.: .box)
 -------------------------------------------------------------------*/
-.navigation { position:relative; z-index:100; font-size:0;}
+.navigation { position:relative; z-index:100; font-size:0; }
+.navigation ul li:before { content:""; padding:0; float:none; display:inline; }
 .navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; font-size:0; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0; }
-.navigation ul li:before { content:""; padding:0; float:none; display:inline; }
 .navigation > ul > li > a { display:block; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
-.navigation > ul > li > ul > li { margin:0; text-indent:0px; }
+.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { color:#000; }
 .navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; margin:0; }
+.navigation > ul > li > ul > li { margin:0; text-indent:0px; }
 .navigation > ul > li > ul > li > a { padding:7px 10px; background:#FFF; display:block; }
 .navigation > ul > li > ul > li:hover > a { background:#CCC; }
-.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { color:#000; }
 .btn { display:inline-block; font-size:14px; padding:10px 12px; color:#FFF; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; opacity:1; margin:0 5px 0 0; }
 .btn:hover { opacity:0.8; }
 #map_canvas { height:300px; }
@@ -96,5 +96,7 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .has-red-bg { background:#F44236; }
 .has-yellow-bg { background:#FEC107; }
 .has-green-bg { background:#8BC24A; }
+.has-no-bullets { text-indent:0; margin:0; }
+.has-no-bullets li:before { content:""; padding:0; float:none; display:inline; }
 table tr:hover td { background:#f1f1f1 !important; }
 .navigation > ul > li > .is-hover { zoom:1; filter:alpha(opacity=100); opacity:1; display:block; }

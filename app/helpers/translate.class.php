@@ -6,7 +6,8 @@ class Translate {
 	{
 		global $routes, $lang2_trans, $lang2;
 		
-		$key = array_search("{$_GET['page']}", $routes);
+		if(isset($_GET['param1'])) $key = array_search("{$_GET['page']}/{$_GET['param1']}", $routes);
+		elseif(!$key) $key = array_search("{$_GET['page']}", $routes);
 		
 		if($routes["$key"] && $routes["$key"] != 'index')
 		{
