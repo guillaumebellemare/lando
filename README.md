@@ -85,7 +85,7 @@ $this->delete($this->table, "id = $id")
 $rs = $this->select($this->table)->all();
 $bar = new Bar();
 
-foreach($rs as $key => &$record)
+foreach($rs as &$record)
 {
 	$record["bars"] = $bar->select($bar->table)->where("{$bar->table}.id = {$record['{$this->table}.id']}");
 }
