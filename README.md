@@ -105,9 +105,9 @@ $foo->createSlugField("name_$this->lang3", "slug_$this->lang3", "URL Slug - $thi
 $this->redirect("route_to_redirect");
 ```
 ### Slug Translation
-If you have a slug, you can make sure it translates well in your Controller
-You have to call the function translateSlug() in your Controller
-The first argument is the slug found in your query. The second one is the position of the slug in the URI
+```If you have a slug, you can make sure it translates well in your Controller```
+```You have to call the function translateSlug() in your Controller```
+```The first argument is the slug found in your query. The second one is the position of the slug in the URI```
 ```php
 $data = $model->getCurrentData($_GET["param2"]);
 
