@@ -316,5 +316,26 @@ class AppController extends SluggedRecord {
 		if($from_zap) self::$image = URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;
 		self::$image .= $string;
 	}
-	
+		
+	# translateSlug()
+	# @access public
+	# @param $slug, $paramNbr
+	# @return void
+	public function translateSlug($slug, $paramNbr)
+	{
+		global $routes;
+		
+		if($slug!=$_GET["param{$paramNbr}"])
+		{
+			$path =  "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2."/".$_GET["page"];
+			if($paramNbr==1) $path .= "/".$slug;
+			if($paramNbr==2) $path .= "/".$_GET["param1"]."/".$slug;
+			if($paramNbr==3) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$slug;
+			if($paramNbr==4) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$slug;
+			if($paramNbr==5) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$_GET["param4"]."/".$slug;
+			
+			header('Location: '.$path);
+		}else return false;
+	}
+
 }
