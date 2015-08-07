@@ -2,6 +2,20 @@
 
 /*
 |--------------------------------------------------------------------------
+| Initialization
+|--------------------------------------------------------------------------
+|
+| This is where the initialization is made
+|
+*/
+define("PRODUCTION_MODE", 0);
+define("COMPLETE_FOLDER", dirname(__FILE__));
+define("PUBLIC_FOLDER", "public/");
+define("WBR_FOLDER", "images/wbr/uploads/");
+define("COMPLETE_URL_ROOT", $_SERVER['DOCUMENT_ROOT'].URL_ROOT);
+
+/*
+|--------------------------------------------------------------------------
 | Database connection
 |--------------------------------------------------------------------------
 |
@@ -65,8 +79,8 @@ require_once("app/helpers/ti/ti.php");
 |
 */
 require_once("app/core/app_controller.php");
-require_once("app/helpers/custom_methods/index.php");
 if(@require_once("app/helpers/translate.class.php"));
+if(@require_once(COMPLETE_URL_ROOT . 'app/helpers/meta.class.php'));
 
 /*
 |--------------------------------------------------------------------------
@@ -82,6 +96,7 @@ foreach (glob("app/models/*.php") as $filename)
 }
 $user = new User();
 $app_controller = new AppController();
+require_once("app/helpers/custom_methods/index.php");
 
 /*
 |--------------------------------------------------------------------------

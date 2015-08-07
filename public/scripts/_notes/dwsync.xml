@@ -33,4 +33,8 @@
 <file name="selectivizr-min.js" server="ftp.espacedev2.com//lando/" local="130754156187173361" remote="130689318000000000" Dst="2" />
 <file name="stacktable.js" server="ftp.espacedev2.com//lando/" local="130754156187573801" remote="130689318000000000" Dst="2" />
 <file name="jquery.validate.additional-methods-zip.js" server="ftp.espacedev2.com//lando/" local="130767915020850641" remote="130767915000000000" Dst="2" />
+<file name="jquery.fileupload.js" server="ftp.espacedev2.com//lando/" local="130831718939307924" remote="130834276200000000" Dst="2" />
+<file name="jquery.iframe-transport.js" server="ftp.espacedev2.com//lando/" local="130831718939787899" remote="130834276200000000" Dst="2" />
+<file name="jquery.timepicker.min.js" server="ftp.espacedev2.com//lando/" local="130831718940507965" remote="130834276200000000" Dst="2" />
+<file name="jquery.ui.widget.js" server="ftp.espacedev2.com//lando/" local="130831718941628021" remote="130834276200000000" Dst="2" />
 </dwsync>
