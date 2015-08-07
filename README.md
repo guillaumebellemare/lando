@@ -108,8 +108,10 @@ $this->redirect("route_to_redirect");
 If you have a slug, you can make sure it translates well in your Controller
 
 You have to call the function translateSlug() in your Controller
+-> Also note that your model query method ($model->getCurrentData($_GET["param2"])) must finish by ->limit(1) in order to work.
 
 The first argument is the slug found in your query. The second one is the position of the slug in the URI
+
 ```php
 $data = $model->getCurrentData($_GET["param2"]);
 
