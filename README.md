@@ -111,13 +111,13 @@ You have to call the function translateSlug() in your Controller
 
 - Also note that your model query method ($model->getCurrentData($_GET["param2"])) must finish by ->limit(1) in order to work.
 
-The first argument is the slug found in your query. The second one is the position of the slug in the URI
+The first argument is the slug found in your query. The second one is optional and is the position of the slug in the URI (ex.: 2)
 
 ```php
 $data = $model->getCurrentData($_GET["param2"]);
 
 if(!$data) $this->redirect("route_to_redirect");
-$this->translateSlug($data["tables.slug_$this->lang3"], 2);
+$this->translateSlug($data["tables.slug_$this->lang3"]);
 ```
 =====
 ## View Functions
