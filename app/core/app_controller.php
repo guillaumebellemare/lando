@@ -18,6 +18,7 @@ class AppController extends SluggedRecord {
 		
 		$this->lang3 = $lang3;
 		$this->lang2 = $lang2;
+		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
 		$this->current_function = &$current_function;
 	}
 	
@@ -321,19 +322,28 @@ class AppController extends SluggedRecord {
 	# @access public
 	# @param $slug, $paramNbr
 	# @return void
-	public function translateSlug($slug, $paramNbr)
+	public function translateSlug($slug, $paramNbr = NULL)
 	{
 		global $routes;
 		
 		if($slug!=$_GET["param{$paramNbr}"])
 		{
 			$path =  "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2."/".$_GET["page"];
-			if($paramNbr==1) $path .= "/".$slug;
-			if($paramNbr==2) $path .= "/".$_GET["param1"]."/".$slug;
-			if($paramNbr==3) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$slug;
-			if($paramNbr==4) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$slug;
-			if($paramNbr==5) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$_GET["param4"]."/".$slug;
-			
+			if($paramNbr)
+			{
+				if($paramNbr==1) $path .= "/".$slug;
+				if($paramNbr==2) $path .= "/".$_GET["param1"]."/".$slug;
+				if($paramNbr==3) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$slug;
+				if($paramNbr==4) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$slug;
+				if($paramNbr==5) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$_GET["param4"]."/".$slug;
+			}else{
+				if(isset($_GET["param5"])) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$_GET["param4"]."/".$slug;
+				elseif(isset($_GET["param4"])) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$_GET["param3"]."/".$slug;
+				elseif(isset($_GET["param3"])) $path .= "/".$_GET["param1"]."/".$_GET["param2"]."/".$slug;
+				elseif(isset($_GET["param2"])) $path .= "/".$_GET["param1"]."/".$slug;
+				
+				else $path .= "/".$slug;
+			}
 			header('Location: '.$path);
 		}else return false;
 	}

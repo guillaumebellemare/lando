@@ -29,6 +29,7 @@ class App extends SluggedRecord {
 		$this->db = $db;
 		$this->lang2 = $lang2;
 		$this->lang3 = $lang3;
+		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
 		$this->table = $table;
 		$this->table_code = $table_code;
 		
