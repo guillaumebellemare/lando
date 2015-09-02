@@ -6,6 +6,9 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 	
+	#Download FR ou EN 
+    RewriteRule ^(en|fr)/download/(.*)$ /lando/config.php?lang=$1&page=download&param1=$2 [L]   
+    
     #Niveau 1 : exemple : fr/index
     RewriteRule ^(en|fr)/([^/]*)$ /lando/config.php?lang=$1&page=$2 [L]
    
@@ -23,7 +26,7 @@
 
     #Root FR ou EN
     RewriteRule ^(en|fr)/$ /lando/config.php?lang=$1&page=index [L]    
-    RewriteRule ^(en|fr)$ /lando/config.php?lang=$1&page=index [L]     
+    RewriteRule ^(en|fr)$ /lando/config.php?lang=$1&page=index [L]    
     
     #404 ... 
     ErrorDocument 404 /lando/config.php?page=404

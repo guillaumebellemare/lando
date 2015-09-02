@@ -1,7 +1,7 @@
 <?php include('app/views/layouts/two-columns.php') ?>
 <?php startblock('content') ?>
 <h1>Elements</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, faucibus quis nibh in, imperdiet vehicula metus. Mauris eget purus gravida, iaculis nulla in, lacinia magna. Proin gravida, <a href="#">ipsum vitae fermentum</a> mollis, nisi sem faucibus leo, vitae sodales eros turpis quis erat. Donec lacinia erat tristique, pharetra erat at, finibus lectus.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, faucibus quis nibh in, imperdiet vehicula metus. Mauris eget purus gravida, iaculis nulla in, lacinia magna. Proin gravida, <a href="<?=$app->readSecuredFile("common/slider.jpg")?>">ipsum vitae fermentum</a> mollis, nisi sem faucibus leo, vitae sodales eros turpis quis erat. Donec lacinia erat tristique, pharetra erat at, finibus lectus.</p>
 <p>Sed ut mattis nulla. Aliquam erat volutpat. Maecenas a dui ultricies justo euismod mattis. Aenean a leo vel tellus ullamcorper dignissim. Praesent pulvinar tristique orci non interdum. Aliquam ut finibus risus. Aenean volutpat convallis luctus. Fusce fermentum imperdiet lacus, sit amet posuere erat aliquam id. Sed eget urna nec tellus pellentesque pretium.</p>
 <ul>
   <li>List

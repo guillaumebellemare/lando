@@ -565,7 +565,7 @@ class App extends SluggedRecord {
 	# @access public
 	# @param string $string
 	# @return array() of picture infos
-	function getPictureInfo($string){
+	public function getPictureInfo($string){
 		$a = explode('::', $string);
 		return array('file' => $a[0], 'cropdata' => $a[1]);
 	}
@@ -574,7 +574,7 @@ class App extends SluggedRecord {
 	# @access public
 	# @param string $string, $line_breaks, $xml
 	# @return trimmed string
-	function nl2p($string, $line_breaks = true, $xml = true) {
+	public function nl2p($string, $line_breaks = true, $xml = true) {
 
 		$string = str_replace(array('<p>', '</p>', '<br>', '<br />'), '', $string);
 		
@@ -593,11 +593,23 @@ class App extends SluggedRecord {
 	# @access public
 	# @param string $a, $field
 	# @return $a_compact
-	function compact_list($a, $field){
+	public function compact_list($a, $field){
 		$a_compact = array();
 		foreach($a as $row){
 			$a_compact[] = $row[$field];
 		}
 		return $a_compact;
+	}
+	
+	# readSecuredFile()
+	# @access public
+	# @param string $file
+	# @return $secured_file
+	public function readSecuredFile($file){
+
+		global $routes;
+		
+		$secured_file_link = $this->lang2."/".$routes["download"].$file;
+		return $secured_file_link;
 	}
 }
