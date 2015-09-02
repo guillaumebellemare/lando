@@ -136,6 +136,10 @@ $this->translateSlug($data["tables.slug_$this->lang3"]);
 	<?php endforeach; ?>
 <?php endforeach; ?>
 ```
+### Read secured file
+```php
+<a href="<?=$app->readSecuredFile("$path")?>" target="_blank">Link</a>
+```
 ### Write Pretty Date
 ```php
 $app->writePrettyDate("$date")
