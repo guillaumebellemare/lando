@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="apple-touch-icon" href="<?=URL_ROOT . PUBLIC_FOLDER?>images/common/apple-touch-icon.png"/>
 <link rel="shortcut icon" href="<?=URL_ROOT . PUBLIC_FOLDER?>images/common/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="<?=URL_ROOT . PUBLIC_FOLDER?>styles/reset.css" type="text/css" media="screen" />
