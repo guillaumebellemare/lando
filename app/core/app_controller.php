@@ -213,6 +213,21 @@ class AppController extends SluggedRecord {
 		}
 
 	}
+	
+	function getMetaFromPageParam($part)
+	{
+		global $routes, $meta;
+		$key = array_search("{$_GET['page']}/{$_GET['param1']}", $routes);
+
+		if($meta["$key.$part"])
+		{
+			$string = $meta["$key.$part"];
+			if($part == 'title') $string .= " | ";
+			return $string;
+		}else{
+			return false;
+		}
+	}
 
 	# getMeta()
 	# @access public
@@ -226,11 +241,15 @@ class AppController extends SluggedRecord {
 		if(self::$title && $part == "title") $current_meta .= self::$title." | ";
 		if(self::$description && $part == "description") $current_meta .= self::$description;
 		if(self::$keywords && $part == "keywords") $current_meta .= self::$keywords;
+		if(self::$image && $part == "image") $current_meta .= self::$image;
+		if(self::$type && $part == "type") $current_meta .= self::$type;
+		
 		if(isset($_GET['param4']) && isset($meta["{$_GET['param4']}.{$part}"])) $current_meta .= $meta["{$_GET['param4']}.{$part}"]." | ";
 		if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.{$part}"])) $current_meta .= $meta["{$_GET['param3']}.{$part}"]." | ";
 		if(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.{$part}"])) $current_meta .= $meta["{$_GET['param2']}.{$part}"]." | ";
 		if(isset($_GET['param1']) && isset($meta["{$_GET['param1']}.{$part}"])) $current_meta .= $meta["{$_GET['param1']}.{$part}"]." | ";
 		$current_meta .= $this->getMetaFromPage("{$part}");
+		$current_meta .= $this->getMetaFromPageParam("{$part}");
 		if(isset($meta["site.{$part}"])) $current_meta .= $meta["site.{$part}"];
 		
 		return $current_meta;
@@ -314,7 +333,7 @@ class AppController extends SluggedRecord {
 	# @return void
 	public function setImage($string, $from_zap = true)
 	{
-		if($from_zap) self::$image = URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;
+		if($from_zap) self::$image = "http://$_SERVER[HTTP_HOST]" . URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;
 		self::$image .= $string;
 	}
 		

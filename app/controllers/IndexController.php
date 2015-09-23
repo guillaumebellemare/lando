@@ -12,6 +12,9 @@ class IndexController extends AppController {
 		# Data
 		//$foo = $base->getAllBar();
 
+		# Metas
+
+		# Returns
 		//return array("foo" => $foo);
 	}
 	

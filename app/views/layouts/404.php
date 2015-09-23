@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/meta.inc.php')) ?>
+<?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/meta.php')) ?>
 <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/header.php')) ?>
 <?php startblock('extended-styles') ?>
 <?php endblock() ?>
