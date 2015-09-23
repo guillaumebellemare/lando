@@ -122,7 +122,7 @@ $this->translateSlug($data["tables.slug_$this->lang3"]);
 When you search for the slug, make sure you check for both languages. If you more than one, hardcode them (slug_fre, slug_eng, slug_esp)
 ```php
 public function getCurrentData($slug) {
-	$this->select($this->table)->where("$this->table.slug_$lang3 = '$slug'  OR $this->table.slug_$this->lang3_trans = '$slug'")
+	$this->select($this->table)->where("$this->table.slug_$lang3 = '$slug'  OR $this->table.slug_$this->lang3_trans = '$slug'")->all()
 }
 ```
 =====
