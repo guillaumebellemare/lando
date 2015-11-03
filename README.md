@@ -142,7 +142,7 @@ public function getCurrentData($slug) {
 	<?php endforeach; ?>
 <?php endforeach; ?>
 ```
-### Read secured file
+### Read secure file
 #### Download file
 To block direct access to a folder, create an .htaccess in that folder:
 ```php
