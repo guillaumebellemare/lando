@@ -148,7 +148,7 @@ To block direct access to a folder, create an .htaccess in that folder:
 Order deny,allow
 Deny from all
 ```
-Then, to call the file, call readSecuredFile
+Then, to call the file, call readSecuredFile(folder/file.pdf)
 ```php
 <a href="<?=$app->readSecuredFile("$path")?>" target="_blank">Link</a>
 ```
