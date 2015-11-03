@@ -143,6 +143,12 @@ public function getCurrentData($slug) {
 <?php endforeach; ?>
 ```
 ### Read secured file
+To block direct access to a folder, create an .htaccess in that folder:
+```php
+Order deny,allow
+Deny from all
+```
+Then, to call the file, call readSecuredFile
 ```php
 <a href="<?=$app->readSecuredFile("$path")?>" target="_blank">Link</a>
 ```
