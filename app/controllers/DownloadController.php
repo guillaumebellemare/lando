@@ -10,7 +10,8 @@ class DownloadController extends AppController {
 		// Show file to the user here
 		if($user->check() && isset($_GET['param1']))
 		{
-			$file = PUBLIC_FOLDER.'/images/'.$_GET['param1'];
+			$file = PUBLIC_FOLDER.WBR_FOLDER.'/'.$_GET['param1'];
+			if(isset($_GET['param2']) && $_GET['param2']) $file .= "/".$_GET['param2'];
 			
 			if(file_exists($file)){
 				header('Content-Description: File Transfer');
