@@ -337,11 +337,11 @@ class AppController extends SluggedRecord {
 		self::$image .= $string;
 	}
 		
-	# translateSlug()
+	# translateSlugOLD()
 	# @access public
 	# @param $slug, $paramNbr
 	# @return void
-	public function translateSlug($slug, $paramNbr = NULL)
+	public function translateSlugOLD($slug, $paramNbr = NULL)
 	{
 		global $routes;
 		
@@ -365,6 +365,44 @@ class AppController extends SluggedRecord {
 			}
 			header('Location: '.$path);
 		}else return false;
+	}
+	
+	# translateSlug()
+	# @access public
+	# @param $slug, $paramNbr
+	# @return void
+	public function translateSlug($param1, $param2 = NULL, $param3 = NULL, $param4 = NULL, $param5 = NULL)
+	{
+		
+		$path =  "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2."/".$_GET["page"];
+		
+		if($param1) $path .= "/".$param1;
+		if($param2) $path .= "/".$param2;
+		if($param3) $path .= "/".$param3;
+		if($param4) $path .= "/".$param4;
+		if($param5) $path .= "/".$param5;
+		
+		if(isset($_GET["param1"]) && $param1!=$_GET["param1"] && !isset($_GET["param2"]))
+		{
+			header('Location: '.$path);
+		}elseif(isset($_GET["param1"]) && $param1!=$_GET["param1"] && isset($_GET["param2"]) && $param2!=$_GET["param2"] && !isset($_GET["param3"]))
+		{
+			header('Location: '.$path);
+		}elseif(isset($_GET["param1"]) && $param1!=$_GET["param1"] && isset($_GET["param2"]) && $param1!=$_GET["param2"] && isset($_GET["param3"]) && $param3!=$_GET["param3"] && !isset($_GET["param4"]))
+		{
+			header('Location: '.$path);
+		}elseif(isset($_GET["param1"]) && $param1!=$_GET["param1"] && isset($_GET["param2"]) && $param1!=$_GET["param2"] && isset($_GET["param3"]) && $param3!=$_GET["param3"] && isset($_GET["param4"]) && $param4!=$_GET["param4"] && !isset($_GET["param5"]))
+		{
+			header('Location: '.$path);
+		}elseif(isset($_GET["param1"]) && $param1!=$_GET["param1"] && isset($_GET["param2"]) && $param1!=$_GET["param2"] && isset($_GET["param3"]) && $param3!=$_GET["param3"] && isset($_GET["param4"]) && $param4!=$_GET["param4"] && isset($_GET["param5"]) && $param4!=$_GET["param5"])
+		{
+			header('Location: '.$path);
+		}else{
+			return false;
+		}
+		
+		return false;
+
 	}
 
 }
