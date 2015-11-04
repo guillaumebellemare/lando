@@ -107,11 +107,11 @@ $this->redirect("route_to_redirect");
 ### Slug Translation
 If you have a slug, you can make sure it translates well in your Controller
 
-You have to call the function translateSlug() in your Controller
+You have to call the function translateSlug() in your Controller once
 
 - Also note that your model query method ($model->getCurrentData($_GET["param2"])) must finish by ->limit(1) in order to work.
 
-The first argument is the slug found in your query. The second one is optional and is the position of the slug in the URI (ex.: 2)
+The arguments are the slugs found in your query.
 
 ```php
 $data = $model->getCurrentData($_GET["param2"]);
@@ -119,10 +119,14 @@ $data = $model->getCurrentData($_GET["param2"]);
 if(!$data) $this->redirect("route_to_redirect");
 $this->translateSlug($data["tables.slug_$this->lang3"]);
 ```
-When you search for the slug, make sure you check for both languages. If you more than one, hardcode them (slug_fre, slug_eng, slug_esp)
+When you search for the slug, make sure you check for both languages. If you more than one, hardcode them (slug_fre, slug_eng, slug_esp):
 ```php
 public function getCurrentData($slug) {
 	$this->select($this->table)->where("$this->table.slug_$lang3 = '$slug'  OR $this->table.slug_$this->lang3_trans = '$slug'")->all()
+}
+
+public function getCurrentData($slug) {
+	$this->select($this->table)->where("$this->table.slug_fre = '$slug' OR $this->table.slug_eng = '$slug' OR $this->table.slug_esp = '$slug'")->all()
 }
 ```
 =====
