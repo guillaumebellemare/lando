@@ -284,7 +284,7 @@ class App extends SluggedRecord {
 		if($this->table_rows) unset($this->table_rows);
 		if($this->a_table_rows) unset($this->a_table_rows);
 
-		if($this->limit && $this->limit == 1)
+		if($this->limit && $this->limit === 1)
 		{
 			if($this->limit) unset($this->limit);
 			return current($data);
