@@ -21,7 +21,7 @@
 <file name="stacktable.js" server="ftp.espacedev2.com/lando/" local="130705547674199634" remote="130689318000000000" Dst="2" />
 <file name="selectivizr-min.js" server="ftp.espacedev2.com/lando/" local="130705547674199634" remote="130689318000000000" Dst="2" />
 <file name="jquery.smooth-scroll.js" server="ftp.espacedev2.com/lando/" local="130741895671584244" remote="130741895400000000" Dst="2" />
-<file name="galerie.ajax.js" server="ftp.espacedev2.com//lando/" local="130754156183540925" remote="130689318000000000" Dst="2" />
+<file name="galerie.ajax.js" server="ftp.espacedev2.com//lando/" local="130688820000000000" remote="130688820000000000" Dst="1" />
 <file name="jquery.fancybox-media.js" server="ftp.espacedev2.com//lando/" local="130754156183540925" remote="130689318000000000" Dst="2" />
 <file name="jquery.fancybox.js" server="ftp.espacedev2.com//lando/" local="130754156184591695" remote="130689318000000000" Dst="2" />
 <file name="jquery.flexslider-min.js" server="ftp.espacedev2.com//lando/" local="130754156184591695" remote="130689318000000000" Dst="2" />
@@ -37,4 +37,5 @@
 <file name="jquery.iframe-transport.js" server="ftp.espacedev2.com//lando/" local="130831718939787899" remote="130834276200000000" Dst="2" />
 <file name="jquery.timepicker.min.js" server="ftp.espacedev2.com//lando/" local="130831718940507965" remote="130834276200000000" Dst="2" />
 <file name="jquery.ui.widget.js" server="ftp.espacedev2.com//lando/" local="130831718941628021" remote="130834276200000000" Dst="2" />
+<file name="responsive-request-desktop-site.js" server="ftp.espacedev2.com//lando/" local="130933676934516668" remote="130933677000000000" Dst="1" />
 </dwsync>
