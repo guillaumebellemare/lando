@@ -12,7 +12,7 @@
   <?php startblock('header') ?>
   <header>
     <section>
-      <a href="<?=URL_ROOT.$lang2_trans.Translate::translateFromPage()?>"><?=$global["lang"]?></a>
+      <ul class="languages is-no-list is-inline-list"><?php foreach($possible_languages as $language => $code) : ?><?php if($language!=$lang2) : ?><li><a href="<?=URL_ROOT.$language.Translate::translateFromPage($language)?>" title="<?=strtoupper($language)?>"><?=strtoupper($language)?></a></li><?php endif; ?><?php endforeach; ?></ul>
       <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/nav.php')); ?>
       <div class="l-grid">
         <div class="l-grid-100">

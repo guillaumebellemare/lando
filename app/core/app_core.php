@@ -36,7 +36,7 @@ require_once("app/core/app_connect.php");
 |
 */
 require_once("app/helpers/lang.class.php");
-$lang = new Lang();
+$lang = new Lang($possible_languages);
 $lang2 = $lang->lang2;
 $lang3 = $lang->lang3;
 $lang2_trans = $lang->lang2_trans;
