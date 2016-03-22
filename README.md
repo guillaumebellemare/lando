@@ -129,6 +129,11 @@ public function getCurrentData($slug) {
 	$this->select($this->table)->where("$this->table.slug_fre = '$slug' OR $this->table.slug_eng = '$slug' OR $this->table.slug_esp = '$slug'")->all()
 }
 ```
+### Ajax
+Return true if the request is made in ajax
+```php
+$this->is_ajax();
+```
 =====
 ## View Functions
 ### Read returned array
