@@ -12,7 +12,7 @@ class IndexController extends AppController {
 		$foo = new Foo();
 		
 		# Slug creation
-		$foo->create_slug_field("name_$this->lang3");
+		$foo->createSlugField("name_$this->lang3");
 		
 		# Data
 		$foos = foo->getAllBar();
