@@ -25,11 +25,10 @@ else $page = $_GET['page'];
 while($currentRoute = current($routes)) {
 	
 	if ($page == $currentRoute && !$controller_loaded) {
-		
+
 		# Controller file handling
 		if(file_exists('app/controllers/'.ucfirst(key($app_routes)).'Controller.php'))
 		{
-			
 			# Broke the route into tokens
 			$token = strtok($app_routes[key($routes)], "@::");
 			
@@ -49,8 +48,16 @@ while($currentRoute = current($routes)) {
 			$current_route = explode('Controller', $current_controller);
 			$current_route = strtolower($current_route[0]);
 			$current_function = $current_app_route[1];
+
 			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$current_function.'<br>';
-			require_once('app/controllers/'.$current_controller.'.php');
+			
+			if(file_exists('app/controllers/'.$current_controller.'.php'))
+			{
+				require_once('app/controllers/'.$current_controller.'.php');
+			}elseif(SHOPPING_CART){
+				require_once('app/helpers/cart/controllers/'.$current_controller.'.php');
+				$cart_controller = new $current_controller();
+			}
 			$controller = new $current_controller($db, $lang3);
 			$controller_loaded = true;
 		}
@@ -64,16 +71,20 @@ while($currentRoute = current($routes)) {
 		}elseif(isset($currentArrays) && DEBUG==true && $debug_on==true){
 			$app_errors[] = "Vous devez retourner un array[] dans la fonction $current_function() de $current_controller.";
 		}
-		
+
 		# View file handling
 		if(file_exists('app/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded)
 		{
 			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
 			require_once('app/views/'.$current_route.'/'.$current_function.'.php');
 			$view_loaded = true;
-		}elseif(DEBUG==true && $debug_on==true && !$view_loaded){
-			$app_errors[] = "<hr class='app-hr'>Aucune view trouvée correspondant à $current_function dans app/views/$current_route/$current_function.php";	
-			require_once('app/views/404/errors.php');	
+		}elseif(SHOPPING_CART && file_exists('app/helpers/cart/views/'.$current_route.'/'.$current_function.'.php') && !$view_loaded){
+			if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$current_route.'/'.$current_function.'.php';
+			require_once('app/helpers/cart/views/'.$current_route.'/'.$current_function.'.php');
+			$view_loaded = true;
+		}elseif(!$view_loaded){
+			if(DEBUG==true && $debug_on==true) $app_errors[] = "<hr class='app-hr'>Aucune view trouvée correspondant à $current_function dans app/views/$current_route/$current_function.php";	
+			require_once('app/views/404/index.php');	
 			$view_loaded = true;		
 		}
 

@@ -1,0 +1,4213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fournisseurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Fournisseur>
+		<Compagnie>3M - Promotional Markets</Compagnie>
+		<Address>2020, Lookout Drive</Address>
+		<City>North Mankato</City>
+		<Province>Minnesota</Province>
+		<Zip>56003</Zip>
+		<Contact>Sara Fette</Contact>
+		<Phone>800 828 6850, #239</Phone>
+		<Email>sjpfette@3mpromote.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>4 Imprint</Compagnie>
+		<Address>P.O. Box 683</Address>
+		<City>Windsor</City>
+		<Province>Ontario</Province>
+		<Zip>N9A 6N4</Zip>
+		<Contact>Debbi Schoen</Contact>
+		<Phone>800 300-1336, #8181</Phone>
+		<Email>dschoen@4imprint.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>A.J.M. International Ltd.</Compagnie>
+		<Address>350, McCaffey</Address>
+		<City>St-Laurent</City>
+		<Province>QC</Province>
+		<Zip>H4T 1N1</Zip>
+		<Phone>800 361-6256</Phone>
+		<Email>ajmsales@ajmintl.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>A.T. Design</Compagnie>
+		<Address>70, Production Drive</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M1H 2X8</Zip>
+		<Contact>Gregory P. Burke</Contact>
+		<Phone>800 288-0111, #148</Phone>
+		<Email>greg@atdesigns.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Abeilles Busy Bees</Compagnie>
+		<Address>12910, boulevard Métropolitain Est</Address>
+		<City>Montréal </City>
+		<Province>Québec</Province>
+		<Zip> H1A 4A7</Zip>
+		<Contact>Olivier Lanctôt</Contact>
+		<Phone>514 640-6941</Phone>
+		<Email>olanctot@abusy.biz</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Abeilles Busy Bees</Compagnie>
+		<Address>12910, boulevard Métropolitain Est</Address>
+		<City>Montréal </City>
+		<Province>Québec</Province>
+		<Zip> H1A 4A7</Zip>
+		<Contact>Serge Caouette</Contact>
+		<Phone>514 640-6941</Phone>
+		<Email>sergec@abusy.biz</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Accent Mode</Compagnie>
+		<Address>1256, boul. René-Lévesque Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1S 1W2</Zip>
+		<Phone>866 690-1468</Phone>
+		<Email>info@acrobag.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Acro-bag / Acro-gift</Compagnie>
+		<Address>110A, Cochrane Drive</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L3R 5S7</Zip>
+		<Phone>905 305-0688</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>AD-N-Art</Compagnie>
+		<Address>5760, Andover</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4T 1H4</Zip>
+		<Contact>Gina</Contact>
+		<Phone>888 738-9021, #272</Phone>
+		<Email>adnart@adnart.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Adcogroup World</Compagnie>
+		<Address>2600, rue Jean-Perrin, local 165</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2C 2C6</Zip>
+		<Contact>Gaetan Duquet</Contact>
+		<Phone>418 681-1549</Phone>
+		<Email>g.duquet@adco.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Adidas / TMAG</Compagnie>
+		<Address>Ville St-Laurent</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Contact>Karine ou Stéphanie</Contact>
+		<Phone>800 668-9883</Phone>
+		<Email>logo@tmag.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Admart Products</Compagnie>
+		<Address>717, Brea Canyon Rd. Suite #9</Address>
+		<City>Walnut</City>
+		<Province>CA</Province>
+		<Zip>91789</Zip>
+		<Contact>Tiffany</Contact>
+		<Phone>909 348-7919</Phone>
+		<Email>sales@admartproducts.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Advisia inc</Compagnie>
+		<Address>360, rue Franquet, porte 50</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4N3</Zip>
+		<Phone>418 654-1115</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Affichez</Compagnie>
+		<Address>945, rue Mainguy</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1V 3S2</Zip>
+		<Contact>Dominic Letendre</Contact>
+		<Phone>418-800-2211, #103</Phone>
+		<Email>dletendre@affichez.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Agence Clément Langlois</Compagnie>
+		<Address>137 rue André</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1E 5G4</Zip>
+		<Contact>Josée Picard</Contact>
+		<Phone>418 667-6587</Phone>
+		<Email>joseep@agencecl.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Agence Nordiq / Stormtech / Jay-Line</Compagnie>
+		<Address>2885 Boulevard le Corbusier</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7L 4J5</Zip>
+		<Contact>Marc-André Jomphe</Contact>
+		<Phone>450 681-6673</Phone>
+		<Email>m-a@nordiq.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Agence S10</Compagnie>
+		<Contact>Michel Ciarlo</Contact>
+		<Email>michel@agences10.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Agence Sportive C.L.</Compagnie>
+		<Address>255, rue Fortin, local 80</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1M 3M2</Zip>
+		<Contact>Josée Picard</Contact>
+		<Phone>418 667-6587</Phone>
+		<Email>joseep@agencecl.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Aiyze Technology Limited</Compagnie>
+		<Address>8F West Building,Sag S&amp;T Park Huaqiangbei Road,Futian District,Shen Zhen City,Guangdong</Address>
+		<Province>China</Province>
+		<Contact>Ella Wong</Contact>
+		<Email>ella@aiyze.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Alain Bélanger Imprimeur</Compagnie>
+		<Address>225, Rue Lee</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 2L1</Zip>
+		<Contact>Audrey Cyr</Contact>
+		<Phone>418 622-3497</Phone>
+		<Email>audrey@interplex.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Alco Prévention</Compagnie>
+		<Address>3000, boul. des Laurentides, Bureau 12-133</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7K 3G5</Zip>
+		<Contact>Maude Bélanger</Contact>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Alexander</Compagnie>
+		<Address>12978, Tesson Ferry Road</Address>
+		<City>Saint-Louis</City>
+		<Province>MO</Province>
+		<Zip>63128</Zip>
+		<Contact>Pam Favazza</Contact>
+		<Phone>800 467-5343, #7922</Phone>
+		<Email>pamf@alexandermc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Alliance360 Inc (Targus)</Compagnie>
+		<Address>6836, Barrisdale Drive</Address>
+		<City>Mississauga</City>
+		<Province>ON</Province>
+		<Zip>L5N 2H4</Zip>
+		<Contact>Mike O'Bright</Contact>
+		<Phone>416 904-9657</Phone>
+		<Email>mobright07@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Alstyle / Client #322166</Compagnie>
+		<Address>230, Export Blvd</Address>
+		<City>Mississauga</City>
+		<Province>ON</Province>
+		<Zip>L5S 1Z1</Zip>
+		<Contact>Crystal Ramrup</Contact>
+		<Phone>866 275-7860, #232</Phone>
+		<Email>rystalr@alstyle.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>American Apparel</Compagnie>
+		<Address>Mont-Royal</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Contact>Nathalie Cosentini</Contact>
+		<Phone>514 939-0245</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>APF Marketing Ltd.</Compagnie>
+		<Address>3955, De Courtrai</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H3S 1B8</Zip>
+		<Contact>Elisabeth Riva</Contact>
+		<Phone>800-463-2487, #247</Phone>
+		<Email>elisabeth@apfmarketing.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ariel Premium Supply Inc.</Compagnie>
+		<Address>8825, Page Ave</Address>
+		<City>St-Louis</City>
+		<Province>MO</Province>
+		<Zip>63114</Zip>
+		<Contact>Kimberly Schwyhart</Contact>
+		<Phone>800 270-7474, #207</Phone>
+		<Email>customerservice@arielpremium.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ash City / (Account #565048)</Compagnie>
+		<Address>35, Orlando Ave</Address>
+		<City>Richmond Hill </City>
+		<Province>ON</Province>
+		<Zip>L4B 0B4</Zip>
+		<Contact>Darwin</Contact>
+		<Phone>866 274-2489</Phone>
+		<Email>orders@ashcity.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Agence Clément Langlois</Compagnie>
+		<Phone>418 667-6587</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ashlin-BPG Marketing Inc.</Compagnie>
+		<Address>2351, Royal Windsor Drive, Unit #10</Address>
+		<City>Mississauga</City>
+		<Province>ON</Province>
+		<Zip>L5J 4S7</Zip>
+		<Contact>Juanne E. Kochhar</Contact>
+		<Phone>905 855-3027</Phone>
+		<Email>ashlin@ashlinbpg.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Astral</Compagnie>
+		<Address>900, rue d'Youville, 1er étage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1R 3P7</Zip>
+		<Contact>Anne-Cécile Piraux </Contact>
+		<Phone>418 527-3232, #316</Phone>
+		<Email>apiraux@astral.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Astuce Decors inc.</Compagnie>
+		<Address>735, ave Newton</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4C4</Zip>
+		<Contact>Richard Boucher</Contact>
+		<Phone>418 563-2001</Phone>
+		<Email>astuce@decors.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Asystel</Compagnie>
+		<Address>1165, rue Lomer-Gouin, Suite 150</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 1T3</Zip>
+		<Contact>Valérie Boivin</Contact>
+		<Phone>418 683-3739, #2230</Phone>
+		<Email>catherine.cantin@asystel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Atelier Imagic</Compagnie>
+		<Address>165, avenue Lesage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3S5</Zip>
+		<Contact>Yolande Marceau</Contact>
+		<Phone>418 682-2658, #209</Phone>
+		<Email>estim.num@imprimeriebudget.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Atelier la flèche de fer inc. (AFFI)</Compagnie>
+		<Address>1400, avenue Galilée</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4E3</Zip>
+		<Contact>Jean-Guy Gendron</Contact>
+		<Email>GendronJ@affi.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Atelier Le Coup de Main</Compagnie>
+		<Address>4155, 4e avenue Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1H 7A6 </Zip>
+		<Contact>Line Gaudreau</Contact>
+		<Phone>418 624-6838, #211</Phone>
+		<Email>lgaudreau@signesdespoir.org</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Atelier Plastica</Compagnie>
+		<Address>3745, rue Jean Marchand</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2C 2J2</Zip>
+		<Contact>Maxime Grou</Contact>
+		<Phone>418 840-1312</Phone>
+		<Email>maximegrou@plasti.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Atelier Teknograv</Compagnie>
+		<Address>1385, rue de la Pointe-aux-Lièvres</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1L 4M6</Zip>
+		<Contact>Louis Lacourcière</Contact>
+		<Phone>418 523-4533</Phone>
+		<Email>louis@teknograv.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ateliers Hors Cadre</Compagnie>
+		<Address>2071, de la Rivière</Address>
+		<City>St-Isidore</City>
+		<Province>QC</Province>
+		<Zip>G0S 2S0</Zip>
+		<Contact>Carole Labbé</Contact>
+		<Phone>418 882-5753</Phone>
+		<Email>info@ateliershorscadre.com </Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ateliers Pro-Cut</Compagnie>
+		<Address>1255, de L'Ancienne-Cartoucherie, local C</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 1X8</Zip>
+		<Contact>Stéphane Savard</Contact>
+		<Phone>418 683-0123</Phone>
+		<Email>ssavard@ateliersprocut.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ateliers TAQ Inc.</Compagnie>
+		<Address>515, rue des Méandres</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 5K6</Zip>
+		<Contact>Karine Paquet</Contact>
+		<Phone>418 871-4912</Phone>
+		<Email>kpaquet@atelierstaq.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Attraction</Compagnie>
+		<Address>672, rue Du Parc</Address>
+		<City>Lac Drolet</City>
+		<Province>QC</Province>
+		<Zip>G0Y 1C0</Zip>
+		<Contact>Josée Turcotte</Contact>
+		<Phone>800 567-6095</Phone>
+		<Email>jturcotte@attraction.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Azran sales</Compagnie>
+		<Address>55, Richard Meloche</Address>
+		<City>Dollard-des-Ormeaux</City>
+		<Province>QC</Province>
+		<Zip>H9A 2Y8</Zip>
+		<Contact>David Azran</Contact>
+		<Phone>800 268-7766</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>AztexEnterprises Ltd.</Compagnie>
+		<Address>925, Century Drive</Address>
+		<City>Burlington</City>
+		<Province>ON</Province>
+		<Zip>L7L 5J8</Zip>
+		<Contact>Maclean Bryant</Contact>
+		<Phone>800-558-4836, #233</Phone>
+		<Email>macleanb@aztex.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Azur Impression</Compagnie>
+		<Address>2055, Ave Branly</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4C7</Zip>
+		<Contact>Diane Roy</Contact>
+		<Phone>418 266-5150, #26</Phone>
+		<Email>diane@azurimpression.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>B78 Inc.</Compagnie>
+		<Address>208, chemin Belmont</Address>
+		<City>Stoneham</City>
+		<Province>QC</Province>
+		<Zip>G3C 0R8</Zip>
+		<Contact>Etienne Magny</Contact>
+		<Email>ets@b78.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bag Designs / Justin Case</Compagnie>
+		<Address>300, Confederation Parkway, Unit 3</Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Zip>L4K 4T8</Zip>
+		<Contact>Deepa Malik</Contact>
+		<Phone>877-761-8998, #102</Phone>
+		<Email>deepa@justincasepromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bagsfirst</Compagnie>
+		<Address>526, Lepine Ave</Address>
+		<City>Dorval</City>
+		<Province>QC</Province>
+		<Zip>H9P 2V6</Zip>
+		<Contact>Ty</Contact>
+		<Phone>514 384-7462</Phone>
+		<Email>info@bagsfirst.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bannerpen / Midway-Pedigree</Compagnie>
+		<Address>6300, Parc Ave., Suite 502</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2V 4H8</Zip>
+		<Contact>Luigi</Contact>
+		<Phone>514 495-9040</Phone>
+		<Email>luigi@bannerpen.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bay State Specialty Co.</Compagnie>
+		<Address>101, Industrial</Address>
+		<City>Lakeville</City>
+		<Province>MA</Province>
+		<Zip>2347</Zip>
+		<Phone>508 947-6700</Phone>
+		<Email>samples@baystate.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Beacon Promotions Inc.</Compagnie>
+		<Address>2121, S Bridge St</Address>
+		<City>New Ulm</City>
+		<Province>MN</Province>
+		<Zip>56073-3959</Zip>
+		<Contact>Deb Schmit</Contact>
+		<Phone>507 233-3240</Phone>
+		<Email>orders@beaconpromotions.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bédard &amp; Prévost Les Encadreurs Inc</Compagnie>
+		<Address>794, Boulevard Charest Est</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 3J7</Zip>
+		<Contact>André Bédard</Contact>
+		<Phone>418 647-9292</Phone>
+		<Email>lesencadreurs@bedardetprevost.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Berco</Compagnie>
+		<Address>165, avenue Lesage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3S5</Zip>
+		<Contact>Lyne Daigle</Contact>
+		<Phone>418 682-8806, #301</Phone>
+		<Email>lynedaigle@etiquettesberco.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>BGL / Courtage</Compagnie>
+		<Address>2750, rue Einstein, Bureau 380</Address>
+		<City>Sainte-Foy</City>
+		<Province>QC</Province>
+		<Zip>G1P 4R4</Zip>
+		<Contact>Judith Drolet</Contact>
+		<Phone>418 650-4995</Phone>
+		<Email>jdrolet@bglbrokerage.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bic</Compagnie>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Contact>Sophie</Contact>
+		<Phone>800 265-5585</Phone>
+		<Email>customerservice.ca@bicgraphic.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Big Al</Compagnie>
+		<Address>2705, Michelin</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7L 5X6</Zip>
+		<Contact>Pierre Dion</Contact>
+		<Phone>450 681-2700, #107</Phone>
+		<Email>dion.p@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bijouterie Serge Gagnon</Compagnie>
+		<Address>254 rue Saint-Vallier Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 1K2</Zip>
+		<Contact>Marc Gagnon</Contact>
+		<Email>info@bijouteriesergegagnon.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>BIZ Collection</Compagnie>
+		<Address>3701, Hastings St., Suite 40</Address>
+		<City>Burnaby</City>
+		<Province>CB</Province>
+		<Zip>V5C 2H6</Zip>
+		<Contact>Patrice Dulac</Contact>
+		<Phone>604 569-2599</Phone>
+		<Email>patricedulac@sympatico.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Blitz Manufacturing Co. Inc.</Compagnie>
+		<Address>263, America Place</Address>
+		<City>Jeffersonville</City>
+		<Province>IN</Province>
+		<Zip>47130</Zip>
+		<Contact>Skip Powell</Contact>
+		<Phone>800 356-0860, #1300</Phone>
+		<Email>spowell@blitzinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Blue Loyal International Inc.</Compagnie>
+		<Address>1205 - 11980 Hammersmith Way</Address>
+		<City>Richmond</City>
+		<Province>CB</Province>
+		<Zip>V7A 0A4</Zip>
+		<Phone>604 272-8809</Phone>
+		<Email>val@blueloyal.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Blueline Inc.</Compagnie>
+		<Address>230, Rue Foch</Address>
+		<City>St-Jean-sur-Richelieu</City>
+		<Province>QC</Province>
+		<Zip>J3B 2B2</Zip>
+		<Contact>Karen Busse</Contact>
+		<Phone>877 315-3337</Phone>
+		<Email>smd@bluelineinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bois Paul Inc.</Compagnie>
+		<Address>9475, 5e avenue</Address>
+		<City>St-Goerges</City>
+		<Province>QC </Province>
+		<Zip>G5Y 2B2</Zip>
+		<Contact>Paul Thabet</Contact>
+		<Email>paul.thabet@cgocable.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Boîte Diana Inc.</Compagnie>
+		<Address>13361, boul. du Curé Labelle</Address>
+		<City>Mirabel</City>
+		<Province>QC</Province>
+		<Zip>J7J 1H1 </Zip>
+		<Contact>Raymond Boulich</Contact>
+		<Phone>450 435-2515</Phone>
+		<Email>boitesdiana@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Boîtes RC</Compagnie>
+		<Address> 2525, av Watt</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 3T2</Zip>
+		<Contact>Daniel Cyr</Contact>
+		<Email>info@boitesrc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bonica Precision Inc.</Compagnie>
+		<Address>Unit 105 - 3830, Jacombs Road</Address>
+		<City>Richmond</City>
+		<Province>CB</Province>
+		<Zip>V6V 1Y6</Zip>
+		<Phone>604 270-0812</Phone>
+		<Email>icare@bonicatime.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Brighter Promotions</Compagnie>
+		<Phone>847 403-0100</Phone>
+		<Email>sales@asi44888.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Brightline Sportswear Inc.</Compagnie>
+		<Address>980, Clark Drive</Address>
+		<City>Vancouver</City>
+		<Province>CB</Province>
+		<Zip>V5L 3J8</Zip>
+		<Contact>Freida Mak</Contact>
+		<Phone>866 251-8288, #106</Phone>
+		<Email>Sales@Brightline.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Brodem Inc.</Compagnie>
+		<Address>175, 3e avenue</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1L 2V3</Zip>
+		<Contact>Mario Da Silva</Contact>
+		<Phone>418 525-8989</Phone>
+		<Email>soera@videotron.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Broderie Design</Compagnie>
+		<Address>135 boul. de la Commune</Address>
+		<City>Trois-Rivières</City>
+		<Zip>G9A 2V8</Zip>
+		<Contact>Émilie Labelle</Contact>
+		<Phone>819 694-1331</Phone>
+		<Email>emilie@broderiedesign.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Broderie Sélect</Compagnie>
+		<Address>256, boul. Pierre-Bertrand</Address>
+		<City>Vanier</City>
+		<Province>QC</Province>
+		<Zip>G1M 2C6                                                           </Zip>
+		<Contact>Martine Chabot </Contact>
+		<Phone>418 683-5258</Phone>
+		<Email>info@broderieselect.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Broderies Spectra</Compagnie>
+		<Address>682, rue Kirouac</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 2J2</Zip>
+		<Contact>Manon Lemelin </Contact>
+		<Phone>418 683-0401</Phone>
+		<Email>man.67@sympatico.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Budget  </Compagnie>
+		<Address>165, avenue Lesage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3S5</Zip>
+		<Contact>Manon Leclerc</Contact>
+		<Phone>418 683-2112, #102</Phone>
+		<Email>mleclerc@imprimeriebudget.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bugatti-Sedona Inc.</Compagnie>
+		<Address>2323, Rue Cohen</Address>
+		<City>Saint-Laurent </City>
+		<Province>QC</Province>
+		<Zip>H4R 2N7   </Zip>
+		<Contact>David Plotkin</Contact>
+		<Email>David.Plotkin@bugatti.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bullet Line</Compagnie>
+		<Address>6301 East 10th Ave Suite 110</Address>
+		<City>Hialeah</City>
+		<Province>Floride</Province>
+		<Zip>33013</Zip>
+		<Contact>Kenny</Contact>
+		<Phone>800-749-7367, #3</Phone>
+		<Email>orders@bulletline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bulletin Canada</Compagnie>
+		<Address>490, boul. Montpellier</Address>
+		<City>St-Laurent </City>
+		<Province>QC</Province>
+		<Zip>H4N 2G7</Zip>
+		<Contact>Christina</Contact>
+		<Phone>514 279-4581</Phone>
+		<Email>christina@bulletincanada.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Bulova Watch Company</Compagnie>
+		<Address>39, Casebridge Court</Address>
+		<City>Toronto </City>
+		<Province>ON</Province>
+		<Zip>M1B 5N4</Zip>
+		<Contact>Suzie Lachance </Contact>
+		<Phone>800 268-6562</Phone>
+		<Email>suzielachance@bulovaawards.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Busrel</Compagnie>
+		<Address>200, Rue Deslauriers</Address>
+		<City>St-Laurent</City>
+		<Province>QC</Province>
+		<Zip>H4N 1V8    </Zip>
+		<Contact>Jessica Miron-Lefebvre  </Contact>
+		<Phone>800 661-5757, #296</Phone>
+		<Email> artquebec@busrel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Buztronics Canada CO.</Compagnie>
+		<Address>2645, Matthew Road</Address>
+		<City>Nanoose Bay </City>
+		<Province>CB</Province>
+		<Zip>V9P 9B2</Zip>
+		<Phone>877 289-2891</Phone>
+		<Email>lnielsen@buztronics.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cable Car Store</Compagnie>
+		<Address>39 Pier #231</Address>
+		<City>San Francisco</City>
+		<Province>CA</Province>
+		<Zip>94133</Zip>
+		<Contact>Marcel or Mike</Contact>
+		<Phone>415 989-2040</Phone>
+		<Email>orders@cablecarstore.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>California tattoos</Compagnie>
+		<Address>3741 E Technical Dr</Address>
+		<City>Tucson</City>
+		<Province>AZ</Province>
+		<Zip>85713-5343</Zip>
+		<Contact>Lisa Theis</Contact>
+		<Email>ltheis@tattoosales.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Callaway Golf Canada</Compagnie>
+		<Address> </Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Contact>Monique Singh </Contact>
+		<Phone>800 387-7001, #6441</Phone>
+		<Email>art@callawaygolf.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Caméléon Boutique</Compagnie>
+		<Address>198, rue Saint-Vallier Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 1K1</Zip>
+		<Contact>Karine</Contact>
+		<Phone>418 692-2262</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Canada Sportswear</Compagnie>
+		<Address>230, Barmac Drive</Address>
+		<City>North York</City>
+		<Province>ON</Province>
+		<Zip>M9L 2Z3</Zip>
+		<Contact>Celine Brochu</Contact>
+		<Phone>800 659-5174, #5</Phone>
+		<Email>celine@canadasportswear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Candec</Compagnie>
+		<Address>6045, 4th. Street S.E.</Address>
+		<City>Calgary</City>
+		<Province>AL</Province>
+		<Zip>T2H 2A5</Zip>
+		<Contact></Contact>
+		<Phone>888 979-7769</Phone>
+		<Email>info@candec.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Capamerica</Compagnie>
+		<Address>1 Cap America Drive</Address>
+		<City>Fredericktown</City>
+		<Province>MO</Province>
+		<Zip>63645</Zip>
+		<Contact>Jeni Pierce</Contact>
+		<Email>jenip@capamerica.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Capamerica</Compagnie>
+		<Address>1 Cap America Drive</Address>
+		<City>Fredericktown</City>
+		<Province>MO</Province>
+		<Zip>63645</Zip>
+		<Contact>Jenny Proctor</Contact>
+		<Email> jennyp@capamerica.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cargo Web</Compagnie>
+		<Address>795, de Montreuil</Address>
+		<City>St-Nicolas</City>
+		<Province>QC</Province>
+		<Zip>G7A 4W3</Zip>
+		<Contact>Guillaume Caron</Contact>
+		<Phone>418 575-7092</Phone>
+		<Email>caron.gui@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cartopo Enr.</Compagnie>
+		<Address>820, Charest Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 2C8</Zip>
+		<Phone>418 527-4424</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Castelli</Compagnie>
+		<Address>208,0 Brierely Way, Suite 102</Address>
+		<City>Sparks</City>
+		<Province>NV</Province>
+		<Zip>89434</Zip>
+		<Contact>Eileen Martin</Contact>
+		<Phone>866 306-4066</Phone>
+		<Email>info@castellinorthamerica.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CBS affichage</Compagnie>
+		<Address>2305, rue Cyrille-Duquet</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4L7</Zip>
+		<Contact>Philippe Jean</Contact>
+		<Phone>418 687-0562</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CD Impact</Compagnie>
+		<Address>3075, boul. Wilfrid-Hamel, local 106</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1P 4C6   </Zip>
+		<Contact>Étienne Waters</Contact>
+		<Phone>418 524-7555, #108</Phone>
+		<Email>etienne@cdimpact.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CFEL inc. / CKOI FM  </Compagnie>
+		<Address>2136, chemin Ste-Foy, 3e étage</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1V 1R8   </Zip>
+		<Phone>418 830-1122</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Chabot &amp; Graham inc.</Compagnie>
+		<Address>1375 Frank-Carrel #8</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 2E7</Zip>
+		<Contact>Annabelle Chabot</Contact>
+		<Email>achabot@chabotgraham.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Chocolate Signatures Inc.</Compagnie>
+		<Address>920, Caledonia Rd., #1B</Address>
+		<City>Toronto</City>
+		<Province>ON </Province>
+		<Zip>M6B 3Y1</Zip>
+		<Contact>Amy </Contact>
+		<Phone>888 246-2397</Phone>
+		<Email>chocsale@chocsig.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Chocolats Geneviève Grandbois</Compagnie>
+		<Address>5524, rue St-Patrick, Entrée C, bureau 211</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H4E 1A8 </Zip>
+		<Contact>Julie</Contact>
+		<Phone>514 270-4508</Phone>
+		<Email>info@chocolatsgg.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cineplex Media</Compagnie>
+		<Address>102, Atlantic Avenue</Address>
+		<City>Toronto </City>
+		<Province>ON </Province>
+		<Zip>M6K 1X9</Zip>
+		<Phone>416 539-8800</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CNIJ</Compagnie>
+		<Address>5770, Andover</Address>
+		<City>Montreal </City>
+		<Province>QC</Province>
+		<Zip>H4T 1H4      </Zip>
+		<Contact>Dante Solobello    </Contact>
+		<Phone>800 739-2645</Phone>
+		<Email>dante@cnij.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Coasters Plus</Compagnie>
+		<Address>45, Leadale Avenue</Address>
+		<City>Toronto</City>
+		<Province>ON </Province>
+		<Zip>M4G 3E9  </Zip>
+		<Contact>Neil Mackay  </Contact>
+		<Phone>888 285-2783</Phone>
+		<Email>info@coastersplus.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Coffee Concept</Compagnie>
+		<Address>1, 5905 - 11 Street SE</Address>
+		<City>Calgary</City>
+		<Province>AB</Province>
+		<Zip>T2H 2A6</Zip>
+		<Contact>Jesse Dow</Contact>
+		<Phone>403 258-1976</Phone>
+		<Email>jesse@coffeeconcept.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cogéco / Métromédia</Compagnie>
+		<Address>1253, McGill College, 450</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H3B 2Y5</Zip>
+		<Contact>Jacques Béland</Contact>
+		<Phone>514 874-1515</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Copie de la capitale</Compagnie>
+		<Address>235, boul. Charest Est</Address>
+		<City>Québec</City>
+		<Province>Qc</Province>
+		<Zip>G1K 3G8</Zip>
+		<Contact>Marie-Eve Lavoie</Contact>
+		<Phone>418 648-1911</Phone>
+		<Email>mevelavoie@copies-capitale.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Corporate Headquarters</Compagnie>
+		<Address>1408, North Sam Houston Parkway East, #130</Address>
+		<City>Houston</City>
+		<Province>TX </Province>
+		<Zip>77032</Zip>
+		<Phone>1 832-533-2896</Phone>
+		<Email>sales@casinochocolates.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Country Line Inc.   </Compagnie>
+		<Address>20 - 90, Signet Drive</Address>
+		<City>Toronto</City>
+		<Province>ON </Province>
+		<Zip>M9L 1T5</Zip>
+		<Phone>1-800-310-7880</Phone>
+		<Email>countryline@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CPS Sérigraphie</Compagnie>
+		<Address>1360, rue Provinciale</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4A2 </Zip>
+		<Contact>Mario Drolet      </Contact>
+		<Phone>418 872-8100 #234</Phone>
+		<Email>mario.drolet@cpsserigraphie.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CPS Sérigraphie inc.</Compagnie>
+		<Address>1360, rue Provinciale</Address>
+		<City>Québec</City>
+		<Province>Québec</Province>
+		<Zip>G1N 4A2</Zip>
+		<Contact>Jean Langevin</Contact>
+		<Email>jean.langevin@cpsserigraphie.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CPS Sérigraphie inc.</Compagnie>
+		<Address>1360, rue Provinciale</Address>
+		<City>Québec</City>
+		<Province>Québec</Province>
+		<Zip>G1N 4A2</Zip>
+		<Contact>Nathalie Chabot</Contact>
+		<Phone>418 872-8100</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>CPS Sérigraphie inc.</Compagnie>
+		<Address>1360, rue Provinciale</Address>
+		<City>Québec</City>
+		<Province>Québec</Province>
+		<Zip>G1N 4A2</Zip>
+		<Contact>Nathalie Rousseau</Contact>
+		<Email>nathalie.rousseau@cpsserigraphie.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Création Animation Mascotte</Compagnie>
+		<Address>854, de la Rive</Address>
+		<City>St-Jean Chrysostome</City>
+		<Province>QC</Province>
+		<Zip>G6Z 2L1</Zip>
+		<Contact>Cathy Lanouette</Contact>
+		<Phone>418 832-1200</Phone>
+		<Email>information@mascottes.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Crown Ease Corporation Ltd</Compagnie>
+		<Address>Flat C, 2/F, Leader Industrial Centre, Phase 1, 188-202 Texaco Rd, Tsuen Wan, NT, Hong Kong.</Address>
+		<Contact>Godfrey</Contact>
+		<Email>godfrey@enyangpremium.cn</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Crown Products</Compagnie>
+		<Address>3107, Halls Mill Road</Address>
+		<City>Mobile</City>
+		<Province>AL</Province>
+		<Zip>36606-2506</Zip>
+		<Contact>Lane Brabner</Contact>
+		<Phone>251 665-3645</Phone>
+		<Email>lbrabner@crownprod.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Crystal Sensations</Compagnie>
+		<Address>950, Denison St. Unit 19</Address>
+		<City>Markham </City>
+		<Province>ON </Province>
+		<Zip>L3R 3K5</Zip>
+		<Contact>Jerome Bacchus</Contact>
+		<Phone>888 735-4622</Phone>
+		<Email>jerome@crystalsensations.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Cuir Mario</Compagnie>
+		<Address>10, rue Gingras</Address>
+		<City>Laurierville </City>
+		<Province>QC</Province>
+		<Zip>G0S 1P0</Zip>
+		<Contact>Mario</Contact>
+		<Phone>819 365-4256</Phone>
+		<Email>info@cuirsmario.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Culmer Pen Inc.</Compagnie>
+		<Address>4181, Sladeview Cr., Unit 32</Address>
+		<City>Mississauga</City>
+		<Province>ON </Province>
+		<Zip> L5L 5R2</Zip>
+		<Contact>Barbara</Contact>
+		<Phone>905 542-0040</Phone>
+		<Email>barbara@culmerpen.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>D &amp; X Industry Co,.Ltd</Compagnie>
+		<Address>F13 1st  Xiangjing Bldg  W Lianhua Rd, Futian District, Shenzhen P.R.China    P.C.:518034</Address>
+		<Contact>Sandy </Contact>
+		<Email>sandy@dxindustry.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>D-Vice  </Compagnie>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Phone>877 384-7462</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Danesco Inc.</Compagnie>
+		<Address>18111, route Trans-Canada</Address>
+		<City>Kirkland</City>
+		<Province>QC</Province>
+		<Zip>H9J 3K1</Zip>
+		<Contact>Chantal Dorval</Contact>
+		<Phone>514 694-9111</Phone>
+		<Email>DorvalC@danescoinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Debco Bag &amp; Umbrella</Compagnie>
+		<Address>111, Villarboit Cres.</Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Zip>L4K 4K2</Zip>
+		<Contact>Virginie Nove</Contact>
+		<Phone>800 263-3554, #336</Phone>
+		<Email>art@debcobag.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Delite Promotional Products</Compagnie>
+		<Address>297, Idema Rd.</Address>
+		<City>Markham </City>
+		<Province>ON </Province>
+		<Zip>L3R 1B1</Zip>
+		<Contact>Sue Su</Contact>
+		<Phone>416 496-2777, #107</Phone>
+		<Email>info@delitepromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Deschamps impression inc.</Compagnie>
+		<Address>755, Boul. Des Chutes</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1E 2C2</Zip>
+		<Contact>François Gendron</Contact>
+		<Phone>418 667-6118 #2243</Phone>
+		<Email>fgendron@jbdeschamps.com </Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Desjardins Sécurité Financière</Compagnie>
+		<Address>1150, rue Claire-Fontaine, 6e étage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1R 5G4</Zip>
+		<Contact>Nathalie Carrier</Contact>
+		<Email>ncarrier@sfl.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Després Laporte</Compagnie>
+		<Address>850, boul. Pierre Bertrand, local 110</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1M 3K8</Zip>
+		<Contact>Stéphane Desrosiers</Contact>
+		<Phone>418 682-5643</Phone>
+		<Email>sdesrosiers@despreslaporte.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>DezineCorp</Compagnie>
+		<Address>215, Statesman Drive</Address>
+		<City>Mississauga</City>
+		<Province>ON</Province>
+		<Zip>L5S 1X4</Zip>
+		<Phone>866 625-7820</Phone>
+		<Email>sales@dezinecorp.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Dgroup Trevelyan</Compagnie>
+		<Address>375, Rexdale Boulevard</Address>
+		<City>Toronto </City>
+		<Province>ON</Province>
+		<Zip>M9W 1R9</Zip>
+		<Contact>Kel Westgate</Contact>
+		<Phone>888 878-8726</Phone>
+		<Email>kel@dgrouptrevelyan.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Digitek Corp</Compagnie>
+		<Address>5665, Creek Road</Address>
+		<City>Cincinnati</City>
+		<Province>OH</Province>
+		<Zip>45242</Zip>
+		<Phone>513 794-3190</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Discount Trophy Canada - DTC</Compagnie>
+		<Address>524, St-Amable</Address>
+		<City>St-Barnabé Sud</City>
+		<Province>QC</Province>
+		<Zip>J0H 1G0 </Zip>
+		<Contact>Sylvie Charron</Contact>
+		<Phone>888 624-2228</Phone>
+		<Email>info@discounttrophy.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Display Technologies</Compagnie>
+		<Address>111-01, 14th Avenue</Address>
+		<City>College Point</City>
+		<Province>NY</Province>
+		<Zip>11356</Zip>
+		<Contact>Jahasama Riley</Contact>
+		<Phone>800-424-4220, #355</Phone>
+		<Email>jriley@display-technologies.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Dixon Ticonderoga Inc.</Compagnie>
+		<Address>210, Pony Drive, Unit 1</Address>
+		<City>Newmarket</City>
+		<Province>ON</Province>
+		<Zip>L3Y 7B6</Zip>
+		<Contact>Sharon Haight</Contact>
+		<Phone>905 895-5122</Phone>
+		<Email>shaight@dixoncanada.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>DML Création</Compagnie>
+		<Address>18080, rue des Gouverneurs</Address>
+		<City>Mirabel</City>
+		<Province>QC</Province>
+		<Zip> J7J 0G8</Zip>
+		<Contact>James</Contact>
+		<Email>james@dmlcreation.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>DML Création</Compagnie>
+		<Address>18080, rue des Gouverneurs</Address>
+		<City>Mirabel</City>
+		<Province>QC</Province>
+		<Zip> J7J 0G8</Zip>
+		<Contact>Jean-François Lefebvre</Contact>
+		<Phone>1.514.750.0795, #223</Phone>
+		<Email>jf@dmlcreation.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Domaine Gilles Gaumond</Compagnie>
+		<Address>1130, rue Beaulac</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H4R 1R7</Zip>
+		<Phone>866 908-5686</Phone>
+		<Email>info@domainelabel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Domaine Pinnacle</Compagnie>
+		<Address>150, Chemin Richford</Address>
+		<City>Frelighsburg</City>
+		<Province>Québec</Province>
+		<Zip>J0J 1C0</Zip>
+		<Contact>Sylvain Poirier</Contact>
+		<Phone>450 263-5835</Phone>
+		<Email>sylvain@domainepinnacle.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Domaine Pinnacle</Compagnie>
+		<Address>150, Chemin Richford</Address>
+		<City>Frelighsburg</City>
+		<Province>Québec</Province>
+		<Zip>J0J 1C0</Zip>
+		<Contact>Sylvie Ouellette</Contact>
+		<Phone>450 263-5835</Phone>
+		<Email>Sylvie@domainepinnacle.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Domaine Pinnacle</Compagnie>
+		<Address>291, Miner</Address>
+		<City>Cowansville</City>
+		<Province>QC</Province>
+		<Zip>J2K 3Y6</Zip>
+		<Contact>Sylvie Ouellette</Contact>
+		<Phone>450 263-5835, #238</Phone>
+		<Email>sylvie@domainepinnacle.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Domaine Steinbach</Compagnie>
+		<Address>2205, chemin Royal</Address>
+		<City>Saint-Pierre-de-l'Île-d'Orléans</City>
+		<Province>QC</Province>
+		<Zip>G0A 4E0</Zip>
+		<Contact>Claire et Philippe Steinbach</Contact>
+		<Phone>418 828-0000</Phone>
+		<Email>info@domainesteinbach.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Douglasbridge Inc.</Compagnie>
+		<Address>313, 10820 - 24th Street</Address>
+		<City>Calgary</City>
+		<Province>AB</Province>
+		<Zip>T2Z 4C9</Zip>
+		<Contact>Carla Alongi</Contact>
+		<Phone>403 203-2390</Phone>
+		<Email>info@douglasbridge.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Dri Mark</Compagnie>
+		<City>Port Washington</City>
+		<Province>NY</Province>
+		<Contact>Tina Marie Cummings</Contact>
+		<Phone>800 645-9118, #110</Phone>
+		<Email>art@drimark.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Drop Stop Canada</Compagnie>
+		<Address>39, Colonel Cohoe St., RR3</Address>
+		<City>Niagara-on-the-Lake </City>
+		<Province>ON</Province>
+		<Zip>L0S 1J0</Zip>
+		<Contact>Anne-Marie Keogh</Contact>
+		<Phone>289 868-9353</Phone>
+		<Email>dropstopcanada@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Eastside</Compagnie>
+		<Address>8700, 8e avenue</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H1Z 2W9</Zip>
+		<Contact>Julie Marsolais</Contact>
+		<Phone>514 326-6700</Phone>
+		<Email>julie@eastside.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Easy Sources</Compagnie>
+		<Address>33, Bay Street, Suite 4411</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M5J 2Z3</Zip>
+		<Contact>Nelson Sun</Contact>
+		<Phone>604 729-8568</Phone>
+		<Email>nelson@easy-sources.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Échantillons KD Inc.</Compagnie>
+		<Address>877, boul. Jean-Paul-Vincent</Address>
+		<City>Longueuil</City>
+		<Province>QC</Province>
+		<Zip>J4G 1R3</Zip>
+		<Contact>Michel Fournier</Contact>
+		<Phone>514 646-9997</Phone>
+		<Email>servimage@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Éclairages Fluo-Néon</Compagnie>
+		<Address>170, rue Martineau</Address>
+		<City>St-Gilles</City>
+		<Province>QC</Province>
+		<Zip>G0S 2P0</Zip>
+		<Contact>Mario Bilodeau</Contact>
+		<Phone>418 563-8068</Phone>
+		<Email>eclfluoneon@globetrotter.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ecorite</Compagnie>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Contact>Roger Montoya</Contact>
+		<Phone>800 265-2740, #31</Phone>
+		<Email>roger@ecorite.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Eddy Match Co</Compagnie>
+		<City>Pembroke</City>
+		<Province>ON</Province>
+		<Phone>800 267-3158</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Edgar</Compagnie>
+		<Address>1605, chemin Sainte-Foy, bur. 117</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1S 2P1</Zip>
+		<Contact>Karine Lizotte</Contact>
+		<Phone>418-686-5233, #180</Phone>
+		<Email>klizotte@edgar.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ellessco LLC.</Compagnie>
+		<Address>4532 Telephone Rd</Address>
+		<City>Ventura</City>
+		<Province>CA</Province>
+		<Zip>93003</Zip>
+		<Contact>Summer Scarbrough </Contact>
+		<Phone>800 915-8599, #106</Phone>
+		<Email>summer@vinnibag.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emballage L.P. Aubut</Compagnie>
+		<Address>1135 rue Taillon</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4G7</Zip>
+		<Contact>Lise Labrecque</Contact>
+		<Phone>418 523-2956</Phone>
+		<Email>l.labrecque@lpaubut.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emballage Tout</Compagnie>
+		<Address>6995, Boul. Thimens</Address>
+		<City>Ville St-Laurent</City>
+		<Zip>H4S 2C7</Zip>
+		<Contact>Isabelle Quevillon</Contact>
+		<Phone>800 361-3354</Phone>
+		<Email>isabelleq@emballagetout.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emballages Carrousel Inc.</Compagnie>
+		<Address>905, rue Philippe-Paradis</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4E3</Zip>
+		<Contact>Julie Poliquin</Contact>
+		<Phone>418 683-2025</Phone>
+		<Email>jpoliquin@embcarrousel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emballages de la Capitale</Compagnie>
+		<Address>1255, de L'Ancienne-Cartoucherie, loc.A.</Address>
+		<Zip>G1N 1X8</Zip>
+		<Contact>Johanne</Contact>
+		<Email>adm@emballagescapitale.com </Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emballages MM</Compagnie>
+		<Address>5623 Casgrain</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2T 1Y1</Zip>
+		<Contact>Benoît Letarte</Contact>
+		<Phone>514 852-1515</Phone>
+		<Email>benoit.letarte@noblepack.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Emperor</Compagnie>
+		<Address>Box 455</Address>
+		<City>Green Lane</City>
+		<Province>PA</Province>
+		<Zip>18054</Zip>
+		<Contact>Stephen D. Peters</Contact>
+		<Phone>888 883-1286, #700</Phone>
+		<Email>freeglobetrekker@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enseignes FX Boisvert</Compagnie>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Contact>Serge Boisvert</Contact>
+		<Phone>888 376-6474</Phone>
+		<Email>info@fxboisvert.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enseignes Garneau</Compagnie>
+		<Address>473, Ave Joseph-Giffard</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1C 1N1</Zip>
+		<Contact>Pierre Garneau</Contact>
+		<Phone>418 664-1002</Phone>
+		<Email>pierre.garneau@oricom.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enseignes Impact Visuel Inc.</Compagnie>
+		<Address>2200 Leon Harmel</Address>
+		<City>Quebec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4L2</Zip>
+		<Contact>André Fortin</Contact>
+		<Phone>418 687-2323</Phone>
+		<Email>afortin@enseignesimpactvisuel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enseignes Otis Image Inc.</Compagnie>
+		<Address>2485, boul. Wilfrid-Hamel, suite 100</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 2H9</Zip>
+		<Contact>Richard Rusk</Contact>
+		<Phone>418 687-3854</Phone>
+		<Email>rrusk@otis-imagein.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enveloppe Québec</Compagnie>
+		<Address>6, rue des Gouverneurs</Address>
+		<City>Lévis</City>
+		<Province>QC</Province>
+		<Zip>G6Z 8C1</Zip>
+		<Contact>Jean-Pierre Marcotte</Contact>
+		<Phone>418 832-8500</Phone>
+		<Email>jpmarcotte@enveloppe-quebec.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Enveloppes Demers</Compagnie>
+		<Address>4-2200, Léon-Harmel</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 4L2</Zip>
+		<Contact>Micheline Plamondon </Contact>
+		<Phone>418 687-1001, #802 </Phone>
+		<Email>info@enveloppesdemers.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>ESP Wholesale</Compagnie>
+		<Address>545 Legendre Ouest</Address>
+		<City>Montreal</City>
+		<Province>QC</Province>
+		<Zip>H2N 1J1</Zip>
+		<Contact>Béatrice Jean-Noel</Contact>
+		<Phone>514 383-8577</Phone>
+		<Email>info-quebec@esppromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Estampe-Ray</Compagnie>
+		<Address>2175, boul. Ste-Anne</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1J 1X9 </Zip>
+		<Contact>Yvon Pelletier</Contact>
+		<Phone>418 667-1626</Phone>
+		<Email>e.ray@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>EtiPens</Compagnie>
+		<Address>187 Davis Dr., R.R. #3</Address>
+		<City>Mount Albert </City>
+		<Province>ON</Province>
+		<Zip>L0G 1M0 </Zip>
+		<Phone>877 384-7367</Phone>
+		<Email>info@etipens.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Étiquettes Profecta</Compagnie>
+		<Address>5050, Armand-Frappier</Address>
+		<City>St-Hubert </City>
+		<Province>QC</Province>
+		<Zip>J3Y 1G5</Zip>
+		<Contact>Carole Mailloux </Contact>
+		<Phone>888 776-3539, #232</Phone>
+		<Email>estimation@profecta.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Étiquettes Thermo-Décor</Compagnie>
+		<Address>3940 3ième Avenue</Address>
+		<City>Rawdon</City>
+		<Province>QC</Province>
+		<Zip>J0K 1S0</Zip>
+		<Contact>M. Bertrand</Contact>
+		<Phone>450 834-4407</Phone>
+		<Email>thermodecor@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>ETR (Groupe)</Compagnie>
+		<Address>6-2555, Ave. Watt</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 3T2</Zip>
+		<Contact>Bruno Bilodeau</Contact>
+		<Phone>418 658-8122</Phone>
+		<Email>bbilodeau@groupeetr.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>ETS Express</Compagnie>
+		<Address>420 S. Lombard St.</Address>
+		<City>Oxnard</City>
+		<Province>CA</Province>
+		<Zip>93030</Zip>
+		<Contact>Jennifer Barnes</Contact>
+		<Phone>805 278-7771</Phone>
+		<Email>orders@etsexpress.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Euréka Signature</Compagnie>
+		<Address>166, rue Jean XXIII</Address>
+		<City>Beauport </City>
+		<Province>QC</Province>
+		<Zip>G1C 6E5</Zip>
+		<Contact>Manon Robitaille </Contact>
+		<Phone>418 687-8737</Phone>
+		<Email>manon@eureka-design.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>EXCD COM</Compagnie>
+		<Address>600, Port-Royal #200</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H3L 2C5  </Zip>
+		<Contact>François Gareau</Contact>
+		<Phone>866 524-4449</Phone>
+		<Email>info@excdcom.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>FanBox Inc.   (certificat cadeau)</Compagnie>
+		<Address>50 rue De Lauzon</Address>
+		<City>Boucherville </City>
+		<Province>QC</Province>
+		<Zip>J4B 1E6</Zip>
+		<Contact>Isabelle Théroux </Contact>
+		<Phone>450-463-3939 #23</Phone>
+		<Email>itheroux@fanbox.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fantasia</Compagnie>
+		<Address>5780 Andover</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H4T 1H4</Zip>
+		<Contact>Amir</Contact>
+		<Phone>877 596-6741 #311</Phone>
+		<Email>amirz@fantasialogo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Faro Products</Compagnie>
+		<Address>116 Leacock Drive</Address>
+		<City>Pointe-Claire</City>
+		<Province>QC</Province>
+		<Zip>H9R 1H1</Zip>
+		<Contact>Maryse Bélanger</Contact>
+		<Phone>514-694-0707, #242</Phone>
+		<Email>info@faroproducts.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fersten Worlwide Inc.</Compagnie>
+		<Address>5570 Paré Street</Address>
+		<City>Montréal</City>
+		<Zip>H4P 2M1</Zip>
+		<Contact>Josette Dorcena </Contact>
+		<Phone>800 565-7462</Phone>
+		<Email>josette@fersten.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>FIEL - Fairdeal Import &amp; Export</Compagnie>
+		<Address>Unit 116 - 3855 Henning Drive</Address>
+		<City>Burnaby </City>
+		<Province>BC</Province>
+		<Zip>V5C 6N3</Zip>
+		<Contact>Jelloul</Contact>
+		<Phone>877-836-8642, #203</Phone>
+		<Email>jelloul@fiel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fin Finaud</Compagnie>
+		<Address>5550, rue Fullum #312</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2G 2H4</Zip>
+		<Contact>Marie Normand</Contact>
+		<Phone>514 398-0303</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>FineAwards</Compagnie>
+		<Address>250 North Dixie Highway, Suite #13</Address>
+		<City>Hollywood</City>
+		<Province>FL</Province>
+		<Zip>33020</Zip>
+		<Contact>Barbara Rodriguez </Contact>
+		<Phone>800 343-3166</Phone>
+		<Email>marketing@fineawards.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Finitions Graphiques</Compagnie>
+		<Address>2930, rue Watt, suite 108   </Address>
+		<City>Sainte-Foy </City>
+		<Province>QC</Province>
+		<Zip>G1X 4G3 </Zip>
+		<Phone>418 657-3636</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fiou</Compagnie>
+		<Address>2235, chemin de la Petite-Côte</Address>
+		<City>Laval </City>
+		<Province>QC</Province>
+		<Zip>H7L 5Z4</Zip>
+		<Contact>Kathleen Brennan</Contact>
+		<Phone>514 236-2513</Phone>
+		<Email>ioucuisine@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Flagmaster</Compagnie>
+		<Address>4701, South Whipple street</Address>
+		<City>Chicago</City>
+		<Province>IL</Province>
+		<Zip>60632</Zip>
+		<Contact>Sylvia</Contact>
+		<Email>info@flagmaster.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fleurigros</Compagnie>
+		<Address>2365 Watt</Address>
+		<City>Ste-Foy </City>
+		<Province>QC</Province>
+		<Zip>G1P 3X2</Zip>
+		<Contact>Chantale Plamondon</Contact>
+		<Phone>418 654-2888</Phone>
+		<Email>chantale.plamondon@fleurigros.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Foamwork</Compagnie>
+		<Address>55 Bren Street</Address>
+		<City>Cornwallis</City>
+		<Province>Nova Scotia </Province>
+		<Zip>B0S 1H0</Zip>
+		<Contact>Dana Patrick Surette</Contact>
+		<Phone>888 633-2233</Phone>
+		<Email>dana@foamworx.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Focuson Gifts Inc.</Compagnie>
+		<Address>136-20, 38th avenue, room 328</Address>
+		<City>Flushing</City>
+		<Province>NY</Province>
+		<Zip>11354</Zip>
+		<Contact>Order</Contact>
+		<Email>info@focusongifts.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Footprints USA</Compagnie>
+		<Address>3720 N. Industry Ave. #125</Address>
+		<City>Lakewood</City>
+		<Province>CA</Province>
+		<Zip>90712</Zip>
+		<Phone>800 381-8940</Phone>
+		<Email>orders@footprintsusa.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Formation Dimensions</Compagnie>
+		<Address>3025, ave Tassé</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1P 1T1 </Zip>
+		<Contact>Michel Blanchard</Contact>
+		<Phone>418 872-0539</Phone>
+		<Email>michelblanchard@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Formulatech Créapub Design</Compagnie>
+		<Address>1050 Wifried-Hamel</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1M 2S3</Zip>
+		<Contact>Danyelle Blouin</Contact>
+		<Phone>418 628-4277</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Formule 1</Compagnie>
+		<Address>405, rue Nolin</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 1E8  </Zip>
+		<Contact>Doris Lachance </Contact>
+		<Phone>418 683-2220</Phone>
+		<Email>info@formule1.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Fourniture Denis</Compagnie>
+		<Contact>Doris</Contact>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>France Beaudry </Compagnie>
+		<Address>303 Rue Joseph Viel</Address>
+		<City>Rivière-du- Loup </City>
+		<Province>QC</Province>
+		<Zip>G5R 4Y5</Zip>
+		<Phone>418 862-1559</Phone>
+		<Email>beaudry_france@hotmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Furkins International Corporation inc.</Compagnie>
+		<Address>2600 John St., Unit 212</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L3R 3W3</Zip>
+		<Phone>877 387-5467</Phone>
+		<Email>furkins@idirect.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>G&amp;G Golf Company</Compagnie>
+		<Address>Unit #302 - 26730 56th Ave</Address>
+		<City>Langley</City>
+		<Province>BC</Province>
+		<Zip>V4W 3X5</Zip>
+		<Contact>Tania</Contact>
+		<Phone>800 661-004</Phone>
+		<Email>graphics@gandg.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Galaxy Balloons Inc.</Compagnie>
+		<Address>PO Box 698</Address>
+		<City>Lakewood</City>
+		<Province>OH</Province>
+		<Zip>44107-0998</Zip>
+		<Phone>800 678-8861</Phone>
+		<Email>orders@galaxyballoon.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>GB Micro</Compagnie>
+		<Address>6620, rue Abrams</Address>
+		<City>St-Laurent </City>
+		<Province>QC</Province>
+		<Zip>H4S 1Y1</Zip>
+		<Contact>Greg</Contact>
+		<Phone>800 361-2568</Phone>
+		<Email>greg@gbmicro.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Gemline / Account# 1003635</Compagnie>
+		<Address>9 International Way</Address>
+		<City>Lawrence </City>
+		<Province>MA</Province>
+		<Zip>1843</Zip>
+		<Contact>Lynn Tisbert</Contact>
+		<Email>lynnt@gemline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Geneviève Bolduc / Pigiste</Compagnie>
+		<Address>1045, rue du Prince-Albert</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2L 1C1</Zip>
+		<Phone>418 570-1038</Phone>
+		<Email>genevieve.bolduc@hotmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>GES - Stéphane Fortin    </Compagnie>
+		<Address>950 avenue St-Jean-Baptiste, bureau 100</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 5E9</Zip>
+		<Phone>418.877.2727 #234   </Phone>
+		<Email>SFortin@ges.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Girafe &amp; Associés inc.</Compagnie>
+		<Address>840, Raoul Jobin, bureau 200</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 1S7</Zip>
+		<Contact>Gaétan Côté    </Contact>
+		<Phone>418 688-0455</Phone>
+		<Email>girafe@girafe.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Gold Star</Compagnie>
+		<Address>12121, Scripps Summit Dr., 2nd Floor</Address>
+		<City>San Diego</City>
+		<Province>CA</Province>
+		<Zip>92131</Zip>
+		<Contact>Karen Hoy</Contact>
+		<Phone>800 553-9646</Phone>
+		<Email>khoy@goldstarasi.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Golden Lion USA</Compagnie>
+		<Address>14333 Proctor Ave. </Address>
+		<City>Los Angeles</City>
+		<Province>CA</Province>
+		<Zip>91746-2910</Zip>
+		<Contact>Cindy</Contact>
+		<Phone>888 930-9993</Phone>
+		<Email>cindy@goldenlionusa.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Golf Master Canada</Compagnie>
+		<Address>4032 Ripple Road</Address>
+		<City>West Vancouver</City>
+		<Province>BC</Province>
+		<Zip>V7V 3K9</Zip>
+		<Phone>888 499-3343</Phone>
+		<Email>kenardo@telus.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Gordon Sinclair</Compagnie>
+		<Address>1500 Plaza Avenue</Address>
+		<City>New Hyde Park</City>
+		<Province>NY</Province>
+		<Zip>11040</Zip>
+		<Phone>800 226-0808</Phone>
+		<Email>art@gordonsinclair.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Grant Custom Products</Compagnie>
+		<Address>427 Horner Avenue</Address>
+		<City>Toronto </City>
+		<Province>ON</Province>
+		<Zip>M8W 4W3 </Zip>
+		<Contact>Alain Calvé</Contact>
+		<Phone>800 315-4133</Phone>
+		<Email>infos@acalve.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Graphiscan</Compagnie>
+		<Address>210, rue Fortin, bureau 100</Address>
+		<City>Québec</City>
+		<Zip>G1M 0A4</Zip>
+		<Contact>Sonia Tremblay</Contact>
+		<Phone>418 266-0707</Phone>
+		<Email>sonia.tremblay@graphiscan.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Gravure Christian</Compagnie>
+		<Address>2185, ave Larue</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1C 4Z3</Zip>
+		<Contact>Carole Dubeau</Contact>
+		<Phone>418 524-8600</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Groupe Boucher Sports</Compagnie>
+		<Address>Laurier Québec, 2700 boul. Laurier Édifice Champlain, bureau 3000</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1V4K5</Zip>
+		<Contact>Alexandre Tardif</Contact>
+		<Phone>418 658-1820</Phone>
+		<Email>atardif@groupebouchersports.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Groupe Levasse</Compagnie>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Contact>Sylvie Beaudoin</Contact>
+		<Phone>418 614-5945</Phone>
+		<Email>sylvie.beaudoin@groupelevasse.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Groupe Poitras</Compagnie>
+		<Address>1265, rue Borne</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 1M6</Zip>
+		<Contact>M. Legaré</Contact>
+		<Phone>418 681-6271</Phone>
+		<Email>jlegare@groupepoitras.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Groupe Sports-Inter Plus (Le)</Compagnie>
+		<Address>420, rue Faraday</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 4E5</Zip>
+		<Contact>Nicolas Lachance</Contact>
+		<Phone>800 463-5561</Phone>
+		<Email>nlachance@sports-inter.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Guru Sportswear</Compagnie>
+		<Address>285 Midwest Road</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M1P 3A6</Zip>
+		<Contact>Alisha Crewe</Contact>
+		<Phone>416 751-7772</Phone>
+		<Email>alisha@gurusportswear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Hangzhou Chinastars Reflective Material Co., Ltd.</Compagnie>
+		<Address>2nd Floor, Chuang Ye Mansion, No. 99 Hua Xing Road, Hangzhou 310012, P.R.</Address>
+		<Contact>Helen</Contact>
+		<Phone>86-571-88156168</Phone>
+		<Email>helen@chinastars.com.cn</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Hangzhou Prostar Enterprises Ltd.</Compagnie>
+		<Address>Unit 904 Huayuan Development Buidling, NO.639 Jian Guo North Road, Hangzhou310004</Address>
+		<Contact>Elsie Jiang</Contact>
+		<Email>elsie.jiang@prostar-pen.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Harold Boivin</Compagnie>
+		<Address>555, St-Gabriel</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Phone>418 933-2837</Phone>
+		<Email>harold.boivin@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Headwear Canada</Compagnie>
+		<Address>3190B Orlando Dr.</Address>
+		<City>Mississauga</City>
+		<Province>ON</Province>
+		<Zip>L4V 1R5</Zip>
+		<Contact>Philip Addo</Contact>
+		<Phone>800 548-7942</Phone>
+		<Email>hc@headwearc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Hebdos Transcontinental Québec</Compagnie>
+		<Contact>Alain Lepage</Contact>
+		<Phone>418-686-3036, #258</Phone>
+		<Email>lepage@transcontinental.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>High Caliber Line</Compagnie>
+		<Address>#200 - 19072 26 Avenue</Address>
+		<City>Surrey</City>
+		<Province>BC</Province>
+		<Zip>V3S 3V7</Zip>
+		<Contact>Linda</Contact>
+		<Phone>866 536-9100 #232</Phone>
+		<Email>info@highcaliberline.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Hit Promotional Products / #Client 721760</Compagnie>
+		<Address>7150 Bryan Dairy Road</Address>
+		<City>Largo</City>
+		<Province>FL</Province>
+		<Zip>33777</Zip>
+		<Contact>Dale Ross</Contact>
+		<Phone>800-237-6305 # 2220</Phone>
+		<Email>dross@hitpromo.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Holiday Group Inc.</Compagnie>
+		<Address>4875 Des Grandes Prairies</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H1R 1X4</Zip>
+		<Contact>Lisa Hébert</Contact>
+		<Phone>866 325-0660</Phone>
+		<Email>lhebert@holiday.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Hooplah Interactive Inc.</Compagnie>
+		<Address>150 Ferrand Drive, Suite 804</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M3C 3E5</Zip>
+		<Contact>Jo Ann Green</Contact>
+		<Phone>800 296-5408</Phone>
+		<Email>info@hooplahinteractive.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>i-novapromo</Compagnie>
+		<Address>7275, Boul. Langelier, P.O. Box 88030</Address>
+		<City>Montreal</City>
+		<Province>QC</Province>
+		<Zip>H1S 3G9</Zip>
+		<Contact>Luc Bégin</Contact>
+		<Phone>514 529-6556</Phone>
+		<Email>lbegin@i-novapromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ideal Knitwear Inc.</Compagnie>
+		<Address>9494 St-Laurent suite 400</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H2N 1P4</Zip>
+		<Email>Frank@idealknitwear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Idée Pro</Compagnie>
+		<Address>54, Rue de la Pointe-Aux-Lièvres</Address>
+		<City>Quebec </City>
+		<Province>QC</Province>
+		<Zip>G1K 5Y3 </Zip>
+		<Contact>Pascale Litalien</Contact>
+		<Phone>418-522-4455 #13</Phone>
+		<Email>plitalien@ideepro.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>IDL</Compagnie>
+		<Address>360 Harry Walker Parkway S, Unit 1</Address>
+		<City>Newmarket</City>
+		<Province>ON</Province>
+		<Zip>L3Y 9E9</Zip>
+		<Contact>Suriya Dostzadah</Contact>
+		<Phone>877 579-1882</Phone>
+		<Email>Suriya.Dostzadah@idldisplays.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Idwear</Compagnie>
+		<City>Richmond</City>
+		<Province>BC</Province>
+		<Phone>888 433-3646</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imagémo</Compagnie>
+		<Address>991, Pierre-Bertrand Sud</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1M 2E8</Zip>
+		<Contact>Benoît Juneau</Contact>
+		<Phone>418 527-2476</Phone>
+		<Email>info@imagemo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imagerie Numérique</Compagnie>
+		<Address>14, rue Soumande, bur. 1-14</Address>
+		<City>Québec</City>
+		<Province>Québec</Province>
+		<Zip>G1L 0A4</Zip>
+		<Contact>François Marcoux</Contact>
+		<Email>fmarcoux@imagerienumerique.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imagic</Compagnie>
+		<Address>165, avenue Lesage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3S5</Zip>
+		<Contact>Manon Leclerc </Contact>
+		<Phone>418 682-2658</Phone>
+		<Email>imagic@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>IMC</Compagnie>
+		<Address>10318 Norris Av.</Address>
+		<City>Pacoima</City>
+		<Province>CA</Province>
+		<Zip>91331</Zip>
+		<Contact>International Merchandise Concepts</Contact>
+		<Phone>818 879-2800</Phone>
+		<Email>customerservice@imc-miracles.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Impression Rive-Sud</Compagnie>
+		<Address>1403, des Pionniers Ouest</Address>
+		<City>Cap-St-Ignace</City>
+		<Province>QC</Province>
+		<Zip>G0R 1H0</Zip>
+		<Contact>Marc Savard</Contact>
+		<Email>savardmarc11@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Impressions Credo</Compagnie>
+		<Address>1010, rue Renault</Address>
+		<City>St-Jean-Chrysostome</City>
+		<Province>QC </Province>
+		<Zip>G6Z 2Y8</Zip>
+		<Contact>Richard Cadrin</Contact>
+		<Phone>418 839-7207</Phone>
+		<Email>richardc@impressionscredo.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Impressions de Beauce</Compagnie>
+		<Address>125, 181e Rue</Address>
+		<City>Beauceville</City>
+		<Province>QC</Province>
+		<Zip>G5X 2S9</Zip>
+		<Contact>Jean Bolduc  </Contact>
+		<Phone>418 774-5565</Phone>
+		<Email>jbolduc@impbeauce.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Impressions Spécialisées</Compagnie>
+		<Address>1000, rue St-Jean-Baptiste, local 116</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2E 5G5</Zip>
+		<Contact>Jude Dubé</Contact>
+		<Phone>418 527-8853</Phone>
+		<Email>impressionsspecialisees@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Impressive impressions Inc.</Compagnie>
+		<Address>33 Stapleton Street</Address>
+		<City>Winnipeg</City>
+		<Province>MB</Province>
+		<Zip>R2L 1Z9</Zip>
+		<Phone>888 413-8888</Phone>
+		<Email>customerservice@impressiveline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Budget</Compagnie>
+		<Address>165, avenue Lesage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3S5</Zip>
+		<Contact>Manon</Contact>
+		<Phone>418 683-2112</Phone>
+		<Email>mleclerc@imprimeriebudget.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie F.L. Chicoine</Compagnie>
+		<Address>340, chemin Yamaska</Address>
+		<City>St-Germain de Grantham</City>
+		<Province>QC</Province>
+		<Zip>J0C 1K0</Zip>
+		<Contact>Jean Langevin</Contact>
+		<Email>jlangevin@flweb.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie La Martine</Compagnie>
+		<Address>475, ave Pruneau, suite 1</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 2J8      </Zip>
+		<Contact>André St-Pierre  </Contact>
+		<Phone>418 688-8193</Phone>
+		<Email>impmart@oricom.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Le Pixel Vert</Compagnie>
+		<Address>650, Père Lelièvre, Local 125</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1M 3T2 </Zip>
+		<Contact>Sylvain Dallaire</Contact>
+		<Phone>418 977-4627</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Mikan Printing Inc.</Compagnie>
+		<Address>6565 Henri-Bourassa W.</Address>
+		<City>Montreal </City>
+		<Province>QC</Province>
+		<Zip>H4R 1E1     </Zip>
+		<Contact>Valérie Mikan </Contact>
+		<Phone>514 332-9002</Phone>
+		<Email>vmikan@mikanprint.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Provinciale</Compagnie>
+		<Address>185, boul. des Cèdres</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1L 1M8</Zip>
+		<Phone>418 628-3011</Phone>
+		<Email>carl.bedard@imprimerieprovinciale.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Sociale</Compagnie>
+		<Address>71, des Grands-Lacs</Address>
+		<City>Saint-Augustin-de-Desmaures</City>
+		<Province>QC</Province>
+		<Zip>G3A 1T5</Zip>
+		<Contact>Jean Leclerc</Contact>
+		<Phone>418 878-9499</Phone>
+		<Email>jleclerc@imprimeriesociale.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Imprimerie Ste-Julie</Compagnie>
+		<Address>1851, rue Nobel</Address>
+		<City>Sainte-Julie</City>
+		<Province>QC</Province>
+		<Zip>J3E 1Z6 </Zip>
+		<Contact>Yanick Turenne  </Contact>
+		<Phone>800 361-9344</Phone>
+		<Email>yturenne@impsj.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Infoglobe</Compagnie>
+		<Address>1305, boul. Lebourneuf, Bur. 101</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2K 2E4 </Zip>
+		<Contact>Christian Ricard </Contact>
+		<Phone>418 681-2929</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Informatique Mercier</Compagnie>
+		<Address>4750, Boul. Hamel</Address>
+		<City>Québec </City>
+		<Zip>G1P 2J9</Zip>
+		<Contact>Geneviève Beaudry</Contact>
+		<Phone>418 871-7022</Phone>
+		<Email>gbeaudry@infomercier.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Informatique Mercier</Compagnie>
+		<Address>4750, Boul. Hamel</Address>
+		<City>Québec </City>
+		<Zip>G1P 2J9</Zip>
+		<Contact>Sylvie Gingras</Contact>
+		<Phone>418 877-5888</Phone>
+		<Email>sgingras@infomercier.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Innovation specialties Inc.</Compagnie>
+		<Address>1350 Rue Volta</Address>
+		<City>Boucherville</City>
+		<Province>QC</Province>
+		<Zip>J4B 6G6</Zip>
+		<Contact>Michelle Morin</Contact>
+		<Phone>800 361-6716</Phone>
+		<Email>mmorin@innovspec.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Interfold Designs Inc (Canada)</Compagnie>
+		<Address>7-140 Finchdene Sq</Address>
+		<City>Scarborough</City>
+		<Province>Ontario</Province>
+		<Zip>M1X 1B2</Zip>
+		<Email>interfolddesigns@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Interscript</Compagnie>
+		<Address>600, boul. Charest Est, 3e étage</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1K 3J4  </Zip>
+		<Contact>Virginie Tardif </Contact>
+		<Phone>418.694.1930 # 258</Phone>
+		<Email>virginie.tardif@interscript.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>IS Line</Compagnie>
+		<Address>1350, Volta</Address>
+		<City>Boucherville</City>
+		<Province>QC</Province>
+		<Zip>J4B 6G6</Zip>
+		<Contact>Daniel Duquette</Contact>
+		<Phone>450 641-2070</Phone>
+		<Email>clockparts@innovspec.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>ISM Line</Compagnie>
+		<Address>1245A, Avenue Godin</Address>
+		<City>Laval </City>
+		<Province>QC</Province>
+		<Zip>H7E 2T1</Zip>
+		<Contact>Josée Boivin</Contact>
+		<Phone>888 936-3476</Phone>
+		<Email>b@ismline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>James Harvest Sportswear</Compagnie>
+		<Address>9494, St-Laurent Suite 700</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2N 1P4</Zip>
+		<Phone>877 384-7462</Phone>
+		<Email>info@james-harvest.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Jay-Line Manufacturing /  J &amp; J</Compagnie>
+		<Address>15 Keefer Road</Address>
+		<City>Ste-Catherines</City>
+		<Province>ON</Province>
+		<Contact>Melanie Cameron</Contact>
+		<Phone>800 262-8707, #232</Phone>
+		<Email>melanie@jay-line.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Jean Chainé Enseignes Sculptées</Compagnie>
+		<Address>16 ave Plante</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1M 1R9</Zip>
+		<Phone>418 682-6333</Phone>
+		<Email>chainer@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Jeff Denis réalisateur</Compagnie>
+		<Address>2059 de la Canardière, apt 6</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1J 2E7</Zip>
+		<Contact>Jean-François Denis</Contact>
+		<Phone>418 956-5156</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Jennyfer Collin  -  Traducteur</Compagnie>
+		<Address>3535, avenue Barrès</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 2K2</Zip>
+		<Phone>418 687-9368</Phone>
+		<Email>info@jennyfercollin.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Jerico</Compagnie>
+		<Contact>Zina</Contact>
+		<Phone>800 668-6443</Phone>
+		<Email>zina1@jerico.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Journal Book</Compagnie>
+		<Address>1010, Timeplanner Drive</Address>
+		<City>Charlotte</City>
+		<Province>North Carolina</Province>
+		<Zip>28206</Zip>
+		<Contact>Alex Betzwiezer</Contact>
+		<Email>Alexb@journalbooks.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Justin Case</Compagnie>
+		<Address>300 Confederation Parkway, Unit 3</Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Zip>L4K 4T8</Zip>
+		<Contact>Heather Clark</Contact>
+		<Phone>905 761-8998</Phone>
+		<Email>info@justincasepromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>K2 Impressions Inc.</Compagnie>
+		<Address>425, Rue Nolin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1M 1E8</Zip>
+		<Contact>Luc Simard     </Contact>
+		<Phone>418 687-1114</Phone>
+		<Email>lsimard@k2impressions.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Kamazu Hockey</Compagnie>
+		<Address>66, des Bourdages</Address>
+		<City>Beauport </City>
+		<Province>QC</Province>
+		<Zip>G1C 6J8</Zip>
+		<Contact>Fred Turgeon </Contact>
+		<Phone>418 573-5932</Phone>
+		<Email>fredturgeon@sympatico.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Kanata Blanket</Compagnie>
+		<Address>100-13260 Delf Place</Address>
+		<City>Richmond</City>
+		<Province>BC</Province>
+		<Zip>V6V 2A2</Zip>
+		<Contact>April</Contact>
+		<Phone>800 594-9411</Phone>
+		<Email>April@kanatablanket.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>KC CAPS</Compagnie>
+		<Address>195 Duffield Drive</Address>
+		<City>Markham</City>
+		<Province>Ontario</Province>
+		<Zip>L6G 1C2</Zip>
+		<Contact>Noelle</Contact>
+		<Email>canada@kccaps.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Keystone CPS / ASI9381</Compagnie>
+		<Address>5678 West Ridge Road, P.O. Box 8182</Address>
+		<City>Erie</City>
+		<Province>PA</Province>
+		<Zip>16505</Zip>
+		<Contact>Kelly</Contact>
+		<Phone>800 772-8247</Phone>
+		<Email>orders@keystoneline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>KNP Headwear Inc.</Compagnie>
+		<Address>50 Melham Court</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M1B 2E5</Zip>
+		<Contact>Chantal Perrier </Contact>
+		<Phone>800 268-5990</Phone>
+		<Email>orderdesk@knpheadwear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>KOBE Sportswear Inc.</Compagnie>
+		<Address>791 Tapscott Road</Address>
+		<City>Scarborough</City>
+		<Province>ON</Province>
+		<Zip>M1X 1A2</Zip>
+		<Phone>888 898-5623</Phone>
+		<Email>info@kobesportswear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>L'étandard</Compagnie>
+		<Address>3775 rue Jean-Marchand</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2C 2J2</Zip>
+		<Contact>Claude Arsenault </Contact>
+		<Phone>418 845-2121</Phone>
+		<Email>carsenault@etendard.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>L'Étoile du Lac</Compagnie>
+		<Address>797, boul. St-Joseph, bureau 101</Address>
+		<City>Roberval</City>
+		<Province>QC</Province>
+		<Zip>G8H 2L4</Zip>
+		<Contact>Éric Palin</Contact>
+		<Phone>418 275-2911</Phone>
+		<Email>eric.palin@tc.tc</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>La pub express</Compagnie>
+		<Address>600 avenue Godin</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1M 2K3</Zip>
+		<Contact>Joanne Muise </Contact>
+		<Phone>418 682-1094</Phone>
+		<Email>jmuise@lapubexpress.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>La règle de Bedford Ltée</Compagnie>
+		<Address>21, rue Champagnat</Address>
+		<City>Bedford</City>
+		<Province>QC</Province>
+		<Zip>J0J 1A0</Zip>
+		<Contact>Éric Leclerc</Contact>
+		<Email>eric.leclair@rbr.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>La règle de Bedford Ltée</Compagnie>
+		<Address>21, rue Champagnat</Address>
+		<City>Bedford</City>
+		<Province>QC</Province>
+		<Zip>J0J 1A0</Zip>
+		<Contact>Sylvain Leclerc</Contact>
+		<Email>sylvain.leclair@rbr.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Laklé inc.</Compagnie>
+		<Address>1165, Rue Lomer-Gouin</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 1T3</Zip>
+		<Contact>Alain Poulin</Contact>
+		<Phone>418 681-1136 #1131</Phone>
+		<Email>alainpoulin@lakle.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Landes</Compagnie>
+		<Address>400, St-Valier</Address>
+		<City>Granby</City>
+		<Province>QC</Province>
+		<Zip>J2G 2S9 </Zip>
+		<Phone>450 378-9853</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Laser Die Cut</Compagnie>
+		<Address>772 Ardouin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1C 7J8 </Zip>
+		<Contact>Réjean Vachon</Contact>
+		<Phone>418 660-3195</Phone>
+		<Email>laserdiecut@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Latulippe</Compagnie>
+		<Address>637 Saint-Vallier Ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 1C6</Zip>
+		<Contact>Carol Royer</Contact>
+		<Phone>418 529-0024</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Laven - Labels &amp; Trims</Compagnie>
+		<Address>195, Konrad Cres</Address>
+		<City>Markham</City>
+		<Province>Ontario</Province>
+		<Zip>L3R 8T9</Zip>
+		<Contact>Tim Elliott</Contact>
+		<Phone>905 477-4410</Phone>
+		<Email>tim@laven.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Le Soleil</Compagnie>
+		<Address>410, boul. Charest Est</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 7J6   </Zip>
+		<Contact>Gisèle Roy</Contact>
+		<Phone>418 686-3435</Phone>
+		<Email>groy@lesoleil.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Leed's</Compagnie>
+		<Address>400 Hunt Valley Road</Address>
+		<City>New Kensington</City>
+		<Province>PA</Province>
+		<Zip>15068</Zip>
+		<Phone>800-860-1555 #2764</Phone>
+		<Email>orders@leedsworld.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>LG Chabot</Compagnie>
+		<Address>1375, rue Frank-Carrel, porte 19</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 2E7</Zip>
+		<Contact>JF-Chabot</Contact>
+		<Phone>418 688-5090, #108</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Libéo inc.</Compagnie>
+		<Address>5700, boul. des Galeries, bureau 300</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2K 0H5</Zip>
+		<Contact>Simon Légaré</Contact>
+		<Phone>418 520-0739</Phone>
+		<Email>simon.legare@libeo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Librairie Médiaspaul</Compagnie>
+		<Address>1073 boul. René Levesque ouest</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1S 4R5</Zip>
+		<Contact>Anne-Françoise Sigier    </Contact>
+		<Phone>418 687-3564</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Lincoln Line / Essef Distributors Inc.</Compagnie>
+		<Address>264, Herricks Rd</Address>
+		<City>Mineola</City>
+		<Province>NY</Province>
+		<Zip>11501-2210</Zip>
+		<Contact>Robyn</Contact>
+		<Phone>516 741-4140</Phone>
+		<Email>robyn@lincolnline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Lion de l'image</Compagnie>
+		<Address>1172, avenue du Lac-St-Charles</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G3G 2S7</Zip>
+		<Contact>Jean Paré</Contact>
+		<Phone>418 841-2538</Phone>
+		<Email>info@leliondulaminage.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Lion de l'image</Compagnie>
+		<Address>1172, avenue du Lac-St-Charles</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G3G 2S7</Zip>
+		<Contact>Tommy</Contact>
+		<Email>info@leliondulaminage.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Litho Services</Compagnie>
+		<Address>2200, Léon-Hamel, Bureau 3</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4L2</Zip>
+		<Contact>Jacques        </Contact>
+		<Phone>418 527-3373</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Loni Star Tampographie Express</Compagnie>
+		<Address>908, rue Fernand-Dufour</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 3B1</Zip>
+		<Contact>Denis Pelletier</Contact>
+		<Phone>418 688-0948</Phone>
+		<Email>denispelletier@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Louis Fréchette Graveur-Imprimeur</Compagnie>
+		<Address>375, rue Verdun</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 3N8</Zip>
+		<Contact>Michel Aubut </Contact>
+		<Phone>418 524-0775</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Love pink pepper</Compagnie>
+		<Address>3132, boul. Neilson, app 304</Address>
+		<City>Québec</City>
+		<Province>Québec</Province>
+		<Zip>G1W 2V4</Zip>
+		<Contact>Stécie April</Contact>
+		<Phone>418 977-5623</Phone>
+		<Email>lpp.april@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Macaron</Compagnie>
+		<Address>8639, 8 avenue</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H1Z 2X4</Zip>
+		<Contact>Carole Petel </Contact>
+		<Phone>800 350-4383</Phone>
+		<Email>cpetel@macaron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>MacXtrême</Compagnie>
+		<Address>C.P. Succ. Jean Gauvin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1X 5A3</Zip>
+		<Contact>Richard Leclerc</Contact>
+		<Phone>418 998-1035</Phone>
+		<Email>service@macxtreme.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Madison Ave. Studios</Compagnie>
+		<Address>45 Port-Royal West</Address>
+		<City>Montreal </City>
+		<Province>QC</Province>
+		<Zip>H3L 2A5 </Zip>
+		<Contact>Anita Leisser </Contact>
+		<Phone>514-383-8720, ext. 305 </Phone>
+		<Email>anita@madisonavenuestudios.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Magic Light</Compagnie>
+		<City>Boisbriand</City>
+		<Province>QC</Province>
+		<Zip> </Zip>
+		<Contact>Cindy Davidson</Contact>
+		<Phone>800 465-4569</Phone>
+		<Email>cindy@magiclight.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Magister Industrie</Compagnie>
+		<Address>444, rue de l'Amiante</Address>
+		<City>Asbestos </City>
+		<Province>QC</Province>
+		<Zip>J1T 4S3</Zip>
+		<Contact>Max Carignan</Contact>
+		<Phone>819 879-4008, #101</Phone>
+		<Email>max.carignan@magister.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Magnet Group Canada</Compagnie>
+		<Address>7, Chamber Drive</Address>
+		<City>Washington </City>
+		<Province>MO</Province>
+		<Zip>63090</Zip>
+		<Contact>Kelly Basler</Contact>
+		<Phone>800 458-9457, #5261</Phone>
+		<Email>kellyb@themagnetgroup.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Magnus Pen</Compagnie>
+		<Address>125 Nantucket Blvd</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M1P 2N5</Zip>
+		<Phone>416 292-7367</Phone>
+		<Email>artroom@magnuspen.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Magra Multi Média</Compagnie>
+		<Address>1061, rue Saint-Alexandre, 6e étage</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H2Z 1P5</Zip>
+		<Contact>Martin Gendron </Contact>
+		<Phone>514 286-2472</Phone>
+		<Email>martin@magramultimedia.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Maison Rondeau</Compagnie>
+		<Address>82, rue Saint-Paul, CP 1994</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 7M1</Zip>
+		<Contact>Françoise </Contact>
+		<Phone>418 692-0144</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Martini Promotions / Crazy Cordz</Compagnie>
+		<Address>74 Merizzi</Address>
+		<City>Montreal </City>
+		<Province>QC</Province>
+		<Zip>H4T 1S4</Zip>
+		<Contact>Moe</Contact>
+		<Phone>877 276-4666</Phone>
+		<Email>moe.sales@crazycordz.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Matrice Neufchatel inc.</Compagnie>
+		<Address>1 000 avenue St-Jean Baptiste, #116</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 5G5</Zip>
+		<Contact>Lise Bérubé</Contact>
+		<Phone>418 687-4567</Phone>
+		<Email>estimation@matrice.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Matsuda</Compagnie>
+		<Address>552 Gordon Baker Road</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M2H 3B4</Zip>
+		<Phone>416 496-2183</Phone>
+		<Email>webmaster@matsuda.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Média Secours</Compagnie>
+		<Address>692 Terrasse du Ruisseau</Address>
+		<City>Lachine </City>
+		<Province>QC</Province>
+		<Zip>H8T 3N5</Zip>
+		<Contact>Isabel Bernier </Contact>
+		<Phone>514 497-2186</Phone>
+		<Email>ibernier@mediasecours.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Mégapose</Compagnie>
+		<Address>1253 McGill College, bureau 450</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H3B 2Y5</Zip>
+		<Contact>Pierre-Michel Perron</Contact>
+		<Phone>514 874-9566, #254</Phone>
+		<Email>pierre-michel@megapose.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Mentor International</Compagnie>
+		<Address>2686, Chemin de la Petite Côte</Address>
+		<City>Laval </City>
+		<Province>QC</Province>
+		<Zip>H7L 5Z7</Zip>
+		<Contact>Pierre Calestagne</Contact>
+		<Phone>450 963-6069, #5229</Phone>
+		<Email>pcalestagne@mentorinternational.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Mi Pen Compagny</Compagnie>
+		<City>Richmond Hill</City>
+		<Province>ON</Province>
+		<Contact>Niki Araya </Contact>
+		<Phone>800 520-8584, #250</Phone>
+		<Email>reception@mipencompany.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Minimedia INT'L Inc.</Compagnie>
+		<Address>2103, Dagenais W.</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7L 5W9</Zip>
+		<Contact>Angela</Contact>
+		<Phone>800-665-7874, #225</Phone>
+		<Email>service@minimediaonline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Money Clamp</Compagnie>
+		<Address>1800, Nueces street</Address>
+		<City>Austin</City>
+		<Province>TX</Province>
+		<Zip>78701</Zip>
+		<Contact>Mary-Margaret</Contact>
+		<Phone>877 216-3072</Phone>
+		<Email>marymargaret@moneyclamp.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Mono-Lino Inc.</Compagnie>
+		<Address>235, boul. Hamel Est</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1L 4J1</Zip>
+		<Contact>Michel Carbonneau</Contact>
+		<Phone>418 522-0615</Phone>
+		<Email>michel.carbonneau@mono-lino.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Multiforme</Compagnie>
+		<Address>625, rue Simonds sud</Address>
+		<City>Granby</City>
+		<Province>QC</Province>
+		<Zip>J2J 1C2</Zip>
+		<Phone>800-361-5404, #27</Phone>
+		<Email>info@multiforme.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>My M&amp;M'S / MARS direct</Compagnie>
+		<Address>700 High Street</Address>
+		<City>Hackettstown</City>
+		<Province>NJ</Province>
+		<Zip>7840</Zip>
+		<Contact>Nancy</Contact>
+		<Phone>866 902-2703</Phone>
+		<Email>marsdirect@casupport.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>New Compagny NY Inc</Compagnie>
+		<Address>860 Sixth Ave (at 30th Street)</Address>
+		<City>New York</City>
+		<Province>NY</Province>
+		<Zip>10001</Zip>
+		<Phone>212 252-8668</Phone>
+		<Email>ncny888@aol.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Nexen Sportswear Inc</Compagnie>
+		<Address>8573 Dalton Road</Address>
+		<City>Ville Mount Royal</City>
+		<Province>QC</Province>
+		<Zip>H4T 1V5</Zip>
+		<Phone>514 340-2227</Phone>
+		<Email>sales@nexenheadwear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Nexgen Golf Products Inc.</Compagnie>
+		<Address>60 Weybright Court, Unit 2</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M1S 4E4</Zip>
+		<Phone>866 639-4363</Phone>
+		<Email>contact@nexgengolf.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Nicober</Compagnie>
+		<Address>425, rue Nolin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1M 1E8</Zip>
+		<Contact>Roger Vallée </Contact>
+		<Phone>418 681-0064</Phone>
+		<Email>rvallee@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ningbo EAGO Premium GIFT Company Piggy bank</Compagnie>
+		<Address> Rm 1310 &amp; 1306, Moonlake Tower, No. 16 East  Nanzhan Rd</Address>
+		<City>Ningbo </City>
+		<Zip>315016</Zip>
+		<Contact>Maggie Luo</Contact>
+		<Phone>86-574-27899868 </Phone>
+		<Email>sales1@eagogift.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ningbo Shunkang Arts &amp; Crafts Co.,Ltd.</Compagnie>
+		<Address>Room   409,ZhongShan  Commercial Buliding, No.121  Gongyuan    Road, Ningbo,</Address>
+		<Contact>Alex</Contact>
+		<Phone>86 574 82901220</Phone>
+		<Email>info@nbshunkang.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Noble gift packaging</Compagnie>
+		<Address>5623 Casgrain</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2T 1Y1</Zip>
+		<Contact>Baila Kisner</Contact>
+		<Phone>800 463-8388, #2156</Phone>
+		<Email>bailak@noblepack.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Norecob</Compagnie>
+		<Address>340, rue Principale</Address>
+		<City>Saint-Jules</City>
+		<Province>Québec</Province>
+		<Zip>G0N 1R0</Zip>
+		<Contact>François Plouffe</Contact>
+		<Email>fplouffe@norecob.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Northen Souvenirs</Compagnie>
+		<Address>1621 Chabanel</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4N 2T7</Zip>
+		<Contact>Alain Drouin</Contact>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Northen Souvenirs</Compagnie>
+		<Address>1621 Chabanel</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4N 2T7</Zip>
+		<Contact>Raffi</Contact>
+		<Email>info@northernsouvenirs.ca </Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Northen Souvenirs</Compagnie>
+		<Address>1621 Chabanel</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4N 2T7</Zip>
+		<Contact>Sarine Sabounjian</Contact>
+		<Email>sarine@northernsouvenirs.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Norwood Bic Graphic</Compagnie>
+		<Address>384 Neptune Crescent</Address>
+		<City>London </City>
+		<Province>ON</Province>
+		<Zip>N6M 1A1</Zip>
+		<Phone>866 810-5442</Phone>
+		<Email>canorders@norwood.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>NRG Management inc</Compagnie>
+		<Address>293, boul. Industriel</Address>
+		<City>St-Eustache</City>
+		<Province>QC</Province>
+		<Zip>J7R 6B7 </Zip>
+		<Contact>Allain Durette</Contact>
+		<Phone>418 681-0180</Phone>
+		<Email>adurette@nrgqc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>NRG Management inc</Compagnie>
+		<Address>293, boul. Industriel</Address>
+		<City>St-Eustache</City>
+		<Province>QC</Province>
+		<Zip>J7R 6B7 </Zip>
+		<Contact>Marc Desparois</Contact>
+		<Email>marc@nrgqc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>NRJ Québec 98.9</Compagnie>
+		<Address>900, rue d'Youville, 1ère étage</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1R 3P7</Zip>
+		<Contact>Anne-Cécile Piraux  </Contact>
+		<Phone>418 527-3232, #316</Phone>
+		<Email>apiraux@astral.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Nu-Foilprint</Compagnie>
+		<Address>70-A, Brunswick</Address>
+		<City>Dollard-des-Ormeaux</City>
+		<Province>Québec</Province>
+		<Zip>H9B 2C5</Zip>
+		<Contact>Virginie Jolicoeur</Contact>
+		<Email>virginie@foilprint.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>O Mini-Prix Boutiques Chantal Croft</Compagnie>
+		<Address>603, Rte Bégin</Address>
+		<City>Saint-Anselme</City>
+		<Province>Québec</Province>
+		<Zip>G0R 2N0</Zip>
+		<Contact>Audrey Vachon</Contact>
+		<Phone>418 885-9895</Phone>
+		<Email>audreyvachon@live.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>O2 Web</Compagnie>
+		<Address>1660, chemin Saint-Louis</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1S 1G9</Zip>
+		<Contact>Charles Guimont</Contact>
+		<Phone>418 210-3500</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Oasis bags</Compagnie>
+		<City>Vaudreuil</City>
+		<Province>QC</Province>
+		<Contact>Catherine</Contact>
+		<Phone>877 286-2747</Phone>
+		<Email>catherine@oasisbags.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>OGP ENTERPRISES INC.</Compagnie>
+		<Address> 670 HARDWICK RD UNIT #1</Address>
+		<City> BOLTON</City>
+		<Province>ONTARIO</Province>
+		<Zip>L7E 5R5  </Zip>
+		<Contact>Mary </Contact>
+		<Phone>905 951-7825</Phone>
+		<Email>mary@officialgamepuck.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Oratio Films productions</Compagnie>
+		<Address>363 de l'escale</Address>
+		<City>St-Nicolas</City>
+		<Province>QC</Province>
+		<Zip>G7A 1G5</Zip>
+		<Contact>Jean-François Denis   </Contact>
+		<Phone>418 956-5156</Phone>
+		<Email>jeff@oratiofilms.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>OTTIAQ Ordre des traducteurs, terminologues et interprètes agréés du Québec</Compagnie>
+		<Address>2021, av Union, bureau 1108</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H3A 2A9</Zip>
+		<Email>kgelinas@ottiaq.org</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>PA Morin</Compagnie>
+		<Address>17 St-Marc</Address>
+		<City>St-Anselme</City>
+		<Province>QC</Province>
+		<Zip>G0R 2N0</Zip>
+		<Contact>André Morin</Contact>
+		<Email>andre@pamorin.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Papier Québec</Compagnie>
+		<City>Beauport </City>
+		<Province>QC</Province>
+		<Contact>Cindy Pelchat</Contact>
+		<Phone>418 660-0068</Phone>
+		<Email>cindy@papiersquebec.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Par Ballon</Compagnie>
+		<Address>210, rue Lee </Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 2K6</Zip>
+		<Contact>Richard Bossé </Contact>
+		<Phone>418 522-1302</Phone>
+		<Email>info@parballon.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pascal Rousse</Compagnie>
+		<Address>312, d'Île de France</Address>
+		<City>Saint-Basile-le-Grand</City>
+		<Province>QC</Province>
+		<Zip>J3N 1V3</Zip>
+		<Phone>514 250-9459</Phone>
+		<Email>pascal@zunic.biz</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Passion sport logo</Compagnie>
+		<Address>Le 75, des Épinettes, suite 7</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1L 1N6</Zip>
+		<Contact>Josée Lemelin</Contact>
+		<Phone>418 683-1533</Phone>
+		<Email>joseel@passionsportlogo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Paul Marchand</Compagnie>
+		<Address>406 St-Joseph</Address>
+		<City>Laurier-Station</City>
+		<Province>QC</Province>
+		<Zip>G0S 1N0</Zip>
+		<Contact>Paul Marchand</Contact>
+		<Email>monicpol@globetrotter.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Payge International Inc.</Compagnie>
+		<Address>4583, Métropolitain Est</Address>
+		<City>St-Léonard</City>
+		<Province>QC</Province>
+		<Zip>H1R 1Z4</Zip>
+		<Phone>866 796-6667</Phone>
+		<Email>info@payge.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>PCA Calendar</Compagnie>
+		<Contact>Order</Contact>
+		<Email>pca@pcacal.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pedigree</Compagnie>
+		<Address>8270 Pie IX Blvd.</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H1Z 3T6</Zip>
+		<Contact>Emilia Sabelli </Contact>
+		<Phone>800 205-0205</Phone>
+		<Email>emilias@midwayindustries.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pelligraph</Compagnie>
+		<Address>455, avenue Marais #140</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G6J 1N5 </Zip>
+		<Contact>Louis-Paul</Contact>
+		<Phone>418 688-3545</Phone>
+		<Email>louis-paul@pelligraph.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Penpal</Compagnie>
+		<Address>3-1750 The Queensway, suite 414</Address>
+		<City>Toronto </City>
+		<Province>ON</Province>
+		<Zip>M9C 5H5</Zip>
+		<Contact>Nabil Nusair</Contact>
+		<Phone>866 491-0983</Phone>
+		<Email>nabil@penpalgroup.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Penusa</Compagnie>
+		<Address>7-200 Cochrane Drive</Address>
+		<City>Markham </City>
+		<Province>ON</Province>
+		<Zip>L3R 8E8</Zip>
+		<Contact>Ivy</Contact>
+		<Phone>905 948-9991</Phone>
+		<Email>ivy@penusa.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Perfect Measuring Tape Co. USA</Compagnie>
+		<Contact>Andy Bohnengel</Contact>
+		<Phone>419 243-6811</Phone>
+		<Email>tapegate@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Perfect Penpal</Compagnie>
+		<Contact>Naomi</Contact>
+		<Phone>800 423-5343</Phone>
+		<Email>naomi@perfectllc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>PI Incentives Ltd.</Compagnie>
+		<Address>315-220 DUNCAN MILL RD</Address>
+		<City>Toronto</City>
+		<Province>ON</Province>
+		<Zip>M3B 3J5</Zip>
+		<Contact>Raluca Get</Contact>
+		<Phone>416.383.0766, #117</Phone>
+		<Email>raluca@piincentives.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pierre Despatie</Compagnie>
+		<Phone>450 446-1118</Phone>
+		<Email>pierre.depatie@sympatico.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Plastichoix</Compagnie>
+		<Address>925, rue Newton, local 122</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4M2</Zip>
+		<Contact>Armand Thibodeau  </Contact>
+		<Phone>418 871-0101</Phone>
+		<Email>plasti86@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Plastichoix</Compagnie>
+		<Address>925, rue Newton, local 122</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4M2</Zip>
+		<Contact>Frédéric Bernier</Contact>
+		<Email>plastichoix.spirale@bellnet.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Polar Feet</Compagnie>
+		<Address>#203, 336 East 1st Ave</Address>
+		<City>Vancouver</City>
+		<Province>BC</Province>
+		<Zip> V5T 4R6</Zip>
+		<Contact>Lisa Falconer</Contact>
+		<Email>lisa@polarfeet.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Poly Alto</Compagnie>
+		<Address>3825, rue Jean-Marchand</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2C 2J2</Zip>
+		<Contact>Émilie Claveau  </Contact>
+		<Phone>418 847-8311, #2250</Phone>
+		<Email>emilie.claveau@polyalto.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Polycrylic</Compagnie>
+		<Address>64 Ave. Des Industriels</Address>
+		<City>Coaticook </City>
+		<Province>QC </Province>
+		<Zip>J1A 2S2</Zip>
+		<Contact>Alain Quirion </Contact>
+		<Phone>1 800-268-9674</Phone>
+		<Email>poly@polycrylic.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Posimage</Compagnie>
+		<Address>6285, Boul. Hamel Ouest</Address>
+		<City>Ancienne-Lorette </City>
+		<Province>QC</Province>
+		<Zip>G2E 5W2</Zip>
+		<Contact>François Thibodeau</Contact>
+		<Phone>418 877-2775, #2232</Phone>
+		<Email>francoist@posimage.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Premiums Plus Inc.</Compagnie>
+		<Address>1050 Copperstone Drive</Address>
+		<City>Pickering </City>
+		<Province>ON</Province>
+		<Zip>L1W 3V8</Zip>
+		<Contact>Michele Waters</Contact>
+		<Phone>800-383-3963 #238</Phone>
+		<Email>info@premiums-plus.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Prestige Glass Int</Compagnie>
+		<Address>5 Roddis Road</Address>
+		<City>Elliot Lake</City>
+		<Province>ON</Province>
+		<Zip>P5A 2T1</Zip>
+		<Contact>Catherine </Contact>
+		<Phone>705 848-1723</Phone>
+		<Email>orders@prestigeglass.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Primeline</Compagnie>
+		<Address>1100, Boston Ave</Address>
+		<City>Bridgeport </City>
+		<Province>CT</Province>
+		<Zip>6610</Zip>
+		<Phone>800 873-7746 #3368</Phone>
+		<Email>customercare@primeline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Printed Drinkware Company</Compagnie>
+		<Address>7-606 Rivermede Road</Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Zip>L4K 2H6</Zip>
+		<Phone>905 760-7979</Phone>
+		<Email>info@printeddrinkware.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Production Richard Vézina</Compagnie>
+		<Address>900, Boul. Pierre-Bertrand #140</Address>
+		<City>Vanier</City>
+		<Province>QC</Province>
+		<Zip>G1M 3K2</Zip>
+		<Contact>Stéphane Vézina </Contact>
+		<Phone>418 686-3777</Phone>
+		<Email>infos@impvezina.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Promo Plastik</Compagnie>
+		<Address>360, rue du Faubourg</Address>
+		<City>St-Jean-Port-Joli </City>
+		<Province>QC</Province>
+		<Zip>G0R 3G0</Zip>
+		<Contact>Claire</Contact>
+		<Phone>1 418 598-9171</Phone>
+		<Email>contact@promoplastik.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Promobilia</Compagnie>
+		<Address>5920 No. 6 Road</Address>
+		<City>Richmond</City>
+		<Province>BC</Province>
+		<Contact>Peggy Eng</Contact>
+		<Phone>800 598-4325</Phone>
+		<Email>peggy@promobilia.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Promocom</Compagnie>
+		<Address>25, du Lipizzan</Address>
+		<City>Blainville </City>
+		<Province>QC</Province>
+		<Zip>J7C 4X4</Zip>
+		<Contact>Claudette Coghlan</Contact>
+		<Phone>450 434-3511</Phone>
+		<Email>info@promocom.qc.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Propaganda Design</Compagnie>
+		<Address>1433, 4e avenue</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1J 3B9</Zip>
+		<Contact>Pascal Laprise</Contact>
+		<Phone>418 647-4555</Phone>
+		<Email>plaprise@propagandadesign.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>PSL</Compagnie>
+		<Address>13500 Maycrest Way</Address>
+		<City>Richmond</City>
+		<Province>BC</Province>
+		<Zip>V6V 2N8</Zip>
+		<Contact>Jiti Sanghera</Contact>
+		<Phone>800 668-8998</Phone>
+		<Email>info@pslcanada.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pub Interactive SG inc.</Compagnie>
+		<Address>550, boulevard de Mortagne, bureau 240</Address>
+		<City>Boucherville </City>
+		<Province>QC</Province>
+		<Zip>J4B 5E4  </Zip>
+		<Contact>Sébastien Goulet</Contact>
+		<Phone>450 906-4055</Phone>
+		<Email>sgoulet@pubinteractive.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Pub-Action</Compagnie>
+		<Address>895, rue Raoul-Jobin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1N 1S6  </Zip>
+		<Contact>Charles Garneau</Contact>
+		<Phone>418 681-6211 #226</Phone>
+		<Email>charles@groupepubaction.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Publicité Express</Compagnie>
+		<Address>908, rue Fernand-Dufour</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 3B1</Zip>
+		<Contact>Denis Pelletier</Contact>
+		<Phone>418 688-0948</Phone>
+		<Email>express@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Publicité Express</Compagnie>
+		<Address>908, rue Fernand-Dufour</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 3B1</Zip>
+		<Contact>Sylvie Beaulieu</Contact>
+		<Email>express@qc.aira.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Publisac</Compagnie>
+		<Address>710 Bouvier, local 107</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2J 1A7</Zip>
+		<Contact>Olivier Leroux    </Contact>
+		<Phone>418 628-3155 #225</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>PVH Career apparal</Compagnie>
+		<Address>30 Pedigree Court, Unit 2</Address>
+		<City>Brampton</City>
+		<Province>ON</Province>
+		<Zip>L6T 5T8</Zip>
+		<Phone>800 999-0146</Phone>
+		<Email>vhcareerapp@pvh.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Quantum Productions</Compagnie>
+		<Address>1185, rue Philippe-Paradis #190</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4E2 </Zip>
+		<Contact>Michelle Savard</Contact>
+		<Phone>418 687-2730, #223 </Phone>
+		<Email>michelles@quantumprod.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>R2M Imagem</Compagnie>
+		<Address>11500, 10e Avenue, suite 405</Address>
+		<City>Saint-Georges</City>
+		<Province>QC</Province>
+		<Zip>G5Y 7S5</Zip>
+		<Contact>Régis Veilleux</Contact>
+		<Phone>418 221-0450</Phone>
+		<Email>rveilleux@r2mimagem.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Raphael Langevin - Imagerie 3D</Compagnie>
+		<Address>1256, 1ere avenue Québec</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1L 3K9</Zip>
+		<Contact>Raphael Langevin</Contact>
+		<Email>raphlange20@hotmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Ravi solution</Compagnie>
+		<Address>450-A Place Trans-Canada</Address>
+		<City>Longueuil</City>
+		<Province>QC</Province>
+		<Zip>J4G 1N8</Zip>
+		<Contact>Marc Chalifour</Contact>
+		<Phone>514 312-8476</Phone>
+		<Email>marc.gmmc@gmail.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Reliure Sélect Alternative</Compagnie>
+		<Address>2225, avenue Chauveau</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2C 1B2     </Zip>
+		<Contact>Daniel Leboeuf</Contact>
+		<Phone>418 840-2100 #22</Phone>
+		<Email>info@relalt.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Rémi Thibault / Rédacteur</Compagnie>
+		<Address>218, Berlioz, app. 112</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H3E 1B8</Zip>
+		<Phone>514 362-9233</Phone>
+		<Email>rthibo@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Reprographic</Compagnie>
+		<Address>1995, rue Frank-Carrel, Porte 105</Address>
+		<City>Ste-Foy</City>
+		<Province>QC</Province>
+		<Zip>G1N 4H9</Zip>
+		<Contact>Sandy Roy</Contact>
+		<Phone>418 683-1999 #229</Phone>
+		<Email>sandy@reprografic.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>RO-EL Group</Compagnie>
+		<Address>8965 Boul. St-Laurent</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H2N 1M5</Zip>
+		<Contact>Christina</Contact>
+		<Phone>800-266-7635 #264</Phone>
+		<Email>roelgrp@roelgrp.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>ROUGE FM</Compagnie>
+		<Address>900, rue d'Youvile, 1er étage</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1R 3P7</Zip>
+		<Contact>Anne-Cécile Piraux</Contact>
+		<Phone>418 527-3232</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sanders Manufacturing Company</Compagnie>
+		<Address>1422, Lebanon Road</Address>
+		<City>Nashville</City>
+		<Province>TN</Province>
+		<Zip>37210</Zip>
+		<Contact>Judy </Contact>
+		<Phone>866 254-6611 #111</Phone>
+		<Email>sales@samcoline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sanford</Compagnie>
+		<Address>586 Argus Road</Address>
+		<City>Oakville</City>
+		<Province>ON</Province>
+		<Zip>L6J 3J3</Zip>
+		<Phone>800 514-4307</Phone>
+		<Email>b2b.custserv@sanford.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sani-Métal</Compagnie>
+		<Address>5170, Rideau</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 5S4</Zip>
+		<Contact>Julie Contant</Contact>
+		<Email>JContant@sanimetal.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sani-Métal</Compagnie>
+		<Address>5170, Rideau</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2E 5S4</Zip>
+		<Contact>Julie Desmeules</Contact>
+		<Phone>418 872-8778</Phone>
+		<Email>jdesmeules@sanimetal.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sanmar Canada</Compagnie>
+		<Address>13471 Crestwood Place</Address>
+		<City>Richmond</City>
+		<Province>BC</Province>
+		<Zip>V6V 2G4</Zip>
+		<Phone>604 273-9088</Phone>
+		<Email>helenel@sanmarcanada.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sanmar Canada</Compagnie>
+		<Address>8400, Côte de Liesse</Address>
+		<City>Ville St-Laurent </City>
+		<Province>QC</Province>
+		<Zip>H4T 1G7</Zip>
+		<Contact>Hélène Lazure </Contact>
+		<Phone>514 299-4156, #3200</Phone>
+		<Email>helenel@sanmarcanada.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sapes Marketing Inc</Compagnie>
+		<Address>334 Courval</Address>
+		<City>Boisbriand</City>
+		<Province>QC</Province>
+		<Zip>J7G 2Y8 </Zip>
+		<Contact>Yvan Boucher</Contact>
+		<Phone>514 502-0242</Phone>
+		<Email>sapes@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Savoir-faire Linux | L3i</Compagnie>
+		<Address>265 de la couronne, bur. 201</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 6E1</Zip>
+		<Contact>Anick Tardif</Contact>
+		<Phone>418 262-5503</Phone>
+		<Email>anick.tardif@savoirfairelinux.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Schleeh Design</Compagnie>
+		<Address>8307, Chemin Royden</Address>
+		<City>Mont-Royal</City>
+		<Province>QC</Province>
+		<Zip>H4P 2J8</Zip>
+		<Contact>Michelle Reid</Contact>
+		<Phone>514 762-3720</Phone>
+		<Email>info@schleehdesign.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>SCR -  Claude Rousseau</Compagnie>
+		<Address>649, avenue Godin</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 3V8</Zip>
+		<Phone>418 527-7755</Phone>
+		<Email>scr@clauderousseau.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Securi-Sport</Compagnie>
+		<Address>2055 ave Branly</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4C7</Zip>
+		<Contact>Christian Gagné</Contact>
+		<Email>christian@securisport.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sérid'art</Compagnie>
+		<Address>1375, rue Frank-Carrel, porte 14</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 2E7</Zip>
+		<Contact>Pierre Bédard</Contact>
+		<Phone>418 683-6422</Phone>
+		<Email>seridart@seridart.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sharper Image Apparel</Compagnie>
+		<Address>5503 - 82 Avenue</Address>
+		<City>Edmonton</City>
+		<Province>AB</Province>
+		<Zip>T6B 2J6</Zip>
+		<Contact>Berkley Boutcher </Contact>
+		<Phone>866 283-5369</Phone>
+		<Email>info@sharperpromo.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Showdown Displays</Compagnie>
+		<Address>6400 Bunker Lake NW</Address>
+		<City>Ramsa</City>
+		<Province>MN</Province>
+		<Zip>55303-5849</Zip>
+		<Phone>888 376-7469</Phone>
+		<Email>info@displayheadquarters.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Showdown Displays</Compagnie>
+		<Address>6400 Bunker Lake NW</Address>
+		<City>Ramsa</City>
+		<Province>MN</Province>
+		<Zip>55303-5849</Zip>
+		<Contact>Order</Contact>
+		<Email>orders@signzoneinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Siborg2</Compagnie>
+		<Address>2270, rue Léon-Harmel, suite 245</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4L2</Zip>
+		<Contact>Simon Gaudreault  </Contact>
+		<Phone>418 640-0008</Phone>
+		<Email>info@Siborg2.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Siel Imprimerie</Compagnie>
+		<Address>659, avenue Godin</Address>
+		<City>Vanier </City>
+		<Province>QC</Province>
+		<Zip>G1M 3E6</Zip>
+		<Contact>Martin Verville</Contact>
+		<Phone>418 688-9593</Phone>
+		<Email>siel@imprimeriesiel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Signalisation FAB</Compagnie>
+		<Address>460 Rue des Adirondacks</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1C 7E8</Zip>
+		<Contact>DAVE BOUCHARD </Contact>
+		<Email>dave@signalisationfab.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Simplex Promo</Compagnie>
+		<Address>116 B Viceroy Rd., Unit 10</Address>
+		<City>Concord</City>
+		<Province>ON</Province>
+		<Zip>L4K 2M2</Zip>
+		<Contact>Dan Engel</Contact>
+		<Phone>866 516-8080</Phone>
+		<Email>info@simplexpromo.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Soera</Compagnie>
+		<Address>175, 3e av</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1L 2V3</Zip>
+		<Contact>Fernando</Contact>
+		<Phone>418 525-8989</Phone>
+		<Email>soera@videotron.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Solisco</Compagnie>
+		<Address>2200, Rue Cyrille-Duquet, bur. 206</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 2G3 </Zip>
+		<Contact>Jean-Philippe Morin</Contact>
+		<Phone>418 687-4434 #551</Phone>
+		<Email>jean-philippe.morin@solisco.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Solisco Numérix</Compagnie>
+		<Address>4050, Rue Jean-Marchand, bureau 100</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2C 1Y6</Zip>
+		<Contact>Dominic Guay</Contact>
+		<Phone>418 842-0850, #230</Phone>
+		<Email>dguay@numerix.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Somcan Marketing &amp; Sales</Compagnie>
+		<Address>1795 Ironstone Manor, Unit 1 Pickering</Address>
+		<Province>ON</Province>
+		<Zip>L1W 3W9</Zip>
+		<Contact>Debbie Shortt</Contact>
+		<Phone>905-831-3364 #107</Phone>
+		<Email>dshortt@somcan.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spector &amp; Co</Compagnie>
+		<Address>5700 Kieran Road</Address>
+		<City>Ville St-Laurent</City>
+		<Province>QC</Province>
+		<Zip>H4S 2B5</Zip>
+		<Contact>Dayana Saba</Contact>
+		<Email>dayana@spectorandco.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spector &amp; Co</Compagnie>
+		<Address>5700 Kieran Road</Address>
+		<City>Ville St-Laurent</City>
+		<Province>QC</Province>
+		<Zip>H4S 2B5</Zip>
+		<Contact>Paola Riccio</Contact>
+		<Phone>800 385-7063 #242</Phone>
+		<Email>paola@spectorandco.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spectrum Média Solution Web Inc.</Compagnie>
+		<Address>344 du Charpentier</Address>
+		<City>St-Augustin </City>
+		<Province>QC</Province>
+		<Zip>G3A 1P5</Zip>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spicers</Compagnie>
+		<Address>10 000, boul. Ray-Lawson</Address>
+		<City>Ville D'Anjou</City>
+		<Province>QC</Province>
+		<Zip>H1J 1L8</Zip>
+		<Contact>Chantal Vallée</Contact>
+		<Phone>514 356-3809</Phone>
+		<Email>chantal.vallee@spicers.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spicers</Compagnie>
+		<Address>2893, avenue Kepler</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1X 3V4</Zip>
+		<Contact>Nathalie Boulé</Contact>
+		<Email>Nathalie.Boule@spicers.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Spirale Québec</Compagnie>
+		<Address>925, avenue Newton</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 4M2</Zip>
+		<Contact>Claudine</Contact>
+		<Phone>418 871-0101</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Sportzbiz</Compagnie>
+		<Contact>Benoit Pichette</Contact>
+		<Phone>514 776-0061</Phone>
+		<Email>benoit@pro-dev.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>St. John's Trophies Limited</Compagnie>
+		<Address>1750 Bonhill Road</Address>
+		<City>Mississauga </City>
+		<Province>ON</Province>
+		<Zip>L5T 1C8</Zip>
+		<Contact>Marie Jordan</Contact>
+		<Phone>800 387-3151</Phone>
+		<Email>sales@sjtl.com </Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>St. Regis Crystal inc.</Compagnie>
+		<Address>271 Yorktech Drive</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L6G 1A6</Zip>
+		<Contact>Ellen Star </Contact>
+		<Phone>888-854-0591 #3242</Phone>
+		<Email>ellen@stregiscrystal.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Standex</Compagnie>
+		<Address>2800, avenue Dalton, bureau 8</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1P 3S4</Zip>
+		<Contact>Jean Blanchard</Contact>
+		<Phone>418 654-0029 #201</Phone>
+		<Email>Jean.Blanchard@standex.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Starline Industries Inc.</Compagnie>
+		<Address>37 Staffern Drive.</Address>
+		<City>Concord </City>
+		<Province>ON</Province>
+		<Zip>L4K 2X2</Zip>
+		<Phone>800 361-7878</Phone>
+		<Email>Quebec@starline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Starline International Group Limited -SZ Rep. Office</Compagnie>
+		<Contact>Jessica Tang</Contact>
+		<Phone>86 755 8349 6075</Phone>
+		<Email>jessica.tang@starlinehk.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Stormtech Performance Apparel</Compagnie>
+		<Address>2560 Boundary road</Address>
+		<City>Burnaby</City>
+		<Province>BC</Province>
+		<Zip>V5M 3Z3</Zip>
+		<Contact>David Marino</Contact>
+		<Phone>866-407-2222 #252</Phone>
+		<Email>davidm@stormtech.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Stormtech Performance Apparel</Compagnie>
+		<Address>2560 Boundary road</Address>
+		<City>Burnaby</City>
+		<Province>BC</Province>
+		<Zip>V5M 3Z3</Zip>
+		<Contact>Dominic</Contact>
+		<Phone>866 714-2513</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Strong Leather Co.</Compagnie>
+		<Address>105 Maplewood Ave</Address>
+		<City>Gloucester</City>
+		<Province>MA</Province>
+		<Zip>1930</Zip>
+		<Contact>Terry Mansfield</Contact>
+		<Phone>800 332-6025</Phone>
+		<Email>orders@strongleather.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Studio Expression</Compagnie>
+		<Address>710, Bouvier, bureau 128</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G2J 1C2</Zip>
+		<Phone>418 563-0902</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Studio Steve Bergeron</Compagnie>
+		<Address>485, boul. Langelier, suite 304</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1K 5P3</Zip>
+		<Phone>418 930-9833</Phone>
+		<Email>steve@studiobergeron.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>STYLO.CA Québec</Compagnie>
+		<Address>2700, boul. Laurier</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1V 2L8</Zip>
+		<Contact>M. Guy Filion</Contact>
+		<Phone>418 651-1295</Phone>
+		<Email>Filion@stylo.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Supratech</Compagnie>
+		<Address>960, rue André-Liné</Address>
+		<City>Granby</City>
+		<Province>QC</Province>
+		<Zip>J2J 1E2 </Zip>
+		<Contact>Kathryn Doucet  </Contact>
+		<Phone>800 363-1276 #239</Phone>
+		<Email>estimation@supratech.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Supreme Laces inc.</Compagnie>
+		<Address>7755 boul. St-Laurent</Address>
+		<City>Montréal </City>
+		<Province>QC</Province>
+		<Zip>H2R 1X1  </Zip>
+		<Contact>Ève</Contact>
+		<Phone>800 465-7990 #108</Phone>
+		<Email>sales@supremelaces.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Swissmar Ltd.</Compagnie>
+		<Address>35 East Beaver Creek Road, Unit 6</Address>
+		<City>Richmond Hill</City>
+		<Province>ON</Province>
+		<Zip>L4B 1B3</Zip>
+		<Contact>Erica Kim</Contact>
+		<Phone>905 764-1121</Phone>
+		<Email>ericak@swissmar.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Targetline</Compagnie>
+		<Address>520 S Gould St</Address>
+		<City>Owosso</City>
+		<Province>MI</Province>
+		<Zip>48867-2643</Zip>
+		<Contact>Order</Contact>
+		<Email>orders@targetline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Taylor &amp; Grant Specialties</Compagnie>
+		<Address>151 Weber St. South</Address>
+		<City>Waterloo </City>
+		<Province>ON</Province>
+		<Zip>N2J 2A9</Zip>
+		<Phone>800 461-0892</Phone>
+		<Email>orders@chocolateinn.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Taylor Made adidas Golf Canada</Compagnie>
+		<Address>8100 Highway 27</Address>
+		<City>Woodbridge</City>
+		<Province>ON</Province>
+		<Zip>L4H 3N2</Zip>
+		<Contact>Simon Brunet</Contact>
+		<Phone>800 668-9883</Phone>
+		<Email>simon@agenceS10.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Team Aquatic Supplies Ltd.</Compagnie>
+		<Address>#8-4155 Fairview Street</Address>
+		<City>Burlington</City>
+		<Province>ON</Province>
+		<Zip>L7L 2A4</Zip>
+		<Phone>905 632-2590</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Teamco Sportwear</Compagnie>
+		<Address>480 Denison Street</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L3R 1B9</Zip>
+		<Phone>888 668-6443</Phone>
+		<Email>info@teamcosportswear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Teknograv</Compagnie>
+		<Address>1385, rue de la Pointe-aux-Lièvres</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1L 4M6  </Zip>
+		<Contact>Louis Lacoursière</Contact>
+		<Phone>418 523-4533</Phone>
+		<Email>louis@teknograv.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Telio</Compagnie>
+		<Address>625, Deslauriers</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4N 1W8</Zip>
+		<Contact>Benoît</Contact>
+		<Phone>514 271-4607</Phone>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Tessier / Services d'Exposition</Compagnie>
+		<Address>220, rue Lee</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1K 2K6</Zip>
+		<Contact>Arnaud Viel</Contact>
+		<Phone>418 524-1888</Phone>
+		<Email>info@brunotessier.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Têtu Inc.</Compagnie>
+		<Address>2300 Léon-Harmel, suite 109</Address>
+		<City>Québec</City>
+		<Province>QC</Province>
+		<Zip>G1N 4L2</Zip>
+		<Contact>Jean Blanchet</Contact>
+		<Phone>418 682-2122  #224</Phone>
+		<Email>jeanblanchet@groupetetu.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>That's My Ball</Compagnie>
+		<Address>#8-8086 130 Street</Address>
+		<City>Surrey</City>
+		<Province>BC</Province>
+		<Zip>V3W 8J9</Zip>
+		<Contact>Cindy</Contact>
+		<Phone>877 501-7779</Phone>
+		<Email>customer@thatsmyball.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Timberwolf Products</Compagnie>
+		<Address>21669 Hanover Avenue</Address>
+		<City>Lakeville</City>
+		<Province>MN</Province>
+		<Zip>55044</Zip>
+		<Contact>Nick Rendahl</Contact>
+		<Email>nick@timberwolfplastics.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Timex Group Canada, Inc.</Compagnie>
+		<Address>445 Hood Rd. </Address>
+		<City>Markham </City>
+		<Province>ON</Province>
+		<Zip>L3R 8H1</Zip>
+		<Contact>Brian Benner</Contact>
+		<Phone>519 954-6004</Phone>
+		<Email>bbenner@Timex.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Transcontinental</Compagnie>
+		<Address>2850 Rue Jean-Perrin</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G2C 2C8</Zip>
+		<Contact>Patrice Desgagnés</Contact>
+		<Phone>418 840-5000 #2256</Phone>
+		<Email>Patrice.Desgagnes@tc.tc</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Trimark Sportswear Group Inc.</Compagnie>
+		<Address>8688 Woodbine Ave.</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L3R 8B9</Zip>
+		<Phone>800 723-8383</Phone>
+		<Email>order@trimarksportswear.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Trudeau Corporation 1889 Inc.</Compagnie>
+		<Address>1600, rue Eiffel</Address>
+		<City>Boucherville </City>
+		<Province>QC</Province>
+		<Zip>J4B 5Y1</Zip>
+		<Phone>800 878-3328</Phone>
+		<Email>gaudet.charles@videotron.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Urbano International Inc.</Compagnie>
+		<Address>5527 De Castille</Address>
+		<City>Montreal-Nord</City>
+		<Province>QC</Province>
+		<Zip>H1G 3E6</Zip>
+		<Phone>514 324-0902</Phone>
+		<Email>info@urbanointernational.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>USB Promotions Inc.</Compagnie>
+		<Address>760 du Village</Address>
+		<City>Morin Heights </City>
+		<Province>QC</Province>
+		<Zip>J0R 1H0</Zip>
+		<Contact>Doug White</Contact>
+		<Phone>866 225-8183 #86</Phone>
+		<Email>dwhite@usbpromotions.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>V plus M</Compagnie>
+		<Address>375, boul des Chutes</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1E 3G2</Zip>
+		<Contact>Vincent Légaré</Contact>
+		<Phone>418 780-6630</Phone>
+		<Email>vincent@vplusm.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>V.M.O. Promotional Product </Compagnie>
+		<Address>1241 Aerowood Drive</Address>
+		<City>Mississauga </City>
+		<Province>ON</Province>
+		<Zip>L4W 1B9</Zip>
+		<Phone>905 896-1110</Phone>
+		<Email>victor@vmo-inc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Velmont</Compagnie>
+		<Address>251, boulevard de Gaulle</Address>
+		<City>Lorraine</City>
+		<Province>QC</Province>
+		<Zip>J6Z 4H1</Zip>
+		<Contact>Jean Traynor</Contact>
+		<Phone>450 621-4021</Phone>
+		<Email>info@velmontinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vergers Pedneault (Les)</Compagnie>
+		<Address>3384, Chemin des Coudriers</Address>
+		<City>Isle-aux-Coudres</City>
+		<Province>Québec</Province>
+		<Zip>G0A 3J0</Zip>
+		<Contact>Éric Desgagnés</Contact>
+		<Phone>418 435-8710</Phone>
+		<Email>verpedno@charlevoix.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vergers Pedneault (Les)</Compagnie>
+		<Address>3384, Chemin des Coudriers </Address>
+		<City>Isle-aux-Coudres</City>
+		<Province>QC</Province>
+		<Zip>G0A 3J0</Zip>
+		<Contact>Éric Desgagnés</Contact>
+		<Phone>418 438-2365</Phone>
+		<Email>verpedno@charlevoix.net</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vêtement du livre</Compagnie>
+		<Address>132, rue Giroux</Address>
+		<City>Loretteville </City>
+		<Province>QC</Province>
+		<Zip>G2B 2Y2 </Zip>
+		<Contact>Frederick Savard</Contact>
+		<Phone>418 842-3608</Phone>
+		<Email>estim@avdl1981.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vêtements François Lortie Inc.</Compagnie>
+		<Address>107 rue de la Belle-Rive</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1E 5S8</Zip>
+		<Phone>418 951-8917</Phone>
+		<Email>info@francoislortie.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Victorinox Swiss Army</Compagnie>
+		<Address>904, Magnetic Drive</Address>
+		<City>North York </City>
+		<Province>ON</Province>
+		<Zip>M3J 2C4</Zip>
+		<Contact>Frank Spadafora</Contact>
+		<Phone>800-665-4095, #4127</Phone>
+		<Email>fspadafora@swissarmy.ca</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vin &amp; Passion</Compagnie>
+		<Address>3208 aut. 440 Ouest</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7T 2H6</Zip>
+		<Contact>Denise DIONNE</Contact>
+		<Phone>450 781-8467</Phone>
+		<Email>DDionne@vinetpassion.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vinum Grappa</Compagnie>
+		<Address>1261 avenue Maguire</Address>
+		<City>Québec </City>
+		<Province>QC</Province>
+		<Zip>G1T 1Z2</Zip>
+		<Contact>Jérémie Boivin</Contact>
+		<Phone>418 650-1919</Phone>
+		<Email>jeremie@vinumgrappa.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vinyform ltée</Compagnie>
+		<Address>1975, rue Monterey</Address>
+		<City>Laval</City>
+		<Province>QC</Province>
+		<Zip>H7L 3T6</Zip>
+		<Contact>Pierre Meunier</Contact>
+		<Phone>877 688-8923 #222</Phone>
+		<Email>info@vinyform.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Vispak Inc.</Compagnie>
+		<Address>174 Merizzi</Address>
+		<City>Montréal</City>
+		<Province>QC</Province>
+		<Zip>H4T 1S4</Zip>
+		<Contact>Andy Rattanavong</Contact>
+		<Phone>800 459-7790</Phone>
+		<Email>info@vispak.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Whiteridge Inc.</Compagnie>
+		<Address>7103, 67th Street</Address>
+		<City>Edmonton </City>
+		<Province>AB</Province>
+		<Zip>T6B 3L7</Zip>
+		<Contact>Bonny</Contact>
+		<Phone>780 463-4441</Phone>
+		<Email>bonnyr@whiteridgeinc.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Windmill Canada</Compagnie>
+		<Address>P.O. Box 40</Address>
+		<City>Williamstown </City>
+		<Province>ON</Province>
+		<Zip>K0C 2J0</Zip>
+		<Phone>866 418-7407</Phone>
+		<Email>wincan@windmillpressonline.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Wings of Canada</Compagnie>
+		<Address>235 Hood Rd, Unit# 2</Address>
+		<City>Markham</City>
+		<Province>ON</Province>
+		<Zip>L3R 4N5</Zip>
+		<Contact>Stephanie</Contact>
+		<Phone>888 281-7643</Phone>
+		<Email>info@woccollections.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Zorrel</Compagnie>
+		<Address>13500, 15th Street</Address>
+		<City>Grandview</City>
+		<Province>MO</Province>
+		<Zip>64030</Zip>
+		<Phone>403 256-4224</Phone>
+		<Email>orders@zorrel.com</Email>
+	</Fournisseur>
+	<Fournisseur>
+		<Compagnie>Zoum, impression et Design</Compagnie>
+		<Address>3900, Place Java #112</Address>
+		<City>Brossard </City>
+		<Province>QC</Province>
+		<Zip>J4Y 0C4</Zip>
+		<Contact>Isabelle Richard</Contact>
+		<Phone>450 844-8470</Phone>
+	</Fournisseur>
+</Fournisseurs>

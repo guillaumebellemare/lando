@@ -1,0 +1,27 @@
+<?php
+
+$cart_routes = array(
+	"product" => "produits",
+	"product_show" => "produits/{$_GET['param1']}",
+	"cart" => "mon-panier",
+	"cart_update" => "mon-panier/mise-a-jour",
+	"cart_remove" => "mon-panier/retirer",
+	"cart_add" => "mon-panier/ajouter",
+	"cart_estimate_shipping_rates" => "mon-panier/estimation-des-couts-d-expedition",
+	"checkout_shipping-address" => "commande/adresse-dexpedition",
+	"checkout_login" => "commande/connexion",
+	"checkout_logout" => "deconnexion",
+	"checkout_billing-address" => "commande/adresse-de-facturation",
+	"checkout_order-confirmation" => "commande/confirmation-de-votre-commande",
+	"checkout_completed-transaction" => "commande/transaction-completee",
+	"forgot" => "recuperation-de-votre-mot-de-passe",
+	"recover" => "reinitialisation-de-votre-mot-de-passe",
+	"recover_valid" => "reinitialisation-de-votre-mot-de-passe/{$_GET['param1']}/{$_GET['param2']}",
+	"user_profile" => "profil-utilisateur",
+	"pp_redirect" => "redirection-paiement",
+	"pp_back" => "retour-de-paiement",
+	"pp_cancel" => "annulation-de-paiement/{$_GET['param1']}",
+	"pp_cancel_complete" => "annulation-de-paiement",
+	"pp_ipn_route" => "pp_ipn",
+	//"pp_ipn" => "pp_ipn/{$_GET['param1']}/{$_GET['param2']}",
+);

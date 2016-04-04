@@ -21,3 +21,10 @@ $(document).ready(function() {
 	});
 });
 
+
+/* Animated navigation-trigger */
+$(document).ready(function(){
+    $('.navigation-trigger').click(function(){
+        $(this).toggleClass('open');
+    });
+});

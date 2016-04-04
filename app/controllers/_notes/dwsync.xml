@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="IndexController.php" server="ftp.espacedev2.com" local="130689353235915296" remote="130689345000000000" Dst="1" />
-<file name="IndexController.php" server="ftp.espacedev2.com/lando/" local="130724702076884027" remote="130724701800000000" Dst="2" />
-<file name="IndexController.php" server="ftp.espacedev2.com//lando/" local="130874918203319474" remote="130874917800000000" Dst="1" />
-<file name="LoginController.php" server="ftp.espacedev2.com//lando/" local="130772220000000000" remote="130772220000000000" Dst="2" />
-<file name="PayPalController.php" server="ftp.espacedev2.com//lando/" local="130834284836410297" remote="130834284600000000" Dst="2" />
-<file name="DownloadController.php" server="ftp.espacedev2.com//lando/" local="130910404327408318" remote="130910440200000000" Dst="1" />
+<file name="IndexController.php" server="ftp.espacedev2.com" local="131042547543779275" remote="131019406200000000" Dst="2" />
+<file name="DownloadController.php" server="ftp.espacedev2.com" local="131042547543623002" remote="131012476800000000" Dst="2" />
+<file name="LoginController.php" server="ftp.espacedev2.com" local="131042547544091783" remote="131012476800000000" Dst="2" />
+<file name="PayPalController.php" server="ftp.espacedev2.com" local="131042547544248023" remote="131012476800000000" Dst="2" />
 </dwsync>

@@ -8,11 +8,10 @@
 | This is where the initialization is made
 |
 */
-define("PRODUCTION_MODE", 0);
 define("COMPLETE_FOLDER", dirname(__FILE__));
+define("COMPLETE_URL_ROOT", $_SERVER['DOCUMENT_ROOT'].URL_ROOT);
 define("PUBLIC_FOLDER", "public/");
 define("WBR_FOLDER", "images/wbr/uploads/");
-define("COMPLETE_URL_ROOT", $_SERVER['DOCUMENT_ROOT'].URL_ROOT);
 
 /*
 |--------------------------------------------------------------------------
@@ -112,7 +111,7 @@ foreach (glob("public/lang/".$lang2."/*.php") as $filename)
 }
 
 require_once("app/core/app_routes.php");
-
+if(SHOPPING_CART) require_once("app/helpers/cart/cart_core.php");
 
 /*
 |--------------------------------------------------------------------------
@@ -153,4 +152,11 @@ if(DEBUG==true)
 	
 }
 
+if(SHOPPING_CART && (CANADA_POST_SANDBOX_MODE || PAYPAL_SANDBOX_MODE))
+{
+	$app_floating_messages[] = 'Vous &ecirc;tes en <strong>mode sandbox</strong>';
+	if(CANADA_POST_SANDBOX_MODE) $app_floating_messages[] = ' pour <strong>Poste Canada</strong>';
+	if(CANADA_POST_SANDBOX_MODE && PAYPAL_SANDBOX_MODE) $app_floating_messages[] = ' et';
+	if(PAYPAL_SANDBOX_MODE) $app_floating_messages[] = ' pour <strong>PayPal</strong>';
+}
 require_once("app/core/app_handler.php");

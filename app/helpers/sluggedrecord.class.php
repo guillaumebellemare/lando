@@ -38,10 +38,10 @@ class SluggedRecord {
 	function check_slug($source_field,  $slug_field) {
 		
 		# Create slug for  
-		$rs = $this->db->Execute("SELECT id, $source_field, $slug_field FROM {$this->table} WHERE $slug_field = '' AND active = 1");
+		$rs = $this->db_temp->Execute("SELECT id, $source_field, $slug_field FROM {$this->table} WHERE $slug_field = '' AND active = 1");
 		
 		while(!$rs->EOF){
-			$this->db->Execute("UPDATE {$this->table} SET $slug_field = '" . $this->slug(strip_tags($rs->fields($source_field)), '-') . "' WHERE id = ".$rs->fields('id').""); 
+			$this->db_temp->Execute("UPDATE {$this->table} SET $slug_field = '" . $this->slug(strip_tags($rs->fields($source_field)), '-') . "' WHERE id = ".$rs->fields('id').""); 
 			$rs->MoveNext();
 		}
 		$rs->Close();
@@ -57,33 +57,45 @@ class SluggedRecord {
 		if(!$slug_field) $slug_field = "slug_$this->lang3";
 		if(!$slug_label) $slug_label = "URL Slug - $this->lang2";
 		
-		$rsField = $this->db->Execute('SELECT id FROM fields WHERE type = "form/slug"');
+		$rsField = $this->db_temp->Execute('SELECT id FROM fields WHERE type = "form/slug"');
 		$field_id = $rsField->fields['id'];
 		$rsField->Close();
-		$rs = $this->db->Execute('SELECT pages.id FROM pages WHERE code_name = "' . $this->table_code . '"');
+		$rs = $this->db_temp->Execute('SELECT pages.id FROM pages WHERE code_name = "' . $this->table_code . '"');
 		$page_id = $rs->fields('id');
 		$rs->Close();
-		$rs = $this->db->Execute('SELECT pages_fields.id FROM pages_fields WHERE name = "' . $slug_field . '" AND page_id = '.$page_id.'');
+		$rs = $this->db_temp->Execute('SELECT pages_fields.id FROM pages_fields WHERE name = "' . $slug_field . '" AND page_id = ' . $page_id);
 		
 		if(!$rs->RecordCount()){
-			$this->db->Execute("INSERT INTO `pages_fields` ( `page_id`, `field_id`, `classdef`, `list_display_style`, `display_in_list`, `active`, `rank`, `name`, `label_fre`, `label_eng`, `lang_specific`, `specs`, `rules_fre`, `rules_eng`) VALUES
+			$this->db_temp->Execute("INSERT INTO `pages_fields` ( `page_id`, `field_id`, `classdef`, `list_display_style`, `display_in_list`, `active`, `rank`, `name`, `label_fre`, `label_eng`, `lang_specific`, `specs`, `rules_fre`, `rules_eng`) VALUES
 ($page_id, $field_id, '', '', 0, 1, 60, '$slug_field', '$slug_label', '$slug_label', 1, '', '', '')");
-			$this->db->Execute("ALTER TABLE {$this->table} ADD $slug_field varchar(255) NOT NULL");
+
+			$this->db_temp->SetFetchMode(ADODB_FETCH_ASSOC);
+			$q = "SHOW COLUMNS FROM {$this->table}";
+			$rsColumns = $this->db_temp->Execute($q);
+			$is_already_setted = false;
+			while(!$rsColumns->EOF){
+				$current_field = $rsColumns->fields["Field"];
+				if("$current_field"=="$slug_field") $is_already_setted = true;
+				//echo $current_field." ".$slug_field."<br>";
+			$rsColumns->MoveNext();
+			}
+			$rsColumns->Close();
+
+			if(!$is_already_setted) $this->db_temp->Execute("ALTER TABLE {$this->table} ADD $slug_field varchar(255) NOT NULL");
 		}
+		
 		$this->check_slug($source_field, $slug_field);
 	}
 	
-	/**
-	 * get_from_slug function.
-	 * Cette fonction renvoie l'ID à partir d'un slug donné. 
-	 * @access public
-	 * @param string $slug_field Le nom du champ slug.
-	 * @param string $slug_value La valeur du champ slug (provient généralement de l'URL)
-	 * @param string $source_field (default: null) Le nom du champ source à partir duquel est construit le slug (en cas de slug non défini)
-	 * @param int $trans (default: 1) Défini si on doit aller chercher la valeur du champ slug traduit (généralement utile pour les boutons "english/français" pour passer d'une langue à l'autre tout en restant sur la même page. 
-	 * @return L'ID de l'enregistrement associé au slug.
-	 */
-	// "name_$lang3", $_GET['type'], "slug_$lang3", 0
+	# get_from_slug()
+	# Cette fonction renvoie l'ID à partir d'un slug donné. 
+	# @access public
+	# @param string $slug_field Le nom du champ slug.
+	# @param string $slug_value La valeur du champ slug (provient généralement de l'URL)
+	# @param string $source_field (default: null) Le nom du champ source à partir duquel est construit le slug (en cas de slug non défini)
+	# @param int $trans (default: 1) Défini si on doit aller chercher la valeur du champ slug traduit
+	#                               (généralement utile pour les boutons "english/français" pour passer d'une langue à l'autre tout en restant sur la même page. 
+	# @return L'ID de l'enregistrement associé au slug.
 	function get_from_slug ($slug_field, $slug_value, $source_field = null, $trans = 1) {
 		$this->setComplexWhere();
 		$this->getLangTrans($lang2, $lang3);
@@ -93,7 +105,7 @@ class SluggedRecord {
 		}
 		if($trans == 1)$slug_trang = "slug_$lang3";
 		else $slug_trans = $slug_field;
-		$rs = $this->db->Execute("SELECT id, $slug_field AS slug_trans FROM {$this->table} WHERE $slug_field = '$slug_value' AND active = 1{$this->complex_where}" );
+		$rs = $this->db_temp->Execute("SELECT id, $slug_field AS slug_trans FROM {$this->table} WHERE $slug_field = '$slug_value' AND active = 1{$this->complex_where}" );
 		if($rs && $rs->RecordCount()){
 			$this->current_id = $rs->fields('id');
 			$this->current_slug = $slug_value;
@@ -102,14 +114,13 @@ class SluggedRecord {
 		return $this->current_id;
 	}
 	
-	/**
-	 * getLangTrans function.
-	 * Permet d'obtenir la langue de traduction (valide pour un site bilingue). Si c'est français, ça retourne les code en anglais (en, eng), si c'est anglais, ça retourne les codes en français (fr, fre).
-	 * @access public
-	 * @param string &$lang2
-	 * @param string &$lang3
-	 * @return void
-	 */
+	# getLangTrans()
+	# Permet d'obtenir la langue de traduction (valide pour un site bilingue).
+	# Si c'est français, ça retourne les code en anglais (en, eng), si c'est anglais, ça retourne les codes en français (fr, fre).
+	# @access public
+	# @param string &$lang2
+	# @param string &$lang3
+	# @return void
 	function getLangTrans(&$lang2,  &$lang3) {
 		if($this->lang3 == 'fre'){
 			$lang2 = 'en';
@@ -120,13 +131,11 @@ class SluggedRecord {
 		}
 	}
 	
-	/**
-	 * get function.
-	 * Avant de renvoyer le contenu du champ, on s'assure que la requête de sélection de l'enregistrement en cours a bien été fait auparavant.
-	 * @access public
-	 * @param mixed $field Nom du champ à retourner.
-	 * @return Le contenu d'un champ de l'enregistrement selectionné.
-	 */
+	# get()
+	# Avant de renvoyer le contenu du champ, on s'assure que la requête de sélection de l'enregistrement en cours a bien été fait auparavant.
+	# @access public
+	# @param mixed $field Nom du champ à retourner.
+	# @return Le contenu d'un champ de l'enregistrement selectionné.
 	function get($field){
 		if(!$this->rsCurrent) $this->getCurrent();
 		return $this->rsCurrent->fields($field);

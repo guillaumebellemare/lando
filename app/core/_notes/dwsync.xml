@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="app_core.php" server="ftp.espacedev2.com" local="130689353236825945" remote="130689341400000000" Dst="1" />
-<file name="app_handler.php" server="ftp.espacedev2.com" local="130689353237296269" remote="130689301800000000" Dst="1" />
-<file name="app_routes.php" server="ftp.espacedev2.com" local="130689353238357018" remote="130689310800000000" Dst="1" />
-<file name="app_messages.php" server="ftp.espacedev2.com" local="130689353237306279" remote="130689309000000000" Dst="1" />
-<file name="app_connect.php" server="ftp.espacedev2.com" local="130689353235925300" remote="130689301200000000" Dst="1" />
-<file name="app_controller.php" server="ftp.espacedev2.com" local="130689353235925300" remote="130689297600000000" Dst="1" />
-<file name="app_connect.php" server="ftp.espacedev2.com/lando/" local="130716175166897500" remote="130716174600000000" Dst="2" />
-<file name="app_core.php" server="ftp.espacedev2.com/lando/" local="130716186916432514" remote="130716186600000000" Dst="2" />
-<file name="app_messages.php" server="ftp.espacedev2.com/lando/" local="130705547595862747" remote="130689318000000000" Dst="2" />
-<file name="app_controller.php" server="ftp.espacedev2.com/lando/" local="130705547592502633" remote="130689318000000000" Dst="2" />
-<file name="app_routes.php" server="ftp.espacedev2.com/lando/" local="130705547598023071" remote="130705505400000000" Dst="2" />
-<file name="app_handler.php" server="ftp.espacedev2.com/lando/" local="130716189781499753" remote="130716189600000000" Dst="2" />
-<file name="app_connect.php" server="ftp.espacedev2.com//lando/" local="130716174600000000" remote="130716174600000000" Dst="2" />
-<file name="app_controller.php" server="ftp.espacedev2.com//lando/" local="130911454924341381" remote="130911490800000000" Dst="1" />
-<file name="app_core.php" server="ftp.espacedev2.com//lando/" local="130933829144943419" remote="130933828800000000" Dst="1" />
-<file name="app_routes.php" server="ftp.espacedev2.com//lando/" local="130910404889686598" remote="130910440800000000" Dst="1" />
-<file name="app_handler.php" server="ftp.espacedev2.com//lando/" local="130767920669580830" remote="130767920400000000" Dst="2" />
-<file name="app_messages.php" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
+<file name="app_controller.php" server="ftp.espacedev2.com" local="131042547544630825" remote="131020976400000000" Dst="2" />
+<file name="app_connect.php" server="ftp.espacedev2.com" local="131042547544474446" remote="131012476800000000" Dst="2" />
+<file name="app_core.php" server="ftp.espacedev2.com" local="131042547544943375" remote="131039934600000000" Dst="2" />
+<file name="app_messages.php" server="ftp.espacedev2.com" local="131042547545255828" remote="131027917800000000" Dst="2" />
+<file name="app_handler.php" server="ftp.espacedev2.com" local="131042547545099576" remote="131027121000000000" Dst="2" />
+<file name="app_routes.php" server="ftp.espacedev2.com" local="131042547545477276" remote="131020936200000000" Dst="2" />
 </dwsync>

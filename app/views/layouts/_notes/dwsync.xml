@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="__rows.php" server="ftp.espacedev2.com" local="130689353257391778" remote="130677277800000000" Dst="1" />
-<file name="one-column.php" server="ftp.espacedev2.com" local="130689353257391778" remote="130689348000000000" Dst="1" />
-<file name="two-columns.php" server="ftp.espacedev2.com" local="130689353257461791" remote="130689348000000000" Dst="1" />
-<file name="one-column.php" server="ftp.espacedev2.com/lando/" local="130705547627217563" remote="130705507800000000" Dst="2" />
-<file name="two-columns.php" server="ftp.espacedev2.com/lando/" local="130724627932115790" remote="130724627400000000" Dst="2" />
-<file name="__rows.php" server="ftp.espacedev2.com/lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
-<file name="two-columns.php" server="ftp.espacedev2.com//lando/" local="130933824744992328" remote="130933824600000000" Dst="1" />
-<file name="errors.php" server="ftp.espacedev2.com//lando/" local="130767917795017740" remote="130767917400000000" Dst="2" />
-<file name="404.php" server="ftp.espacedev2.com//lando/" local="130874917916486807" remote="130874917800000000" Dst="2" />
+<file name="404.php" server="ftp.espacedev2.com" local="131042547570682451" remote="131012476800000000" Dst="2" />
+<file name="one-column.php" server="ftp.espacedev2.com" local="131042547570682451" remote="131021822400000000" Dst="2" />
+<file name="two-columns.php" server="ftp.espacedev2.com" local="131042547570682451" remote="131021826600000000" Dst="2" />
 </dwsync>

@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="app.css" server="ftp.espacedev2.com" local="130689353280261577" remote="130677312000000000" Dst="1" />
-<file name="global.css" server="ftp.espacedev2.com" local="130689353282161711" remote="130689348600000000" Dst="1" />
-<file name="queries.css" server="ftp.espacedev2.com" local="130689353284181838" remote="130689349200000000" Dst="1" />
-<file name="layout.css" server="ftp.espacedev2.com" local="130689353282521727" remote="130689348600000000" Dst="1" />
-<file name="normalize.css" server="ftp.espacedev2.com" local="130689353282601741" remote="130677278400000000" Dst="1" />
-<file name="reset.css" server="ftp.espacedev2.com" local="130689353283581894" remote="130689349200000000" Dst="1" />
-<file name="fancybox.css" server="ftp.espacedev2.com" local="130689353280941645" remote="130689346200000000" Dst="1" />
-<file name="flexslider.css" server="ftp.espacedev2.com" local="130689353281561670" remote="130677278400000000" Dst="1" />
-<file name="app.css" server="ftp.espacedev2.com/lando/" local="130705547674349666" remote="130692950400000000" Dst="2" />
-<file name="fancybox.css" server="ftp.espacedev2.com/lando/" local="130705547676050000" remote="130689318000000000" Dst="2" />
-<file name="flexslider.css" server="ftp.espacedev2.com/lando/" local="130705555963359785" remote="130705519800000000" Dst="2" />
-<file name="global.css" server="ftp.espacedev2.com/lando/" local="130705583632064656" remote="130705547400000000" Dst="2" />
-<file name="layout.css" server="ftp.espacedev2.com/lando/" local="130737586722727236" remote="130737586800000000" Dst="2" />
-<file name="normalize.css" server="ftp.espacedev2.com/lando/" local="130705547676950196" remote="130689318000000000" Dst="2" />
-<file name="queries.css" server="ftp.espacedev2.com/lando/" local="130705547676950196" remote="130689318000000000" Dst="2" />
-<file name="reset.css" server="ftp.espacedev2.com/lando/" local="130705547677607774" remote="130689318000000000" Dst="2" />
-<file name="global.css" server="ftp.espacedev2.com//lando/" local="130933823468202885" remote="130933823400000000" Dst="1" />
-<file name="flexslider.css" server="ftp.espacedev2.com//lando/" local="130754156140003612" remote="130705519800000000" Dst="2" />
-<file name="app.css" server="ftp.espacedev2.com//lando/" local="130754156141214469" remote="130692950400000000" Dst="2" />
-<file name="layout.css" server="ftp.espacedev2.com//lando/" local="130737168000000000" remote="130737168000000000" Dst="2" />
-<file name="fancybox.css" server="ftp.espacedev2.com//lando/" local="130754156141254349" remote="130689318000000000" Dst="2" />
-<file name="normalize.css" server="ftp.espacedev2.com//lando/" local="130754156142054891" remote="130689318000000000" Dst="2" />
-<file name="queries.css" server="ftp.espacedev2.com//lando/" local="130862858082130624" remote="130862857800000000" Dst="2" />
-<file name="reset.css" server="ftp.espacedev2.com//lando/" local="130754156142064898" remote="130689318000000000" Dst="2" />
+<file name="fancybox.css" server="ftp.espacedev2.com" local="131042547595774569" remote="131012477400000000" Dst="2" />
+<file name="app.css" server="ftp.espacedev2.com" local="131042547595684484" remote="131039934600000000" Dst="2" />
+<file name="layout.css" server="ftp.espacedev2.com" local="131042547596344867" remote="131021811600000000" Dst="2" />
+<file name="flexslider.css" server="ftp.espacedev2.com" local="131042547595844869" remote="131012477400000000" Dst="2" />
+<file name="global.css" server="ftp.espacedev2.com" local="131042547596575344" remote="131039934000000000" Dst="2" />
+<file name="queries.css" server="ftp.espacedev2.com" local="131042547597125606" remote="131021811600000000" Dst="2" />
+<file name="reset.css" server="ftp.espacedev2.com" local="131042547597035534" remote="131012477400000000" Dst="2" />
+<file name="normalize.css" server="ftp.espacedev2.com" local="131042547596635253" remote="131012477400000000" Dst="2" />
 </dwsync>

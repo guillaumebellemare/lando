@@ -13,3 +13,4 @@
     </li>
   </ul>
 </nav>
+<?php if(@include(COMPLETE_URL_ROOT . 'app/helpers/cart/includes/cart-nav.php')); ?>

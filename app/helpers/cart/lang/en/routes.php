@@ -1,0 +1,27 @@
+<?php
+
+$cart_routes = array(
+	"product" => "products",
+	"product_show" => "products/{$_GET['param1']}",
+	"cart" => "shopping-cart",
+	"cart_update" => "shopping-cart/update",
+	"cart_remove" => "shopping-cart/remove",
+	"cart_add" => "shopping-cart/add",
+	"cart_estimate_shipping_rates" => "shopping-cart/estimate-shipping-rates",
+	"checkout_shipping-address" => "checkout/shipping-address",
+	"checkout_login" => "checkout/login",
+	"checkout_logout" => "logout",
+	"checkout_billing-address" => "checkout/billing-address",
+	"checkout_order-confirmation" => "checkout/order-confirmation",
+	"checkout_completed-transaction" => "checkout/completed-transaction",
+	"forgot" => "recover-your-password",
+	"recover" => "reinitialize-your-password",
+	"recover_valid" => "reinitialize-your-password/{$_GET['param1']}/{$_GET['param2']}",
+	"user_profile" => "user-profile",
+	"pp_redirect" => "payment-redirection",
+	"pp_back" => "retour-de-paiement",
+	"pp_cancel" => "canceled-transaction/{$_GET['param1']}",
+	"pp_cancel_complete" => "canceled-transaction",
+	"pp_ipn_route" => "pp_ipn",
+	//"pp_ipn" => "pp_ipn/{$_GET['param1']}/{$_GET['param2']}",
+);

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="box-shadow.txt" server="ftp.espacedev2.com" local="130689353227852067" remote="130677277800000000" Dst="1" />
-<file name="text-shadow.txt" server="ftp.espacedev2.com" local="130689353228633334" remote="130677277800000000" Dst="1" />
-<file name="border-radius.txt" server="ftp.espacedev2.com" local="130689353228789593" remote="130677277800000000" Dst="1" />
-<file name="box-sizing.txt" server="ftp.espacedev2.com" local="130689353229570839" remote="130677277800000000" Dst="1" />
-<file name="border-radius.txt" server="ftp.espacedev2.com/lando/" local="130705547580908990" remote="130689318000000000" Dst="2" />
-<file name="box-shadow.txt" server="ftp.espacedev2.com/lando/" local="130705547580752701" remote="130689318000000000" Dst="2" />
-<file name="box-sizing.txt" server="ftp.espacedev2.com/lando/" local="130705547580908990" remote="130689318000000000" Dst="2" />
-<file name="text-shadow.txt" server="ftp.espacedev2.com/lando/" local="130705547583252723" remote="130689318000000000" Dst="2" />
+<file name="border-radius.txt" server="ftp.espacedev2.com" local="131042547494197985" remote="131012476800000000" Dst="2" />
+<file name="box-shadow.txt" server="ftp.espacedev2.com" local="131042547495513250" remote="131012476800000000" Dst="2" />
+<file name="text-shadow.txt" server="ftp.espacedev2.com" local="131042547495200755" remote="131012476800000000" Dst="2" />
+<file name="box-sizing.txt" server="ftp.espacedev2.com" local="131042547495044665" remote="131012476800000000" Dst="2" />
 </dwsync>

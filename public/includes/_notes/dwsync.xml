@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="scripts.php" server="ftp.espacedev2.com" local="130689353271841025" remote="130689350400000000" Dst="1" />
-<file name="nav.php" server="ftp.espacedev2.com" local="130689353271180987" remote="130689311400000000" Dst="1" />
-<file name="meta.php" server="ftp.espacedev2.com" local="130689353271160988" remote="130677278400000000" Dst="1" />
-<file name="messages.php" server="ftp.espacedev2.com" local="130689353271160988" remote="130689350400000000" Dst="1" />
-<file name="header.php" server="ftp.espacedev2.com" local="130689353270220921" remote="130689347400000000" Dst="1" />
-<file name="footer.php" server="ftp.espacedev2.com" local="130689353270200922" remote="130689350400000000" Dst="1" />
-<file name="analyticstracking.php" server="ftp.espacedev2.com" local="130689353269006331" remote="130677277800000000" Dst="1" />
-<file name="slider.php" server="ftp.espacedev2.com" local="130689353272361058" remote="130677304800000000" Dst="1" />
-<file name="header.php" server="ftp.espacedev2.com/lando/" local="130710062774651949" remote="130710026400000000" Dst="2" />
-<file name="analyticstracking.php" server="ftp.espacedev2.com/lando/" local="130705547646187382" remote="130689318000000000" Dst="2" />
-<file name="footer.php" server="ftp.espacedev2.com/lando/" local="130705547649239981" remote="130689318000000000" Dst="2" />
-<file name="nav.php" server="ftp.espacedev2.com/lando/" local="130705547653230623" remote="130689318000000000" Dst="2" />
-<file name="messages.php" server="ftp.espacedev2.com/lando/" local="130705547649590040" remote="130689318000000000" Dst="2" />
-<file name="meta.php" server="ftp.espacedev2.com/lando/" local="130724627586357394" remote="130724627400000000" Dst="2" />
-<file name="slider.php" server="ftp.espacedev2.com/lando/" local="130705547655961068" remote="130689318000000000" Dst="2" />
-<file name="scripts.php" server="ftp.espacedev2.com/lando/" local="130741895816287722" remote="130741895400000000" Dst="2" />
-<file name="header.php" server="ftp.espacedev2.com//lando/" local="130862857871656274" remote="130862857800000000" Dst="2" />
-<file name="footer.php" server="ftp.espacedev2.com//lando/" local="130689318000000000" remote="130689318000000000" Dst="2" />
-<file name="scripts.php" server="ftp.espacedev2.com//lando/" local="130933677103917847" remote="130933677000000000" Dst="1" />
-<file name="fancybox.php" server="ftp.espacedev2.com//lando/" local="130767910675659014" remote="130767910200000000" Dst="2" />
-<file name="flexslider.php" server="ftp.espacedev2.com//lando/" local="130767910841059147" remote="130767910800000000" Dst="2" />
-<file name="jquery.validate.zip.php" server="ftp.espacedev2.com//lando/" local="130767915277791536" remote="130767915000000000" Dst="2" />
-<file name="jquery.validate.password.php" server="ftp.espacedev2.com//lando/" local="130767916024448777" remote="130767915600000000" Dst="2" />
-<file name="meta.php" server="ftp.espacedev2.com//lando/" local="130874919482707757" remote="130874919000000000" Dst="2" />
-<file name="analyticstracking.php" server="ftp.espacedev2.com//lando/" local="130689354000000000" remote="130689354000000000" Dst="2" />
-<file name="messages.php" server="ftp.espacedev2.com//lando/" local="130772221052795281" remote="130772220600000000" Dst="2" />
-<file name="nav.php" server="ftp.espacedev2.com//lando/" local="130862857420298678" remote="130862857200000000" Dst="2" />
+<file name="analyticstracking.php" server="ftp.espacedev2.com" local="131042547583326916" remote="131012476800000000" Dst="2" />
+<file name="footer.php" server="ftp.espacedev2.com" local="131042547586131534" remote="131021811600000000" Dst="2" />
+<file name="fancybox.php" server="ftp.espacedev2.com" local="131042547585671205" remote="131012476800000000" Dst="2" />
+<file name="flexslider.php" server="ftp.espacedev2.com" local="131042547586141538" remote="131012476800000000" Dst="2" />
+<file name="header.php" server="ftp.espacedev2.com" local="131042547586271630" remote="131021820000000000" Dst="2" />
+<file name="jquery.validate.password.php" server="ftp.espacedev2.com" local="131042547586892111" remote="131012476800000000" Dst="2" />
+<file name="meta.php" server="ftp.espacedev2.com" local="131042547587467290" remote="131012476800000000" Dst="2" />
+<file name="messages.php" server="ftp.espacedev2.com" local="131042547586993507" remote="131012476800000000" Dst="2" />
+<file name="nav.php" server="ftp.espacedev2.com" local="131042547587477294" remote="131020972800000000" Dst="2" />
+<file name="scripts.php" server="ftp.espacedev2.com" local="131042547587767647" remote="131025402000000000" Dst="2" />
+<file name="jquery.validate.zip.php" server="ftp.espacedev2.com" local="131042547586902118" remote="131012476800000000" Dst="2" />
+<file name="slider.php" server="ftp.espacedev2.com" local="131042547588047848" remote="131012476800000000" Dst="2" />
 </dwsync>

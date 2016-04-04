@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="add.php" server="ftp.espacedev2.com" local="131042547556279140" remote="131038992000000000" Dst="2" />
+<file name="index.php" server="ftp.espacedev2.com" local="131042547557501510" remote="131042481000000000" Dst="2" />
+<file name="product.php" server="ftp.espacedev2.com" local="131042547559974478" remote="131021780400000000" Dst="2" />
+<file name="product_show.php" server="ftp.espacedev2.com" local="131042547560130728" remote="131021826600000000" Dst="2" />
+<file name="billing_address.php" server="ftp.espacedev2.com" local="131042547556465284" remote="131021785200000000" Dst="2" />
+<file name="shipping_address.php" server="ftp.espacedev2.com" local="131042547561289756" remote="131021785800000000" Dst="2" />
+<file name="estimate_shipping_rates.php" server="ftp.espacedev2.com" local="131042547556967528" remote="131041054200000000" Dst="2" />
+<file name="order_confirmation.php" server="ftp.espacedev2.com" local="131042547558126513" remote="131042497200000000" Dst="2" />
+<file name="calculate_shipping_rates.php" server="ftp.espacedev2.com" local="131042547556655083" remote="131039188800000000" Dst="2" />
+<file name="profile.php" server="ftp.espacedev2.com" local="131042547560664758" remote="131042472000000000" Dst="2" />
+<file name="completed_transaction.php" server="ftp.espacedev2.com" local="131042547556967528" remote="131021827200000000" Dst="2" />
+<file name="forgot.php" server="ftp.espacedev2.com" local="131042547557496354" remote="131015865600000000" Dst="2" />
+<file name="login.php" server="ftp.espacedev2.com" local="131042547557501510" remote="131021782800000000" Dst="2" />
+<file name="logout.php" server="ftp.espacedev2.com" local="131042547557501510" remote="131015876400000000" Dst="2" />
+<file name="paypal_back.php" server="ftp.espacedev2.com" local="131042547558126513" remote="131025388200000000" Dst="2" />
+<file name="paypal_ipn.php" server="ftp.espacedev2.com" local="131042547558282778" remote="131024541600000000" Dst="2" />
+<file name="paypal_cancel.php" server="ftp.espacedev2.com" local="131042547558816815" remote="131024544600000000" Dst="2" />
+<file name="paypal_redirect.php" server="ftp.espacedev2.com" local="131042547559285572" remote="131026290000000000" Dst="2" />
+<file name="paypal_routine_check.php" server="ftp.espacedev2.com" local="131042547558972910" remote="131024541600000000" Dst="2" />
+<file name="recover.php" server="ftp.espacedev2.com" local="131042547560664758" remote="131015871000000000" Dst="2" />
+<file name="update.php" server="ftp.espacedev2.com" local="131042547560664758" remote="131014045800000000" Dst="2" />
+</dwsync>

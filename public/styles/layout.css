@@ -5,9 +5,9 @@
 /*-------------------------------------------------------------------
 	Layout (ex.: .l-grid)
 -------------------------------------------------------------------*/
-.wrapper { width:100%; clear:both; padding:20px 0; }
-section { max-width:960px; margin:0 auto; clear:both; }
-section:after { clear:both; }
+.v-spacer { width:100%; clear:both; padding:20px 0; }
+.wrapper { max-width:960px; margin:0 auto; clear:both; }
+.wrapper:after { clear:both; }
 
 /* Grid */
 .l-grid { clear:both; overflow:hidden; }

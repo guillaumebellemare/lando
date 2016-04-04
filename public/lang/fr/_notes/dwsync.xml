@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="global.php" server="ftp.espacedev2.com" local="130689353274481202" remote="130677278400000000" Dst="1" />
-<file name="meta.php" server="ftp.espacedev2.com" local="130689353275401258" remote="130677278400000000" Dst="1" />
-<file name="navigation.php" server="ftp.espacedev2.com" local="130689353275421263" remote="130677278400000000" Dst="1" />
-<file name="routes.php" server="ftp.espacedev2.com" local="130689353275421263" remote="130689311400000000" Dst="1" />
-<file name="validate.php" server="ftp.espacedev2.com" local="130689353276061302" remote="130677278400000000" Dst="1" />
-<file name="navigation.php" server="ftp.espacedev2.com/lando/" local="130705571360903788" remote="130705534800000000" Dst="2" />
-<file name="meta.php" server="ftp.espacedev2.com/lando/" local="130705571335695687" remote="130705534800000000" Dst="2" />
-<file name="global.php" server="ftp.espacedev2.com/lando/" local="130705571309186084" remote="130705534800000000" Dst="2" />
-<file name="routes.php" server="ftp.espacedev2.com/lando/" local="130705571404755233" remote="130705535400000000" Dst="2" />
-<file name="validate.php" server="ftp.espacedev2.com/lando/" local="130705571430204933" remote="130705535400000000" Dst="2" />
-<file name="validate.php" server="ftp.espacedev2.com//lando/" local="130767901692915831" remote="130767901200000000" Dst="2" />
-<file name="routes.php" server="ftp.espacedev2.com//lando/" local="130910404717615388" remote="130910440200000000" Dst="1" />
-<file name="navigation.php" server="ftp.espacedev2.com//lando/" local="130767901817302337" remote="130767901800000000" Dst="2" />
-<file name="meta.php" server="ftp.espacedev2.com//lando/" local="130874918673390803" remote="130874918400000000" Dst="2" />
-<file name="global.php" server="ftp.espacedev2.com//lando/" local="130933822311324200" remote="130933822200000000" Dst="1" />
-<file name="login.php" server="ftp.espacedev2.com//lando/" local="130772220000000000" remote="130772220000000000" Dst="2" />
+<file name="global.php" server="ftp.espacedev2.com" local="131042547589780942" remote="131012477400000000" Dst="2" />
+<file name="login.php" server="ftp.espacedev2.com" local="131042547589961069" remote="131015865000000000" Dst="2" />
+<file name="meta.php" server="ftp.espacedev2.com" local="131042547589961069" remote="131012477400000000" Dst="2" />
+<file name="navigation.php" server="ftp.espacedev2.com" local="131042547590401399" remote="131012477400000000" Dst="2" />
+<file name="routes.php" server="ftp.espacedev2.com" local="131042547590686620" remote="131020936200000000" Dst="2" />
+<file name="validate.php" server="ftp.espacedev2.com" local="131042547590706637" remote="131015742000000000" Dst="2" />
 </dwsync>

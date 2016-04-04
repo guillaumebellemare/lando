@@ -163,7 +163,7 @@ class paypal_class {
 
 	  $pp_post .= "<p>$this->waiting_message</p>\n";
 	  if($lang2=="fr") $btn = "Cliquez ici pour aller directement au module de paiement PayPal"; else $btn = "Click here to be redirected to PayPal";
-	  $pp_post .= "<button type=\"submit\" class='btn btn-grey-on-grey btn-is-smaller'>$btn</button>\n";
+	  $pp_post .= "<button type=\"submit\" class='btn'>$btn</button>\n";
 
 
       $pp_post .= "</form>\n";

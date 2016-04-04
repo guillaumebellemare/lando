@@ -11,8 +11,8 @@ header { background:#607C8A; }
 section { }
 footer { background:#CCC; }
 a { }
-h1 { font-size:25px; margin:20px 0 20px 0; }
-h2 { }
+h1 { font-size:25px; margin:0 0 20px 0; }
+h2 { font-size:18px; margin:0 0 15px 0; }
 h3 { }
 p, ul { margin:0 0 12px 0; font-size:12px; line-height:14px; }
 ul > li:before { content:"•"; padding:0 12px 0 0; display:inline-block; float:left; }
@@ -21,15 +21,14 @@ ul > li { margin:4px 0 4px 0; }
 ul { margin:0 0 20px 12px; list-style:none; text-indent:-12px; }
 strong { }
 hr { border:none; height:1px; background:#CCC; margin:20px 0; }
-table th { background:#333; padding:10px; text-align:left; font-size:14px; color:#FFF; }
-table td { background:#f8f8f8; padding:10px; border-bottom:1px solid #eaeaea; }
-table tr:nth-child(odd) td { background:#FFF; }
-label { display:block; }
+table {  width:100%; }
+label { display:block; margin:0 0 4px 0; }
 input, textarea, select { font-family:Arial,Helvetica,sans-serif; }
-input[type=text], textarea, select { -webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:1px solid #CCC; display:block; width:100%; margin:0 0 10px 0; padding:8px 8px; }
+input[type=text], input[type=password], input[type=number], textarea, select { -webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; border:1px solid #CCC; display:block; width:100%; margin:0 0 15px 0; padding:9px 9px; }
 input:focus, textarea:focus, input:hover, textarea:hover, select:focus, select:hover { outline:none; border:1px solid #999; }
+button:focus { outline:none; }
 textarea { resize:vertical; min-height:150px; }
-input[type=submit] { cursor:pointer; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
+input[type=submit], button { cursor:pointer; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
 input[type='radio'] { opacity:0; float:left; width:16px; height:16px; cursor:default; padding:0; margin:0; }
 input[type='radio'] + label { background-image:url(../images/common/radio-off.png); background-repeat:no-repeat; height:16px; padding:3px 0 0 20px; display:block; margin:0 0 8px 0; }
 input[type='radio']:checked + label { background-image:url(../images/common/radio-on.png); }
@@ -38,8 +37,8 @@ input[type='checkbox'] + label { background-image:url(../images/common/check-off
 input[type='checkbox']:checked + label { background-image:url(../images/common/check-on.png); }
 input[type="text"]:disabled { background:#dddddd; }
 input:disabled:hover, textarea:disabled:hover { border:1px solid #CCC; }
-select { background:url(../images/common/form-select.png) no-repeat center right; }
-select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right; }
+select { background:url(../images/common/form-select.png) no-repeat center right #FFF; padding-right:30px; }
+select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right #FFF; }
 ::selection { background:#607C8A; color:#FFF; }
 ::-moz-selection { background:#607C8A; border:1px solid #607C8A; color:#FFF; }
 ::-webkit-input-placeholder { color:#999; }
@@ -54,8 +53,8 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .navigation ul li:before { content:""; padding:0; float:none; display:inline; }
 .navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; font-size:0; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0; }
-.navigation > ul > li > a { display:block; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
-.navigation > ul > li:hover > a, .navigation > ul > .is-selected >  a { color:#000; }
+.navigation > ul > li > a { display:block; color:#FFF; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
+.navigation > ul > li:hover > a, .navigation > ul > .is-selected > a { color:#CCC; }
 .navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; margin:0; }
 .navigation > ul > li > ul > li { margin:0; text-indent:0px; }
 .navigation > ul > li > ul > li > a { padding:7px 10px; background:#FFF; display:block; }
@@ -63,35 +62,33 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .languages { text-indent:0; margin:0; }
 .languages li { margin:0; }
 .languages li:before { content:""; padding:0; float:none; display:inline; }
-.btn { display:inline-block; font-size:14px; padding:10px 12px; color:#FFF; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; opacity:1; margin:0 5px 0 0; }
+.btn { display:inline-block; text-align:center; font-size:14px; border:none; cursor:pointer; padding:10px 12px; background:#333; color:#FFF; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; opacity:1; margin:0 5px 0 0; }
 .btn:hover { opacity:0.8; }
 #map_canvas { height:300px; }
 
 /*-------------------------------------------------------------------
 	States (ex.: .is-collapsed)
 -------------------------------------------------------------------*/
-.app-msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; }
-.app-msg > p { display:block; clear:both; line-height:22px; }
-.app-msg > p > .msg-icon { width:23px; height:23px; display:block; float:left; margin:0 5px 9px 0; }
-.app-msg strong { font-weight:bold; }
 .msg { padding:15px; font-size:16px; color:#FFF; line-height:20px; margin:0 0 10px 0; }
-.msg > p { display:block; clear:both; line-height:22px; }
+.msg > p { display:block; clear:both; line-height:22px; margin-bottom:0; }
 .msg > p > .msg-icon { width:23px; height:23px; display:block; float:left; margin:0 5px 9px 0; }
 .msg strong { font-weight:bold; }
 .is-success { background:#8BC24A; }
 .is-success > p > .msg-icon { background:url(../images/common/icon-success.png); }
 .is-failure { background:#F44236; }
 .is-failure > p > .msg-icon { background:url(../images/common/icon-error.png); }
-.is-error { border:1px solid #F44236 !important; color:#F44236; }
-.is-error::-webkit-input-placeholder { color:#F44236; }
-.is-error:-moz-placeholder { color:#F44236; }
-.is-error::-moz-placeholder { color:#F44236; }
-.is-error:-ms-input-placeholder { color:#F44236; }
+input.is-error { border:1px solid #F44236 !important; color:#F44236; }
+label.is-error { color:#F44236; position:relative; top:-10px; }
+input.is-error::-webkit-input-placeholder { color:#F44236; }
+input.is-error:-moz-placeholder { color:#F44236; }
+input.is-error::-moz-placeholder { color:#F44236; }
+input.is-error:-ms-input-placeholder { color:#F44236; }
 .is-successful { border:1px solid #8BC24A !important; color:#8BC24A; }
 .is-successful::-webkit-input-placeholder { color:#8BC24A; }
 .is-successful:-moz-placeholder { color:#8BC24A; }
 .is-successful::-moz-placeholder { color:#8BC24A; }
 .is-successful:-ms-input-placeholder { color:#8BC24A; }
+.is-full-width { display:block; width:100%; height:auto; }
 .last-row-is-highlighted td:last-child { background:#52a2ff; }
 .has-rounded-corners { -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
 .has-box-shadow { -webkit-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); -moz-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); margin-bottom:4px; }
@@ -99,7 +96,7 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .has-red-bg { background:#F44236; }
 .has-yellow-bg { background:#FEC107; }
 .has-green-bg { background:#8BC24A; }
+.is-hidden { display:none !important; }
 .has-no-bullets { text-indent:0; margin:0; }
 .has-no-bullets li:before { content:""; padding:0; float:none; display:inline; }
-table tr:hover td { background:#f1f1f1 !important; }
 .navigation > ul > li > .is-hover { zoom:1; filter:alpha(opacity=100); opacity:1; display:block; }

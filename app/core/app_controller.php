@@ -22,6 +22,15 @@ class AppController extends SluggedRecord {
 		$this->current_function = &$current_function;
 	}
 	
+	# getPicturePath()
+	# @access public
+	# @param string $string
+	# @return picture path
+	public function getPicturePath($string){
+		$a = explode("::", $string);
+		return $a[0];
+	}
+
 	# redirect()
 	# @access public
 	# @param $to_route
@@ -31,6 +40,13 @@ class AppController extends SluggedRecord {
 		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2.'/'.$routes[$to_route];
 		header('Location: '.$path);
 		exit;
+	}
+
+	# is_ajax()
+	# @access public
+	# @return true if it's an ajax request.
+	function is_ajax(){
+		return (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
 	}
 
 	# writePrettyDate()

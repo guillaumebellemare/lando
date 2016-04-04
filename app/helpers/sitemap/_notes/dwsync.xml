@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="sitemap-generator-dev.php" server="ftp.espacedev2.com" local="130689353242129383" remote="130689340800000000" Dst="1" />
-<file name="sitemap-generator.php" server="ftp.espacedev2.com" local="130689353242199396" remote="130689328800000000" Dst="1" />
-<file name="sitemap.xml" server="ftp.espacedev2.com" local="130689353242829489" remote="130677277800000000" Dst="1" />
-<file name="sitemap-generator-dev.php" server="ftp.espacedev2.com/lando/" local="130705547602943390" remote="130689318000000000" Dst="2" />
-<file name="sitemap-generator.php" server="ftp.espacedev2.com/lando/" local="130705547607023533" remote="130689318000000000" Dst="2" />
-<file name="sitemap.xml" server="ftp.espacedev2.com/lando/" local="130705547607023533" remote="130689318000000000" Dst="2" />
+<file name="sitemap-generator-dev.php" server="ftp.espacedev2.com" local="131042547564136536" remote="131012476800000000" Dst="2" />
+<file name="sitemap-generator.php" server="ftp.espacedev2.com" local="131042547564292776" remote="131012476800000000" Dst="2" />
+<file name="sitemap.xml" server="ftp.espacedev2.com" local="131042547564670373" remote="131012476800000000" Dst="2" />
 </dwsync>

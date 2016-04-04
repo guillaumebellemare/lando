@@ -17,3 +17,12 @@ if($app_messages)
 		}
 	echo '</div>';
 }
+
+if($app_floating_messages)
+{
+	echo '<div class="app-floating-msg">';
+		foreach ($app_floating_messages as $app_floating_message) {
+			echo $app_floating_message;
+		}
+	echo '</div>';
+}

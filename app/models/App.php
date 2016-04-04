@@ -22,11 +22,15 @@ class App extends SluggedRecord {
 		# Create ADO object & connect to the database
 		$db = ADONewConnection(DB_TYPE);
 		$db->Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
+		$db_temp = ADONewConnection(DB_TYPE);
+		$db_temp->Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 		
 		# Allow MySQL to query in utf8 encoding
 		$db->Execute("SET NAMES utf8");
+		$db_temp->Execute("SET NAMES utf8");
 
 		$this->db = $db;
+		$this->db_temp = $db_temp;
 		$this->lang2 = $lang2;
 		$this->lang3 = $lang3;
 		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
@@ -39,7 +43,17 @@ class App extends SluggedRecord {
 			{
 				error_reporting(E_ERROR | E_WARNING | E_PARSE);
 				ini_set("display_errors", 1);
-				$db->debug = true;
+				$this->db->debug = true;
+			}
+		}
+		
+		if(DEBUG_ALL==true)
+		{
+			if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
+			{
+				error_reporting(E_ERROR | E_WARNING | E_PARSE);
+				ini_set("display_errors", 1);
+				$this->db_temp->debug = true;
 			}
 		}
 
@@ -58,17 +72,17 @@ class App extends SluggedRecord {
 	# @access public
 	# @param string $table
 	# @return $this
-    function select($table)
+    function select($table=NULL)
     {
-
+		if(!$table) $table = $this->table;
 		if($table)
 		{			
 			$data = array();
-			$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
+			$this->db_temp->SetFetchMode(ADODB_FETCH_ASSOC);
 			$this->table_rows = "";
 			
 			$q = "SHOW COLUMNS FROM {$table}";
-			$rsColumns = $this->db->Execute($q);
+			$rsColumns = $this->db_temp->Execute($q);
 			
 			# Select rows names
 			$this->i = 1;
@@ -82,7 +96,6 @@ class App extends SluggedRecord {
 
 				# Put fields in a string
 				$this->table_rows .= $table.".".$rsColumns->fields["Field"]." AS ".$table."_".$rsColumns->fields["Field"];;
-				#if($this->i==1) $this->table_rows = $table.".".$rsColumns->fields["Field"]; else $this->table_rows .= $table.".".$rsColumns->fields["Field"];
 				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
 				
 				$this->i++;
@@ -128,7 +141,7 @@ class App extends SluggedRecord {
 			}
 			
 			$q = "SHOW COLUMNS FROM {$joined_table}";
-			$rsColumns = $this->db->Execute($q);
+			$rsColumns = $this->db_temp->Execute($q);
 			
 			# Select rows names
 			while(!$rsColumns->EOF){
@@ -244,6 +257,8 @@ class App extends SluggedRecord {
 		}
 		if($this->limit) $q .= " LIMIT {$this->limit}";
 		$rsList = $this->db->Execute($q);
+		/*include(COMPLETE_URL_ROOT .'zap/lib/php/adodb5/tohtml.inc.php'); # load code common to ADOdb 
+		rs2html($rsList,'border=2 cellpadding=3');*/
 
 		# Put all data in an array
 		$i = 0;
@@ -340,6 +355,14 @@ class App extends SluggedRecord {
 	public function update(&$record, $id){
 		return $this->db->AutoExecute($this->table, $record, 'UPDATE', 'id = ' . $id); 
 	}
+	
+	# raw_update()
+	# @access public
+	# @param $raw_update
+	function raw_update($raw_query){
+		
+		$this->db->Execute($raw_query);
+	}
 
 	# delete()
 	# @access public
@@ -356,7 +379,7 @@ class App extends SluggedRecord {
 		{
 			$q = "DELETE FROM {$table}";
 			$q .= " WHERE {$clause}";
-			$rsList = $db->Execute($q);
+			$rsList = $this->db->Execute($q);
 		
 			$_SESSION['errors'] = 'Le champs a bien été supprimé.';
 		}else{
@@ -612,4 +635,16 @@ class App extends SluggedRecord {
 		$secured_file_link = $this->lang2."/".$routes["download"].$file;
 		return $secured_file_link;
 	}
+	
+	# redirect()
+	# @access public
+	# @param $to_route
+	# @return void
+	public function redirect($to_route = NULL){
+		global $routes;
+		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2.'/'.$routes[$to_route];
+		header('Location: '.$path);
+		exit;
+	}
+
 }

@@ -15,4 +15,13 @@ $validate = array(
 	"email_required" 		=> "Please enter your email address.",
 	"comment_required" 		=> "Please enter a comment.",
 	"question_required" 	=> "Please enter a question.",
+	"city_required" 		=> "Please enter a city.",
+	"company_required" 		=> "Please enter a company name.",
+	"address_required" 		=> "Please enter an address.",
+	"other_information_required" => "Please enter your informations on your payment mode.",
+	"transit_number_required" => "Please enter a transit number.",
+	"year_required" => "Please enter a number of years",
+	"gravure_required" => "Please enter a message",
+	"product_required" => "Please enter a product name",
+	"entreprise_required" => "Please enter a company's name",
 );
