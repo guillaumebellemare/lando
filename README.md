@@ -17,6 +17,7 @@ class IndexController extends AppController {
 		# Data
 		$foos = foo->getAllBar();
 		$current_foo = current($foo->currentFoo());
+		$this->helper->writePrettyDate($date);
 		
 		return array("foos" => $foos, "current_foo" => $current_foo);
 	}
@@ -164,31 +165,31 @@ Then, to call the file, call readSecuredFile(folder/file.pdf)
 ```
 ### Write Pretty Date
 ```php
-$app->writePrettyDate("$date")
+$helper->writePrettyDate("$date")
 ```
 ### Write Pretty Month
 ```php
-$app->writePrettyMonth("$month")
+$helper->writePrettyMonth("$month")
 ```
 ### Limit String Size
 ```php
-$app->limitStringSize($month, 200)
+$helper->limitStringSize($month, 200)
 ```
 ### Format Money
 ```php
-$app->formatMoney($price)
+$helper->formatMoney($price)
 ```
 ### Get picture path
 ```php
-$app->getPicturePath($picture_path)
+$helper->getPicturePath($picture_path)
 ```
 ### Get picture infos
 ```php
-$app->getPictureInfo($picture_path)
+$helper->getPictureInfo($picture_path)
 ```
 ### New line to paragraph
 ```php
-$app->nl2p(string)
+$helper->nl2p(string)
 ```
 =====
 ## Routes
