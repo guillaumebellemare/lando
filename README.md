@@ -135,6 +135,38 @@ Return true if the request is made in ajax
 ```php
 $this->is_ajax();
 ```
+### Send email
+```php
+# Required files
+require_once("app/helpers/mail/phpmailer.class.php");
+require_once("app/helpers/mail/smtp.class.php");
+
+# Initialization
+$mail = new PHPMailer();
+$mail->CharSet = "utf-8"; 
+$mail->IsSMTP();
+$mail->IsHTML(true);
+
+# Email information
+$mail->Subject	= "Enter Your Subject Here"; 
+$mail->From = (EMAIL_MANAGER);
+$mail->FromName = (EMAIL_MANAGER_NAME);
+$mail->AddReplyTo(EMAIL_MANAGER, EMAIL_MANAGER_NAME);
+$mail->AddAddress(EMAIL_MANAGER, EMAIL_MANAGER_NAME);
+
+# Message
+$message = "<body>";
+	$message = "<p>Lorem ipsum dolor</p>";
+$message = "</body">;
+$mail->Body = $message;
+
+# Send email	
+if ($mail->Send()) {
+	$_SESSION['messages'][] = "Success message";
+}else{
+	$_SESSION['errors'][] = "Error message " . $mail->ErrorInfo;
+}
+```
 =====
 ## View Functions
 ### Read returned array
