@@ -16,7 +16,7 @@
     </tr>
     <?php foreach($cart_session['items'] as $key => $item): ?>
     <tr class="item<?=(isset($item['invalid']) ? ' error' : '');?>" id="<?=$key?>">
-      <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>"><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $app->getPicturePath($item['data']["products.pic_t"])?>" alt="<?=$item['data']["products.name_$lang3"]; ?>" class="is-full-width"></a></td>
+      <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>"><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $helper->getPicturePath($item['data']["products.pic_t"])?>" alt="<?=$item['data']["products.name_$lang3"]; ?>" class="is-full-width"></a></td>
       <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>"><span class="product-name"><?=$item['data']["products.name_$lang3"]; ?></span></a></td>
       <td class="price"><input name="price" value="<?=($item['price']);?>" type="hidden">
       <?php 
@@ -57,7 +57,7 @@
       <td colspan="2"><?=$cart["delivery_cost_estimate"]?><br>
         <?php foreach($shipping_rates as $rate) : ?>	
         	<?php if($rate["service_code"]==$_SESSION['cart']["shipping_rates_estimate"]) : ?>
-			<span class="name_and_date"><?=$rate["service_name"]." - ".$app->writePrettyDate($rate["expected_delivery_date"])?></span>
+			<span class="name_and_date"><?=$rate["service_name"]." - ".$helper->writePrettyDate($rate["expected_delivery_date"])?></span>
             <?php endif; ?>
         <?php endforeach; ?>
       </td>

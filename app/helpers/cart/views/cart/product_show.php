@@ -1,7 +1,7 @@
 <?php include('app/views/layouts/two-columns.php') ?>
 <?php startblock('content') ?>
 <h1><?=$product["products.name_$lang3"]?></h1>
-<img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $app->getPicturePath($product["products.pic_t"])?>" alt="<?=$product["products.name_$lang3"]?>">
+<img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $helper->getPicturePath($product["products.pic_t"])?>" alt="<?=$product["products.name_$lang3"]?>">
 <?=$product["products.description_$lang3"]?>
 <?php endblock() ?>
 <?php startblock('sidebar') ?>

@@ -8,5 +8,3 @@
 |
 */
 
-require_once('app/models/App.php');
-$app = new App();

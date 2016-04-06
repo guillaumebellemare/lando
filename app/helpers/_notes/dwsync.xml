@@ -4,4 +4,6 @@
 <file name="meta.class.php" server="ftp.espacedev2.com//lando/" local="131042557062453043" remote="131042518800000000" Dst="2" />
 <file name="sluggedrecord.class.php" server="ftp.espacedev2.com//lando/" local="131042557063571349" remote="131042518800000000" Dst="2" />
 <file name="translate.class.php" server="ftp.espacedev2.com//lando/" local="131042557067628463" remote="131042518800000000" Dst="2" />
+<file name="helpers.php" server="ftp.espacedev2.com//lando/" local="131044415277260453" remote="131044378800000000" Dst="2" />
+<file name="Helper.php" server="ftp.espacedev2.com//lando/" local="131044416823775891" remote="131044380600000000" Dst="2" />
 </dwsync>

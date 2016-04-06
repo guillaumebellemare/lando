@@ -6,7 +6,7 @@
 <h3><?=$cart["shipping_cost"]?></h3>
 <select name="shipping_rates_select" id="shipping_rates_select" class="shipping_rates_select">
 	<?php foreach($final_shipping_rates as $rate) : ?>
-    <option value="<?=$rate["service_code"]?>" <?php if($rate["service_code"]==$_SESSION['cart']["calculated_shipping_rates"]) : ?> selected<?php endif; ?>><?=$rate["service_name"]." (".$rate["shipping_cost"]." $) - ".$app->writePrettyDate($rate["expected_delivery_date"])?></option>
+    <option value="<?=$rate["service_code"]?>" <?php if($rate["service_code"]==$_SESSION['cart']["calculated_shipping_rates"]) : ?> selected<?php endif; ?>><?=$rate["service_name"]." (".$rate["shipping_cost"]." $) - ".$helper->writePrettyDate($rate["expected_delivery_date"])?></option>
     <?php endforeach; ?>
 </select>
 </form>
@@ -70,7 +70,7 @@
 	    </tr>
 	    <?php foreach($cart_session['items'] as $key => $item): ?>
 	    <tr class="item<?=(isset($item['invalid']) ? ' error' : '');?>" id="<?=$key?>">
-	      <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>" target="_blank"><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $app->getPicturePath($item['data']["products.pic_t"])?>" class="is-full-width"></a></td>
+	      <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>" target="_blank"><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER . $helper->getPicturePath($item['data']["products.pic_t"])?>" class="is-full-width"></a></td>
           <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$item['data']["products.slug_$lang3"]?>" target="_blank"><?=$item['data']["products.name_$lang3"]?></a></td>
 		  <td class="price"><?php if(!empty($item['price'])) echo number_format($item['price'], 2) . ' $'; ?></td>
 	      <td class="qty">
@@ -102,7 +102,7 @@
           <td colspan="2"><?=$cart["delivery_cost"]?><br>
             <?php foreach($final_shipping_rates as $rate) : ?>	
                 <?php if($rate["service_code"]==$_SESSION['cart']["calculated_shipping_rates"]) : ?>
-                <?=$rate["service_name"]." - ".$app->writePrettyDate($rate["expected_delivery_date"])?>
+                <?=$rate["service_name"]." - ".$helper->writePrettyDate($rate["expected_delivery_date"])?>
                 <?php endif; ?>
             <?php endforeach; ?>
           </td>

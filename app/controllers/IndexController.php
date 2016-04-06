@@ -5,7 +5,7 @@ class IndexController extends AppController {
 	function index() {
 		
 		# Model declaration
-		$base = new Base();
+		//$base = new Base();
 
 		# Slug creation
 		

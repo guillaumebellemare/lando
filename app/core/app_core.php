@@ -19,7 +19,6 @@ define("WBR_FOLDER", "images/wbr/uploads/");
 |--------------------------------------------------------------------------
 |
 | This is where the connection is made to the database.
-| The language files is included as well.
 |
 */
 require_once("app/core/app_connect.php");
@@ -41,6 +40,9 @@ $lang3 = $lang->lang3;
 $lang2_trans = $lang->lang2_trans;
 
 require_once("app/helpers/sluggedrecord.class.php");
+if(@require_once("app/helpers/translate.class.php"));
+if(@require_once(COMPLETE_URL_ROOT . 'app/helpers/meta.class.php'));
+require_once("app/core/app_routes.php");
 
 
 /*
@@ -71,15 +73,14 @@ require_once("app/helpers/ti/ti.php");
 
 /*
 |--------------------------------------------------------------------------
-| Custom methods
+| App Controller
 |--------------------------------------------------------------------------
 |
 | Here is where the custom methods are declared.
 |
 */
 require_once("app/core/app_controller.php");
-if(@require_once("app/helpers/translate.class.php"));
-if(@require_once(COMPLETE_URL_ROOT . 'app/helpers/meta.class.php'));
+
 
 /*
 |--------------------------------------------------------------------------
@@ -89,13 +90,29 @@ if(@require_once(COMPLETE_URL_ROOT . 'app/helpers/meta.class.php'));
 | Here is where all the models classes are called.
 |
 */
+require_once("app/core/App.php");
+require_once("app/helpers/Helper.php");
+$app = new App();
+$helper = new Helper();
+
 foreach (glob("app/models/*.php") as $filename)
 {
 	require_once($filename);
 }
 $user = new User();
 $app_controller = new AppController();
+
+
+/*
+|--------------------------------------------------------------------------
+| Custom methods
+|--------------------------------------------------------------------------
+|
+| Here is where the custom methods are declared.
+|
+*/
 require_once("app/helpers/custom_methods/index.php");
+
 
 /*
 |--------------------------------------------------------------------------
@@ -110,8 +127,17 @@ foreach (glob("public/lang/".$lang2."/*.php") as $filename)
     require_once($filename);
 }
 
-require_once("app/core/app_routes.php");
+
+/*
+|--------------------------------------------------------------------------
+| Shopping Cart
+|--------------------------------------------------------------------------
+|
+| Here is where the langugages files are instantiated.
+|
+*/
 if(SHOPPING_CART) require_once("app/helpers/cart/cart_core.php");
+
 
 /*
 |--------------------------------------------------------------------------
@@ -122,9 +148,7 @@ if(SHOPPING_CART) require_once("app/helpers/cart/cart_core.php");
 |
 |
 */
- 
-
-if(DEBUG==true)
+if(DEBUG==true || DEBUG_ALL==true)
 {
 	if(CHECK_MOD_REWRITE)
 	{
@@ -159,4 +183,5 @@ if(SHOPPING_CART && (CANADA_POST_SANDBOX_MODE || PAYPAL_SANDBOX_MODE))
 	if(CANADA_POST_SANDBOX_MODE && PAYPAL_SANDBOX_MODE) $app_floating_messages[] = ' et';
 	if(PAYPAL_SANDBOX_MODE) $app_floating_messages[] = ' pour <strong>PayPal</strong>';
 }
+
 require_once("app/core/app_handler.php");

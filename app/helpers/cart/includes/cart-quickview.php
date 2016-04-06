@@ -10,7 +10,7 @@
                 <?php $cart_picture = current($cart_item['data']["item_pictures"]); ?>
                 <table id="<?=$key?>">
                     <tr>
-                        <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$cart_item['data']["products.slug_$lang3"]?>"><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;?><?=$app->getPicturePath($cart_item['data']["products.pic_t"])?>" width="90" /></a></td>
+                        <td><a href="<?=URL_ROOT.$lang2."/".$routes["product"]."/".$cart_item['data']["products.slug_$lang3"]?>"><?php if($cart_item['data']["products.pic_t"]) : ?><img src="<?=URL_ROOT . PUBLIC_FOLDER . WBR_FOLDER;?><?=$helper->getPicturePath($cart_item['data']["products.pic_t"])?>" width="90" /><?php endif; ?></a></td>
                         <td>
                             <span class="product-title"><?php echo $cart_item['data']["products.name_$lang3"]; ?></span><br />
                             <span class="product-price"><span class="product-price-price"><?php echo number_format($cart_item['total_price'], 2); ?></span> $</span><br />

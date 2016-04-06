@@ -769,10 +769,12 @@ class CartController extends AppController {
 
 		$province = new CartProvince();
 		$citem = new CartProduct();
+		
 		if(!isset($_SESSION['customer']['shipping_province'])){
 			if($this->lang3 == 'fre') $shipping_province = 'Québec';
 			else $shipping_province = 'Quebec';
 		}else $shipping_province = $_SESSION['customer']['shipping_province'];
+
 		$taxes = $province->select('provinces')->where("name_$this->lang3 = '$shipping_province'")->order_by("FIELD(tax_name, 'TPS', 'TVQ', 'TVH')")->all();
 		$_SESSION['cart']['sub_total'] = 0;
 		$_SESSION['cart']['total'] = 0;

@@ -20,17 +20,10 @@ class AppController extends SluggedRecord {
 		$this->lang2 = $lang2;
 		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
 		$this->current_function = &$current_function;
+		
+		$this->helper = new Helper();
 	}
 	
-	# getPicturePath()
-	# @access public
-	# @param string $string
-	# @return picture path
-	public function getPicturePath($string){
-		$a = explode("::", $string);
-		return $a[0];
-	}
-
 	# redirect()
 	# @access public
 	# @param $to_route
@@ -49,169 +42,30 @@ class AppController extends SluggedRecord {
 		return (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
 	}
 
-	# writePrettyDate()
+	# getMeta()
 	# @access public
-	# @param string $date
-	# @return readable date
-	public function writePrettyDate($date){
-		
-		if($this->lang3=="fre") $word_link = "au"; else $word_link = "to";
-		$return_date = NULL;
-		
-		$date = explode(',', $date);
-		
-		$first_date = explode('-', $date[0]);
-		$first_date_day = (int)$first_date[2];
-		$first_date_month = $this->writePrettyMonth($first_date[1]);
-		$first_date_year = $first_date[0];
-		
-		if($this->lang3=="fre" && $first_date_day==1) $first_date_day = $first_date_day."<sup>er</sup>";
-		
-		$first_date_send = $first_date_day." ".$first_date_month." ".$first_date_year;
-		
-		if(count($date) == 1){
-			$return_date = $first_date_send;
-		}else {
-			$second_date = explode('-', $date[1]);
-			$second_date_day = (int)$second_date[2];
-			$second_date_month = $this->writePrettyMonth($second_date[1]);
-			$second_date_year = $second_date[0];
-			$second_dateSend = $second_date_day." ".$second_date_month." ".$second_date_year;
-			
-			if($this->lang3=="fre" && $second_date_day==1) $second_date_day = $second_date_day."<sup>er</sup>";
-			
-			# Only one date
-			if($first_date==$second_date)
-			{
-				$return_date = $first_date_send;
-			}else {
-				if($this->lang3=="fre")
-				{
-					#######################
-					## French formatting ##
-					#######################
-					
-					# Two dates of the same year
-					if($first_date_year == $second_date_year) $return_date = $first_date_day." ".$first_date_month." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
-					# Two dates of the same month
-					if($first_date_month === $second_date_month) $return_date = $first_date_day." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
-					
-					# Two dates of different year
-					if($first_date_year != $second_date_year) $return_date = $first_date_day." ".$first_date_month." ".$first_date_year." $word_link ".$second_date_day." ".$second_date_month." ".$second_date_year;
-					
-					# Default
-					if($return_date==NULL) $first_date_send." $word_link ".$second_dateSend;
-					
-				}elseif($this->lang3=="eng"){
-					########################
-					## English formatting ##
-					########################
-					
-					# Two dates of the same year
-					if($first_date_year == $second_date_year) $return_date = $first_date_month." ".$first_date_day." $word_link ".$second_date_month." ".$second_date_day.", ".$second_date_year;
-					# Two dates of the same month
-					if($first_date_month === $second_date_month) $return_date = $second_date_month." ".$first_date_day." $word_link ".$second_date_day.", ".$second_date_year;
-					
-					# Two dates of different year
-					if($first_date_year != $second_date_year) $return_date = $first_date_month." ".$first_date_day.", ".$first_date_year." $word_link ".$second_date_month." ".$second_date_day.", ".$second_date_year;
-					
-					# Default 
-					if($return_date==NULL) $first_date_send." $word_link ".$second_dateSend;	 
-				}
-			}
-		}
-		
-		return $return_date;
-	}
-
-	# writePrettyMonth()
-	# @access public
-	# @param string $month
-	# @return readable montb
-	public function writePrettyMonth($month)
+	# @param $part
+	# @return current_meta
+	public function getMeta($part)
 	{
-		if($this->lang3=="fre")
-		{
-			switch ($month) {
-				case "01":
-					$month = "janvier";
-				break;
-				case "02":
-					$month = "février";
-				break;
-				case "03":
-					$month = "mars";
-				break;
-				case "04":
-					$month = "avril";
-				break;
-				case "05":
-					$month = "mai";
-				break;
-				case "06":
-					$month = "juin";
-				break;
-				case "07":
-					$month = "juillet";
-				break;
-				case "08":
-					$month = "août";
-				break;
-				case "09":
-					$month = "septembre";
-				break;
-				case "10":
-					$month = "octobre";
-				break;
-				case "11":
-					$month = "novembre";
-				break;
-				case "12":
-					$month = "décembre";
-				break;
-			}
-		}elseif($this->lang3=="eng"){
-			switch ($month) {
-				case "01":
-					$month = "January";
-				break;
-				case "02":
-					$month = "February";
-				break;
-				case "03":
-					$month = "March";
-				break;
-				case "04":
-					$month = "April";
-				break;
-				case "05":
-					$month = "May";
-				break;
-				case "06":
-					$month = "June";
-				break;
-				case "07":
-					$month = "July";
-				break;
-				case "08":
-					$month = "August";
-				break;
-				case "09":
-					$month = "September";
-				break;
-				case "10":
-					$month = "October";
-				break;
-				case "11":
-					$month = "November";
-				break;
-				case "12":
-					$month = "December";
-				break;
-			}
-		}
+		global $meta;
+		$current_meta = NULL;
+
+		if(self::$title && $part == "title") $current_meta .= self::$title." | ";
+		if(self::$description && $part == "description") $current_meta .= self::$description;
+		if(self::$keywords && $part == "keywords") $current_meta .= self::$keywords;
+		if(self::$image && $part == "image") $current_meta .= self::$image;
+		if(self::$type && $part == "type") $current_meta .= self::$type;
 		
-		return $month;	
+		if(isset($_GET['param4']) && isset($meta["{$_GET['param4']}.{$part}"])) $current_meta .= $meta["{$_GET['param4']}.{$part}"]." | ";
+		if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.{$part}"])) $current_meta .= $meta["{$_GET['param3']}.{$part}"]." | ";
+		if(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.{$part}"])) $current_meta .= $meta["{$_GET['param2']}.{$part}"]." | ";
+		if(isset($_GET['param1']) && isset($meta["{$_GET['param1']}.{$part}"])) $current_meta .= $meta["{$_GET['param1']}.{$part}"]." | ";
+		$current_meta .= $this->getMetaFromPage("{$part}");
+		$current_meta .= $this->getMetaFromPageParam("{$part}");
+		if(isset($meta["site.{$part}"])) $current_meta .= $meta["site.{$part}"];
+		
+		return $current_meta;
 	}
 	
 	public function getMetaFromPage($part)
@@ -243,32 +97,6 @@ class AppController extends SluggedRecord {
 		}else{
 			return false;
 		}
-	}
-
-	# getMeta()
-	# @access public
-	# @param $part
-	# @return current_meta
-	public function getMeta($part)
-	{
-		global $meta;
-		$current_meta = NULL;
-
-		if(self::$title && $part == "title") $current_meta .= self::$title." | ";
-		if(self::$description && $part == "description") $current_meta .= self::$description;
-		if(self::$keywords && $part == "keywords") $current_meta .= self::$keywords;
-		if(self::$image && $part == "image") $current_meta .= self::$image;
-		if(self::$type && $part == "type") $current_meta .= self::$type;
-		
-		if(isset($_GET['param4']) && isset($meta["{$_GET['param4']}.{$part}"])) $current_meta .= $meta["{$_GET['param4']}.{$part}"]." | ";
-		if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.{$part}"])) $current_meta .= $meta["{$_GET['param3']}.{$part}"]." | ";
-		if(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.{$part}"])) $current_meta .= $meta["{$_GET['param2']}.{$part}"]." | ";
-		if(isset($_GET['param1']) && isset($meta["{$_GET['param1']}.{$part}"])) $current_meta .= $meta["{$_GET['param1']}.{$part}"]." | ";
-		$current_meta .= $this->getMetaFromPage("{$part}");
-		$current_meta .= $this->getMetaFromPageParam("{$part}");
-		if(isset($meta["site.{$part}"])) $current_meta .= $meta["site.{$part}"];
-		
-		return $current_meta;
 	}
 	
 	# getMetaURL()

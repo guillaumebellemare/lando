@@ -81,6 +81,8 @@ class App extends SluggedRecord {
 			$this->db_temp->SetFetchMode(ADODB_FETCH_ASSOC);
 			$this->table_rows = "";
 			
+			#$table_exist = $this->db_temp->Execute("SELECT * FROM information_schema.TABLES WHERE TABLE_NAME = '{$table}' AND TABLE_SCHEMA = '".DB_NAME."'");
+
 			$q = "SHOW COLUMNS FROM {$table}";
 			$rsColumns = $this->db_temp->Execute($q);
 			
@@ -103,6 +105,7 @@ class App extends SluggedRecord {
 			$rsColumns->MoveNext();
 			}
 			$rsColumns->Close();
+
 		}
         return $this;
     }
