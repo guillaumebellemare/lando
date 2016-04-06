@@ -161,7 +161,7 @@ Deny from all
 ```
 Then, to call the file, call readSecuredFile(folder/file.pdf)
 ```php
-<a href="<?=$app->readSecuredFile("$path")?>" target="_blank">Link</a>
+<a href="<?=$helper->readSecuredFile("$path")?>" target="_blank">Link</a>
 ```
 ### Write Pretty Date
 ```php
