@@ -13,10 +13,10 @@ $(document).ready(function() {
 // Responsive navigation
 $(document).ready(function() {
 	$('.navigation').addClass('hide');
+	$('.languages').addClass('hide');
 	$(".navigation-trigger").click(function () {
-		$('.navigation').toggleClass('show');
-		$('.navigation').toggleClass('hide');
-
+		$('.navigation').toggleClass('show').toggleClass('hide');
+		$('.languages').toggleClass('show').toggleClass('hide');
 		return false;
 	});
 });

@@ -1,24 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
-/* Copyright 2015 Propaganda Design Inc. */
+/* Copyright 2016 Propaganda Design Inc. */
 
 /*-------------------------------------------------------------------
 	Base
 -------------------------------------------------------------------*/
 *, *:before, *:after, input, textarea, select { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-body { font-family:Arial,Helvetica,sans-serif; font-size:12px; background:#FFF; }
-header { background:#607C8A; }
+body { font-family:Arial,Helvetica,sans-serif; font-size:14px; background:#FFF; }
+header { background:#3FA2D4; }
 section { }
 footer { background:#CCC; }
 a { }
 h1 { font-size:25px; margin:0 0 20px 0; }
 h2 { font-size:18px; margin:0 0 15px 0; }
 h3 { }
-p, ul { margin:0 0 12px 0; font-size:12px; line-height:14px; }
+p, ul { margin:0 0 12px 0; font-size:14px; line-height:22px; }
+p a, ul li a { color:#3FA2D4; }
 ul > li:before { content:"•"; padding:0 12px 0 0; display:inline-block; float:left; }
 ul ul { margin:0 0 0 12px; }
-ul > li { margin:4px 0 4px 0; }
-ul { margin:0 0 20px 12px; list-style:none; text-indent:-12px; }
+ul > li { margin:0px 0 12px 0; }
+ul > li:last-child { margin-bottom:0; }
+ul { margin:0 0 0 12px; list-style:none; text-indent:-12px; }
 strong { }
 hr { border:none; height:1px; background:#CCC; margin:20px 0; }
 table {  width:100%; }
@@ -39,29 +41,35 @@ input[type="text"]:disabled { background:#dddddd; }
 input:disabled:hover, textarea:disabled:hover { border:1px solid #CCC; }
 select { background:url(../images/common/form-select.png) no-repeat center right #FFF; padding-right:30px; }
 select:hover, select:focus { background:url(../images/common/form-select.png) no-repeat center right #FFF; }
-::selection { background:#607C8A; color:#FFF; }
-::-moz-selection { background:#607C8A; border:1px solid #607C8A; color:#FFF; }
+::selection { background:#3FA2D4; color:#FFF; }
+::-moz-selection { background:#3FA2D4; border:1px solid #3FA2D4; color:#FFF; }
 ::-webkit-input-placeholder { color:#999; }
 :-moz-placeholder { color:#999; }
 ::-moz-placeholder { color:#999; }
 :-ms-input-placeholder { color:#999; }
 
 /*-------------------------------------------------------------------
-	Modules (ex.: .box)
+	Navigation
 -------------------------------------------------------------------*/
-.navigation { position:relative; z-index:100; font-size:0; }
+.navigation { position:relative; z-index:100; font-size:0; float:left; min-width:140px; }
 .navigation ul li:before { content:""; padding:0; float:none; display:inline; }
 .navigation > ul { position:relative; z-index:1; margin:0; text-indent:0; font-size:0; }
 .navigation > ul > li { display:inline-block; *display:inline; *zoom:1; vertical-align:top; margin:0; }
-.navigation > ul > li > a { display:block; color:#FFF; font-size:14px; -webkit-transition:background .3s ease; -moz-transition:background .3s ease; -o-transition:background .3s ease; transition:background .3s ease; }
-.navigation > ul > li:hover > a, .navigation > ul > .is-selected > a { color:#CCC; }
+.navigation > ul > li > a { display:block; color:#FFF; font-size:14px; line-height:14px; padding:10px 10px; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; }
+.navigation > ul > li:hover > a, .navigation > ul > .is-selected > a { background:#FFF; color:#3FA2D4; }
 .navigation > ul > li > ul { zoom:1; filter:alpha(opacity=0); opacity:0; display:none; position:absolute; margin:0; }
 .navigation > ul > li > ul > li { margin:0; text-indent:0px; }
-.navigation > ul > li > ul > li > a { padding:7px 10px; background:#FFF; display:block; }
-.navigation > ul > li > ul > li:hover > a { background:#CCC; }
-.languages { text-indent:0; margin:0; }
+.navigation > ul > li > ul > li > a { padding:10px 10px; font-size:14px; line-height:14px; background:#FFF; display:block; color:#3FA2D4; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; }
+.navigation > ul > li > ul > li:hover > a { background:#3FA2D4; color:#FFF; }
+.navigation > ul > li > .is-hover { zoom:1; filter:alpha(opacity=100); opacity:1; display:block; }
+.languages { text-indent:0; margin:0; float:right; }
 .languages li { margin:0; }
+.languages li a { color:#FFF; }
 .languages li:before { content:""; padding:0; float:none; display:inline; }
+
+/*-------------------------------------------------------------------
+	Modules (ex.: .box)
+-------------------------------------------------------------------*/
 .btn { display:inline-block; text-align:center; font-size:14px; border:none; cursor:pointer; padding:10px 12px; background:#333; color:#FFF; -webkit-transition:all .3s ease; -moz-transition:all .3s ease; -o-transition:all .3s ease; transition:all .3s ease; opacity:1; margin:0 5px 0 0; }
 .btn:hover { opacity:0.8; }
 #map_canvas { height:300px; }
@@ -78,11 +86,11 @@ select:hover, select:focus { background:url(../images/common/form-select.png) no
 .is-failure { background:#F44236; }
 .is-failure > p > .msg-icon { background:url(../images/common/icon-error.png); }
 input.is-error { border:1px solid #F44236 !important; color:#F44236; }
-label.is-error { color:#F44236; position:relative; top:-10px; }
 input.is-error::-webkit-input-placeholder { color:#F44236; }
 input.is-error:-moz-placeholder { color:#F44236; }
 input.is-error::-moz-placeholder { color:#F44236; }
 input.is-error:-ms-input-placeholder { color:#F44236; }
+label.is-error { color:#F44236; position:relative; top:-10px; }
 .is-successful { border:1px solid #8BC24A !important; color:#8BC24A; }
 .is-successful::-webkit-input-placeholder { color:#8BC24A; }
 .is-successful:-moz-placeholder { color:#8BC24A; }
@@ -92,11 +100,6 @@ input.is-error:-ms-input-placeholder { color:#F44236; }
 .last-row-is-highlighted td:last-child { background:#52a2ff; }
 .has-rounded-corners { -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; }
 .has-box-shadow { -webkit-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); -moz-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); box-shadow:4px 4px 0px 0px rgba(0,0,0,0.75); margin-bottom:4px; }
-.has-blue-bg { background:#2095F2;}
-.has-red-bg { background:#F44236; }
-.has-yellow-bg { background:#FEC107; }
-.has-green-bg { background:#8BC24A; }
 .is-hidden { display:none !important; }
 .has-no-bullets { text-indent:0; margin:0; }
 .has-no-bullets li:before { content:""; padding:0; float:none; display:inline; }
-.navigation > ul > li > .is-hover { zoom:1; filter:alpha(opacity=100); opacity:1; display:block; }

@@ -5,9 +5,9 @@ $(window).load(function(){
 	$('.flexslider').flexslider({
 		animation: "fade",
 		controlNav: false,
+		directionNav: false,
 		prevText: "",
 		nextText: "",
-		directionNav: true,
 		start: function(slider){
 			$('body').removeClass('loading');
 		}

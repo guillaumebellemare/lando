@@ -12,6 +12,7 @@
 	<?php startblock('header') ?>
     <header>
       <div class="wrapper">
+        <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/nav.php')); ?>
         <ul class="languages is-no-list is-inline-list">
           <?php foreach($possible_languages as $language => $code) : ?>
               <?php if($language!=$lang2) : ?>
@@ -19,7 +20,7 @@
               <?php endif; ?>
           <?php endforeach; ?>
         </ul>
-        <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/nav.php')); ?>
+        <div class="clear"></div>
         <?php if(@include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'includes/slider.php')); ?>
       </div>
     </header>
