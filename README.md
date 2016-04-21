@@ -258,3 +258,12 @@ $this->setImage("picture.jpg");
 ## Cart
 <p>Set SHOPPING_CART to 1 in /config.php if you want a cart</p>
 <p>If you need to change something, all the files are located in /app/helpers/cart/</p>
+=====
+## Elements
+```html
+<input type="checkbox" name="checkbox[]" value="1" id="checkbox_1">
+<label for="checkbox_1">Checkbox</label>
+
+<input type="radio" name="radio" id="radio_1">
+<label for="radio_1">Radio</label>
+```
