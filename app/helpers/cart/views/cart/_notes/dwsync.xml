@@ -10,7 +10,7 @@
 <file name="logout.php" server="ftp.espacedev2.com//lando/" local="131042557056396146" remote="131042518800000000" Dst="2" />
 <file name="index.php" server="ftp.espacedev2.com//lando/" local="131044436974913583" remote="131044401000000000" Dst="2" />
 <file name="paypal_cancel.php" server="ftp.espacedev2.com//lando/" local="131042557057604075" remote="131042518800000000" Dst="2" />
-<file name="order_confirmation.php" server="ftp.espacedev2.com//lando/" local="131044437161589567" remote="131044401000000000" Dst="2" />
+<file name="order_confirmation.php" server="ftp.espacedev2.com//lando/" local="131044401000000000" remote="131044401000000000" Dst="2" />
 <file name="paypal_back.php" server="ftp.espacedev2.com//lando/" local="131042557057673973" remote="131042518800000000" Dst="2" />
 <file name="paypal_ipn.php" server="ftp.espacedev2.com//lando/" local="131042557057623923" remote="131042518800000000" Dst="2" />
 <file name="paypal_routine_check.php" server="ftp.espacedev2.com//lando/" local="131042557057683980" remote="131042518800000000" Dst="2" />
