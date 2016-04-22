@@ -219,6 +219,11 @@ $helper->getPicturePath($picture_path)
 ```php
 $helper->getPictureInfo($picture_path)
 ```
+### Create video tags
+You need a .m4k, a .webm and a .ogv in order for this to work
+```php
+$helper->createVideo(URL_ROOT.PUBLIC_FOLDER."videos/your_video_name_without_extension", width, height, autoplay: true_or_false, URL_ROOT.PUBLIC_FOLDER."your_poster_path.jpg")
+```
 ### New line to paragraph
 ```php
 $helper->nl2p(string)
