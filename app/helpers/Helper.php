@@ -207,6 +207,26 @@ class Helper extends App {
 		return array('file' => $a[0], 'cropdata' => $a[1]);
 	}
 	
+	# createVideo()
+	# @access public
+	# @param string $path, $width, $height, $autoplay, $poster
+	# @return video tags
+	public function createVideo($path, $width = NULL, $height = NULL, $autoplay = NULL, $poster = NULL) {
+		
+		if($autoplay) $autoplay_video = 'autoplay="autoplay"';
+		
+		$data = NULL;
+		$data .= "<div class='video_player'>";
+			$data .= "<video controls='controls' ".$autoplay_video." poster='".$poster."' title=''>";
+				$data .= "<source src='".$path.".m4v' type='video/mp4'>";
+				$data .= "<source src='".$path.".webm' type='video/webm'>";
+				$data .= "<source src='".$path.".ogv' type='video/ogg'>";
+				$data .= "Your browser does not support HTML5 video.";
+			$data .= "</video>";
+		$data .= "</div>";
+		return $data;
+	}
+	
 	# nl2p()
 	# @access public
 	# @param string $string, $line_breaks, $xml
