@@ -19,7 +19,6 @@ define("WBR_FOLDER", "images/wbr/uploads/");
 | Disabling Magic Quotes
 |--------------------------------------------------------------------------
 |
-| This is where the initialization is made
 |
 */
 if(get_magic_quotes_gpc()) {
@@ -41,10 +40,10 @@ if(get_magic_quotes_gpc()) {
 
 /*
 |--------------------------------------------------------------------------
-| Database connection
+| Database informations
 |--------------------------------------------------------------------------
 |
-| This is where the connection is made to the database.
+| This is where the database info is included.
 |
 */
 require_once("app/core/AppDatabase.php");
