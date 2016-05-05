@@ -7,4 +7,8 @@
 <file name="app_messages.php" server="ftp.espacedev2.com//lando/" local="131042557044747620" remote="131042518800000000" Dst="2" />
 <file name="app_routes.php" server="ftp.espacedev2.com//lando/" local="131042557045067897" remote="131042518800000000" Dst="2" />
 <file name="App.php" server="ftp.espacedev2.com//lando/" local="131044447169847843" remote="131044411200000000" Dst="2" />
+<file name="AppCore.php" server="ftp.espacedev2.com//lando/" local="131069336087454621" remote="131069299800000000" Dst="2" />
+<file name="AppConnect.php" server="ftp.espacedev2.com//lando/" local="131042518800000000" remote="131042518800000000" Dst="2" />
+<file name="AppController.php" server="ftp.espacedev2.com//lando/" local="131044391400000000" remote="131044391400000000" Dst="2" />
+<file name="AppHandler.php" server="ftp.espacedev2.com//lando/" local="131042518800000000" remote="131042518800000000" Dst="2" />
 </dwsync>

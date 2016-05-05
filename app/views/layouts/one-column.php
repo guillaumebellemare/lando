@@ -1,4 +1,4 @@
-<?php if(@include(COMPLETE_URL_ROOT . 'app/core/app_messages.php')); ?>
+<?php if(@include(COMPLETE_URL_ROOT . 'app/core/AppMessages.php')); ?>
 <!doctype html>
 <html>
 <head>
