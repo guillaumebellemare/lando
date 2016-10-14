@@ -4,6 +4,6 @@
 <file name=".htaccess" server="ftp.espacedev2.com//lando/" local="131209462956346152" remote="131209459800000000" Dst="2" />
 <file name="README.md" server="ftp.espacedev2.com//lando/" local="131209462956625985" remote="131209461000000000" Dst="2" />
 <file name="robots.txt" server="ftp.espacedev2.com//lando/" local="131209462956847931" remote="131209461000000000" Dst="2" />
-<file name=".gitignore" server="ftp.espacedev2.com//lando/" local="131209462956245574" remote="131209461000000000" Dst="2" />
+<file name=".gitignore" server="ftp.espacedev2.com//lando/" local="131209465226045481" remote="131209465200000000" Dst="2" />
 <file name="routes.php" server="ftp.espacedev2.com//lando/" local="131209462957188763" remote="131074515000000000" Dst="2" />
 </dwsync>
