@@ -197,36 +197,36 @@ Then, to call the file, call readSecuredFile(folder/file.pdf)
 ```
 ### Write Pretty Date
 ```php
-$helper->writePrettyDate("$date")
+$this->helper->writePrettyDate("$date")
 ```
 ### Write Pretty Month
 ```php
-$helper->writePrettyMonth("$month")
+$this->helper->writePrettyMonth("$month")
 ```
 ### Limit String Size
 ```php
-$helper->limitStringSize($month, 200)
+$this->helper->limitStringSize($month, 200)
 ```
 ### Format Money
 ```php
-$helper->formatMoney($price)
+$this->helper->formatMoney($price)
 ```
 ### Get picture path
 ```php
-$helper->getPicturePath($picture_path)
+$this->helper->getPicturePath($picture_path)
 ```
 ### Get picture infos
 ```php
-$helper->getPictureInfo($picture_path)
+$this->helper->getPictureInfo($picture_path)
 ```
 ### Create video tags
 You need a .m4k, a .webm and a .ogv in order for this to work
 ```php
-$helper->createVideo(URL_ROOT.PUBLIC_FOLDER."videos/your_video_name_without_extension", width, height, autoplay: true_or_false, URL_ROOT.PUBLIC_FOLDER."your_poster_path.jpg")
+$this->helper->createVideo(URL_ROOT.PUBLIC_FOLDER."videos/your_video_name_without_extension", width, height, autoplay: true_or_false, URL_ROOT.PUBLIC_FOLDER."your_poster_path.jpg")
 ```
 ### New line to paragraph
 ```php
-$helper->nl2p(string)
+$this->helper->nl2p(string)
 ```
 =====
 ## Routes
