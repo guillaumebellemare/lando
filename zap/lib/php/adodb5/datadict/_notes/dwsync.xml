@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="datadict-access.inc.php" server="ftp.espacedev2.com//lando/" local="131209462945296728" remote="131070315000000000" Dst="2" />
+<file name="datadict-db2.inc.php" server="ftp.espacedev2.com//lando/" local="131209462945386765" remote="131070315000000000" Dst="2" />
+<file name="datadict-firebird.inc.php" server="ftp.espacedev2.com//lando/" local="131209462945647045" remote="131070315000000000" Dst="2" />
+<file name="datadict-generic.inc.php" server="ftp.espacedev2.com//lando/" local="131209462945686980" remote="131070315000000000" Dst="2" />
+<file name="datadict-ibase.inc.php" server="ftp.espacedev2.com//lando/" local="131209462945767043" remote="131070315000000000" Dst="2" />
+<file name="datadict-informix.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946016395" remote="131070315000000000" Dst="2" />
+<file name="datadict-mssql.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946076556" remote="131070315000000000" Dst="2" />
+<file name="datadict-mssqlnative.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946216673" remote="131070315000000000" Dst="2" />
+<file name="datadict-mysql.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946416802" remote="131070315000000000" Dst="2" />
+<file name="datadict-oci8.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946537056" remote="131070315000000000" Dst="2" />
+<file name="datadict-postgres.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946667157" remote="131070315000000000" Dst="2" />
+<file name="datadict-sapdb.inc.php" server="ftp.espacedev2.com//lando/" local="131209462946922584" remote="131070315000000000" Dst="2" />
+<file name="datadict-sybase.inc.php" server="ftp.espacedev2.com//lando/" local="131209462947057801" remote="131070315000000000" Dst="2" />
+</dwsync>

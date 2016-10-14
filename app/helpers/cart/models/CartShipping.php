@@ -1,6 +1,6 @@
 <?php
 
-class CartShipping extends App {
+class CartShipping extends AppModel {
 	
 	private $service_url = 'https://soa-gw.canadapost.ca/rs/ship/price';
 	private $username; 

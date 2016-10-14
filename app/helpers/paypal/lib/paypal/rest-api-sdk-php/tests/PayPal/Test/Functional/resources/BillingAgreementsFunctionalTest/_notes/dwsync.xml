@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="testBillBalance.json" server="ftp.espacedev2.com//lando/" local="131209462913867352" remote="131179016400000000" Dst="2" />
+<file name="testCancel.json" server="ftp.espacedev2.com//lando/" local="131209462914105998" remote="131179016400000000" Dst="2" />
+<file name="testCreateCCAgreement.json" server="ftp.espacedev2.com//lando/" local="131209462914376186" remote="131179016400000000" Dst="2" />
+<file name="testCreatePayPalAgreement.json" server="ftp.espacedev2.com//lando/" local="131209462914386202" remote="131179016400000000" Dst="2" />
+<file name="testCreateWithOverride.json" server="ftp.espacedev2.com//lando/" local="131209462914606343" remote="131179016400000000" Dst="2" />
+<file name="testExecute.json" server="ftp.espacedev2.com//lando/" local="131209462914786470" remote="131179016400000000" Dst="2" />
+<file name="testGet.json" server="ftp.espacedev2.com//lando/" local="131209462914796480" remote="131179016400000000" Dst="2" />
+<file name="testGetCancelled.json" server="ftp.espacedev2.com//lando/" local="131209462915068325" remote="131179016400000000" Dst="2" />
+<file name="testGetSuspended.json" server="ftp.espacedev2.com//lando/" local="131209462915188440" remote="131179016400000000" Dst="2" />
+<file name="testGetTransactions.json" server="ftp.espacedev2.com//lando/" local="131209462915218428" remote="131179016400000000" Dst="2" />
+<file name="testReactivate.json" server="ftp.espacedev2.com//lando/" local="131209462915922658" remote="131179016400000000" Dst="2" />
+<file name="testSetBalance.json" server="ftp.espacedev2.com//lando/" local="131209462916018819" remote="131179016400000000" Dst="2" />
+<file name="testSuspend.json" server="ftp.espacedev2.com//lando/" local="131209462916028839" remote="131179016400000000" Dst="2" />
+<file name="testUpdate.json" server="ftp.espacedev2.com//lando/" local="131209462916379198" remote="131179016400000000" Dst="2" />
+</dwsync>

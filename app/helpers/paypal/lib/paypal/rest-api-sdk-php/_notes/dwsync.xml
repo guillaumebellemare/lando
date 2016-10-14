@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".coveralls.yml" server="ftp.espacedev2.com//lando/" local="131209462829170007" remote="131179014600000000" Dst="2" />
+<file name=".editorconfig" server="ftp.espacedev2.com//lando/" local="131209462829180011" remote="131179014600000000" Dst="2" />
+<file name=".releasinator.rb" server="ftp.espacedev2.com//lando/" local="131209462829909679" remote="131179014600000000" Dst="2" />
+<file name=".gitignore" server="ftp.espacedev2.com//lando/" local="131209462830019938" remote="131179014600000000" Dst="2" />
+<file name=".travis.yml" server="ftp.espacedev2.com//lando/" local="131209462830420351" remote="131179014600000000" Dst="2" />
+<file name="CHANGELOG.md" server="ftp.espacedev2.com//lando/" local="131209462830430240" remote="131179014600000000" Dst="2" />
+<file name="CONTRIBUTING.md" server="ftp.espacedev2.com//lando/" local="131209462830520292" remote="131179014600000000" Dst="2" />
+<file name="Gemfile" server="ftp.espacedev2.com//lando/" local="131209462831010907" remote="131179014600000000" Dst="2" />
+<file name="LICENSE" server="ftp.espacedev2.com//lando/" local="131209462831020933" remote="131179014600000000" Dst="2" />
+<file name="Gemfile.lock" server="ftp.espacedev2.com//lando/" local="131209462831030940" remote="131179014600000000" Dst="2" />
+<file name="Rakefile" server="ftp.espacedev2.com//lando/" local="131209462831381175" remote="131179014600000000" Dst="2" />
+<file name="README.md" server="ftp.espacedev2.com//lando/" local="131209462831391188" remote="131179014600000000" Dst="2" />
+<file name="composer.json" server="ftp.espacedev2.com//lando/" local="131209462831451348" remote="131179014600000000" Dst="2" />
+<file name="generate-api.sh" server="ftp.espacedev2.com//lando/" local="131209462831826636" remote="131179014600000000" Dst="2" />
+<file name="phpunit.integration.xml" server="ftp.espacedev2.com//lando/" local="131209462858803117" remote="131179015200000000" Dst="2" />
+<file name="phpunit.xml" server="ftp.espacedev2.com//lando/" local="131209462859123494" remote="131179015200000000" Dst="2" />
+</dwsync>

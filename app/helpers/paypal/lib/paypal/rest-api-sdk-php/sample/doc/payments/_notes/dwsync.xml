@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AuthorizationCapture.html" server="ftp.espacedev2.com//lando/" local="131209462870511034" remote="131179015800000000" Dst="2" />
+<file name="AuthorizePayment.html" server="ftp.espacedev2.com//lando/" local="131209462870560894" remote="131179015800000000" Dst="2" />
+<file name="AuthorizePaymentUsingPayPal.html" server="ftp.espacedev2.com//lando/" local="131209462870600931" remote="131179015800000000" Dst="2" />
+<file name="CreatePayment.html" server="ftp.espacedev2.com//lando/" local="131209462871046181" remote="131179015800000000" Dst="2" />
+<file name="CreateFuturePayment.html" server="ftp.espacedev2.com//lando/" local="131209462871126235" remote="131179015800000000" Dst="2" />
+<file name="CreatePaymentUsingPayPal.html" server="ftp.espacedev2.com//lando/" local="131209462871136384" remote="131179015800000000" Dst="2" />
+<file name="ExecutePayment.html" server="ftp.espacedev2.com//lando/" local="131209462871556527" remote="131179015800000000" Dst="2" />
+<file name="CreatePaymentUsingSavedCard.html" server="ftp.espacedev2.com//lando/" local="131209462871576601" remote="131179015800000000" Dst="2" />
+<file name="GetAuthorization.html" server="ftp.espacedev2.com//lando/" local="131209462871576601" remote="131179015800000000" Dst="2" />
+<file name="GetCapture.html" server="ftp.espacedev2.com//lando/" local="131209462871921932" remote="131179015800000000" Dst="2" />
+<file name="ListPayments.html" server="ftp.espacedev2.com//lando/" local="131209462872057041" remote="131179015800000000" Dst="2" />
+<file name="GetPayment.html" server="ftp.espacedev2.com//lando/" local="131209462872067081" remote="131179015800000000" Dst="2" />
+<file name="OrderCapture.html" server="ftp.espacedev2.com//lando/" local="131209462872697593" remote="131179015800000000" Dst="2" />
+<file name="OrderCreateForAuthorization.html" server="ftp.espacedev2.com//lando/" local="131209462872717517" remote="131179015800000000" Dst="2" />
+<file name="OrderAuthorize.html" server="ftp.espacedev2.com//lando/" local="131209462872727518" remote="131179015800000000" Dst="2" />
+<file name="OrderCreateForCapture.html" server="ftp.espacedev2.com//lando/" local="131209462873087923" remote="131179015800000000" Dst="2" />
+<file name="OrderCreateForVoid.html" server="ftp.espacedev2.com//lando/" local="131209462873178165" remote="131179015800000000" Dst="2" />
+<file name="OrderCreateUsingPayPal.html" server="ftp.espacedev2.com//lando/" local="131209462873187997" remote="131179015800000000" Dst="2" />
+<file name="OrderDoVoid.html" server="ftp.espacedev2.com//lando/" local="131209462873528250" remote="131179015800000000" Dst="2" />
+<file name="OrderGet.html" server="ftp.espacedev2.com//lando/" local="131209462873558341" remote="131179015800000000" Dst="2" />
+<file name="Reauthorization.html" server="ftp.espacedev2.com//lando/" local="131209462873618431" remote="131179015800000000" Dst="2" />
+<file name="UpdatePayment.html" server="ftp.espacedev2.com//lando/" local="131209462873963568" remote="131179015800000000" Dst="2" />
+<file name="RefundCapture.html" server="ftp.espacedev2.com//lando/" local="131209462873973575" remote="131179015800000000" Dst="2" />
+<file name="VoidAuthorization.html" server="ftp.espacedev2.com//lando/" local="131209462874018207" remote="131179015800000000" Dst="2" />
+</dwsync>

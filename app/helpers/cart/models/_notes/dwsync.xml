@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="CartCustomer.php" server="ftp.espacedev2.com//lando/" local="131042557051303283" remote="131042518800000000" Dst="2" />
-<file name="CartFournisseur.php" server="ftp.espacedev2.com//lando/" local="131042557051333322" remote="131042518800000000" Dst="2" />
-<file name="CartOrder.php" server="ftp.espacedev2.com//lando/" local="131042557051428572" remote="131042518800000000" Dst="2" />
-<file name="CartOrderItem.php" server="ftp.espacedev2.com//lando/" local="131042557051884016" remote="131042518800000000" Dst="2" />
-<file name="CartPaymentMode.php" server="ftp.espacedev2.com//lando/" local="131042557052054293" remote="131042518800000000" Dst="2" />
-<file name="CartProvince.php" server="ftp.espacedev2.com//lando/" local="131042557052845034" remote="131042518800000000" Dst="2" />
-<file name="CartReserve.php" server="ftp.espacedev2.com//lando/" local="131042557052925084" remote="131042518800000000" Dst="2" />
-<file name="CartShipping.php" server="ftp.espacedev2.com//lando/" local="131042557053596063" remote="131042518800000000" Dst="2" />
-<file name="CartProduct.php" server="ftp.espacedev2.com//lando/" local="131042557054888410" remote="131042518800000000" Dst="2" />
+<file name="CartCustomer.php" server="ftp.espacedev2.com//lando/" local="131209462817779485" remote="131195590200000000" Dst="2" />
+<file name="CartFournisseur.php" server="ftp.espacedev2.com//lando/" local="131209462817804532" remote="131195590200000000" Dst="2" />
+<file name="CartOrder.php" server="ftp.espacedev2.com//lando/" local="131209462817944984" remote="131195590200000000" Dst="2" />
+<file name="CartOrderItem.php" server="ftp.espacedev2.com//lando/" local="131209462818225306" remote="131195590200000000" Dst="2" />
+<file name="CartPaymentMode.php" server="ftp.espacedev2.com//lando/" local="131209462818315418" remote="131195590200000000" Dst="2" />
+<file name="CartProduct.php" server="ftp.espacedev2.com//lando/" local="131209462818405315" remote="131195590200000000" Dst="2" />
+<file name="CartProvince.php" server="ftp.espacedev2.com//lando/" local="131209462818695684" remote="131195590200000000" Dst="2" />
+<file name="CartReserve.php" server="ftp.espacedev2.com//lando/" local="131209462818715520" remote="131195590200000000" Dst="2" />
+<file name="CartShipping.php" server="ftp.espacedev2.com//lando/" local="131209462818800602" remote="131195590200000000" Dst="2" />
 </dwsync>

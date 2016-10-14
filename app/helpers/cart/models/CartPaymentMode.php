@@ -1,6 +1,6 @@
 <?php
 
-class CartPaymentMode extends App {
+class CartPaymentMode extends AppModel {
 	
 	public function __construct() {
 		

@@ -1,1 +1,0 @@
-p span.readable{background:rgba(244,91,93,0.2);position:relative}p span.readable:before,p span.readable:after{content:"";position:relative;padding:0.25em 0;top:0}p span.readable:before{left:0;border-left:2px solid #f45b5d}p span.readable:after{right:0;border-right:2px solid #f45b5d}

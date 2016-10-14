@@ -1,6 +1,6 @@
 <?php
 
-class CartOrderItem extends App {
+class CartOrderItem extends AppModel {
 	
 	public function __construct() {
 		$this->table = 'cartorder_products';

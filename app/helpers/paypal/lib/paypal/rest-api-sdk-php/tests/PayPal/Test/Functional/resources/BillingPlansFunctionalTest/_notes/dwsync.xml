@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="testCreate.json" server="ftp.espacedev2.com//lando/" local="131209462916399103" remote="131179016400000000" Dst="2" />
+<file name="testCreateWithNOChargeModel.json" server="ftp.espacedev2.com//lando/" local="131209462916419112" remote="131179016400000000" Dst="2" />
+<file name="testGet.json" server="ftp.espacedev2.com//lando/" local="131209462916842174" remote="131179016400000000" Dst="2" />
+<file name="testGetList.json" server="ftp.espacedev2.com//lando/" local="131209462916852093" remote="131179016400000000" Dst="2" />
+<file name="testUpdateChangingMerchantPreferences.json" server="ftp.espacedev2.com//lando/" local="131209462916882130" remote="131179016400000000" Dst="2" />
+<file name="testUpdateChangingState.json" server="ftp.espacedev2.com//lando/" local="131209462917212738" remote="131179016400000000" Dst="2" />
+<file name="testUpdateChangingPD.json" server="ftp.espacedev2.com//lando/" local="131209462917222745" remote="131179016400000000" Dst="2" />
+</dwsync>

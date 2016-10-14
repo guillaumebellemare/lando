@@ -1,21 +1,21 @@
 <?php
 
 class IndexController extends AppController {
+	
+	public function index() {
 
-	function index() {
-		
 		# Model declaration
-		//$base = new Base();
+		$model = new Model();
 
 		# Slug creation
 		
 		# Data
-		//$foo = $base->getAllBar();
-
-		# Metas
+		$foo = $model->getAllBar();
+		
+		# Meta
 
 		# Returns
-		//return array("foo" => $foo);
+		return array("foo" => $foo);
 	}
 	
 }

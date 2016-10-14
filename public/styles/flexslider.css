@@ -59,7 +59,6 @@ html[xmlns] .slides {display: block;}
 .loading .flex-viewport { max-height: 300px; }
 .flexslider .slides { zoom: 1; margin:0; text-indent:0; }
 .carousel li { margin-right: 5px; }
-
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav li { margin:0; }

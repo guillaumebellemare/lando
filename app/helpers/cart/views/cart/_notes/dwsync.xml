@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="add.php" server="ftp.espacedev2.com//lando/" local="131042557055563735" remote="131042518800000000" Dst="2" />
-<file name="billing_address.php" server="ftp.espacedev2.com//lando/" local="131042557055685644" remote="131042518800000000" Dst="2" />
-<file name="calculate_shipping_rates.php" server="ftp.espacedev2.com//lando/" local="131042557055795724" remote="131042518800000000" Dst="2" />
-<file name="completed_transaction.php" server="ftp.espacedev2.com//lando/" local="131042557056276055" remote="131042518800000000" Dst="2" />
-<file name="estimate_shipping_rates.php" server="ftp.espacedev2.com//lando/" local="131044436820655213" remote="131044400400000000" Dst="2" />
-<file name="forgot.php" server="ftp.espacedev2.com//lando/" local="131042557056386142" remote="131042518800000000" Dst="2" />
-<file name="login.php" server="ftp.espacedev2.com//lando/" local="131042557056978265" remote="131042518800000000" Dst="2" />
-<file name="logout.php" server="ftp.espacedev2.com//lando/" local="131042557056396146" remote="131042518800000000" Dst="2" />
-<file name="index.php" server="ftp.espacedev2.com//lando/" local="131044436974913583" remote="131044401000000000" Dst="2" />
-<file name="paypal_cancel.php" server="ftp.espacedev2.com//lando/" local="131042557057604075" remote="131042518800000000" Dst="2" />
-<file name="order_confirmation.php" server="ftp.espacedev2.com//lando/" local="131044401000000000" remote="131044401000000000" Dst="2" />
-<file name="paypal_back.php" server="ftp.espacedev2.com//lando/" local="131042557057673973" remote="131042518800000000" Dst="2" />
-<file name="paypal_ipn.php" server="ftp.espacedev2.com//lando/" local="131042557057623923" remote="131042518800000000" Dst="2" />
-<file name="paypal_routine_check.php" server="ftp.espacedev2.com//lando/" local="131042557057683980" remote="131042518800000000" Dst="2" />
-<file name="paypal_redirect.php" server="ftp.espacedev2.com//lando/" local="131042557058204336" remote="131042518800000000" Dst="2" />
-<file name="profile.php" server="ftp.espacedev2.com//lando/" local="131042557058684915" remote="131042518800000000" Dst="2" />
-<file name="product.php" server="ftp.espacedev2.com//lando/" local="131044437332886584" remote="131044401000000000" Dst="2" />
-<file name="product_show.php" server="ftp.espacedev2.com//lando/" local="131044437408439682" remote="131044401000000000" Dst="2" />
-<file name="update.php" server="ftp.espacedev2.com//lando/" local="131042557058825014" remote="131042518800000000" Dst="2" />
-<file name="recover.php" server="ftp.espacedev2.com//lando/" local="131042557059365809" remote="131042518800000000" Dst="2" />
-<file name="shipping_address.php" server="ftp.espacedev2.com//lando/" local="131042557059425864" remote="131042518800000000" Dst="2" />
+<file name="add.php" server="ftp.espacedev2.com//lando/" local="131209462821022333" remote="131074526400000000" Dst="2" />
+<file name="billing_address.php" server="ftp.espacedev2.com//lando/" local="131209462821022333" remote="131074526400000000" Dst="2" />
+<file name="calculate_shipping_rates.php" server="ftp.espacedev2.com//lando/" local="131209462821052348" remote="131074526400000000" Dst="2" />
+<file name="estimate_shipping_rates.php" server="ftp.espacedev2.com//lando/" local="131209462821432741" remote="131074526400000000" Dst="2" />
+<file name="completed_transaction.php" server="ftp.espacedev2.com//lando/" local="131209462821442796" remote="131074526400000000" Dst="2" />
+<file name="forgot.php" server="ftp.espacedev2.com//lando/" local="131209462821452634" remote="131074526400000000" Dst="2" />
+<file name="logout.php" server="ftp.espacedev2.com//lando/" local="131209462821462654" remote="131074526400000000" Dst="2" />
+<file name="login.php" server="ftp.espacedev2.com//lando/" local="131209462821902530" remote="131195586600000000" Dst="2" />
+<file name="index.php" server="ftp.espacedev2.com//lando/" local="131209462822071516" remote="131074526400000000" Dst="2" />
+<file name="order_confirmation.php" server="ftp.espacedev2.com//lando/" local="131209462822311812" remote="131074526400000000" Dst="2" />
+<file name="paypal_back.php" server="ftp.espacedev2.com//lando/" local="131209462822321704" remote="131074526400000000" Dst="2" />
+<file name="paypal_cancel.php" server="ftp.espacedev2.com//lando/" local="131209462822532173" remote="131074526400000000" Dst="2" />
+<file name="paypal_ipn.php" server="ftp.espacedev2.com//lando/" local="131209462822321704" remote="131074526400000000" Dst="2" />
+<file name="paypal_redirect.php" server="ftp.espacedev2.com//lando/" local="131209462822731989" remote="131074526400000000" Dst="2" />
+<file name="paypal_routine_check.php" server="ftp.espacedev2.com//lando/" local="131209462822621914" remote="131074526400000000" Dst="2" />
+<file name="product_show.php" server="ftp.espacedev2.com//lando/" local="131209462823166172" remote="131074526400000000" Dst="2" />
+<file name="product.php" server="ftp.espacedev2.com//lando/" local="131209462823198149" remote="131074526400000000" Dst="2" />
+<file name="profile.php" server="ftp.espacedev2.com//lando/" local="131209462823398270" remote="131074526400000000" Dst="2" />
+<file name="recover.php" server="ftp.espacedev2.com//lando/" local="131209462823558392" remote="131074526400000000" Dst="2" />
+<file name="shipping_address.php" server="ftp.espacedev2.com//lando/" local="131209462823597149" remote="131074526400000000" Dst="2" />
+<file name="update.php" server="ftp.espacedev2.com//lando/" local="131209462823468319" remote="131074526400000000" Dst="2" />
 </dwsync>

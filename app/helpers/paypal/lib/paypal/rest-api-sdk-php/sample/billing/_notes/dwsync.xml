@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CreateBillingAgreementWithCreditCard.php" server="ftp.espacedev2.com//lando/" local="131209462859666192" remote="131179015200000000" Dst="2" />
+<file name="CreateBillingAgreementWithPayPal.php" server="ftp.espacedev2.com//lando/" local="131209462859676039" remote="131179015200000000" Dst="2" />
+<file name="CreatePlan.php" server="ftp.espacedev2.com//lando/" local="131209462859931369" remote="131179015200000000" Dst="2" />
+<file name="DeletePlan.php" server="ftp.espacedev2.com//lando/" local="131209462860046382" remote="131179015200000000" Dst="2" />
+<file name="ExecuteAgreement.php" server="ftp.espacedev2.com//lando/" local="131209462860056329" remote="131179015200000000" Dst="2" />
+<file name="GetBillingAgreement.php" server="ftp.espacedev2.com//lando/" local="131209462860287630" remote="131179015200000000" Dst="2" />
+<file name="GetPlan.php" server="ftp.espacedev2.com//lando/" local="131209462860437567" remote="131179015200000000" Dst="2" />
+<file name="ListPlans.php" server="ftp.espacedev2.com//lando/" local="131209462860437567" remote="131179015200000000" Dst="2" />
+<file name="ReactivateBillingAgreement.php" server="ftp.espacedev2.com//lando/" local="131209462860687738" remote="131179015200000000" Dst="2" />
+<file name="SuspendBillingAgreement.php" server="ftp.espacedev2.com//lando/" local="131209462860822877" remote="131179015200000000" Dst="2" />
+<file name="SearchBillingTransactions.php" server="ftp.espacedev2.com//lando/" local="131209462860832884" remote="131179015200000000" Dst="2" />
+<file name="UpdateBillingAgreement.php" server="ftp.espacedev2.com//lando/" local="131209462861105901" remote="131179015200000000" Dst="2" />
+<file name="UpdatePlan.php" server="ftp.espacedev2.com//lando/" local="131209462861286007" remote="131179015200000000" Dst="2" />
+<file name="UpdatePlanPaymentDefinitions.php" server="ftp.espacedev2.com//lando/" local="131209462861295957" remote="131179015200000000" Dst="2" />
+</dwsync>

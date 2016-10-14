@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="testCancel.json" server="ftp.espacedev2.com//lando/" local="131209462917252775" remote="131179016400000000" Dst="2" />
+<file name="testCreate.json" server="ftp.espacedev2.com//lando/" local="131209462917572995" remote="131179016400000000" Dst="2" />
+<file name="testGet.json" server="ftp.espacedev2.com//lando/" local="131209462917643042" remote="131179016400000000" Dst="2" />
+<file name="testDelete.json" server="ftp.espacedev2.com//lando/" local="131209462917683076" remote="131179016400000000" Dst="2" />
+<file name="testQRCode.json" server="ftp.espacedev2.com//lando/" local="131209462918078390" remote="131179016400000000" Dst="2" />
+<file name="testRecordPayment.json" server="ftp.espacedev2.com//lando/" local="131209462918098405" remote="131179016400000000" Dst="2" />
+<file name="testGetAll.json" server="ftp.espacedev2.com//lando/" local="131209462918108415" remote="131179016400000000" Dst="2" />
+<file name="testRecordRefund.json" server="ftp.espacedev2.com//lando/" local="131209462918458656" remote="131179016400000000" Dst="2" />
+<file name="testRemind.json" server="ftp.espacedev2.com//lando/" local="131209462918468663" remote="131179016400000000" Dst="2" />
+<file name="testSearch.json" server="ftp.espacedev2.com//lando/" local="131209462918588751" remote="131179016400000000" Dst="2" />
+<file name="testUpdate.json" server="ftp.espacedev2.com//lando/" local="131209462918883983" remote="131179016400000000" Dst="2" />
+<file name="testSend.json" server="ftp.espacedev2.com//lando/" local="131209462918903991" remote="131179016400000000" Dst="2" />
+</dwsync>

@@ -1,14 +1,13 @@
-<div class="navigation-trigger"><span></span><span></span><span></span><span></span></div>
+<div class="nav-trigger"><span></span><span></span><span></span><span></span></div>
 <div class="clear"></div>
-<nav class="navigation">
-  <ul>
-    <li<?php if($routes['index']==$_GET['page']) echo " class='is-selected'"; ?>><a href="<?=URL_ROOT.$lang2.'/'.$routes['index']; ?>">
-      <?php if(isset($navigation['index'])) echo $navigation['index']; ?>
-      </a>
-      <ul>
-        <li><a href="<?=URL_ROOT.$lang2; ?>">SubNav 1</a></li>
-        <li><a href="<?=URL_ROOT.$lang2; ?>">SubNav 2</a></li>
-        <li><a href="<?=URL_ROOT.$lang2; ?>">SubNav 3</a></li>
+<nav class="nav">
+  <ul class="nav-list-1">
+    <li class="nav-el-1<?php if($this->routes['index']==$_GET['page']) echo " is-selected"; ?>">
+      <a href="<?=URL_ROOT.$this->lang2.'/'.$this->routes['index']; ?>" class="nav-el-1-link"><?php if(isset($navigation['index'])) echo $navigation['index']; ?></a>
+      <ul class="nav-list-2">
+        <li class="nav-el-2"><a href="<?=URL_ROOT.$this->lang2; ?>" class="nav-el-2-link">SubNav 1</a></li>
+        <li class="nav-el-2"><a href="<?=URL_ROOT.$this->lang2; ?>" class="nav-el-2-link">SubNav 2</a></li>
+        <li class="nav-el-2"><a href="<?=URL_ROOT.$this->lang2; ?>" class="nav-el-2-link">SubNav 3</a></li>
       </ul>
     </li>
   </ul>

@@ -1,6 +1,6 @@
 // Dropdown
 $(document).ready(function() {
-	$('.navigation li').hover(
+	$('.nav li').hover(
 		function () {
 			$(this).find('ul').addClass("is-hover");
 		},
@@ -12,10 +12,10 @@ $(document).ready(function() {
 
 // Responsive navigation
 $(document).ready(function() {
-	$('.navigation').addClass('hide');
+	$('.nav').addClass('hide');
 	$('.languages').addClass('hide');
-	$(".navigation-trigger").click(function () {
-		$('.navigation').toggleClass('show').toggleClass('hide');
+	$(".nav-trigger").click(function () {
+		$('.nav').toggleClass('show').toggleClass('hide');
 		$('.languages').toggleClass('show').toggleClass('hide');
 		return false;
 	});
@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 /* Animated navigation-trigger */
 $(document).ready(function(){
-    $('.navigation-trigger').click(function(){
+    $('.nav-trigger').click(function(){
         $(this).toggleClass('open');
     });
 });

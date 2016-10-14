@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractLogger.php" server="ftp.espacedev2.com//lando/" local="131209462925030703" remote="131179017000000000" Dst="2" />
+<file name="InvalidArgumentException.php" server="ftp.espacedev2.com//lando/" local="131209462925200826" remote="131179017000000000" Dst="2" />
+<file name="LogLevel.php" server="ftp.espacedev2.com//lando/" local="131209462925360936" remote="131179017000000000" Dst="2" />
+<file name="LoggerAwareInterface.php" server="ftp.espacedev2.com//lando/" local="131209462925441026" remote="131179017000000000" Dst="2" />
+<file name="LoggerAwareTrait.php" server="ftp.espacedev2.com//lando/" local="131209462925571100" remote="131179017000000000" Dst="2" />
+<file name="LoggerInterface.php" server="ftp.espacedev2.com//lando/" local="131209462925751218" remote="131179017000000000" Dst="2" />
+<file name="LoggerTrait.php" server="ftp.espacedev2.com//lando/" local="131209462925851404" remote="131179017000000000" Dst="2" />
+<file name="NullLogger.php" server="ftp.espacedev2.com//lando/" local="131209462925931491" remote="131179017000000000" Dst="2" />
+</dwsync>

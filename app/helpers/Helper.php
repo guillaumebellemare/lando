@@ -1,6 +1,6 @@
 <?php
 
-class Helper extends App {
+class Helper {
 	
 	# writePrettyDate()
 	# @access public

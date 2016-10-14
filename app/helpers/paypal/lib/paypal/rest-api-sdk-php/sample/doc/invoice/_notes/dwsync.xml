@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CancelInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462864788978" remote="131179015800000000" Dst="2" />
+<file name="CreateInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462865180616" remote="131179015800000000" Dst="2" />
+<file name="CreateThirdPartyInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462865240529" remote="131179015800000000" Dst="2" />
+<file name="DeleteInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462865260549" remote="131179015800000000" Dst="2" />
+<file name="GetNextInvoiceNumber.html" server="ftp.espacedev2.com//lando/" local="131209462865691025" remote="131179015800000000" Dst="2" />
+<file name="GetInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462865730878" remote="131179015800000000" Dst="2" />
+<file name="ListInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462865861006" remote="131179015800000000" Dst="2" />
+<file name="RecordPayment.html" server="ftp.espacedev2.com//lando/" local="131209462866181486" remote="131179015800000000" Dst="2" />
+<file name="RecordRefund.html" server="ftp.espacedev2.com//lando/" local="131209462866291431" remote="131179015800000000" Dst="2" />
+<file name="RemindInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462866431534" remote="131179015800000000" Dst="2" />
+<file name="SearchInvoices.html" server="ftp.espacedev2.com//lando/" local="131209462866661699" remote="131179015800000000" Dst="2" />
+<file name="RetrieveQRCode.html" server="ftp.espacedev2.com//lando/" local="131209462866712637" remote="131179015800000000" Dst="2" />
+<file name="SendInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462866842759" remote="131179015800000000" Dst="2" />
+<file name="UpdateInvoice.html" server="ftp.espacedev2.com//lando/" local="131209462867192998" remote="131179015800000000" Dst="2" />
+</dwsync>

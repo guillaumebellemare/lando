@@ -1,4 +1,4 @@
-<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="?=URL_ROOT . PUBLIC_FOLDER?>scripts/html5shiv.js"></script><![endif]-->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/selectivizr-min.js"></script>
 <script src="<?=URL_ROOT . PUBLIC_FOLDER?>scripts/navigation.js"></script>

@@ -200,7 +200,7 @@ class paypal_class {
       } else { 
         // Post the data back to paypal
 		$header = "";
-		$header .= "POST /cgi-bin/webscr HTTP/1.0\r\n";
+		$header .= "POST /cgi-bin/webscr HTTP/1.1\r\n";
 		$header .= "Host: {$url_parsed['host']}\r\n";
 		$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
 		$header .= "Content-Length: " . strlen($post_string) . "\r\n\r\n";

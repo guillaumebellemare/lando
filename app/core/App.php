@@ -1,395 +1,269 @@
 <?php
 
-class App extends SluggedRecord {
+class App {
 	
-	private $from;
-	private $where = array();
-	private $order_by = array();
-	private $group_by = array();
-	private $joined_table = NULL;
-	private $joined_table_code = NULL;
-	private $joined_statement = NULL;
-	private $joined_table_active = NULL;
-	private $table_active;
-	private $limit;
-	private $table_rows;
-	private $a_table_rows = array();
-
-	public function __construct($table = NULL, $table_code = NULL) {
-		
-		global $lang2, $lang3;
-		
-		# Create ADO object & connect to the database
-		$db = ADONewConnection(DB_TYPE);
-		$db->Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
-		$db_temp = ADONewConnection(DB_TYPE);
-		$db_temp->Connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
-		
-		# Allow MySQL to query in utf8 encoding
-		$db->Execute("SET NAMES utf8");
-		$db_temp->Execute("SET NAMES utf8");
-
-		$this->db = $db;
-		$this->db_temp = $db_temp;
-		$this->lang2 = $lang2;
-		$this->lang3 = $lang3;
-		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
-		$this->table = $table;
-		$this->table_code = $table_code;
-		
-		if(DEBUG==true)
-		{
-			if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
-			{
-				error_reporting(E_ERROR | E_WARNING | E_PARSE);
-				ini_set("display_errors", 1);
-				$this->db->debug = true;
-			}
-		}
-		
-		if(DEBUG_ALL==true)
-		{
-			if($_SERVER['REMOTE_ADDR']===IP_ADDRESS)
-			{
-				error_reporting(E_ERROR | E_WARNING | E_PARSE);
-				ini_set("display_errors", 1);
-				$this->db_temp->debug = true;
-			}
-		}
-
-	}
+	public $db = NULL;
+	public $lang2 = NULL;
+	public $lang3 = NULL;
+	private $controller_loaded = false;
+	private $view_loaded = false;
+	private $view_from_cart = false;
 	
-	# get()
-	# @access public
-	# @param $id
-	# @return current result
-	public function get($id){
-		$rs = $this->select($this->table)->where("{$this->table}.id = $id")->all(false);
-		return current($rs);
+	public $routes;
+	private $app_routes;
+	private $current_route;
+	private $current_function;
+	
+	public function __construct() {
+		
+		# Load languages
+		$this->loadLanguages();
+			
+		require_once('app/core/AppConnection.php');
+		require_once('app/core/AppController.php');
+		require_once('app/core/AppModel.php');
+		require_once('app/core/CustomException.php');
+		require_once("app/helpers/templace_inheritance/ti.php");
+
+		# Init
+		$this->loadApplication();
 	}
 
-	# select()
-	# @access public
-	# @param string $table
-	# @return $this
-    function select($table=NULL)
-    {
-		if(!$table) $table = $this->table;
-		if($table)
-		{			
-			$data = array();
-			$this->db_temp->SetFetchMode(ADODB_FETCH_ASSOC);
-			$this->table_rows = "";
-			
-			#$table_exist = $this->db_temp->Execute("SELECT * FROM information_schema.TABLES WHERE TABLE_NAME = '{$table}' AND TABLE_SCHEMA = '".DB_NAME."'");
-
-			$q = "SHOW COLUMNS FROM {$table}";
-			$rsColumns = $this->db_temp->Execute($q);
-			
-			# Select rows names
-			$this->i = 1;
-			while(!$rsColumns->EOF){
-				
-				# Put fields in an array
-				$this->a_table_rows[$this->i] = $table.".".$rsColumns->fields["Field"]." AS ".$table."_".$rsColumns->fields["Field"];
-				
-				# Check if active field exist
-				if($rsColumns->fields["Field"]=='active') $this->table_active = true;
-
-				# Put fields in a string
-				$this->table_rows .= $table.".".$rsColumns->fields["Field"]." AS ".$table."_".$rsColumns->fields["Field"];;
-				if($rsColumns->RecordCount()!=$this->i) $this->table_rows .= ", ";
-				
-				$this->i++;
-				
-			$rsColumns->MoveNext();
-			}
-			$rsColumns->Close();
-
-		}
-        return $this;
-    }
-    
- 	# append()
-	# @access public
-	# @param string $a_rows
-	# @return $this
-    function append($a_rows){
-	    foreach($a_rows as $current_row){
-		    $this->a_table_rows[] = $current_row;
-		    $this->table_rows .= ', '. $current_row;
-	    }
-	    return $this;
-    }
-	
-	# left_join()
-	# @access public
-	# @param string $joined_table
-	# @return $this
-	function left_join($joined_table, $force_active = true)
-	{
+	private function loadApplication() {
 		
-       if($joined_table)
-	   {
-			$this->joined_table = $joined_table;
-			$this->joined_table_code = rtrim($joined_table, "s");
+		try {
 			
-			$called_class = get_called_class();
-			$called_class_init = new $called_class();
-		    if(method_exists($called_class_init, $joined_table))
+			# Load routes
+			require_once('routes.php');
+			
+			# Routes
+			require_once('public/lang/'.$this->lang2.'/routes.php');
+			$this->app_routes = $app_routes;
+			$this->routes = $routes;
+			
+			if(SHOPPING_CART) require_once('app/helpers/cart/app_routes.php');
+			if(SHOPPING_CART) require_once('app/helpers/cart/lang/'.$this->lang2.'/routes.php');
+			if(SHOPPING_CART) $this->cart_app_routes = $cart_app_routes;
+			if(SHOPPING_CART) $this->app_routes = array_merge($this->app_routes, $this->cart_app_routes);
+			if(SHOPPING_CART) $this->cart_routes = $cart_routes;
+			if(SHOPPING_CART) $this->routes = array_merge($this->routes, $this->cart_routes);
+			
+			# Languages files
+			foreach(glob("public/lang/".$this->lang2."/*.php") as $filename) require_once($filename);
+			if(SHOPPING_CART) foreach(glob("app/helpers/cart/lang/".$this->lang2."/*.php") as $filename) require_once($filename);
+			
+			# Metas
+			$this->meta = $meta;
+			
+			# Helper Class
+			require_once('app/helpers/Helper.php');
+			$helper = new Helper();
+			$this->helper = new Helper();
+			
+			# Initialize application
+			$this->loadModels();
+			$this->loadController();
+			$this->loadView();
+			
+			# Close DB connection
+			AppConnection::closeConnection();
+			
+			# Extract arrays from Controller
+			if(isset($this->current_arrays)) extract($this->current_arrays);
+			
+			# Get view
+			if(!$this->view_from_cart) require_once('app/views/'.$this->view.'.php'); else require_once('app/helpers/cart/views/'.$this->view.'.php');
+		
+		}catch(CustomException $e) {
+			if(DEBUG) echo $e->errorMessage($e), "\n";
+		}
+
+	}	
+	
+	private function loadLanguages() {
+		$lang = new Lang();
+		$this->lang2 = $lang->lang2;
+		$this->lang3 = $lang->lang3;
+		$this->lang2_trans = $lang->lang2_trans;
+		$this->lang3_trans = $lang->lang3_trans;
+		$this->lang_trans_complete = $lang->lang_trans_complete;
+		$this->possible_languages = $lang->possible_languages;
+	}
+	
+	private function loadModels() {
+		foreach(glob('app/models/*.php') as $filename)
+		{
+			require_once($filename);
+		}
+		
+		if(SHOPPING_CART)
+		{
+			foreach(glob('app/helpers/cart/models/*.php') as $filename)
 			{
-				$this->joined_statement .= " LEFT JOIN {$this->joined_table} ".$called_class_init->{$joined_table}();
+				require_once($filename);
+			}
+		}
+	}
+	
+	private function loadController() {
+	
+		# Get current page path
+		$param_number = count($_GET)-2;
+		$page = $_GET['page'];
+		for ($i = 1; $i <= $param_number; $i++) {
+			$page .= '/'.$_GET['param'.$i.''];
+		}
+		
+		$this->current_route = array_search($page, $this->routes);
+
+		if(array_search($page, $this->routes))
+		{
+			$this->current_route = array_search($page, $this->routes);
+		}else{
+			$asked_route = NULL;
+			for ($i = 1; $i <= $param_number; $i++) {
+				$asked_route .= '/$_GET["param'.$i.'"]';
+			}
+			
+			if(DEBUG) throw new CustomException('Veuillez v&eacute;rifier que la route <em>'.$_GET['page'].$asked_route.'</em> existe bien');
+		}
+		
+		# Broke the route into tokens
+		$token = strtok($this->app_routes[$this->current_route], '@::');
+		while ($token !== false) {
+			$current_app_route[] = $token;
+			$token = strtok('@::');
+		}
+		
+		$current_controller = $current_app_route[0];
+		$this->current_route = explode('Controller', $current_controller);
+		$this->current_route = strtolower($this->current_route[0]);
+
+		$condition = file_exists('app/controllers/'.ucfirst($this->current_route).'Controller.php');
+		if(SHOPPING_CART) $condition .= " | ".file_exists('app/helpers/cart/controllers/'.ucfirst($this->current_route).'Controller.php');
+		if($condition)
+		{
+			$this->current_function = $current_app_route[1];
+	
+			# If the route if protected, authenticate the user and redirect him to the login page if necessary
+			if(isset($current_app_route[2]) && $current_app_route[2]=='protected')
+			{
+				$user = new User();
+				if(!$user->check()) header('Location: '.URL_ROOT.$lang2.'/'.$this->routes['login']);
+			}
+			
+			#if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current controller: </strong>'.$current_controller.'@'.$this->current_function.'<br>';
+			
+			if(file_exists('app/controllers/'.$current_controller.'.php'))
+			{
+				require_once('app/controllers/'.$current_controller.'.php');
+			}elseif(SHOPPING_CART){
+				require_once('app/helpers/cart/controllers/'.$current_controller.'.php');
+				#$cart_controller = new $current_controller();
+			}
+			
+			if(class_exists($current_controller))
+			{
+				$this->current_controller = new $current_controller($this->current_function, $this->lang, $this->db, $this->helper, $this->routes);
+				$this->controller_loaded = true;					
 			}else{
-				$this->joined_statement .= " LEFT JOIN {$this->joined_table} ON {$this->table}.{$this->joined_table_code}_id = {$this->joined_table}.id";
+				if(DEBUG) throw new CustomException('Le nom de votre classe Controller doit correspondre &agrave; son nom de fichier.');	
 			}
-			
-			$q = "SHOW COLUMNS FROM {$joined_table}";
-			$rsColumns = $this->db_temp->Execute($q);
-			
-			# Select rows names
-			while(!$rsColumns->EOF){
-				
-				# Put fields of the joined table in the array
-				$current_field = $rsColumns->fields["Field"];
-				$this->a_table_rows[$this->i] = $joined_table.".".$current_field." AS ".$joined_table."_".$rsColumns->fields["Field"];;
 	
-				# Put fields in a string
-				$this->table_rows .= ", ";
-				$this->table_rows .= $joined_table.".".$current_field." AS ".$joined_table."_".$rsColumns->fields["Field"];;
-				if($current_field=='active' && $force_active) $this->joined_table_active .= " AND {$joined_table}.active = 1";
-				
-				$this->i++;
-			$rsColumns->MoveNext();
+			# If the method exist, extract the arrays returned by the function
+			if(method_exists($this->current_controller, $this->current_function))
+			{
+				$f = $this->current_function;
+				$this->current_arrays = $this->current_controller->$f();
+				if(isset($this->current_arrays) && is_array($this->current_arrays)) extract($this->current_arrays); elseif(isset($this->current_arrays) && !is_array($this->current_arrays) && DEBUG) throw new CustomException('Vous devez retourner un array[] dans la fonction'.$this->current_function.'() de '.$current_controller.'.');
+			}else{
+				if(DEBUG) throw new CustomException('Fonction <strong>'.$this->current_function.'()</strong> introuvable pour <strong>'.ucfirst($_GET["page"]).'Controller</strong><br>V&eacute;rifiez que vos routes sont bien cr&eacute;&eacute;s.');
 			}
-			$rsColumns->Close();
-	    }
-
-		return $this;
+			
+		}else{
+			if(DEBUG) throw new CustomException('Le fichier <strong>'.$this->current_route.'Controller.php</strong> est introuvable dans <em>app/controllers/'.ucfirst($this->current_route).'Controller.php</em>.<br>V&eacute;rifiez que le fichier existe.');
+		}	
 	}
 	
-	# oneToMany()
-	# @access public
-	# @param string $foreign_key, $primary_key
-	# @return $this
-	function oneToMany($foreign_key, $primary_key)
-	{
-		return "ON {$foreign_key} = {$primary_key}";
-	}
+	private function loadView() {
 	
-	# where()
-	# @access public
-	# @param string $where
-	# @return $this
-    function where($where)
-    {
-       if($where) $this->where[] = "($where)";
-       return $this;
-    }
-	
-	# order_by()
-	# @access public
-	# @param string $order_by
-	# @return $this
-    function order_by($order_by=NULL)
-    {
-       if($order_by) $this->order_by[] = $order_by;
-       return $this;
-    }
-	
-	# group_by()
-	# @access public
-	# @param string $group_by
-	# @return $this
-    function group_by($group_by=NULL)
-    {
-       if($group_by) $this->group_by[] = $group_by;
-       return $this;
-    }
-	
-	# limit()
-	# @access public
-	# @param string $limit
-	# @return $this->all()
-	function limit($limit)
-	{
-		if($limit) $this->limit = $limit;
-		return $this->all();
-	}
-	
-	# all()
-	# @access public
-	# @return array()
-	function all($force_active = true)
-    {		
-		global $app_messages;
-
-		$q = "SELECT {$this->table_rows} FROM {$this->table}";
-		if($this->joined_statement) $q .= $this->joined_statement;
-		$q .= " WHERE ";
-		if($this->where) 
-		{
-			foreach($this->where as $where_statement)
+		# View file handling
+		try{
+			if(file_exists('app/views/'.$this->current_route.'/'.$this->current_function.'.php') && !$this->view_loaded)
 			{
-				$q .= "{$where_statement} AND ";
-			}
-		}
-		
-		if($this->table_active && $force_active) $q .= " {$this->table}.active = 1"; else $q .= " 1"; 
-		$q .= $this->joined_table_active;
-		if($this->group_by) 
-		{
-			$q .= " GROUP BY ";
-			$i = 0;
-			foreach($this->group_by as $group_statement)
-			{
-				if($i!=0) $q .= ", ";
-				$q .= "{$group_statement}";
-				$i++;
-			}
-		}
-		if($this->order_by) 
-		{
-			$q .= " ORDER BY ";
-			$i = 0;
-			foreach($this->order_by as $order_statement)
-			{
-				if($i!=0) $q .= ", ";
-				$q .= "{$order_statement}";
-				$i++;
-			}
-		}
-		if($this->limit) $q .= " LIMIT {$this->limit}";
-		$rsList = $this->db->Execute($q);
-		/*include(COMPLETE_URL_ROOT .'zap/lib/php/adodb5/tohtml.inc.php'); # load code common to ADOdb 
-		rs2html($rsList,'border=2 cellpadding=3');*/
-
-		# Put all data in an array
-		$i = 0;
-
-		while(!$rsList->EOF){
-			
-			$data[$i] = array();
-			
-			foreach($this->a_table_rows as $table_row)
-			{
-				if(explode(' AS ', $table_row)) list($complete_field, $as_field) = explode(' AS ', $table_row);
-				if(explode('.', $table_row)) list($table_name, $table_field) = explode('.', $table_row);
-				if(strstr($as_field, 'special_')){
-					$table_row = (explode('special_', $as_field));
-					$complete_field = 'special.'.$table_row[1];
-				}else{
-					$table_row = explode(".", $table_row);
-					$table_row_complete = $table_row[0].'.'.$table_row[1];
+				#if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$this->current_route.'/'.$this->current_function.'.php';
+				$this->view = $this->current_route.'/'.$this->current_function;
+				$this->view_loaded = true;
+			}elseif(SHOPPING_CART && file_exists('app/helpers/cart/views/'.$this->current_route.'/'.$this->current_function.'.php') && !$this->view_loaded){
+				#if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$this->current_route.'/'.$this->current_function.'.php';
+				$this->view = $this->current_route.'/'.$this->current_function;
+				$this->view_loaded = true;
+				$this->view_from_cart = true;
+			}elseif(!$this->view_loaded){
+				#if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$this->current_route.'/'.$this->current_function.'.php';
+				if(!$this->current_route && ($_GET["page"]!="erreur-404") && ($_GET["page"]!="error-404") && ($_GET["page"]!="404") && isset($_GET["lang"]))
+				{
+					if($this->lang2=="fr") $epage = "erreur-404/la/page/est/introuvable/ou/existe/plus"; else $epage = "error-404/your/page/is/not/found";
+					header("Location: http://".$_SERVER[HTTP_HOST].URL_ROOT.$this->lang2."/".$epage);
 				}
 
-				$data[$i][$complete_field] = $rsList->fields[$as_field];
+				$this->view = "errors/404";
+				$this->view_loaded = true;
+				if(DEBUG) throw new CustomException('La vue <strong>'.$this->current_function.'.html</strong> introuvable dans <em>app/views/'.$this->current_route.'/'.$this->current_function.'.html</em>');
 			}
-			$i++;
-			
-		$rsList->MoveNext();
+		}catch(CustomException $e) {
+			if(DEBUG) echo $e->errorMessage($e), "\n";
 		}
-		$rsList->Close();
 
-		//if($_SERVER['REMOTE_ADDR']===IP_ADDRESS) $app_messages[] = "<hr class='app-hr'><span class='app-query'>$q</span><br>";
-		
-		if($this->from) unset($this->from);
-		if($this->where) unset($this->where);
-		if($this->order_by) unset($this->order_by);
-		if($this->joined_table) unset($this->joined_table);
-		if($this->joined_statement) unset($this->joined_statement);
-		if($this->joined_table_active) unset($this->joined_table_active);
-		if($this->joined_table_code) unset($this->joined_table_code);
-		if($this->table_rows) unset($this->table_rows);
-		if($this->a_table_rows) unset($this->a_table_rows);
+		$page_setted = 1;
 
-		if($this->limit && $this->limit === 1)
-		{
-			if($this->limit) unset($this->limit);
-			return current($data);
-		}else{
-			if($this->limit) unset($this->limit);
-        	return $data;
-		}
-    }
+	}
 	
-	# raw_query()
-	# @access public
-	# @param $raw_query
-	# @return array()
-	function raw_query($raw_query){
+	
+	function translateFromPage()
+	{
 		
-		$data = array();
-		$this->db->SetFetchMode(ADODB_FETCH_ASSOC);
-		$rsList = $this->db->Execute($raw_query);
+		$key = NULL;
 		
-		$columns = array();
-		$columns = $rsList->fields;
-		$i = 0;
-		
-		while(!$rsList->EOF){
-			
-			foreach($columns AS $column)
+		if(SHOPPING_CART)
+		{
+			include(COMPLETE_URL_ROOT."app/helpers/cart/lang/".$this->lang2."/routes.php");
+			$global_routes = array_merge($this->cart_routes, $this->routes);
+		}else{
+			$global_routes = $this->routes;	
+		}
+		if(isset($_GET['param1']) && isset($_GET['param2']) && isset($_GET['param3']) && isset($_GET['param4'])) $key = array_search("{$_GET['page']}/{$_GET['param1']}/{$_GET['param2']}/{$_GET['param3']}/{$_GET['param4']}", $global_routes);
+		elseif(isset($_GET['param1']) && isset($_GET['param2']) && isset($_GET['param3'])) $key = array_search("{$_GET['page']}/{$_GET['param1']}/{$_GET['param2']}/{$_GET['param3']}", $global_routes);
+		elseif(isset($_GET['param1']) && isset($_GET['param2'])) $key = array_search("{$_GET['page']}/{$_GET['param1']}/{$_GET['param2']}", $global_routes);
+		elseif(isset($_GET['param1'])) $key = array_search("{$_GET['page']}/{$_GET['param1']}", $global_routes);
+		elseif(!$key) $key = array_search("{$_GET['page']}", $global_routes);
+
+		if($global_routes["$key"] && $global_routes["$key"] != 'index')
+		{
+			include(COMPLETE_URL_ROOT . PUBLIC_FOLDER . 'lang/'.$this->lang2_trans.'/routes.php');
+			if(SHOPPING_CART)
 			{
-				$data[$i] = $rsList->fields;
+				include(COMPLETE_URL_ROOT."app/helpers/cart/lang/".$this->lang2_trans."/routes.php");
+				$routes = array_merge($global_routes, $cart_routes);
 			}
-			$i++;
+			
+			$translated_route .= $routes["$key"];
 
-		$rsList->MoveNext();
-		}
-		$rsList->Close();
-
-		return $data;
-	}
-	
-	# insert()
-	# @access public
-	# @param $record
-	# @return @void
-	public function insert(&$record){
-		$this->db->AutoExecute($this->table, $record, 'INSERT'); 
-		$record['id'] = $this->db->insert_id();
-		return true;
-	}
-	
-	# update()
-	# @access public
-	# @param $record, $id
-	# @return @void
-	public function update(&$record, $id){
-		return $this->db->AutoExecute($this->table, $record, 'UPDATE', 'id = ' . $id); 
-	}
-	
-	# raw_update()
-	# @access public
-	# @param $raw_update
-	function raw_update($raw_query){
-		
-		$this->db->Execute($raw_query);
-	}
-
-	# delete()
-	# @access public
-	# @param $table, $clause
-	# @return @void
-	function delete($table, $clause) {
-	
-		global $db;
-		global $messages, $errors;
-		if(!isset($table))$table = $this->table;
-		$q = "SELECT * FROM {$table} WHERE {$clause}";
-		$rsList = $this->db->Execute($q);
-		if($rsList->RecordCount()!=0)
-		{
-			$q = "DELETE FROM {$table}";
-			$q .= " WHERE {$clause}";
-			$rsList = $this->db->Execute($q);
-		
-			$_SESSION['errors'] = 'Le champs a bien été supprimé.';
+			if($translated_route) return '/'.$translated_route; else return false;
 		}else{
-			$_SESSION['errors'] = 'Aucun champs avec cet id. Le champs n\'a pas été supprimé.';
+			return false;
 		}
 
 	}
-
+	
+	# getMeta()
+	# @access public
+	# @param $part
+	# @return current_meta
+	public function getMeta($part)
+	{
+		return $this->current_controller->getMeta($part, $this->meta, $this->routes);
+	}
+	
 
 }

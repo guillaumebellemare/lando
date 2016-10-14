@@ -1,6 +1,6 @@
 <?php
 
-class AppController extends SluggedRecord {	
+class AppController extends App {	
 	
 	private static $title;
 	private static $description;
@@ -12,25 +12,35 @@ class AppController extends SluggedRecord {
 	# @access public
 	# @param mixed $current_function - Reference to the function that will be executed. We keep the reference to be able to modify it later to show another view if necessary
 	# @return void
-	public function __construct(&$current_function=NULL){
+	public function __construct(&$current_function=NULL, &$lang, &$db, &$helper, &$routes){
 		
-		global $lang2, $lang3;
-		
-		$this->lang3 = $lang3;
-		$this->lang2 = $lang2;
-		if($lang3=="fre") $this->lang3_trans = "eng"; else $this->lang3_trans = "fre";
 		$this->current_function = &$current_function;
-		
-		$this->helper = new Helper();
+		$this->db = $db;
+
+		$lang = new Lang();
+		$this->lang2 = $lang->lang2;
+		$this->lang3 = $lang->lang3;
+		$this->lang2_trans = $lang->lang2_trans;
+		$this->lang3_trans = $lang->lang3_trans;
+		$this->lang_trans_complete = $lang->lang_trans_complete;
+		$this->possible_languages = $lang->possible_languages;
+		$this->helper = $helper;
+		$this->routes = $routes;
+
+		/*foreach(glob("app/models/*.php") as $filename)
+		{
+			require_once($filename);
+		}*/
+		#$this->helper = new Helper();
 	}
-	
+
 	# redirect()
 	# @access public
 	# @param $to_route
 	# @return void
 	public function redirect($to_route = NULL){
-		global $routes;
-		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2.'/'.$routes[$to_route];
+		if(!$to_route) $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2; else $path = "http://$_SERVER[HTTP_HOST]".URL_ROOT.$this->lang2.'/'.$this->routes[$to_route];
+		#echo $path;
 		header('Location: '.$path);
 		exit;
 	}
@@ -46,9 +56,8 @@ class AppController extends SluggedRecord {
 	# @access public
 	# @param $part
 	# @return current_meta
-	public function getMeta($part)
+	public function getMeta($part, $meta, $routes)
 	{
-		global $meta;
 		$current_meta = NULL;
 
 		if(self::$title && $part == "title") $current_meta .= self::$title." | ";
@@ -61,16 +70,15 @@ class AppController extends SluggedRecord {
 		if(isset($_GET['param3']) && isset($meta["{$_GET['param3']}.{$part}"])) $current_meta .= $meta["{$_GET['param3']}.{$part}"]." | ";
 		if(isset($_GET['param2']) && isset($meta["{$_GET['param2']}.{$part}"])) $current_meta .= $meta["{$_GET['param2']}.{$part}"]." | ";
 		if(isset($_GET['param1']) && isset($meta["{$_GET['param1']}.{$part}"])) $current_meta .= $meta["{$_GET['param1']}.{$part}"]." | ";
-		$current_meta .= $this->getMetaFromPage("{$part}");
-		$current_meta .= $this->getMetaFromPageParam("{$part}");
+		$current_meta .= $this->getMetaFromPage("{$part}", $meta, $routes);
+		if(isset($_GET['param1'])) $current_meta .= $this->getMetaFromPageParam("{$part}", $meta, $routes);
 		if(isset($meta["site.{$part}"])) $current_meta .= $meta["site.{$part}"];
-		
+
 		return $current_meta;
 	}
 	
-	public function getMetaFromPage($part)
+	public function getMetaFromPage($part, $meta, $routes)
 	{
-		global $routes, $meta;
 		$key = array_search("{$_GET['page']}", $routes);
 
 		if($meta["$key.$part"])
@@ -84,10 +92,9 @@ class AppController extends SluggedRecord {
 
 	}
 	
-	function getMetaFromPageParam($part)
+	function getMetaFromPageParam($part, $meta, $routes)
 	{
-		global $routes, $meta;
-		$key = array_search("{$_GET['page']}/{$_GET['param1']}", $routes);
+		$key = array_search("{$_GET['page']}/{$_GET['param1']}", $this->routes);
 
 		if($meta["$key.$part"])
 		{

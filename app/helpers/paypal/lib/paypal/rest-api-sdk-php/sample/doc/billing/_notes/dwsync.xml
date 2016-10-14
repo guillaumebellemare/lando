@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CreateBillingAgreementWithCreditCard.html" server="ftp.espacedev2.com//lando/" local="131209462861706301" remote="131179015200000000" Dst="2" />
+<file name="CreateBillingAgreementWithPayPal.html" server="ftp.espacedev2.com//lando/" local="131209462862686665" remote="131179015200000000" Dst="2" />
+<file name="CreatePlan.html" server="ftp.espacedev2.com//lando/" local="131209462863037022" remote="131179015200000000" Dst="2" />
+<file name="DeletePlan.html" server="ftp.espacedev2.com//lando/" local="131209462863337219" remote="131179015200000000" Dst="2" />
+<file name="ExecuteAgreement.html" server="ftp.espacedev2.com//lando/" local="131209462863437347" remote="131179015200000000" Dst="2" />
+<file name="GetBillingAgreement.html" server="ftp.espacedev2.com//lando/" local="131209462863467196" remote="131179015200000000" Dst="2" />
+<file name="ReactivateBillingAgreement.html" server="ftp.espacedev2.com//lando/" local="131209462863858194" remote="131179015200000000" Dst="2" />
+<file name="GetPlan.html" server="ftp.espacedev2.com//lando/" local="131209462863883225" remote="131179015200000000" Dst="2" />
+<file name="ListPlans.html" server="ftp.espacedev2.com//lando/" local="131209462863893217" remote="131179015200000000" Dst="2" />
+<file name="SearchBillingTransactions.html" server="ftp.espacedev2.com//lando/" local="131209462864238595" remote="131179015800000000" Dst="2" />
+<file name="UpdateBillingAgreement.html" server="ftp.espacedev2.com//lando/" local="131209462864288643" remote="131179015800000000" Dst="2" />
+<file name="SuspendBillingAgreement.html" server="ftp.espacedev2.com//lando/" local="131209462864308648" remote="131179015800000000" Dst="2" />
+<file name="UpdatePlanPaymentDefinitions.html" server="ftp.espacedev2.com//lando/" local="131209462864719053" remote="131179015800000000" Dst="2" />
+<file name="UpdatePlan.html" server="ftp.espacedev2.com//lando/" local="131209462864739000" remote="131179015800000000" Dst="2" />
+</dwsync>
