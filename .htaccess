@@ -32,5 +32,5 @@
     #RewriteRule ^(fr)$ index.php?lang=$1&page=index [L]    
     
     #404 ... 
-  	ErrorDocument 404 /mvc_test/index.php?lang=$1&page=404
+  	ErrorDocument 404 /lando/index.php?lang=$1&page=404
 </IfModule>

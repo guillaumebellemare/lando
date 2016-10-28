@@ -2,7 +2,7 @@
 
 if(!isset($_GET["lang"])) header('Location: fr');
 
-define("DEBUG", 1);
+define("DEBUG", 0);
 define("IP_ADDRESS", "65.94.73.25");
 define("URL_ROOT", '/lando/');
 define("ADMIN_PATH", 'zap/');

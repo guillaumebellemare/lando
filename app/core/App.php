@@ -200,16 +200,14 @@ class App {
 				$this->view_loaded = true;
 				$this->view_from_cart = true;
 			}elseif(!$this->view_loaded){
-				#if(DEBUG==true && $debug_on==true) $app_messages[] = '<hr class="app-hr"><strong>Current view:</strong> app/views/'.$this->current_route.'/'.$this->current_function.'.php';
-				if(!$this->current_route && ($_GET["page"]!="erreur-404") && ($_GET["page"]!="error-404") && ($_GET["page"]!="404") && isset($_GET["lang"]))
-				{
-					if($this->lang2=="fr") $epage = "erreur-404/la/page/est/introuvable/ou/existe/plus"; else $epage = "error-404/your/page/is/not/found";
-					header("Location: http://".$_SERVER[HTTP_HOST].URL_ROOT.$this->lang2."/".$epage);
+				
+				if($_GET["page"]!="404") {
+					header("Location: http://".$_SERVER[HTTP_HOST].URL_ROOT.$this->lang2."/404");
 				}
-
-				$this->view = "errors/404";
+				$this->view = "404/index";
 				$this->view_loaded = true;
 				if(DEBUG) throw new CustomException('La vue <strong>'.$this->current_function.'.html</strong> introuvable dans <em>app/views/'.$this->current_route.'/'.$this->current_function.'.html</em>');
+			
 			}
 		}catch(CustomException $e) {
 			if(DEBUG) echo $e->errorMessage($e), "\n";
