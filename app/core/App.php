@@ -201,7 +201,7 @@ class App {
 				$this->view_from_cart = true;
 			}elseif(!$this->view_loaded){
 				
-				if($_GET["page"]!="404") {
+				if($_GET["page"]!="404" && $_GET["page"]!="index" && $_GET["page"]!="") {
 					header("Location: http://".$_SERVER[HTTP_HOST].URL_ROOT.$this->lang2."/404");
 				}
 				$this->view = "404/index";

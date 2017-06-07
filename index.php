@@ -1,11 +1,11 @@
 <?php
 
-if(!isset($_GET["lang"])) header('Location: fr');
-
 define("DEBUG", 0);
 define("IP_ADDRESS", "65.94.73.25");
 define("URL_ROOT", '/lando/');
 define("ADMIN_PATH", 'zap/');
+
+if((!isset($_GET["lang"]) && $_GET["page"]!="404") || $_GET["page"]=="") header('Location: '.URL_ROOT.'fr');
 
 define("COMPLETE_FOLDER", dirname(__FILE__));
 define("PUBLIC_FOLDER", "public/");
