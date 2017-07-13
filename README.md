@@ -249,7 +249,7 @@ $app_routes = array(
 	"index" => "IndexController@index::protected",
 );
 ```
-=====
+
 ## Metas
 <p>Set these in a show() function of a Controller</p>
 ```php
@@ -259,11 +259,11 @@ $this->setKeywords("key, words");
 $this->setPageType("article"); // Default : website
 $this->setImage("picture.jpg");
 ```
-=====
+
 ## Cart
 <p>Set SHOPPING_CART to 1 in /config.php if you want a cart</p>
 <p>If you need to change something, all the files are located in /app/helpers/cart/</p>
-=====
+
 ## Elements
 ```html
 <input type="checkbox" name="checkbox[]" value="1" id="checkbox_1">
@@ -272,7 +272,7 @@ $this->setImage("picture.jpg");
 <input type="radio" name="radio" value="1" id="radio_1">
 <label for="radio_1">Radio</label>
 ```
-=====
+
 ## Resize picture helper
 ```php
 // exact, maxWidth, maxHeight
