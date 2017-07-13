@@ -231,18 +231,21 @@ $this->helper->nl2p(string)
 
 ## Routes
 <p>You have to set your routes in two differents files:</p>
+
 ### public/lang/routes.php
 ```php
 $routes = array(
 	"index" => "index",
 );
 ```
+
 ### app/core/app_routes.php
 ```php
 $app_routes = array(
 	"index" => "IndexController@index",
 );
 ```
+
 #### Password Protected
 ```php
 $app_routes = array(
