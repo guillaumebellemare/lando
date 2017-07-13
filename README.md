@@ -228,7 +228,7 @@ $this->helper->createVideo(URL_ROOT.PUBLIC_FOLDER."videos/your_video_name_withou
 ```php
 $this->helper->nl2p(string)
 ```
-=====
+
 ## Routes
 <p>You have to set your routes in two differents files:</p>
 ### public/lang/routes.php
