@@ -255,6 +255,7 @@ $app_routes = array(
 
 ## Metas
 <p>Set these in a show() function of a Controller</p>
+
 ```php
 $this->setTitle("Title");
 $this->setDescription("Description");
