@@ -272,3 +272,11 @@ $this->setImage("picture.jpg");
 <input type="radio" name="radio" value="1" id="radio_1">
 <label for="radio_1">Radio</label>
 ```
+=====
+## Resize picture helper
+```php
+// exact, maxWidth, maxHeight
+$resize = new ResizeImage('images/Be-Original.jpg');
+$resize->resizeTo(100, 100, 'exact');
+$resize->saveImage('images/be-original-exact.jpg');
+```
