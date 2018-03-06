@@ -1,5 +1,5 @@
-# Lando
-<p>Lando Calrissian. C’est un petit magouilleur, un combinard... un vaurien, il va vous plaire.<br>http://guillaumebellemare.github.io/lando/<br>https://www.youtube.com/watch?v=WrvHMW4rviE</p>
+# Windu
+<p>In the name of the Galactic Senate of the Republic, you are under arrest, Chancellor.<br>http://guillaumebellemare.github.io/lando/<br>https://www.youtube.com/watch?v=WrvHMW4rviE</p>
 
 # Documentation
 ## Controllers
@@ -12,10 +12,10 @@ class IndexController extends AppController {
 		$foo = new Foo();
 		
 		# Slug creation
-		$foo->createSlugField("name_$this->lang3");
+		$foo->create_slug_field("name_$this->lang3");
 		
 		# Data
-		$foos = foo->getAllBar();
+		$foos = $foo->getAllBar();
 		$current_foo = current($foo->currentFoo());
 		$this->helper->writePrettyDate($date);
 		
@@ -98,8 +98,8 @@ return $rs;
 ### Create Slug Field
 You can omit the second and third arguments witch are: name of the slug and name of the label of the slug
 ```php
-$foo->createSlugField("name_$this->lang3");
-$foo->createSlugField("name_$this->lang3", "slug_$this->lang3", "URL Slug - $this->lang2");
+$foo->create_slug_field("name_$this->lang3");
+$foo->create_slug_field("name_$this->lang3", "slug_$this->lang3", "URL Slug - $this->lang2");
 ```
 ### Redirect
 ```php
