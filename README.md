@@ -226,7 +226,11 @@ $this->helper->createVideo(URL_ROOT.PUBLIC_FOLDER."videos/your_video_name_withou
 ```
 ### New line to paragraph
 ```php
-$this->helper->nl2p(string)
+$this->helper->nl2p($string);
+```
+### var_dump
+```php
+$this->var_dump($array);
 ```
 
 ## Routes
